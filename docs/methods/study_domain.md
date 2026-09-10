@@ -1,156 +1,247 @@
-# Study domain
+#Study domain
 
-## Purpose
+#Purpose
 
-This document describes the spatial unit and the construction of the fixed analytical domain used to study native vegetation, planted pasture, and temporary agriculture in the Brazilian Cerrado and Amazon.
+This document defines the spatial support and reproducible construction of the
+fixed analytical domain used to study native vegetation, planted pasture, and
+temporary agriculture in the Brazilian Cerrado and Amazon.
 
-The analytical domain was originally produced in ArcGIS Pro through attribute and spatial selection. The procedure described here records that historical workflow as it was performed. A scripted implementation may later reproduce the same logical rule and verify its agreement with the original layer.
+The project distinguishes between:
 
-## Spatial reference data
+• the historical domain, produced in ArcGIS Pro and used in previous
+analyses; and
+• the canonical reconstructed domain, produced from versioned source assets
+and rules in Google Earth Engine.
 
-### Brazilian biome boundaries
+The historical domain is retained for provenance. The reconstructed domain
+will be used to regenerate the analytical results intended for peer review.
 
-The spatial reference was the **2025 Brazilian biome shapefile produced by the Brazilian Institute of Geography and Statistics (IBGE)**.
+Canonical spatial inputs
 
-The Cerrado and Amazon features were selected from this layer and used to identify the grid cells belonging to the study region.
+Brazilian biome boundaries
 
-### Parent grid
+The spatial reference is the 2025 Brazilian biome layer produced by the
+Brazilian Institute of Geography and Statistics (IBGE). Its Earth Engine asset
+is:
 
-The parent spatial framework was a regular hexagonal grid constructed for the Brazilian territory. Each cell has an area of approximately **20,000 ha** and a unique `cell_id`.
+```text
+projects/ee-barroso2501/assets/biomas_IBGE
+```
 
-The hexagons are the accounting units of the analysis. Land-cover areas and transitions are aggregated over complete cells rather than interpreted as individual pixel trajectories.
+Biome identity is stored in the string field CD_BIOMA. Code 1 identifies
+Amazonia and code 3 identifies the Cerrado.
 
-## Historical ArcGIS Pro procedure
+Parent grid
 
-### Step 1 — Cerrado–Amazon spatial selection
+The parent spatial framework is a regular hexagonal grid created for the
+Brazilian territory. Its Earth Engine asset is:
 
-The `Cerrado` and `Amazônia` features were selected from the 2025 IBGE biome layer.
+```text
+projects/ee-barroso2501/assets/grade_20mil_ha
+```
 
-ArcGIS Pro's **Select Layer By Location** operation was then applied using the `INTERSECT` relationship. Every parent-grid hexagon intersecting either selected biome was retained as a candidate cell.
+Each cell has a unique cell_id and an area of approximately 20,000 ha. The
+hexagons are the accounting units. Land-cover areas and transitions are
+aggregated over complete cells and must not be interpreted as individual pixel
+trajectories.
 
-Formally, if \(G_0\) is the parent grid and \(B_{CA}\) is the union of the Cerrado and Amazon biome polygons, the candidate set is:
+MapBiomas coverage
 
-\[
-G_{CA}=\{h\in G_0:h\cap B_{CA}\neq\varnothing\}.
-\]
+The canonical land-cover input is the final public MapBiomas Brazil Collection
+11 coverage product:
 
-The selected hexagons were **not clipped** to the biome boundaries. A boundary hexagon remains a complete 20,000 ha accounting unit and may contain land outside the Cerrado or Amazon.
+```text
+projects/mapbiomas-public/assets/brazil/lulc/collection11/
+mapbiomas_brazil_collection11_coverage_v3
+```
 
-### Step 2 — Endpoint land-cover calculation
+The earlier working version 0-4-13-w3y-5 is retained as provenance only and
+must not be used to generate canonical outputs.
 
-MapBiomas Brazil Collection 11 land-cover data were used for the endpoint years **1985** and **2025**.
+Canonical reconstruction procedure
 
-For every candidate hexagon, the areas classified as native vegetation and water were summed over the full cell area:
+Step 1 — Select the spatial candidate population
 
-\[
-NW_y(h)=NAT_y(h)+WATER_y(h),
-\]
+The Amazonia and Cerrado features are selected from the IBGE 2025 biome layer.
+Every parent-grid cell intersecting either target biome is retained:
 
-where \(y\) is 1985 or 2025.
+[
+G_{CA}={h\in G_0:h\cap B_{CA}\neq\varnothing},
+]
 
-The canonical class groups currently used by the project are:
+where (G_0) is the parent grid and (B_{CA}) is the union of the selected
+Amazonia and Cerrado features.
 
-- native vegetation: `1, 3, 4, 5, 6, 7, 10, 11, 12, 13, 29, 32, 49, 50, 84`;
-- water: `26, 31, 33`.
+The spatial relation is INTERSECTS. Selected hexagons are not clipped to
+biome boundaries. A boundary cell therefore remains a complete accounting unit
+and may contain land outside the two focal biomes.
 
-These lists must remain synchronized with the canonical class-remapping configuration used by the processing pipeline.
+To prevent the vector spatial join from being propagated into the raster
+reduction, the candidate population was materialized as:
 
-The denominator was the **total area of the complete hexagonal cell**, not only the area assigned to a particular biome and not a biome-clipped portion of the cell.
+```text
+projects/ee-barroso2501/assets/
+grade_hex_CeAmz_candidates_ibge2025
+```
 
-### Step 3 — Exclusion of fully natural cells
+The asset contains 32,305 cells with unique cell_id values and no invalid
+geometries. It is partitioned deterministically into eight balanced batches.
 
-A candidate cell was excluded only when native vegetation plus water represented 100% of its area in **both** endpoint years:
+Step 2 — Calculate endpoint anthropogenic area
 
-\[
-EXCLUDE(h)=
-\left[NW_{1985}(h)=AREA(h)\right]
-\land
-\left[NW_{2025}(h)=AREA(h)\right].
-\]
+For every candidate hexagon, recognized anthropogenic area is calculated for
+1985 and 2025 over the complete cell geometry. It is the sum of the canonical
+MapBiomas class groups:
 
-The final analytical domain is therefore:
+• planted pasture (PAS): 15;
+• temporary agriculture (TMP): 19, 20, 39, 40, 41, 62;
+• other agriculture (OAG): 9, 21, 35, 36, 46, 47, 48; and
+• other anthropogenic cover (OUT): 22, 23, 24, 25, 30, 75, 91.
 
-\[
-D=\left\{h\in G_{CA}:
-NW_{1985}(h)<AREA(h)
+The definitive groups are maintained in config/constants.js. Analysis
+scripts must import those definitions rather than maintain independent class
+lists.
+
+Native vegetation (NAT), water (WATER), class 27 (NODATA), masked pixels,
+and unexpected codes are not treated as anthropogenic. Their areas are tracked
+as coverage diagnostics so that incomplete or unexpected observations cannot
+silently determine cell membership.
+
+Step 3 — Apply the fixed endpoint rule
+
+Let (A_y(h)) be the recognized anthropogenic area in cell (h) at endpoint
+year (y). The reconstructed fixed domain is:
+
+[
+D=\left{h\in G_{CA}:
+A_{1985}(h)>0.01\ \text{ha}
 \lor
-NW_{2025}(h)<AREA(h)
-\right\}.
-\]
+A_{2025}(h)>0.01\ \text{ha}
+\right}.
+]
 
-The resulting layer is `grade_hex_CeAmz_selecao`, containing approximately **21,869 cells**.
+The 0.01-ha threshold is a numerical tolerance used to suppress negligible
+floating-point reduction noise. It is far below the area of one native 30-m
+pixel and is not a substantive minimum land-use threshold.
 
-## Interpretation of the domain
+The final number of reconstructed cells is not specified in advance. It will
+be recorded as an output of this procedure.
 
-The domain contains cells with land cover other than native vegetation or water in at least one endpoint year. It is best described as a:
+Historical ArcGIS-derived domain
 
-> Fixed Cerrado–Amazon analytical domain with anthropogenic land-cover presence at either endpoint.
+The original analytical-grid asset is:
 
-It should not be described as a set containing only cells with land-cover change. A cell may remain in the domain even if its anthropogenic cover is stable between 1985 and 2025.
+```text
+projects/ee-barroso2501/assets/grade_hex_CeAmz_selecao
+```
 
-The domain definition also should not be confused with pixel-level alternation. Pixel trajectories and annual class changes are analyzed separately from the cell-level rule used to establish the study domain.
+It contains 21,869 cells. It was produced in ArcGIS Pro by selecting complete
+20,000-ha hexagons associated with the Cerrado and Amazon and excluding cells
+that were entirely native vegetation plus water at both endpoints. The layer
+was not generated by a version-controlled script.
 
-## Fixed domain and time-varying activity
+The historical layer documents the origin of the previous analyses but does
+not define the membership or expected size of the canonical reconstruction.
+Agreement between the two layers is reported descriptively rather than used as
+an acceptance criterion.
 
-The 21,869-cell domain is fixed for all analytical periods. Every cell should be retained in the balanced analytical panel, including intervals in which its measured flows are zero.
+The candidate-grid audit found:
 
-Within this fixed domain, process-specific activity may vary among five-year intervals. Separate analytical subsets may identify cells with:
+|Membership comparison                            |Cells |
+|-------------------------------------------------|-----:|
+|Historical cells present in the candidate asset  |21,531|
+|Historical cells outside the candidate asset     |338   |
+|Candidate cells absent from the historical domain|10,774|
 
-- native vegetation to pasture flow;
-- native vegetation to temporary agriculture flow;
-- pasture to temporary agriculture flow;
-- any focal transition;
-- no focal transition during the interval.
+These differences do not by themselves indicate errors in earlier results or
+in the canonical reconstruction. No historical cell is added to or removed
+from the reconstructed domain solely to improve agreement.
 
-A cell with `PAS→TMP > 0` belongs to the consolidation-active subset for that interval. This subset is not equivalent to the complete domain or to the set of cells with any form of activity.
+Interpretation of the fixed domain
 
-## Boundary-cell implications
+The reconstructed domain represents complete Cerrado–Amazon candidate cells
+with recognized anthropogenic land cover at one or both endpoints. It must not
+be described as a set containing only cells that changed between 1985 and
+2025. Stable anthropogenic cells may also belong to the domain.
 
-Because cells were selected by intersection and retained as complete hexagons:
+Domain membership must also remain distinct from pixel-level trajectory and
+alternation. A cell-level net balance of zero does not establish that its
+pixels were stable, while a cell that is entirely native vegetation or water
+at both endpoints is a structural zero for the focal land-use accounting.
 
-- some boundary cells contain areas outside the Cerrado or Amazon;
-- biome boundaries determine cell inclusion but do not mask the internal accounting area;
-- total cell-level estimates refer to the selected hexagonal lattice, not to an exact polygon-clipped biome area;
-- comparisons among alternative grids must apply the same intersection and full-cell accounting rules.
+Fixed domain and time-varying activity
 
-Biome composition may later be included as a cell attribute or covariate. It should not be inferred from the selection operation alone.
+After reconstruction, the same spatial population will be used for every
+five-year interval. Every domain cell should remain in the balanced analytical
+panel, including intervals in which its measured focal flows are zero.
 
-## Reproducibility requirements
+Within this fixed domain, process-specific activity may vary among intervals.
+Separate analytical subsets may identify cells with:
 
-A future scripted reconstruction of the domain must document and fix:
+• native vegetation to pasture flow;
+• native vegetation to temporary agriculture flow;
+• pasture to temporary agriculture flow;
+• any focal transition;
+• no focal transition during the interval; or
+• PAS→TMP > 0, representing consolidation-active cells.
 
-1. the exact 2025 IBGE biome layer and its spatial reference;
-2. the parent-grid asset and unique identifier field;
-3. the `INTERSECT` spatial-selection rule;
-4. the MapBiomas Collection 11 asset and product version;
-5. the native vegetation and water class codes;
-6. the cell-area calculation method and projection;
-7. the numerical tolerance used to interpret 100% coverage;
-8. the treatment of masked, unobserved, or unclassified pixels;
-9. the expected final cell count;
-10. agreement between the reconstructed domain and the original ArcGIS-derived layer.
+These subsets are analytical attributes and do not redefine the fixed domain.
 
-## Validation checks
+Boundary-cell implications
 
-The domain is considered successfully reconstructed when:
+Because cells are selected by intersection and retained as complete hexagons:
 
-- every output feature is a complete hexagonal polygon;
-- `cell_id` is present and unique;
-- every retained cell intersects the Cerrado or Amazon biome polygon;
-- no excluded cell contains anthropogenic land cover in either endpoint under the canonical classification;
-- the number of reconstructed cells matches the original domain, or every difference is explicitly explained;
-- spatial disagreement with the original layer is reported by `cell_id` and mapped for inspection.
+• some boundary cells contain areas outside the Cerrado or Amazon;
+• biome boundaries determine cell inclusion but do not mask the accounting
+area inside the cell;
+• totals refer to the selected hexagonal lattice rather than an exact
+polygon-clipped biome area; and
+• alternative grids must use the same intersection and full-cell accounting
+rules.
 
-## Role in later analyses
+Biome composition may later be included as a cell attribute or covariate. It
+must not be inferred from the selection operation alone.
 
-This domain is the common spatial support for:
+Reproducibility and validation requirements
 
-- five-year stock and flow accounting;
-- the fixed 1985 pasture cohort;
-- within-interval annual trajectory analysis;
-- consolidation–replenishment balance metrics;
-- spatial autocorrelation analysis;
-- sensitivity tests for the modifiable areal unit problem (MAUP).
+The reconstructed domain must document and fix:
 
-For MAUP tests, alternative zoning and cell-size configurations must repeat the same domain-selection logic so that differences can be attributed to the spatial support rather than to inconsistent inclusion criteria.
+1. the IBGE 2025 biome asset, biome-code field, and target codes;
+2. the parent-grid asset and unique identifier;
+3. the INTERSECTS spatial-selection rule;
+4. the final public MapBiomas Collection 11 coverage asset;
+5. the canonical class groups;
+6. the native MapBiomas lattice used for area calculations;
+7. the cell-area calculation method;
+8. the endpoint years and 0.01-ha tolerance;
+9. the treatment of masked, class-27, and unexpected pixels; and
+10. the output asset, cell count, task identifiers, and execution record.
 
+The reconstruction is valid when:
+
+• every candidate and retained feature has a unique cell_id;
+• complete parent-grid geometries are preserved;
+• every candidate was selected by the documented biome-intersection rule;
+• endpoint areas reconcile to the recognized coverage categories or residuals
+are explicitly reported;
+• the same endpoint rule is applied to every candidate cell; and
+• the materialized batch outputs reconcile to the complete candidate
+population.
+
+Exact agreement with the historical 21,869-cell layer is not required.
+
+Role in later analyses
+
+The reconstructed domain will be the common spatial support for:
+
+• five-year stock and flow accounting;
+• the fixed 1985 pasture cohort;
+• within-interval annual trajectory analysis;
+• consolidation–replenishment balance metrics;
+• spatial autocorrelation analysis; and
+• sensitivity tests for the modifiable areal unit problem (MAUP).
+
+Alternative zoning and cell-size configurations used in MAUP tests must repeat
+the same biome-intersection and endpoint-selection logic. This ensures that
+observed differences arise from spatial support rather than inconsistent
+domain definitions.
