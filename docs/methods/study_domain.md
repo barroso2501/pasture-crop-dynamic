@@ -1,6 +1,6 @@
-#Study domain
+Study domain
 
-#Purpose
+Purpose
 
 This document defines the spatial support and reproducible construction of the
 fixed analytical domain used to study native vegetation, planted pasture, and
