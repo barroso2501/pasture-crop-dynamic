@@ -1,6 +1,6 @@
 # Analytical-domain reconstruction
 
-- **Status:** Endpoint membership completed and validated; final asset materialization pending
+- **Status:** Complete; endpoint membership, asset materialization, and final vector audit passed
 - **Last updated:** 2026-09-11
 - **Decision:** `docs/decisions/004_canonical_domain_reconstruction.md`
 - **Method:** `docs/methods/study_domain.md`
@@ -22,6 +22,8 @@ acceptance criterion.
 | Biome-code field | `CD_BIOMA` (string) |
 | Target biome codes | Amazonia `1`; Cerrado `3` |
 | Materialized candidate grid | `projects/ee-barroso2501/assets/grade_hex_CeAmz_candidates_ibge2025` |
+| Membership table | `projects/ee-barroso2501/assets/canonical_domain_membership_c11_v3` |
+| Canonical analytical grid | `projects/ee-barroso2501/assets/grade_hex_CeAmz_canonical_c11_v3` |
 | Historical grid, provenance only | `projects/ee-barroso2501/assets/grade_hex_CeAmz_selecao` |
 | Endpoint coverage | `projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3` |
 | Endpoint years | 1985 and 2025 |
@@ -63,6 +65,8 @@ silently interpreted as anthropogenic.
 | Diagnostic pilot | `gee/02c_reconstruct_domain_endpoints_b00.js` | Processes `b00` with endpoint and coverage diagnostics |
 | Lean pilot | `gee/02d_reconstruct_domain_endpoints_b01.js` | Tests the two-band production configuration on `b01` |
 | Remaining batches | `gee/02e_reconstruct_domain_endpoints_b02_b07.js` | Processes `b02` through `b07` with the validated lean configuration |
+| Final materialization | `gee/02f_materialize_canonical_domain.js` | Joins validated membership to complete candidate geometries |
+| Final asset audit | `gee/02g_audit_canonical_domain_asset.js` | Verifies the persisted asset without raster processing or export |
 
 The superseded scripts `gee/02_reconstruct_analytical_domain.js` and
 `gee/02_reconstruct_analytical_domain_v3.js` must not be rerun.
@@ -197,6 +201,43 @@ The `b02`-`b07` output files were received and validated on 2026-09-11. Their
 task IDs, runtimes, and EECU use were not supplied and are not required to
 validate the analytical content of the exported files.
 
+### Canonical-domain materialization
+
+| Field | Value |
+|---|---|
+| Task | `materialize_canonical_domain_c11_v3` |
+| Task ID | `LU4HKR53HPE6OZU2BOMBTYWU` |
+| Status | Completed, attempt 1 |
+| Start | 2026-09-11 15:03:23, UTC-03:00 |
+| Runtime | 2 minutes |
+| Batch compute usage | 0.0119 EECU-seconds |
+| Output asset | `projects/ee-barroso2501/assets/grade_hex_CeAmz_canonical_c11_v3` |
+
+The low compute use is consistent with the vector-only join and export: no
+endpoint raster calculation was repeated.
+
+## Final persisted-asset audit
+
+Script `gee/02g_audit_canonical_domain_asset.js` compared the persisted asset
+with the retained rows in the membership table. It created no export task.
+
+| Check | Result |
+|---|---:|
+| Canonical features | 24,889 |
+| Distinct `cell_id` values | 24,889 |
+| Duplicate `cell_id` values | 0 |
+| Distinct `GRID_ID` values | 24,889 |
+| Duplicate `GRID_ID` values | 0 |
+| Features with all required properties | 24,889 |
+| Features with `canonical_member` other than 1 | 0 |
+| Output cells without retained membership | 0 |
+| Retained membership rows without output cell | 0 |
+| Source batches represented | 8 |
+| Geometry types represented | 1; Polygon |
+
+The final asset therefore reproduces the accepted membership exactly while
+preserving the complete candidate-grid geometries.
+
 ## Evidence files
 
 The combined evidence archive is:
@@ -248,6 +289,6 @@ The endpoint calculation is accepted because:
 - the pilot diagnostics found no unexpected codes or class-27 area; and
 - the 0.01-ha tolerance affects only two explicitly identified cells.
 
-No additional cell-level disagreement investigation is required. The next
-step is to materialize the 24,889 retained cells as a new versioned Earth
-Engine asset and then update `config/constants.js` to reference that asset.
+No additional cell-level disagreement investigation is required. The
+canonical analytical-grid asset is accepted and `config/constants.js` now
+references it. Canonical stock-and-flow reprocessing may proceed.
