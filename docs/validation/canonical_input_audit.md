@@ -1,10 +1,10 @@
 # Canonical input audit
 
-- **Status:** Input audit complete with one documented encoding exception; parent-grid domain reconstruction remains required before canonical reprocessing
+- **Status:** Input audit complete with an accepted unresolved-code rule; canonical domain subsequently reconstructed and validated
 - **Audit script:** `gee/01_audit_canonical_inputs.js`, version 3
 - **Configuration:** `config/constants.js`
 - **Method reference:** `docs/methods/data_sources_and_classification.md`
-- **Decision reference:** `docs/decisions/002_canonical_mapbiomas_inputs.md`
+- **Decision references:** `docs/decisions/002_canonical_mapbiomas_inputs.md`; `docs/decisions/003_unresolved_pasture_age_code.md`
 - **Execution date:** 2026-09-08
 
 ## Purpose
@@ -179,7 +179,9 @@ The targeted inventory established that **code `1` is the only observed value fr
 
 The formal MapBiomas pasture-age legend defines code `100` for pasture established by 1985 and codes `200 + consecutive age` for pasture established after 1985. Under that formal encoding, code `1` has no stated role. The MapBiomas access page also contains an example visualization described as `0 = no pasture` and `1–40+ = consecutive age`, creating an internal documentation ambiguity for the public asset. Source: <https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/pastagem/idade/>.
 
-Code `1` occupies only 1,732.52 ha in 2025, or 0.00159% of mapped pasture in the retained domain. It is retained in total pasture area because coverage class `15` is authoritative for land-cover membership, but it must not be assigned to an age cohort without an explicit rule. The recommended provisional treatment is `age unresolved`: include it in pasture stock and land-cover transitions, exclude it from age-specific cohort statistics, report its area, and test whether its exclusion changes any age-dependent result. Reclassification to `201` requires confirmation from the product documentation or MapBiomas team.
+Code `1` occupies only 1,732.52 ha in 2025, or 0.00159% of mapped pasture in the retained domain. In consultation on 2026-09-09, the MapBiomas technician responsible for the pasture-age product confirmed that the value was unexpected and would be investigated. An official resolution or corrected product is not assumed to be available in the short term.
+
+Decision 003 therefore assigns code `1` the project status `age unresolved`. It is retained in total pasture area and land-cover transitions because coverage class `15` is authoritative for land-cover membership. It is exported as an explicit unresolved-age component and excluded from age-specific cohort statistics. Its area must be reported, and age-dependent results must include a sensitivity check. It must not be reclassified to `201` or interpreted as a one-year-old pasture unless MapBiomas provides an official clarification or replacement product.
 
 ## 7. Retained-cell endpoint check
 
@@ -211,7 +213,7 @@ These quantities do not use identical measurement representations: the first is 
 
 ### Status
 
-`INPUT AUDIT COMPLETE WITH DOCUMENTED EXCEPTION — DOMAIN RECONSTRUCTION REQUIRED BEFORE CANONICAL REPROCESSING`
+`INPUT AUDIT COMPLETE — UNRESOLVED-CODE RULE ACCEPTED; CANONICAL DOMAIN SUBSEQUENTLY RECONSTRUCTED AND VALIDATED`
 
 ### Components passed
 
@@ -224,22 +226,31 @@ These quantities do not use identical measurement representations: the first is 
 - native raster-lattice alignment;
 - targeted identification of low pasture-age values.
 
-### Documented exception
+### Accepted handling of source anomaly
 
-- code `1` occurs inside a very small area classified as pasture but is not resolved by the formal `100`/`2xx` encoding rule;
+- code `1` occurs inside a very small area classified as pasture and has been confirmed as unexpected by the MapBiomas product team;
 - total pasture accounting remains valid because coverage class `15` is authoritative;
-- age-dependent analysis requires the provisional `age unresolved` treatment or later source confirmation.
+- code `1` is retained as `age unresolved` and excluded from attributable-age cohorts pending an official source resolution.
 
-### Remaining prerequisite
+### Subsequent domain resolution
 
-- reconstruction of the fixed analytical-domain selection from the complete parent grid using `coverage_v3`.
+The required parent-grid reconstruction was completed on 2026-09-11. The
+validated canonical domain contains 24,889 cells and is stored as:
+
+```text
+projects/ee-barroso2501/assets/
+grade_hex_CeAmz_canonical_c11_v3
+```
+
+See `docs/validation/domain_reconstruction.md` and Decision 004. The
+21,869-cell grid examined in this input audit remains historical provenance;
+it is not the spatial support for canonical reprocessing.
 
 ## 10. Required next decisions
 
-1. Confirm or revise the provisional `age unresolved` treatment for code `1`.
-2. Reconstruct the endpoint selection from the parent grid using the canonical coverage asset and native transform.
-3. Compare the reconstructed domain with `grade_hex_CeAmz_selecao` before any cell is added or removed.
-4. Begin canonical stock-and-flow reprocessing only after the domain comparison is resolved and recorded.
+1. Use the reconstructed canonical domain in all new stock-and-flow processing.
+2. Preserve the unresolved-age treatment defined in Decision 003.
+3. Regenerate historical analytical outputs from the canonical inputs.
 
 ## 11. Files produced
 
