@@ -1,13 +1,13 @@
-Decision 004 — Canonical reconstruction of the analytical domain
+# Decision 004 — Canonical reconstruction of the analytical domain
 
-• Status: Accepted
-• Date recorded: 2026-09-10
-• Scope: Spatial domain, analytical population, and reproducibility
-• Supersedes: Decision 001 for the canonical processing workflow
-• Related method: docs/methods/study_domain.md
-• Related validation: docs/validation/domain_reconstruction.md
+- **Status:** Accepted
+- **Date recorded:** 2026-09-10
+- **Scope:** Spatial domain, analytical population, and reproducibility
+- **Supersedes:** Decision 001 for the canonical processing workflow
+- **Related method:** `docs/methods/study_domain.md`
+- **Related validation:** `docs/validation/domain_reconstruction.md`
 
-Context
+## Context
 
 The first analytical domain was produced through spatial and attribute
 selection in ArcGIS Pro. It contains 21,869 complete hexagonal cells and was
@@ -23,12 +23,12 @@ canonical inputs. It is not to force exact agreement with the historical
 ArcGIS-derived layer or to use discrepancies as evidence that previous results
 were erroneous.
 
-Decision
+## Decision
 
 The canonical analytical domain will be reconstructed independently from the
 historical layer in two stages.
 
-Stage 1 — Spatial candidate population
+### Stage 1 — Spatial candidate population
 
 Complete cells from the 20,000-ha parent grid are retained when they intersect
 the Amazonia or Cerrado feature in the IBGE 2025 biome layer. The cells are not
@@ -42,61 +42,61 @@ projects/ee-barroso2501/assets/
 grade_hex_CeAmz_candidates_ibge2025
 ```
 
-It contains 32,305 complete cells with unique cell_id values.
+It contains 32,305 complete cells with unique `cell_id` values.
 
-Stage 2 — Endpoint land-cover rule
+### Stage 2 — Endpoint land-cover rule
 
-For every candidate cell, recognized anthropogenic area will be calculated
+For every candidate cell, recognized anthropogenic area was calculated
 from the final public MapBiomas Collection 11 coverage product for 1985 and
-2025. The recognized anthropogenic groups are PAS, TMP, OAG, and OUT,
-as defined in config/constants.js.
+2025. The recognized anthropogenic groups are `PAS`, `TMP`, `OAG`, and `OUT`,
+as defined in `config/constants.js`.
 
-A candidate cell will belong to the canonical domain when:
+A candidate cell belongs to the canonical domain when:
 
-[
+\[
 A_{1985}(h) > 0.01\ \text{ha}
 \quad\lor\quad
 A_{2025}(h) > 0.01\ \text{ha},
-]
+\]
 
-where (A_y(h)) is the recognized anthropogenic area in cell (h) and year
-(y). The 0.01-ha threshold is a numerical tolerance, not a substantive
+where \(A_y(h)\) is the recognized anthropogenic area in cell \(h\) and year
+\(y\). The 0.01-ha threshold is a numerical tolerance, not a substantive
 minimum land-use area.
 
-Native vegetation, water, class 27, masked pixels, and unexpected codes will
-not be interpreted automatically as anthropogenic. Coverage closure and code
-diagnostics will be retained so that missing or unexpected observations cannot
+Native vegetation, water, class 27, masked pixels, and unexpected codes are
+not interpreted automatically as anthropogenic. Coverage closure and code
+diagnostics are retained so that missing or unexpected observations cannot
 silently determine domain membership.
 
-Role of the historical grid
+### Role of the historical grid
 
 The historical asset
-projects/ee-barroso2501/assets/grade_hex_CeAmz_selecao is retained for
+`projects/ee-barroso2501/assets/grade_hex_CeAmz_selecao` is retained for
 provenance and descriptive comparison only. Historical membership will not:
 
-• determine membership in the reconstructed domain;
-• be used to add or remove candidate cells;
-• define an expected final cell count; or
-• be an acceptance criterion for the canonical reconstruction.
+- determine membership in the reconstructed domain;
+- be used to add or remove candidate cells;
+- define an expected final cell count; or
+- be an acceptance criterion for the canonical reconstruction.
 
 All downstream stock, flow, trajectory, balance, spatial-autocorrelation, and
 MAUP analyses will be reprocessed using the reconstructed domain after it is
 materialized and validated.
 
-Candidate-grid validation result
+## Candidate-grid validation result
 
 The materialized spatial candidate population passed its structural audit.
 
-|Check                    |Result       |
-|-------------------------|------------:|
-|Candidate cells          |32,305       |
-|Distinct `cell_id` values|32,305       |
-|Non-polygon geometries   |0            |
-|Invalid historical flags |0            |
-|Invalid batch identifiers|0            |
-|Minimum cell area        |20,042.998 ha|
-|Mean cell area           |20,081.133 ha|
-|Maximum cell area        |20,090.053 ha|
+| Check | Result |
+|---|---:|
+| Candidate cells | 32,305 |
+| Distinct `cell_id` values | 32,305 |
+| Non-polygon geometries | 0 |
+| Invalid historical flags | 0 |
+| Invalid batch identifiers | 0 |
+| Minimum cell area | 20,042.998 ha |
+| Mean cell area | 20,081.133 ha |
+| Maximum cell area | 20,090.053 ha |
 
 The candidate population was divided deterministically into eight batches with
 4,040, 4,041, 4,034, 4,043, 4,038, 4,036, 4,037, and 4,036 cells.
@@ -106,54 +106,84 @@ historical cells do not, and 10,774 candidate cells were not members of the
 historical domain. These differences are reported but do not invalidate the
 new candidate population.
 
-Acceptance criteria
+## Endpoint reconstruction result
 
-The canonical domain reconstruction will be accepted when:
+The endpoint calculation was completed and validated on 2026-09-11. All
+32,305 candidate cells were processed exactly once in eight deterministic
+batches. The documented rule retained 24,889 cells and excluded 7,416 cells.
+
+Of the excluded cells, 7,414 have exactly zero recognized anthropogenic area
+in both endpoints. Two cells have positive areas below the numerical tolerance:
+0.002422 ha in cell 21,346 and 0.006657 ha in cell 42,381. Without the 0.01-ha
+tolerance, the domain would contain 24,891 rather than 24,889 cells.
+
+The reconstructed domain shares 20,480 cells with the historical domain,
+contains 4,409 reconstructed-only cells, and excludes 1,051 historical cells
+that occurred in the candidate population. A further 338 historical cells are
+outside the canonical spatial candidate population. These counts are retained
+for provenance and do not alter the canonical result.
+
+The membership calculation was accepted and the 24,889 retained features were
+materialized and audited as:
+
+```text
+projects/ee-barroso2501/assets/
+grade_hex_CeAmz_canonical_c11_v3
+```
+
+The materialization task completed on 2026-09-11 in its first attempt. The
+persisted asset contains 24,889 features, 24,889 distinct `cell_id` values,
+24,889 distinct `GRID_ID` values, and no unmatched records relative to the
+retained membership table.
+
+## Acceptance criteria
+
+The canonical domain reconstruction was accepted because:
 
 1. the materialized candidate asset is used directly, without a dynamic
-spatial join inside the raster reduction;
-2. the final public Collection 11 coverage_v3 asset and its native lattice
-are used;
+   spatial join inside the raster reduction;
+2. the final public Collection 11 `coverage_v3` asset and its native lattice
+   are used;
 3. the 1985 and 2025 anthropogenic areas are calculated for every candidate
-cell using the canonical class groups;
-4. cell_id is unique and every retained feature preserves its complete
-parent-grid geometry;
+   cell using the canonical class groups;
+4. `cell_id` is unique and every retained feature preserves its complete
+   parent-grid geometry;
 5. masked, class-27, and unexpected-code areas are reported rather than
-silently classified as anthropogenic;
+   silently classified as anthropogenic;
 6. the endpoint rule and numerical tolerance are applied consistently;
 7. the resulting domain is materialized as a new, versioned asset; and
 8. the pilot batch and subsequent batches complete successfully and reconcile
-to the candidate population.
+   to the candidate population.
 
 Exact agreement with the historical 21,869-cell layer is not an acceptance
 criterion.
 
-Consequences
+## Consequences
 
-• The final canonical cell count is an analytical result and is not fixed in
-advance.
-• Published or reported values derived from the earlier working asset must be
-regenerated before peer-review submission.
-• Comparisons with the historical layer remain useful for provenance but do
-not control the reconstructed output.
-• The same fixed reconstructed domain will be used across all five-year
-intervals; interval-specific activity remains an analytical attribute rather
-than a domain-selection rule.
-• Alternative spatial supports used in MAUP analyses must repeat the same
-biome-intersection and endpoint-selection rules.
+- The final canonical endpoint rule retained 24,889 cells. This count was an
+  analytical result and was not fixed in advance.
+- Published or reported values derived from the earlier working asset must be
+  regenerated before peer-review submission.
+- Comparisons with the historical layer remain useful for provenance but do
+  not control the reconstructed output.
+- The same fixed reconstructed domain will be used across all five-year
+  intervals; interval-specific activity remains an analytical attribute rather
+  than a domain-selection rule.
+- Alternative spatial supports used in MAUP analyses must repeat the same
+  biome-intersection and endpoint-selection rules.
 
-Alternatives not adopted
+## Alternatives not adopted
 
-Force exact recovery of the historical 21,869 cells
+### Force exact recovery of the historical 21,869 cells
 
 Not adopted. It would make an undocumented historical result the authority
 over the explicitly defined canonical procedure.
 
-Add the 338 unmatched historical cells to the candidate asset
+### Add the 338 unmatched historical cells to the candidate asset
 
 Not adopted. Historical membership alone is not a scientific inclusion rule.
 
-Investigate every candidate–historical disagreement before processing
+### Investigate every candidate–historical disagreement before processing
 
 Not required for reconstruction. Such an investigation could document the
 historical ArcGIS operation in greater detail, but it would not change the
