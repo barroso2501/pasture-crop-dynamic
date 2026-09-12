@@ -1,10 +1,12 @@
 # NAT-to-TMP within-interval trajectory validation: 2005-2010
 
-- **Status:** Passed
+- **Status:** Passed; complete series subsequently validated
 - **Validation date:** 2026-09-12
 - **Method:** `docs/methods/within_interval_nat_tmp_trajectories.md`
 - **Decision:** `docs/decisions/006_canonical_within_interval_trajectory_analysis.md`
 - **Pilot script:** `gee/04a_reprocess_nat_tmp_trajectory_2005_2010_full_domain.js`
+- **Full-series validation:**
+  `docs/validation/canonical_nat_tmp_trajectory_panel_assembly.md`
 
 ## Purpose
 
@@ -139,8 +141,9 @@ interval. The difference between the two-or-more and consecutive-two-year
 rules is only 18.710 ha.
 
 These pilot results demonstrate that alternative persistence rules can be
-reported without changing the endpoint accounting. Selection of the primary
-scientific rule remains pending until all intervals have been processed.
+reported without changing the endpoint accounting. The complete series was
+subsequently processed and confirmed this result. Selection of the primary
+scientific rule remains a downstream interpretive decision.
 
 ## Diagnostic comparison with the historical analysis
 
@@ -177,11 +180,12 @@ will be revisited after all eight canonical intervals are available.
 ## Acceptance and next step
 
 The 2005-2010 full-domain pilot passes all structural, accounting, partition,
-subset, observation-support, and external-reconciliation checks. It is
+subset, observation-support, and external-reconciliation checks. It was
 accepted as the implementation reference for the remaining seven intervals.
 
-Subsequent exports must use the same canonical inputs, complete-cell
-population, field schema, temporal rules, and validation tolerances. After all
-intervals are complete, they will be assembled into a balanced trajectory
-panel and jointly evaluated before any Moran, MAUP, or substantive spatial
-analysis is initiated.
+Those intervals were subsequently processed with the same canonical inputs,
+complete-cell population, field schema, temporal rules, and validation
+tolerances. The complete balanced panel also passed validation. This document
+remains the pilot-specific regression and acceptance record; the complete
+series is governed by
+`docs/validation/canonical_nat_tmp_trajectory_panel_assembly.md`.
