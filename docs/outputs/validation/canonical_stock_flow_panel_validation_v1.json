@@ -1,0 +1,194 @@
+{
+  "validation_status": "PASS",
+  "validation_version": "canonical-stock-flow-panel-validation-v1",
+  "source_directory": "/content/drive/MyDrive/Trabalho/Contabilidade/cvs",
+  "output_panel": "/content/drive/MyDrive/Trabalho/Contabilidade/panel/canonical_stock_flow_panel_1985_2025_v1.parquet",
+  "output_panel_sha256": "2f05464b0362ac3fe17cd6f25cabc22f41674ab5c6f0e71678ad6ea2f6c6ce64",
+  "expected_intervals": [
+    "1985_1990",
+    "1990_1995",
+    "1995_2000",
+    "2000_2005",
+    "2005_2010",
+    "2010_2015",
+    "2015_2020",
+    "2020_2025"
+  ],
+  "interval_count": 8,
+  "rows_per_interval": 24889,
+  "panel_rows": 199112,
+  "panel_columns": 90,
+  "unique_cell_id": 24889,
+  "duplicate_cell_interval_rows": 0,
+  "diagnostic_interval_rows": 24889,
+  "area_tolerance_ha": 1e-09,
+  "continuity_tolerance_ha": 2e-06,
+  "maximum_absolute_residual_ha": 3.2741809263825417e-11,
+  "maximum_longitudinal_difference_ha": 4.3213367462158203e-07,
+  "interval_checks": [
+    {
+      "interval": "1985_1990",
+      "rows": 24889,
+      "columns": 90,
+      "unique_cell_id": 24889,
+      "unique_GRID_ID": 24889,
+      "missing_values": 0,
+      "negative_area_values": 0,
+      "maximum_absolute_residual_ha": 2.9103830456733704e-11,
+      "residual_rows_over_1e_9_ha": 0,
+      "flow_bound_violations": 0,
+      "maximum_partition_difference_ha": 0.0,
+      "nodata_area_ha": 0.0,
+      "unexpected_area_ha": 0.0
+    },
+    {
+      "interval": "1990_1995",
+      "rows": 24889,
+      "columns": 90,
+      "unique_cell_id": 24889,
+      "unique_GRID_ID": 24889,
+      "missing_values": 0,
+      "negative_area_values": 0,
+      "maximum_absolute_residual_ha": 2.182787284255028e-11,
+      "residual_rows_over_1e_9_ha": 0,
+      "flow_bound_violations": 0,
+      "maximum_partition_difference_ha": 1.8189894035458565e-12,
+      "nodata_area_ha": 0.0,
+      "unexpected_area_ha": 0.0
+    },
+    {
+      "interval": "1995_2000",
+      "rows": 24889,
+      "columns": 90,
+      "unique_cell_id": 24889,
+      "unique_GRID_ID": 24889,
+      "missing_values": 0,
+      "negative_area_values": 0,
+      "maximum_absolute_residual_ha": 1.8189894035458565e-11,
+      "residual_rows_over_1e_9_ha": 0,
+      "flow_bound_violations": 0,
+      "maximum_partition_difference_ha": 1.3642420526593924e-12,
+      "nodata_area_ha": 0.0,
+      "unexpected_area_ha": 0.0
+    },
+    {
+      "interval": "2000_2005",
+      "rows": 24889,
+      "columns": 90,
+      "unique_cell_id": 24889,
+      "unique_GRID_ID": 24889,
+      "missing_values": 0,
+      "negative_area_values": 0,
+      "maximum_absolute_residual_ha": 2.9103830456733704e-11,
+      "residual_rows_over_1e_9_ha": 0,
+      "flow_bound_violations": 0,
+      "maximum_partition_difference_ha": 1.0913936421275139e-11,
+      "nodata_area_ha": 0.0,
+      "unexpected_area_ha": 0.0
+    },
+    {
+      "interval": "2005_2010",
+      "rows": 24889,
+      "columns": 90,
+      "unique_cell_id": 24889,
+      "unique_GRID_ID": 24889,
+      "missing_values": 0,
+      "negative_area_values": 0,
+      "maximum_absolute_residual_ha": 3.2741809263825417e-11,
+      "residual_rows_over_1e_9_ha": 0,
+      "flow_bound_violations": 0,
+      "maximum_partition_difference_ha": 1.3642420526593924e-12,
+      "nodata_area_ha": 0.0,
+      "unexpected_area_ha": 0.0
+    },
+    {
+      "interval": "2010_2015",
+      "rows": 24889,
+      "columns": 90,
+      "unique_cell_id": 24889,
+      "unique_GRID_ID": 24889,
+      "missing_values": 0,
+      "negative_area_values": 0,
+      "maximum_absolute_residual_ha": 3.2741809263825417e-11,
+      "residual_rows_over_1e_9_ha": 0,
+      "flow_bound_violations": 0,
+      "maximum_partition_difference_ha": 1.8189894035458565e-12,
+      "nodata_area_ha": 0.0,
+      "unexpected_area_ha": 0.0
+    },
+    {
+      "interval": "2015_2020",
+      "rows": 24889,
+      "columns": 90,
+      "unique_cell_id": 24889,
+      "unique_GRID_ID": 24889,
+      "missing_values": 0,
+      "negative_area_values": 0,
+      "maximum_absolute_residual_ha": 3.2741809263825417e-11,
+      "residual_rows_over_1e_9_ha": 0,
+      "flow_bound_violations": 0,
+      "maximum_partition_difference_ha": 1.3642420526593924e-12,
+      "nodata_area_ha": 0.0,
+      "unexpected_area_ha": 0.0
+    },
+    {
+      "interval": "2020_2025",
+      "rows": 24889,
+      "columns": 90,
+      "unique_cell_id": 24889,
+      "unique_GRID_ID": 24889,
+      "missing_values": 0,
+      "negative_area_values": 0,
+      "maximum_absolute_residual_ha": 2.9103830456733704e-11,
+      "residual_rows_over_1e_9_ha": 0,
+      "flow_bound_violations": 0,
+      "maximum_partition_difference_ha": 9.094947017729282e-13,
+      "nodata_area_ha": 0.0,
+      "unexpected_area_ha": 0.0
+    }
+  ],
+  "continuity_checks": [
+    {
+      "shared_year": 1990,
+      "maximum_absolute_difference_ha": 3.7253084883559495e-07,
+      "values_over_2e_6_ha": 0,
+      "rows_over_2e_6_ha": 0
+    },
+    {
+      "shared_year": 1995,
+      "maximum_absolute_difference_ha": 2.682209014892578e-07,
+      "values_over_2e_6_ha": 0,
+      "rows_over_2e_6_ha": 0
+    },
+    {
+      "shared_year": 2000,
+      "maximum_absolute_difference_ha": 3.3527612686157227e-07,
+      "values_over_2e_6_ha": 0,
+      "rows_over_2e_6_ha": 0
+    },
+    {
+      "shared_year": 2005,
+      "maximum_absolute_difference_ha": 4.246830940246582e-07,
+      "values_over_2e_6_ha": 0,
+      "rows_over_2e_6_ha": 0
+    },
+    {
+      "shared_year": 2010,
+      "maximum_absolute_difference_ha": 4.172325134277344e-07,
+      "values_over_2e_6_ha": 0,
+      "rows_over_2e_6_ha": 0
+    },
+    {
+      "shared_year": 2015,
+      "maximum_absolute_difference_ha": 4.3213367462158203e-07,
+      "values_over_2e_6_ha": 0,
+      "rows_over_2e_6_ha": 0
+    },
+    {
+      "shared_year": 2020,
+      "maximum_absolute_difference_ha": 4.246830940246582e-07,
+      "values_over_2e_6_ha": 0,
+      "rows_over_2e_6_ha": 0
+    }
+  ]
+}
