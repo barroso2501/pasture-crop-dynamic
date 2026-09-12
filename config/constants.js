@@ -33,12 +33,38 @@ exports.HISTORICAL_WORKING_VERSION = '0-4-13-w3y-5';
 // Canonical project assets
 // ---------------------------------------------------------------------------
 
+// Canonical fixed analytical domain reconstructed and validated on 2026-09-11.
 exports.ANALYTICAL_GRID =
+  'projects/ee-barroso2501/assets/grade_hex_CeAmz_canonical_c11_v3';
+
+// Provenance only. Do not use for canonical reprocessing.
+exports.HISTORICAL_ANALYTICAL_GRID =
   'projects/ee-barroso2501/assets/grade_hex_CeAmz_selecao';
 
-exports.EXPECTED_ANALYTICAL_CELL_COUNT = 21869;
+exports.PARENT_GRID =
+  'projects/ee-barroso2501/assets/grade_20mil_ha';
+
+exports.BIOMES_ASSET =
+  'projects/ee-barroso2501/assets/biomas_IBGE';
+
+exports.CANDIDATE_GRID =
+  'projects/ee-barroso2501/assets/grade_hex_CeAmz_candidates_ibge2025';
+
+exports.CANONICAL_DOMAIN_MEMBERSHIP =
+  'projects/ee-barroso2501/assets/canonical_domain_membership_c11_v3';
+
+exports.BIOME_CODE_FIELD = 'CD_BIOMA';
+exports.TARGET_BIOME_CODES = ['1', '3'];
+exports.TARGET_BIOME_NAMES = {
+  '1': 'Amazonia',
+  '3': 'Cerrado'
+};
+
+exports.EXPECTED_ANALYTICAL_CELL_COUNT = 24889;
+exports.EXPECTED_CANDIDATE_CELL_COUNT = 32305;
 exports.CELL_ID_FIELD = 'cell_id';
 exports.REFERENCE_CELL_AREA_HA = 20000;
+exports.ENDPOINT_TOLERANCE_HA = 0.01;
 
 // ---------------------------------------------------------------------------
 // Temporal framework
@@ -70,13 +96,22 @@ exports.coverageBandName = function (year) {
 };
 
 // ---------------------------------------------------------------------------
-// Native MapBiomas grid
+// Canonical MapBiomas raster grid
 // ---------------------------------------------------------------------------
 
 exports.CRS = 'EPSG:4326';
+
+// Native affine transform of the canonical Collection 11 coverage asset.
+// The pasture-age asset has the same pixel size and pixel lattice: its stored
+// origin differs by exactly 76 columns and 2,205 rows. Keeping the coverage
+// transform as the project reference avoids subpixel resampling during area,
+// stock, and flow calculations.
+//
+// Do not replace this transform with the former global-origin transform
+// [-180, 90]. That origin is not aligned to the native Collection 11 lattice.
 exports.CRS_TRANSFORM = [
-  0.000269494585235856472, 0, -180,
-  0, -0.000269494585235856472, 90
+  0.00026949458523585647, 0, -74.02073025380652,
+  0, -0.00026949458523585647, 5.405791885246045
 ];
 
 exports.SQUARE_METRES_PER_HECTARE = 10000;
@@ -116,11 +151,22 @@ exports.AUXILIARY_GROUPS = ['OAG', 'OUT', 'WATER'];
 exports.PASTURE_AGE_INITIAL_STOCK_CODE = 100;
 exports.PASTURE_AGE_OFFSET = 200;
 
+// Observed in the public pasture-age asset but not defined by the documented
+// 100/2xx encoding. MapBiomas confirmed that this value is unexpected and is
+// investigating it. Do not reinterpret it as age 1 or code 201.
+exports.PASTURE_AGE_UNRESOLVED_CODES = [1];
+
 exports.isInitialPastureAgeCode = function (value) {
   return value === exports.PASTURE_AGE_INITIAL_STOCK_CODE;
 };
 
+exports.isUnresolvedPastureAgeCode = function (value) {
+  return exports.PASTURE_AGE_UNRESOLVED_CODES.indexOf(value) !== -1;
+};
+
 exports.decodePastureAge = function (value) {
+  // Unresolved and initial-stock codes deliberately return null. Only 2xx
+  // values have an attributable consecutive age in the current workflow.
   if (value > exports.PASTURE_AGE_OFFSET) {
     return value - exports.PASTURE_AGE_OFFSET;
   }
@@ -166,9 +212,8 @@ exports.expectedSourceCodes = function () {
 // Output conventions
 // ---------------------------------------------------------------------------
 
-exports.OUTPUT_VERSION = 'canonical-c11-coverage-v3';
+exports.OUTPUT_VERSION = 'canonical-c11-coverage-v3-native-grid';
 
 exports.intervalLabel = function (year0, year1) {
   return year0 + '_' + year1;
 };
-
