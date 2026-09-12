@@ -7,6 +7,8 @@
 - **Canonical panel method:** `docs/methods/five_year_stock_flow_panel.md`
 - **Panel assembly validation:**
   `docs/validation/canonical_stock_flow_panel_assembly.md`
+- **Integrated analytical table:**
+  `docs/methods/integrated_analytical_panel.md`
 
 ## Purpose
 
@@ -388,3 +390,7 @@ silently recoded from `NA` to zero in the balance index.
 - The derived metrics describe spatial and temporal associations and do not
   identify causal drivers.
 
+The derived table is preserved as an independent canonical product. Its
+validated integration with the annual `NAT->TMP` trajectory panel is documented
+in `docs/methods/integrated_analytical_panel.md`; integration does not alter any
+of the 122 stock-flow fields described here.
