@@ -1,3 +1,0 @@
-primary_biome,cell_count,cell_area_ha,amazon_overlap_ha,cerrado_overlap_ha,target_biome_overlap_ha,boundary_cell_count,outside_target_cell_count,spatial_support_version
-Amazon,14213,284257956.329,278464728.298,1097540.02849,279562268.327,293,530,canonical-spatial-support-v1
-Cerrado,10676,213518444.115,1067328.34006,197995479.274,199062807.615,289,1454,canonical-spatial-support-v1

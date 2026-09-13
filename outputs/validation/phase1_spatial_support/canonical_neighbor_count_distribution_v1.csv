@@ -1,8 +1,0 @@
-neighbor_count,cell_count,cell_fraction,graph_version
-0,163,0.0065490779059,canonical-edge-contiguity-v1
-1,320,0.0128570854594,canonical-edge-contiguity-v1
-2,644,0.0258748844871,canonical-edge-contiguity-v1
-3,1214,0.0487765679618,canonical-edge-contiguity-v1
-4,1743,0.0700309373619,canonical-edge-contiguity-v1
-5,2146,0.0862228293624,canonical-edge-contiguity-v1
-6,18659,0.749688617462,canonical-edge-contiguity-v1
