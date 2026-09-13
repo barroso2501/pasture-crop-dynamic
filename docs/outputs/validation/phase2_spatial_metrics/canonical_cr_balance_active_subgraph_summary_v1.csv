@@ -1,0 +1,9 @@
+t0,t1,interval,diagnostic_interval,active_cell_count,inactive_cell_count,active_cell_fraction,active_undirected_edge_count,active_component_count,active_island_count,minimum_active_neighbor_count,mean_active_neighbor_count,maximum_active_neighbor_count,largest_active_component_size,conditional_graph_version
+1985,1990,1985_1990,0,17626,7263,0.708184338463,46479,265,163,0,5.27391353682,6,16694,canonical-cr-balance-active-subgraph-v1
+1990,1995,1990_1995,0,18713,6176,0.751858250633,49778,253,157,0,5.32015176615,6,17631,canonical-cr-balance-active-subgraph-v1
+1995,2000,1995_2000,0,19453,5436,0.781590260758,52034,262,165,0,5.34971469696,6,18344,canonical-cr-balance-active-subgraph-v1
+2000,2005,2000_2005,0,20394,4495,0.819398127687,55120,220,135,0,5.40551142493,6,19297,canonical-cr-balance-active-subgraph-v1
+2005,2010,2005_2010,0,20642,4247,0.829362368918,55936,195,110,0,5.41962988083,6,19594,canonical-cr-balance-active-subgraph-v1
+2010,2015,2010_2015,0,20860,4029,0.838121258387,56551,242,135,0,5.42195589645,6,19727,canonical-cr-balance-active-subgraph-v1
+2015,2020,2015_2020,0,21206,3683,0.85202298204,57621,246,152,0,5.43440535697,6,20521,canonical-cr-balance-active-subgraph-v1
+2020,2025,2020_2025,1,22050,2839,0.88593354494,59914,257,151,0,5.43437641723,6,21366,canonical-cr-balance-active-subgraph-v1
