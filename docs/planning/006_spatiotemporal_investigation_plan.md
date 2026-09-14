@@ -131,6 +131,19 @@ Failure of any condition pauses spatial implementation and triggers a decision
 on targeted or complete upstream reprocessing. Passing the gate closes the
 configuration-provenance issue without reopening accepted accounting logic.
 
+## Temporal interpretation rule
+
+The five-year intervals are fixed accounting windows, not presumed complete land-use episodes.
+The investigation will retain all eight intervals from 1985–1990 through 2020–2025. The final interval will be identified as the **diagnostic temporal-boundary interval** because episodes continuing in 2025 cannot be observed to completion.
+
+Results will distinguish:
+- the **primary period**, containing intervals ending in or before 2020;
+- the **full observed series**, including the flagged 2020–2025 interval.
+
+The final interval will not be excluded from maps, trajectories, episode reconstruction, or descriptive summaries. Conclusions sensitive to its inclusion will be reported through a direct comparison of primary-period and full-series results.
+
+Phase 4 will treat analytical stages as potentially persistent across more than one five-year interval. It will also retain progression, return, recurrence, and alternation among stages. Detailed rules are established in `docs/decisions/009_multiquinquennial_episodes_and_2020_2025.md`.
+
 ### Implementation outcome
 
 Phase 0 passed on 2026-09-12. The hosted module matched the repository and the
@@ -148,6 +161,8 @@ decision are recorded in:
 docs/validation/runtime_configuration_and_native_transform.md
 docs/decisions/007_accept_canonical_outputs_after_transform_verification.md
 ```
+
+
 
 ## Phase 1 — Spatial support table
 
@@ -417,43 +432,396 @@ Phase 3 is therefore closed as a computational production stage. Minor future
 cartographic refinements remain permissible if they do not change class
 membership or temporal comparability. Phase 4 may begin.
 
-## Phase 4 — Cell trajectories and temporal transitions
+## Phase 4 — Cell trajectories and multiquinquennial episodes
 
-Track each `cell_id` through the ordered interval sequence to quantify:
+### Objective
 
-- persistence of high, intermediate, low, or zero activity;
-- intensification and weakening;
-- directional change in the C-R balance;
-- reversals between balance states;
-- entry into and exit from active-process classes;
-- persistence or relocation of high NAT-TMP activity;
-- persistence of NAT-TMP trajectories with detected intermediate pasture.
+Describe how each cell moves through analytical stages across the ordered five-year intervals, explicitly representing persistence, duration, progression, return, and alternation.
 
-Categories must use fixed definitions across time. Consecutive-period
-transition matrices will be produced from the same definitions.
+The five-year interval remains the accounting unit. Multiquinquennial episodes are derived by joining consecutive intervals assigned to the same preregistered stage.
 
-For the C-R balance, the canonical state definitions are:
+The analysis will retain all eight intervals:
 
-| State | Definition | Process interpretation |
-|---|---|---|
-| Inactive | gross C-R activity `<= 1e-9` ha | balance undefined |
-| Replenishment-dominant | `cr_balance_index < -1/3` | replenishment exceeds twice consolidation |
-| Mixed | `-1/3 <= cr_balance_index <= 1/3` | neither process exceeds the other by more than 2:1 |
-| Consolidation-dominant | `cr_balance_index > 1/3` | consolidation exceeds twice replenishment |
+```text
+1985–1990
+1990–1995
+1995–2000
+2000–2005
+2005–2010
+2010–2015
+2015–2020
+2020–2025
+```
 
-Magnitude trajectories will use the pooled median and 90th-percentile limits
-defined in Phase 3. Continuous metrics remain the primary analytical values;
-categories support mapping and transition summaries rather than replace the
-continuous measurements.
+The interval 2020–2025 will remain part of the analysis but will be identified as the **diagnostic temporal-boundary interval**. Episodes reaching 2025 may have a known minimum observed duration but an unknown complete duration.
 
-### Acceptance gate
+Detailed rules are established in `docs/decisions/009_multiquinquennial_episodes_and_2020_2025.md`.
 
-- every trajectory contains the expected seven primary observations unless a
-  documented support rule excludes a value;
-- transition matrices reconcile with their source populations;
-- categories are defined before spatial patterns are interpreted;
-- results distinguish persistence from repeated occurrence in different
-  locations.
+### 4.1 Preregister interval-level stages
+
+Before inspecting trajectory maps, episode frequencies, or spatial patterns, create a stage-definition record specifying:
+
+- variables included in the classification;
+- analytical denominators;
+- treatment of structural zeros;
+- treatment of undefined ratios;
+- minimum material-flow tolerance;
+- numerical thresholds;
+- reference population used to define empirical thresholds;
+- rules for ties and boundary values;
+- stage-definition version.
+
+The same stage definitions and thresholds must be applied to every interval.
+
+If empirical thresholds are required, they will be estimated once from a declared reference population within the primary 1985–2020 period and then applied unchanged to all eight intervals, including 2020–2025.
+
+Interval-specific quantiles are not permitted for longitudinal stage assignment because changing class boundaries could produce artificial stage changes.
+
+The initial candidate stage vocabulary is:
+
+- low or absent focal activity;
+- pasture-expansion dominant;
+- agricultural-consolidation dominant;
+- mixed expansion and consolidation;
+- replacement- or expansion-favoured balance;
+- consolidation-favoured balance;
+- balanced active configuration;
+- undefined balance because neither focal component is materially present.
+
+This vocabulary may be simplified before implementation. However, the final definitions must be fixed and documented before substantive interpretation of the resulting trajectories.
+
+### 4.2 Construct the complete interval-stage panel
+
+Produce one row for every:
+
+```text
+cell_id × five-year interval
+```
+
+The panel must contain all 24,889 cells and all eight intervals, for a total of:
+
+```text
+199,112 cell-interval observations
+```
+
+Required fields include:
+
+- `cell_id`;
+- `interval`;
+- `interval_order`;
+- `interval_start_year`;
+- `interval_end_year`;
+- `stage_code`;
+- `stage_label`;
+- `stage_definition_version`;
+- `primary_period_flag`;
+- `diagnostic_interval_flag`;
+- variables used to assign the stage;
+- structural-zero indicator;
+- undefined-balance indicator;
+- material-activity indicator.
+
+The intervals ending in or before 2020 will receive:
+
+```text
+primary_period_flag = 1
+diagnostic_interval_flag = 0
+```
+
+The interval 2020–2025 will receive:
+
+```text
+primary_period_flag = 0
+diagnostic_interval_flag = 1
+```
+
+Structural zero, low activity, and undefined balance must remain distinct analytical conditions.
+
+An undefined value of `cr_balance_index` caused by the absence of both consolidation and replacement must not be converted automatically to zero or interpreted as a balanced configuration.
+
+### 4.3 Construct ordered cell-stage sequences
+
+For each cell, sort the eight interval-stage observations chronologically and preserve the complete ordered sequence.
+
+For example:
+
+```text
+low → expansion → expansion → mixed → consolidation
+    → consolidation → low → low
+```
+
+The ordered sequence must be stored in a form that permits exact reconstruction of:
+
+- the stage assigned to every interval;
+- the order of stage changes;
+- repeated stages;
+- returns to previously occupied stages;
+- the contribution of 2020–2025 to the final trajectory.
+
+A summary trajectory category must not replace the underlying ordered sequence.
+
+### 4.4 Reconstruct episodes
+
+An episode is defined as one or more consecutive five-year intervals assigned to the same analytical stage.
+
+For each cell, consecutive intervals with the same stage will be combined into one episode.
+
+A stage persisting for two or more consecutive intervals constitutes a **multiquinquennial episode**.
+
+Produce an episode table containing at least:
+
+- `cell_id`;
+- `episode_id`;
+- `episode_order`;
+- `episode_start_year`;
+- `episode_end_year`;
+- `episode_interval_count`;
+- `episode_observed_duration_years`;
+- `episode_stage_code`;
+- `episode_stage_label`;
+- `previous_stage`;
+- `next_stage`;
+- `left_boundary_flag`;
+- `right_boundary_flag`;
+- `includes_2020_2025`;
+- `multiquinquennial_flag`.
+
+Observed episode duration will be calculated as:
+
+\[
+D_e = 5n_e,
+\]
+
+where \(n_e\) is the number of consecutive five-year intervals assigned to episode \(e\).
+
+Thus:
+
+- one interval represents five years of observed duration;
+- two consecutive intervals represent ten years;
+- three consecutive intervals represent fifteen years.
+
+This measure represents duration observed within the analytical series. It is not necessarily the complete duration of the underlying land-use process.
+
+An episode beginning in the first interval may have started before 1985 and will receive:
+
+```text
+left_boundary_flag = 1
+```
+
+An episode containing 2020–2025 and still present at the end of the observed sequence will receive:
+
+```text
+right_boundary_flag = 1
+includes_2020_2025 = 1
+```
+
+A right-boundary episode must be described using minimum observed duration. For example:
+
+> The consolidation-dominant episode persisted for at least ten observed years.
+
+It must not be described as having ended in 2025 unless an observed subsequent transition supports that conclusion.
+
+### 4.5 Classify complete cell trajectories
+
+Using the ordered stage sequence and reconstructed episodes, classify each cell according to its temporal pattern.
+
+At minimum, distinguish:
+
+- persistent single-stage trajectory;
+- multiquinquennial persistence followed by change;
+- one-directional progression;
+- return to a previously occupied stage;
+- repeated alternation;
+- isolated activity episode;
+- late entry into focal activity;
+- apparent exit from focal activity;
+- trajectory containing an undefined stage;
+- trajectory ending in an open right-boundary episode.
+
+These categories describe cell-level analytical trajectories. They do not imply that every pixel within a cell followed the same temporal sequence.
+
+### 4.6 Quantify persistence, return, and alternation
+
+For every cell, calculate at least:
+
+- number of episodes;
+- number of stage changes;
+- number of distinct stages;
+- number of multiquinquennial episodes;
+- maximum observed episode duration;
+- mean observed episode duration;
+- number of returns to a previously occupied stage;
+- alternation count;
+- alternation flag;
+- left-boundary episode flag;
+- right-boundary episode flag;
+- trajectory-category code;
+- trajectory-category label.
+
+A return occurs when a stage reappears after at least one intervening interval assigned to another stage.
+
+For example:
+
+```text
+expansion → mixed → expansion
+```
+
+contains a return to the expansion stage.
+
+Alternation refers to repeated movement between previously occupied cell-level stages. For example:
+
+```text
+expansion → consolidation → expansion → consolidation
+```
+
+represents repeated alternation.
+
+Alternation must not automatically be interpreted as pixel-level land-use reversal. Different portions of an approximately 20,000 ha cell may contribute to the interval-level pattern.
+
+The preferred term is therefore:
+
+```text
+cell-level stage alternation
+```
+
+A stronger interpretation will require supporting annual pixel-trajectory evidence.
+
+### 4.7 Compare primary-period and full-series trajectories
+
+Produce two trajectory summaries:
+
+1. **primary-period summary:** intervals from 1985–1990 through 2015–2020;
+2. **full observed-series summary:** all intervals through 2020–2025.
+
+The 2020–2025 interval will not be excluded from the full-series analysis.
+
+The comparison must identify:
+
+- cells whose trajectory category changes after including 2020–2025;
+- episodes already present in 2015–2020 that are extended by 2020–2025;
+- new episodes beginning in 2020–2025;
+- episodes receiving a right-boundary flag;
+- changes in maximum observed episode duration;
+- changes in stage-change or alternation counts;
+- changes in the direction of the substantive temporal interpretation.
+
+A conclusion will be considered temporally robust when its direction and substantive interpretation remain consistent in the primary-period and full-series summaries.
+
+Material differences must be retained and reported as temporal-boundary sensitivity. The final interval must not be removed merely because its inclusion changes a result.
+
+### 4.8 Map trajectory and episode outcomes
+
+Map only a restricted set of interpretable Phase 4 outcomes:
+
+- longest-duration stage;
+- maximum observed episode duration;
+- number of stage changes;
+- number of multiquinquennial episodes;
+- occurrence of repeated alternation;
+- occurrence of return to a previous stage;
+- trajectory category;
+- open right-boundary episode;
+- change in classification caused by inclusion of 2020–2025.
+
+Maps must use the equal-area cartographic projection established in Phase 3.
+
+Class definitions and map limits must remain comparable across the domain. The diagnostic status of 2020–2025 must be visible in titles, captions, legends, or accompanying notes whenever the final interval contributes to the mapped outcome.
+
+### 4.9 Interpretation constraints
+
+The Phase 4 analysis must preserve the distinction between:
+
+1. five-year interval accounting;
+2. cell-level analytical stages;
+3. multiquinquennial cell-level episodes;
+4. annual pixel-level land-cover trajectories.
+
+Episode reconstruction is a classification layer derived from the validated interval panel. It must not modify:
+
+- interval stock values;
+- interval flow values;
+- pasture-origin partitions;
+- accounting identities;
+- cell-level closure;
+- annual intermediate-trajectory measurements.
+
+Persistence of a cell-level stage does not demonstrate that the same pixels remained in that state throughout the episode.
+
+Likewise, cell-level alternation does not demonstrate that individual pixels repeatedly reversed land use.
+
+### 4.10 Phase 4 stop-and-review conditions
+
+Phase 4 must stop for methodological review if:
+
+- stage definitions have not been fixed before inspection of trajectory results;
+- thresholds differ among intervals;
+- thresholds were selected after inspecting maps or temporal patterns;
+- interval-specific quantiles are being used to define longitudinal stages;
+- structural zeros, low activity, and undefined balance cannot be distinguished;
+- any expected `cell_id × interval` combination is absent;
+- interval-stage keys are not unique;
+- any interval-stage observation is assigned to zero episodes;
+- any interval-stage observation is assigned to more than one episode;
+- episode duration is inconsistent with the number of included intervals;
+- nonconsecutive occurrences of the same stage are merged into one episode;
+- an episode reaching 2025 is interpreted as complete without an observed subsequent transition;
+- inclusion of 2020–2025 reverses a central temporal conclusion;
+- primary-period and full-series classifications differ materially without an explicit sensitivity account;
+- cell-level alternation is interpreted as pixel-level reversal without supporting evidence;
+- episode reconstruction changes any validated interval-level stock or flow value;
+- a summary trajectory category cannot be reconstructed from the retained interval-stage sequence.
+
+A stop condition does not imply removal of 2020–2025. It requires documentation and review of the sensitivity or interpretation involved.
+
+### 4.11 Required outputs
+
+Phase 4 must produce:
+
+1. an interval-stage panel with one row per `cell_id × interval`;
+2. an ordered stage sequence for every cell;
+3. an episode table with one row per reconstructed episode;
+4. a cell-level trajectory summary;
+5. a stage-definition and threshold record;
+6. primary-period and full-series comparison tables;
+7. selected trajectory and episode maps;
+8. a Phase 4 validation record.
+
+Suggested canonical output names are:
+
+```text
+canonical_interval_stage_panel_v1.parquet
+canonical_cell_stage_sequences_v1.parquet
+canonical_multiquinquennial_episodes_v1.parquet
+canonical_cell_trajectory_summary_v1.parquet
+canonical_stage_definition_v1.json
+canonical_phase4_temporal_boundary_comparison_v1.csv
+canonical_phase4_validation_v1.json
+```
+
+### 4.12 Acceptance criteria
+
+Phase 4 is accepted when:
+
+- all 24,889 cells are represented;
+- all eight intervals are represented;
+- all 199,112 expected `cell_id × interval` observations are present;
+- interval-stage keys are unique;
+- stage definitions are documented and versioned;
+- stage thresholds are identical across intervals;
+- structural zeros, low activity, and undefined balance remain distinguishable;
+- the ordered stage sequence is reconstructable for every cell;
+- every interval-stage observation belongs to exactly one episode;
+- consecutive intervals with the same stage are combined reproducibly;
+- nonconsecutive occurrences remain separate episodes;
+- episode duration equals five times the episode interval count;
+- multiquinquennial episodes are explicitly identifiable;
+- persistence, progression, return, and alternation can be distinguished;
+- episodes touching 1985 or 2025 carry the appropriate boundary flag;
+- 2020–2025 remains included and explicitly flagged;
+- primary-period and full-series results can be compared directly;
+- episode reconstruction leaves the validated interval accounting unchanged;
+- summary trajectory classes can be reconstructed from the retained ordered sequences;
+- every triggered stop-and-review condition has been resolved through a documented decision.
 
 ## Phase 5 — Global spatial autocorrelation
 
@@ -567,6 +935,26 @@ configuration will be compared and a compact runtime configuration record will
 be saved. Production records will include the relevant Git commit, script
 version, GEE task identifier, input asset identifiers, analytical-grid asset,
 CRS, affine transform, expected cell count, execution date, and output hash.
+
+### Temporal-boundary synthesis
+
+Every central temporal conclusion must identify whether it is supported by:
+
+- the primary 1985–2020 period;
+- the complete 1985–2025 observed series; or
+- both.
+
+The 2020–2025 interval will remain visible in final analytical products but will be identified as the diagnostic temporal-boundary interval.
+
+The synthesis must report whether inclusion of 2020–2025:
+
+- preserves the direction and magnitude of the main pattern;
+- extends an episode already present in 2015–2020;
+- initiates a new episode;
+- changes the assigned trajectory category;
+- changes the substantive interpretation.
+
+Episodes that remain active in 2025 will be described using minimum observed duration, for example “persisted for at least ten years”, rather than as complete episodes.
 
 ## Stop and review conditions
 
