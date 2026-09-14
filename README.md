@@ -90,7 +90,25 @@ The source time series spans **1985–2025**, with the following five-year refer
 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025
 ```
 
-The main inferential period is expected to end in 2020. The 2020–2025 interval may be processed for diagnostic purposes but is not currently intended to support the primary conclusions because temporal filtering is incomplete at the end of the source series.
+These reference years define eight standardized five-year accounting intervals.
+
+The intervals are accounting windows and must not be interpreted automatically as complete land-use episodes. Phase 4 reconstructs multiquinquennial episodes by evaluating the ordered interval-stage sequence of each cell. It also distinguishes stage persistence, progression, return, and alternation.
+
+The principal temporal interpretation uses the intervals ending in or before 2020. The interval **2020–2025 remains included** in tables, maps, trajectories, and descriptive summaries, but is explicitly identified as the **diagnostic temporal-boundary interval**.
+
+This treatment reflects the fact that processes still present in 2025 cannot be observed beyond the end of the source series. An episode reaching 2025 may therefore have a known minimum observed duration but an unknown complete duration.
+
+Central temporal conclusions will compare:
+
+- a primary-period summary for 1985–2020;
+- a full observed-series summary for 1985–2025.
+
+The final interval will not be removed merely because it changes a result. Any material difference caused by its inclusion will be reported as temporal-boundary sensitivity.
+
+See:
+
+- `docs/decisions/009_multiquinquennial_episodes_and_2020_2025.md`;
+- `docs/planning/006_spatiotemporal_investigation_plan.md`.
 
 ## Data sources
 
