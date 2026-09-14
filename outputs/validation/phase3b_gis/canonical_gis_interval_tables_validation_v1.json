@@ -1,0 +1,116 @@
+{
+  "validation_status": "PASS",
+  "output_version": "canonical-gis-interval-tables-v1",
+  "purpose": "one-to-one ArcGIS join tables by five-year interval",
+  "inputs": {
+    "canonical_spatial_metrics_panel_v1.parquet": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase2/canonical_spatial_metrics_panel_v1.parquet",
+      "sha256": "8c99e77fc85a55e753f95e0e51b7be954ba9c4229a741e9e7b576c6f61637e4c"
+    },
+    "canonical_spatial_metrics_validation_v1.json": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase2/canonical_spatial_metrics_validation_v1.json",
+      "sha256": "9b9278112bbddfb4b8b01c21d15727ae277f28b77cfbf2702b040eff8f3784b8"
+    },
+    "canonical_spatial_map_classes_v1.parquet": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/canonical_spatial_map_classes_v1.parquet",
+      "sha256": "f0860bd2aff2c5bf6f6020bcd5022c86180311229191f58a1ed9600809d12bc3"
+    },
+    "canonical_comparable_maps_validation_v1.json": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/canonical_comparable_maps_validation_v1.json",
+      "sha256": "c7e8a3d4df68615d058b1e1935fe1bd57a8a22884920b61853bf1acca9d769cc"
+    }
+  },
+  "structure": {
+    "source_rows": 199112,
+    "cells": 24889,
+    "intervals": 8,
+    "csv_files": 8,
+    "rows_per_csv": 24889,
+    "columns_per_csv": 78,
+    "continuous_map_metrics": 12,
+    "class_label_fields": 12,
+    "class_code_fields": 12,
+    "join_field": "cell_id",
+    "join_cardinality_within_each_csv": "one_to_one",
+    "diagnostic_interval": "2020_2025"
+  },
+  "arcgis": {
+    "recommended_join": "shapefile cell_id to CSV cell_id",
+    "cell_id_type": "text",
+    "schema_ini_required_location": "same directory as the eight CSV files",
+    "csv_encoding": "UTF-8 with BOM",
+    "warning": "If joined features are exported, prefer a file geodatabase or GeoPackage. Shapefile output truncates field names."
+  },
+  "outputs": {
+    "canonical_gis_metrics_classes_1985_1990_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_metrics_classes_1985_1990_v1.csv",
+      "sha256": "a117bd01012ea6d5c6296634606c8b6efd2b1e244c8319d55c5120d5a48c22d1"
+    },
+    "canonical_gis_metrics_classes_1990_1995_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_metrics_classes_1990_1995_v1.csv",
+      "sha256": "94c458fdde49e0d63836716fe4e780a4ee4c10e9ff2937938efc7a4967bad7cb"
+    },
+    "canonical_gis_metrics_classes_1995_2000_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_metrics_classes_1995_2000_v1.csv",
+      "sha256": "206a94d5bbf25c758dbd213993209cdcf4a32258354fe51f00574dca64168fc3"
+    },
+    "canonical_gis_metrics_classes_2000_2005_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_metrics_classes_2000_2005_v1.csv",
+      "sha256": "567184977e98a35a1dd3ec7eb8babdf3724ae1dc8f97d0a038a43b0af41dc275"
+    },
+    "canonical_gis_metrics_classes_2005_2010_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_metrics_classes_2005_2010_v1.csv",
+      "sha256": "da715dddb7514a671fb6161490d1c52010db660a374e508fdd642a38b3611f87"
+    },
+    "canonical_gis_metrics_classes_2010_2015_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_metrics_classes_2010_2015_v1.csv",
+      "sha256": "7665a4b6f0f8231712340f8538ec710e0669fd81f30a546bd5b54d5d27232b3d"
+    },
+    "canonical_gis_metrics_classes_2015_2020_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_metrics_classes_2015_2020_v1.csv",
+      "sha256": "255464f72f5145ef09c6d1dc22c38089e0c562a6f17e67e807559471a8fced96"
+    },
+    "canonical_gis_metrics_classes_2020_2025_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_metrics_classes_2020_2025_v1.csv",
+      "sha256": "104b05e0aac41de7c701ec1912f27ea02cf02e4b77c1083db94067b368e88852"
+    },
+    "canonical_gis_interval_tables_manifest_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_interval_tables_manifest_v1.csv",
+      "sha256": "0a9a8d11cb3a19e0a499d35b9a046411c3c95ab8f34bae89559ebb70ccea90e3"
+    },
+    "canonical_gis_interval_fields_v1.csv": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_interval_fields_v1.csv",
+      "sha256": "3fa71bfe3a712fae598e305dd7f40b5583aa49c9e05d0190a5c1da8a59c2a16e"
+    },
+    "schema.ini": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/schema.ini",
+      "sha256": "c7fdaa1667649bb4d35e63d4cbbf0327d0fb49e53b7c8d042120b3fdd0a94a12"
+    },
+    "canonical_gis_interval_tables_v1.zip": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/gis_tables_v1/canonical_gis_interval_tables_v1.zip",
+      "sha256": "7d568fba9338348bde4925bc40fc2f4bac83c21da371c0fcdb75e5867693924f"
+    }
+  },
+  "software": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "pandas": "2.2.3",
+    "numpy": "2.1.3",
+    "pyarrow": "23.0.1"
+  },
+  "checks": {
+    "phase2_input_hashes_match": true,
+    "phase2_validation_passed": true,
+    "phase3b_validation_passed": true,
+    "classified_panel_matches_phase3b_record": true,
+    "phase2_and_phase3b_keys_match": true,
+    "one_to_one_join_preserves_all_rows": true,
+    "all_class_fields_complete": true,
+    "eight_expected_intervals_present": true,
+    "each_csv_has_24889_rows": true,
+    "cell_id_unique_within_each_csv": true,
+    "cell_id_survives_csv_roundtrip": true,
+    "schema_ini_created": true,
+    "manifest_and_dictionary_created": true,
+    "portable_zip_integrity_passed": true
+  }
+}

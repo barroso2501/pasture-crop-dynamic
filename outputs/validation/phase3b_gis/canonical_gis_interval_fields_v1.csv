@@ -1,0 +1,79 @@
+field_order,field_name,field_role,pandas_dtype,schema_ini_type,units,missing_value_meaning,description,output_version
+1,cell_id,identifier_or_interval,object,Text Width 32,not_applicable,No missing values expected.,Canonical unique cell identifier and recommended GIS join key.,canonical-gis-interval-tables-v1
+2,GRID_ID,identifier_or_interval,object,Text Width 32,not_applicable,No missing values expected.,Parent-grid identifier retained for provenance.,canonical-gis-interval-tables-v1
+3,t0,identifier_or_interval,int64,Long,not_applicable,No missing values expected.,Initial year of the five-year accounting interval.,canonical-gis-interval-tables-v1
+4,t1,identifier_or_interval,int64,Long,not_applicable,No missing values expected.,Final year of the five-year accounting interval.,canonical-gis-interval-tables-v1
+5,interval,identifier_or_interval,object,Text Width 32,not_applicable,No missing values expected.,Interval label in YYYY_YYYY format.,canonical-gis-interval-tables-v1
+6,diagnostic_interval,identifier_or_interval,int64,Long,not_applicable,No missing values expected.,1 for the diagnostic 2020-2025 interval; otherwise 0.,canonical-gis-interval-tables-v1
+7,primary_inference_interval,identifier_or_interval,int8,Long,not_applicable,No missing values expected.,1 for the seven primary intervals; otherwise 0.,canonical-gis-interval-tables-v1
+8,geometry_area_geodesic_ha,spatial_context,float64,Double,ha,No missing values expected.,Complete-cell geodesic area recorded by Earth Engine.,canonical-gis-interval-tables-v1
+9,geometry_area_aea_ha,spatial_context,float64,Double,ha,No missing values expected.,Complete-cell area in the project Albers equal-area CRS.,canonical-gis-interval-tables-v1
+10,centroid_lon_aea,spatial_context,float64,Double,decimal_degree,No missing values expected.,Longitude of the centroid derived in the AEA CRS.,canonical-gis-interval-tables-v1
+11,centroid_lat_aea,spatial_context,float64,Double,decimal_degree,No missing values expected.,Latitude of the centroid derived in the AEA CRS.,canonical-gis-interval-tables-v1
+12,amazon_overlap_ha,spatial_context,float64,Double,ha,No missing values expected.,Cell area overlapping the Amazon biome.,canonical-gis-interval-tables-v1
+13,cerrado_overlap_ha,spatial_context,float64,Double,ha,No missing values expected.,Cell area overlapping the Cerrado biome.,canonical-gis-interval-tables-v1
+14,amazon_fraction_cell,spatial_context,float64,Double,not_applicable,No missing values expected.,Fraction of complete cell overlapping the Amazon biome.,canonical-gis-interval-tables-v1
+15,cerrado_fraction_cell,spatial_context,float64,Double,not_applicable,No missing values expected.,Fraction of complete cell overlapping the Cerrado biome.,canonical-gis-interval-tables-v1
+16,target_biome_fraction_cell,spatial_context,float64,Double,not_applicable,No missing values expected.,Fraction overlapping either target biome.,canonical-gis-interval-tables-v1
+17,outside_target_biomes_fraction,spatial_context,float64,Double,not_applicable,No missing values expected.,Fraction outside Amazon and Cerrado polygons.,canonical-gis-interval-tables-v1
+18,primary_biome,spatial_context,object,Text Width 32,not_applicable,No missing values expected.,Deterministic dominant-overlap biome label.,canonical-gis-interval-tables-v1
+19,primary_biome_code,spatial_context,object,Text Width 32,not_applicable,No missing values expected.,IBGE code of the primary biome.,canonical-gis-interval-tables-v1
+20,primary_biome_fraction_cell,spatial_context,float64,Double,not_applicable,No missing values expected.,Complete-cell fraction in the primary biome.,canonical-gis-interval-tables-v1
+21,primary_biome_fraction_target_overlap,spatial_context,float64,Double,not_applicable,No missing values expected.,Primary-biome share of target-biome overlap.,canonical-gis-interval-tables-v1
+22,crosses_amazon_cerrado_boundary,spatial_context,bool,Long,not_applicable,No missing values expected.,1 when the cell overlaps both target biomes.,canonical-gis-interval-tables-v1
+23,extends_outside_target_biomes,spatial_context,bool,Long,not_applicable,No missing values expected.,1 when part of the complete cell lies outside both biomes.,canonical-gis-interval-tables-v1
+24,neighbor_count,spatial_context,int64,Long,not_applicable,No missing values expected.,Number of shared-edge neighbors in the fixed canonical graph.,canonical-gis-interval-tables-v1
+25,is_island,spatial_context,bool,Long,not_applicable,No missing values expected.,1 when the cell has no shared-edge neighbor in the reduced domain.,canonical-gis-interval-tables-v1
+26,component_id,spatial_context,object,Text Width 32,not_applicable,No missing values expected.,Connected-component identifier in the fixed graph.,canonical-gis-interval-tables-v1
+27,component_size,spatial_context,int64,Long,not_applicable,No missing values expected.,Number of cells in the connected component.,canonical-gis-interval-tables-v1
+28,stock0_pas,denominator_or_activity,float64,Double,ha,No missing values expected.,Pasture stock at the beginning of the interval.,canonical-gis-interval-tables-v1
+29,stock0_nat,denominator_or_activity,float64,Double,ha,No missing values expected.,Native-vegetation stock at the beginning of the interval.,canonical-gis-interval-tables-v1
+30,gross_cr_activity_ha,denominator_or_activity,float64,Double,ha,No missing values expected.,Consolidation plus replenishment area.,canonical-gis-interval-tables-v1
+31,consolidation_ha,continuous_metric,float64,Double,ha,No missing values expected.,Pasture-to-temporary-crop flow (PAS to TMP).,canonical-gis-interval-tables-v1
+32,consolidation_rate_initial_pasture,continuous_metric,float64,Double,proportion,Undefined process-specific denominator; see support flag and class.,Consolidation divided by initial pasture stock.,canonical-gis-interval-tables-v1
+33,replenishment_ha,continuous_metric,float64,Double,ha,No missing values expected.,Native-vegetation-to-pasture flow (NAT to PAS).,canonical-gis-interval-tables-v1
+34,replenishment_rate_initial_native,continuous_metric,float64,Double,proportion,Undefined process-specific denominator; see support flag and class.,Replenishment divided by initial native stock.,canonical-gis-interval-tables-v1
+35,nat_tmp_endpoint_ha,continuous_metric,float64,Double,ha,No missing values expected.,Native-to-temporary-crop endpoint flow (NAT to TMP).,canonical-gis-interval-tables-v1
+36,nat_tmp_intensity_initial_native,continuous_metric,float64,Double,proportion,Undefined process-specific denominator; see support flag and class.,NAT-TMP endpoint flow divided by initial native stock.,canonical-gis-interval-tables-v1
+37,nat_tmp_pas_any_ha,continuous_metric,float64,Double,ha,No missing values expected.,NAT-TMP endpoint area with pasture in any intermediate year.,canonical-gis-interval-tables-v1
+38,nat_tmp_pas_any_share_endpoint,continuous_metric,float64,Double,proportion,Undefined process-specific denominator; see support flag and class.,Share of NAT-TMP endpoint area with any intermediate pasture.,canonical-gis-interval-tables-v1
+39,nat_tmp_pas_consecutive2_ha,continuous_metric,float64,Double,ha,No missing values expected.,NAT-TMP area with pasture in at least two consecutive intermediate years.,canonical-gis-interval-tables-v1
+40,nat_tmp_pas_consecutive2_share_endpoint,continuous_metric,float64,Double,proportion,Undefined process-specific denominator; see support flag and class.,Share of NAT-TMP endpoint area with at least two consecutive pasture years.,canonical-gis-interval-tables-v1
+41,net_cr_balance_ha,continuous_metric,float64,Double,ha,No missing values expected.,Consolidation minus replenishment area.,canonical-gis-interval-tables-v1
+42,cr_balance_index,continuous_metric,float64,Double,bounded_index_-1_to_1,Undefined process-specific denominator; see support flag and class.,Net C-R balance divided by gross C-R activity; undefined when inactive.,canonical-gis-interval-tables-v1
+43,consolidation_rate_defined,support_flag,int8,Long,not_applicable,No missing values expected.,1 when initial pasture supports the consolidation rate.,canonical-gis-interval-tables-v1
+44,replenishment_rate_defined,support_flag,int8,Long,not_applicable,No missing values expected.,1 when initial native area supports the replenishment rate.,canonical-gis-interval-tables-v1
+45,nat_tmp_intensity_defined,support_flag,int8,Long,not_applicable,No missing values expected.,1 when initial native area supports NAT-TMP intensity.,canonical-gis-interval-tables-v1
+46,cr_balance_defined,support_flag,int8,Long,not_applicable,No missing values expected.,1 when gross C-R activity is positive.,canonical-gis-interval-tables-v1
+47,nat_tmp_endpoint_share_defined,support_flag,int8,Long,not_applicable,No missing values expected.,1 when NAT-TMP endpoint area is positive.,canonical-gis-interval-tables-v1
+48,nat_tmp_pas_any_share_defined,support_flag,int8,Long,not_applicable,No missing values expected.,1 when any-pasture trajectory area is positive.,canonical-gis-interval-tables-v1
+49,has_consolidation,occurrence_flag,int8,Long,not_applicable,No missing values expected.,Primary-tolerance occurrence flag for consolidation.,canonical-gis-interval-tables-v1
+50,has_replenishment,occurrence_flag,int8,Long,not_applicable,No missing values expected.,Primary-tolerance occurrence flag for replenishment.,canonical-gis-interval-tables-v1
+51,has_cr_activity,occurrence_flag,int8,Long,not_applicable,No missing values expected.,Primary-tolerance occurrence flag for any C-R activity.,canonical-gis-interval-tables-v1
+52,spatial_support_version,provenance,object,Text Width 32,not_applicable,No missing values expected.,Version of the canonical spatial support.,canonical-gis-interval-tables-v1
+53,graph_version,provenance,object,Text Width 32,not_applicable,No missing values expected.,Version of the fixed shared-edge graph.,canonical-gis-interval-tables-v1
+54,spatial_metrics_version,provenance,object,Text Width 32,not_applicable,No missing values expected.,Version of the Phase 2 spatial metrics.,canonical-gis-interval-tables-v1
+55,consolidation_ha__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for consolidation_ha.,canonical-gis-interval-tables-v1
+56,consolidation_ha__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of consolidation_ha.,canonical-gis-interval-tables-v1
+57,consolidation_rate_initial_pasture__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for consolidation_rate_initial_pasture.,canonical-gis-interval-tables-v1
+58,consolidation_rate_initial_pasture__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of consolidation_rate_initial_pasture.,canonical-gis-interval-tables-v1
+59,replenishment_ha__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for replenishment_ha.,canonical-gis-interval-tables-v1
+60,replenishment_ha__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of replenishment_ha.,canonical-gis-interval-tables-v1
+61,replenishment_rate_initial_native__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for replenishment_rate_initial_native.,canonical-gis-interval-tables-v1
+62,replenishment_rate_initial_native__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of replenishment_rate_initial_native.,canonical-gis-interval-tables-v1
+63,nat_tmp_endpoint_ha__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for nat_tmp_endpoint_ha.,canonical-gis-interval-tables-v1
+64,nat_tmp_endpoint_ha__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of nat_tmp_endpoint_ha.,canonical-gis-interval-tables-v1
+65,nat_tmp_intensity_initial_native__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for nat_tmp_intensity_initial_native.,canonical-gis-interval-tables-v1
+66,nat_tmp_intensity_initial_native__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of nat_tmp_intensity_initial_native.,canonical-gis-interval-tables-v1
+67,nat_tmp_pas_any_ha__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for nat_tmp_pas_any_ha.,canonical-gis-interval-tables-v1
+68,nat_tmp_pas_any_ha__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of nat_tmp_pas_any_ha.,canonical-gis-interval-tables-v1
+69,nat_tmp_pas_any_share_endpoint__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for nat_tmp_pas_any_share_endpoint.,canonical-gis-interval-tables-v1
+70,nat_tmp_pas_any_share_endpoint__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of nat_tmp_pas_any_share_endpoint.,canonical-gis-interval-tables-v1
+71,nat_tmp_pas_consecutive2_ha__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for nat_tmp_pas_consecutive2_ha.,canonical-gis-interval-tables-v1
+72,nat_tmp_pas_consecutive2_ha__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of nat_tmp_pas_consecutive2_ha.,canonical-gis-interval-tables-v1
+73,nat_tmp_pas_consecutive2_share_endpoint__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for nat_tmp_pas_consecutive2_share_endpoint.,canonical-gis-interval-tables-v1
+74,nat_tmp_pas_consecutive2_share_endpoint__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of nat_tmp_pas_consecutive2_share_endpoint.,canonical-gis-interval-tables-v1
+75,net_cr_balance_ha__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for net_cr_balance_ha.,canonical-gis-interval-tables-v1
+76,net_cr_balance_ha__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of net_cr_balance_ha.,canonical-gis-interval-tables-v1
+77,cr_balance_index__class,frozen_map_class_label,object,Text Width 32,not_applicable,No missing values expected.,Frozen Phase 3A v2 map-class label for cr_balance_index.,canonical-gis-interval-tables-v1
+78,cr_balance_index__code,frozen_map_class_code,int8,Long,not_applicable,No missing values expected.,Ordered integer code for the frozen map class of cr_balance_index.,canonical-gis-interval-tables-v1
