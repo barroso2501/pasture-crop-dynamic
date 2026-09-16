@@ -1,0 +1,45 @@
+{
+  "validation_status": "PASS",
+  "episode_duration_and_flags_verified": true,
+  "window_lengths_and_boundary_flags_verified": true,
+  "transition_counts_and_row_fractions_verified": true,
+  "all_execution_output_hashes_match": true,
+  "gis_flags_unique_2598": true,
+  "diagnostic_followup_of_late_persistent_cells": [
+    {
+      "primary_biome": "Amazon",
+      "stage": "consolidation_dominant",
+      "cells": 245
+    },
+    {
+      "primary_biome": "Amazon",
+      "stage": "inactive",
+      "cells": 1
+    },
+    {
+      "primary_biome": "Amazon",
+      "stage": "mixed",
+      "cells": 70
+    },
+    {
+      "primary_biome": "Amazon",
+      "stage": "replenishment_dominant",
+      "cells": 51
+    },
+    {
+      "primary_biome": "Cerrado",
+      "stage": "consolidation_dominant",
+      "cells": 198
+    },
+    {
+      "primary_biome": "Cerrado",
+      "stage": "mixed",
+      "cells": 132
+    },
+    {
+      "primary_biome": "Cerrado",
+      "stage": "replenishment_dominant",
+      "cells": 97
+    }
+  ]
+}

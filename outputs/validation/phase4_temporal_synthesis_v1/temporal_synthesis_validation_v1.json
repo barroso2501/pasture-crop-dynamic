@@ -1,0 +1,123 @@
+{
+  "validation_status": "PASS",
+  "script_version": "phase4-temporal-synthesis-v1",
+  "execution_utc": "2026-09-15T17:49:46.591852+00:00",
+  "script_sha256": "904359581e5a334127592d31df5bb6124ad27ccd7578e8a86f4a122e4008ef7b",
+  "inputs": {
+    "canonical_gis_interval_tables_manifest_v1.csv": {
+      "sha256": "0a9a8d11cb3a19e0a499d35b9a046411c3c95ab8f34bae89559ebb70ccea90e3"
+    },
+    "canonical_gis_interval_fields_v1.csv": {
+      "sha256": "3fa71bfe3a712fae598e305dd7f40b5583aa49c9e05d0190a5c1da8a59c2a16e"
+    },
+    "canonical_gis_metrics_classes_1985_1990_v1.csv": {
+      "sha256": "a117bd01012ea6d5c6296634606c8b6efd2b1e244c8319d55c5120d5a48c22d1",
+      "rows": 24889,
+      "columns": 78
+    },
+    "canonical_gis_metrics_classes_1990_1995_v1.csv": {
+      "sha256": "94c458fdde49e0d63836716fe4e780a4ee4c10e9ff2937938efc7a4967bad7cb",
+      "rows": 24889,
+      "columns": 78
+    },
+    "canonical_gis_metrics_classes_1995_2000_v1.csv": {
+      "sha256": "206a94d5bbf25c758dbd213993209cdcf4a32258354fe51f00574dca64168fc3",
+      "rows": 24889,
+      "columns": 78
+    },
+    "canonical_gis_metrics_classes_2000_2005_v1.csv": {
+      "sha256": "567184977e98a35a1dd3ec7eb8babdf3724ae1dc8f97d0a038a43b0af41dc275",
+      "rows": 24889,
+      "columns": 78
+    },
+    "canonical_gis_metrics_classes_2005_2010_v1.csv": {
+      "sha256": "da715dddb7514a671fb6161490d1c52010db660a374e508fdd642a38b3611f87",
+      "rows": 24889,
+      "columns": 78
+    },
+    "canonical_gis_metrics_classes_2010_2015_v1.csv": {
+      "sha256": "7665a4b6f0f8231712340f8538ec710e0669fd81f30a546bd5b54d5d27232b3d",
+      "rows": 24889,
+      "columns": 78
+    },
+    "canonical_gis_metrics_classes_2015_2020_v1.csv": {
+      "sha256": "255464f72f5145ef09c6d1dc22c38089e0c562a6f17e67e807559471a8fced96",
+      "rows": 24889,
+      "columns": 78
+    },
+    "canonical_gis_metrics_classes_2020_2025_v1.csv": {
+      "sha256": "104b05e0aac41de7c701ec1912f27ea02cf02e4b77c1083db94067b368e88852",
+      "rows": 24889,
+      "columns": 78
+    },
+    "canonical_gis_interval_tables_validation_v1.json": {
+      "sha256": "130a9d8652f51f232c0d4f0a09e6ceb1d6caac8b0b7fb6a705e2b455dbbd12f3"
+    },
+    "cr_balance_primary_v1.csv": {
+      "sha256": "7a04a7da457b781a800fbe9680c6f6c88dd3ca9c252cea13784e505458d8e957"
+    },
+    "cr_balance_full_observed_v1.csv": {
+      "sha256": "257ab257d3b1b99b812d8f89663196a7b2dc599b075cf754fb39148b0f364364"
+    },
+    "nat_tmp_endpoint_magnitude_primary_v1.csv": {
+      "sha256": "53c26dcbb0605ce8809b38d90dcbb027c82c2bfd5375ae10b1394fcfb0a28397"
+    },
+    "nat_tmp_endpoint_magnitude_full_observed_v1.csv": {
+      "sha256": "2bc3b8daa6d90e73ed6ab1eb1719b1b61bbfa102fadca5e58c1ff302dc14849c"
+    }
+  },
+  "checks": {
+    "authenticated_balanced_panel": true,
+    "accepted_sequences_match_all_frozen_states": true,
+    "constant_flag_code_equivalence": true,
+    "episode_counts_and_maxima_match_accepted": true,
+    "99556_cell_axis_window_sequences": true,
+    "647114_consecutive_transitions": true,
+    "746670_observed_intervals_partitioned": true,
+    "all_groups_biomes_both_windows": true,
+    "late_primary_flags_unique_2598": true
+  },
+  "episodes": 227231,
+  "outputs": {
+    "temporal_transition_counts_v1.csv": {
+      "sha256": "5e8d393beae87afa7652e1b64e450c5e9d96c0317126409eb742e44614e8acda",
+      "bytes": 194699
+    },
+    "schema.ini": {
+      "sha256": "66022a48ce90778d5893ea9b60be4f7fbab4d01a285529d06ba4f6883beaaef1",
+      "bytes": 313
+    },
+    "high_group_flow_concentration_v1.csv": {
+      "sha256": "1c58a3e34b717e7ff333eb850ba76b4f33a6ba2ac62275983e4ec6a497e0761c",
+      "bytes": 14993
+    },
+    "temporal_persistence_reversal_summary_v1.csv": {
+      "sha256": "3491f9a5ff19b3e3e63e98c6d941e4d7a603c0220e9af0ea181aaa50658d044a",
+      "bytes": 3568
+    },
+    "temporal_pooled_transition_matrices_v1.csv": {
+      "sha256": "7932f7c38d85ed608b54eeae563f06d2e6eda7fb05c1668acee855426fa8c486",
+      "bytes": 37944
+    },
+    "high_group_late_concordance_v1.csv": {
+      "sha256": "748c78929e2d5d14667cd17eea0c617db1cea137b279db1af59efd5cc4f68ce5",
+      "bytes": 668
+    },
+    "high_group_late_cell_flags_v1.csv": {
+      "sha256": "f1abb605af1197c613bfeec2f13ee440cab5653d1d6b92eab63b0257c9d18482",
+      "bytes": 84850
+    },
+    "temporal_episode_duration_distribution_v1.csv": {
+      "sha256": "11b69cc824683f75c4503f61b78959604d5bc90e8fcb128df700dc7a02336b1b",
+      "bytes": 126991
+    },
+    "temporal_episode_records_v1.csv": {
+      "sha256": "cb4d03220ed82da08a969fa82483ac3146c4e92e574ecea5344fa1adf874e3f8",
+      "bytes": 23004957
+    },
+    "figures/high_group_cr_transition_matrices_v1.png": {
+      "sha256": "f480d0d67aaab2eadc0de85690b09b2e26a702da1a885bbbbd4ca5048a63a1be",
+      "bytes": 123811
+    }
+  }
+}
