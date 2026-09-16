@@ -1,0 +1,960 @@
+{
+  "validation_status": "PASS",
+  "review_date": "2026-09-15",
+  "accepted_execution_utc": "2026-09-15T19:41:37.990348+00:00",
+  "script_sha256": "f6fb91818f246f89bd2702247b2bd30aeb3dc5f70ad321b519ed0c63553146da",
+  "checked_received_component_hashes": {
+    "global_moran_design_v1.json": "57a03c15017f188eacf76443524144bb29d678edc3fb683258307d60619c9616",
+    "canonical_global_moran_results_v1.csv": "30ababa6003dc03909819563d7b8389ca11c794f9fb9ed58681f4919864966e5",
+    "canonical_global_moran_support_v1.csv": "51d662c812bd4eb533265f8b6a99d52ab300336d2935dfcb083fa57251d6b6c3",
+    "canonical_global_moran_permutations_v1.npz": "3c6c5d4d2ce6972779cf837c2c52c0c66803384853449a8d138cc5859dc2f61f"
+  },
+  "distributions": 104,
+  "simulated_statistics": 1039896,
+  "support_csv_matches_results": true,
+  "support_histogram_reconciliation": true,
+  "by_adjustment_reproduced": true,
+  "all_pvalues_and_distribution_summaries_reproduced": true,
+  "per_distribution": [
+    {
+      "metric": "consolidation_ha",
+      "transformation": "raw",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "raw",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "raw",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "raw",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "net_cr_balance_ha",
+      "transformation": "raw",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "cr_balance_index",
+      "transformation": "raw",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_rate_initial_pasture",
+      "transformation": "raw",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_rate_initial_native",
+      "transformation": "raw",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_intensity_initial_native",
+      "transformation": "raw",
+      "t0": 1985,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "raw",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "raw",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "raw",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "raw",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "net_cr_balance_ha",
+      "transformation": "raw",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "cr_balance_index",
+      "transformation": "raw",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_rate_initial_pasture",
+      "transformation": "raw",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_rate_initial_native",
+      "transformation": "raw",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_intensity_initial_native",
+      "transformation": "raw",
+      "t0": 1990,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "raw",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "raw",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "raw",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "raw",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "net_cr_balance_ha",
+      "transformation": "raw",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "cr_balance_index",
+      "transformation": "raw",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_rate_initial_pasture",
+      "transformation": "raw",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_rate_initial_native",
+      "transformation": "raw",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_intensity_initial_native",
+      "transformation": "raw",
+      "t0": 1995,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "raw",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "raw",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "raw",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "raw",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "net_cr_balance_ha",
+      "transformation": "raw",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "cr_balance_index",
+      "transformation": "raw",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_rate_initial_pasture",
+      "transformation": "raw",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_rate_initial_native",
+      "transformation": "raw",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_intensity_initial_native",
+      "transformation": "raw",
+      "t0": 2000,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "raw",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "raw",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "raw",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "raw",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "net_cr_balance_ha",
+      "transformation": "raw",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "cr_balance_index",
+      "transformation": "raw",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_rate_initial_pasture",
+      "transformation": "raw",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_rate_initial_native",
+      "transformation": "raw",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_intensity_initial_native",
+      "transformation": "raw",
+      "t0": 2005,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "raw",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "raw",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "raw",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "raw",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "net_cr_balance_ha",
+      "transformation": "raw",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "cr_balance_index",
+      "transformation": "raw",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_rate_initial_pasture",
+      "transformation": "raw",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_rate_initial_native",
+      "transformation": "raw",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_intensity_initial_native",
+      "transformation": "raw",
+      "t0": 2010,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "raw",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "raw",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "raw",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "raw",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "net_cr_balance_ha",
+      "transformation": "raw",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "cr_balance_index",
+      "transformation": "raw",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_rate_initial_pasture",
+      "transformation": "raw",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_rate_initial_native",
+      "transformation": "raw",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_intensity_initial_native",
+      "transformation": "raw",
+      "t0": 2015,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "raw",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "raw",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "raw",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "raw",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "net_cr_balance_ha",
+      "transformation": "raw",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_endpoint_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "gross_cr_activity_ha",
+      "transformation": "occurrence_gt_1e-9",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "cr_balance_index",
+      "transformation": "raw",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "consolidation_rate_initial_pasture",
+      "transformation": "raw",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "replenishment_rate_initial_native",
+      "transformation": "raw",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    },
+    {
+      "metric": "nat_tmp_intensity_initial_native",
+      "transformation": "raw",
+      "t0": 2020,
+      "simulations": 9999,
+      "extreme_permutations": 0,
+      "p_reproduced": true,
+      "distribution_summaries_reproduced": true
+    }
+  ],
+  "limitations": [
+    "Observed Moran values not independently recomputed from source Parquets and graph.",
+    "Original generated PNG was not supplied; review figure is rebuilt from authenticated result CSV."
+  ]
+}
