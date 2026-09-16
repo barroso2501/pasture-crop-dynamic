@@ -1,0 +1,55 @@
+{
+  "review_status": "PASS",
+  "statistical_production_accepted": true,
+  "figure_layout_correction_pending": true,
+  "script_version": "phase6-local-moran-lisa-v1",
+  "script_sha256": "56d041f8357c403b492951ccec5887932038610e81f24b4cf37a5fd96fb66de8",
+  "review_scope": {
+    "compact_tables_independently_reconciled": true,
+    "cell_result_parquet_hash_matched": true,
+    "cell_result_parquet_content_independently_reread": false,
+    "five_png_hashes_matched": true,
+    "five_pngs_visually_reviewed": true
+  },
+  "population": {
+    "cells": 24889,
+    "metrics": 5,
+    "intervals": 8,
+    "maps": 40,
+    "cell_metric_interval_rows": 995560,
+    "cell_metric_persistence_rows": 124445,
+    "jaccard_rows": 70
+  },
+  "inference": {
+    "bh_significant_cell_map_rows": 168860,
+    "by_significant_cell_map_rows": 72221,
+    "by_fraction_of_bh": 0.4276975008883098,
+    "hh_rows": 52867,
+    "ll_rows": 113044,
+    "hl_rows": 497,
+    "lh_rows": 2452,
+    "not_significant_rows": 788532,
+    "not_applicable_rows": 38168
+  },
+  "interpretation": {
+    "absolute_metrics_primary_class": "HH",
+    "absolute_metrics_ll_role": "structured low activity or absence",
+    "balance_metrics_primary_classes": ["HH", "LL"],
+    "spatial_outlier_role": ["HL", "LH"],
+    "diagnostic_interval": "2020-2025 included and flagged"
+  },
+  "authenticated_outputs": {
+    "canonical_local_moran_cell_results_v1.parquet": "ec5906cb86e4044082db91d4cf11440b0d5401f6f8b6484217c7e246449ca2b4",
+    "local_moran_consolidation_ha_v1.png": "f201f490728016585a6428d4c4d55407faffc8df7b5b6274edd4b048ac847091",
+    "local_moran_replenishment_ha_v1.png": "40fa3fd3a080b89a9ecf33751602c12bd193b7befe3975d673794e7cf746114f",
+    "local_moran_nat_tmp_endpoint_ha_v1.png": "a347586c91f8b5949a84cef808769f30c2681968474271b89fb1c7be1dcc28a2",
+    "local_moran_net_cr_balance_ha_v1.png": "8b9a7c45b362bc41252925006de90ba8b205cf084deddb531ae74cebc1b70a4d",
+    "local_moran_cr_balance_index_v1.png": "436791f91f4211ffafef5795635b7703c31384aa71067d463b504c1963c229ed"
+  },
+  "visual_review": {
+    "statistical_layers_accepted": true,
+    "layout_issue": "Period titles are clipped or overlap panels in replenishment_ha and net_cr_balance_ha PNGs.",
+    "requires_statistical_rerun": false,
+    "required_action": "Rerender the two affected figures before publication or final figure use."
+  }
+}
