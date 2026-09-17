@@ -1,0 +1,54 @@
+{
+  "script_version": "phase7-biome-comparison-v1",
+  "biomes": [
+    "Amazon",
+    "Cerrado"
+  ],
+  "intervals": [
+    [
+      1985,
+      1990
+    ],
+    [
+      1990,
+      1995
+    ],
+    [
+      1995,
+      2000
+    ],
+    [
+      2000,
+      2005
+    ],
+    [
+      2005,
+      2010
+    ],
+    [
+      2010,
+      2015
+    ],
+    [
+      2015,
+      2020
+    ],
+    [
+      2020,
+      2025
+    ]
+  ],
+  "diagnostic_interval": [
+    2020,
+    2025
+  ],
+  "diagnostic_included": true,
+  "primary_boundary_rule": "deterministic primary_biome from Phase 1",
+  "boundary_sensitivity": "exclude cells with positive overlap in both target biomes; do not reassign",
+  "global_moran": "recomputed on the induced graph for each biome and boundary scope",
+  "local_moran": "accepted combined-domain Phase 6 classes summarized by primary biome; not recomputed",
+  "multiple_testing": "BY within boundary_scope x biome x primary/diagnostic family",
+  "permutations": 9999,
+  "master_seed": 20260917,
+  "map_classes_refitted": false
+}
