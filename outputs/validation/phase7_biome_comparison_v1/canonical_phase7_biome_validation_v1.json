@@ -1,0 +1,113 @@
+{
+  "validation_status": "PASS",
+  "script_version": "phase7-biome-comparison-v1",
+  "execution_utc": "2026-09-17T08:51:13.128078+00:00",
+  "script_sha256": "46ae207d2c32cc4785b7e679328481ba9ef782d48ed805a2b4c866b9b4330cf1",
+  "inputs": {
+    "metrics": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase2/canonical_spatial_metrics_panel_v1.parquet",
+      "sha256": "8c99e77fc85a55e753f95e0e51b7be954ba9c4229a741e9e7b576c6f61637e4c"
+    },
+    "classes": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase3/canonical_spatial_map_classes_v1.parquet",
+      "sha256": "f0860bd2aff2c5bf6f6020bcd5022c86180311229191f58a1ed9600809d12bc3"
+    },
+    "spatial": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase1/canonical_spatial_support_v1.parquet",
+      "sha256": "22425834aee2826f5261fdbda959719a4e46d7c6589a91417cc0328c3112cecc"
+    },
+    "graph": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase1/canonical_contiguity_weights_v1.parquet",
+      "sha256": "85ab9f0dd027545a611c5e681d39b5e2ee5aa185b5c1d318196b91d69392694f"
+    },
+    "global": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase5/global_moran_v1/canonical_global_moran_results_v1.csv",
+      "sha256": "30ababa6003dc03909819563d7b8389ca11c794f9fb9ed58681f4919864966e5"
+    },
+    "local": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase6/local_moran_v1/canonical_local_moran_cell_results_v1.parquet",
+      "sha256": "ec5906cb86e4044082db91d4cf11440b0d5401f6f8b6484217c7e246449ca2b4"
+    }
+  },
+  "engine_checks": {
+    "permutation_expectation": true,
+    "affine_invariance": true,
+    "seed_reproducibility": true,
+    "by_reference": true,
+    "run_lengths": true
+  },
+  "population": {
+    "cells": 24889,
+    "primary_biome_counts": {
+      "Amazon": 14213,
+      "Cerrado": 10676
+    },
+    "transbiome_cells": 582,
+    "intervals": 8,
+    "metrics": 12,
+    "global_moran_tests": 160
+  },
+  "checks": {
+    "authenticated_accepted_inputs": true,
+    "canonical_cell_population": true,
+    "balanced_eight_interval_panels": true,
+    "primary_and_strict_boundary_scopes": true,
+    "twelve_metrics_summarized_without_refitting": true,
+    "core_state_transitions_close": true,
+    "diagnostic_interval_included": true,
+    "biome_global_moran_recomputed_on_induced_graphs": true,
+    "combined_domain_global_moran_used_only_as_reference": true,
+    "local_moran_classes_not_recomputed": true,
+    "local_hh_ll_persistence_partitioned_by_biome": true
+  },
+  "outputs": {
+    "canonical_phase7_biome_design_v1.json": {
+      "sha256": "359cfb28d074bee9960bb9c92d610b17a8af5c9a755595b54a7008a1a4bdfc20",
+      "bytes": 1028
+    },
+    "canonical_phase7_biome_process_summary_v1.csv": {
+      "sha256": "fc2d5d1d5a764f4f54beefb1a90e34246b15ab40c9cae18a84c2f5c15d67a397",
+      "bytes": 70331
+    },
+    "canonical_phase7_biome_state_composition_v1.csv": {
+      "sha256": "4e1db3ee90c23839484f828738f1a164f76423d526069227ae3cdfbf9926bbe3",
+      "bytes": 206585
+    },
+    "canonical_phase7_biome_transition_summary_v1.csv": {
+      "sha256": "26a70d49f6730d6943328c9c98baa344dde9d6fdf52d7188b5cf9eacc8aabef2",
+      "bytes": 212081
+    },
+    "canonical_phase7_biome_trajectory_summary_v1.csv": {
+      "sha256": "b057bf5ecf21c23bb1a8d8de2c0e8ae11b58c99ef17b4a0d2929e46bce23c703",
+      "bytes": 2519
+    },
+    "canonical_phase7_biome_global_moran_v1.csv": {
+      "sha256": "529b191be53ac4f498c6e333b05ec04949505a4a41e4f04d4f789ed5f1259620",
+      "bytes": 62013
+    },
+    "canonical_phase7_biome_local_cluster_summary_v1.csv": {
+      "sha256": "2082f256dfef1eecb8a4b3433302baa31bac6f982bf04e34b3badc9e269fd781",
+      "bytes": 140346
+    },
+    "canonical_phase7_biome_local_persistence_v1.csv": {
+      "sha256": "3f29fcb359d48cfc5d669287e52ed2064e0bc029f68c805e6ded313e5a437c20",
+      "bytes": 3478
+    },
+    "figures/phase7_biome_absolute_processes_v1.png": {
+      "sha256": "ae19e017c33b49d2e015d9c678ebcebddf3c5385690f2caea13ca15b2d765563",
+      "bytes": 267505
+    },
+    "figures/phase7_biome_global_moran_v1.png": {
+      "sha256": "85c7ba332d0628c7a82841bb6f5e9c94682137c530acf7fdf9001ee98615d814",
+      "bytes": 412952
+    },
+    "figures/phase7_biome_lisa_hh_ll_v1.png": {
+      "sha256": "91562e008bd1b6d6cbc4d80a7da81a96ae6610765d130e0fd75477e8c30b2c8e",
+      "bytes": 412256
+    },
+    "canonical_phase7_biome_inventory_v1.csv": {
+      "sha256": "af06562f81b1263ffd25372d3bd194c7f4f5196b926eddae29b9ed7b1c0c4f1d",
+      "bytes": 1363
+    }
+  }
+}
