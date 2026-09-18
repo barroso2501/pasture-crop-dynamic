@@ -1,0 +1,163 @@
+{
+  "validation_status": "PASS",
+  "script_version": "phase8a-maup-alternative-grids-script-v2",
+  "execution_utc": "2026-09-17T21:21:12.917434+00:00",
+  "script_sha256": "d4f0287dd655936293c2f494feb1eadd827911cdf6028877d7eefd59b259b827",
+  "input": {
+    "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase1/canonical_spatial_support_v1.parquet",
+    "sha256": "22425834aee2826f5261fdbda959719a4e46d7c6589a91417cc0328c3112cecc",
+    "cells": 24889
+  },
+  "lattice": {
+    "anchor_x_aea": 767045.1246614072,
+    "anchor_y_aea": 2597613.632654486,
+    "anchor_source_index": 8524,
+    "neighbor_angle_rad": 0.5235987746621621,
+    "vertex_angle_rad": -9.361367236948581e-10,
+    "neighbor_distance_m": 15196.545584892388,
+    "side_length_m": 8773.72968419004,
+    "implied_reference_area_ha": 19999.55746429762,
+    "source_median_area_ha": 19999.864890947352,
+    "side_length_relative_difference": 7.68574769904339e-06,
+    "lattice_residual_p99_m": 15.562854417037501,
+    "lattice_residual_max_m": 16.912968638766728,
+    "basis_q": [
+      13160.594533398082,
+      7598.272780126078
+    ],
+    "basis_r": [
+      1.4226048700151727e-05,
+      15196.545584892388
+    ]
+  },
+  "grids": [
+    {
+      "grid_code": "hex10k_base",
+      "description": "Half-area scale grid with canonical origin and orientation.",
+      "cell_count": 56520,
+      "candidate_cell_count": 205524,
+      "nominal_area_ha": 9999.77873214881,
+      "side_length_m": 6203.963755988484,
+      "neighbor_distance_m": 10745.5804336879,
+      "shift_q_canonical_basis": 0.0,
+      "shift_r_canonical_basis": 0.0,
+      "vector_domain_support_total_ha": 497776400.4434243,
+      "fixed_domain_area_ha": 497776400.44341594,
+      "support_closure_relative_difference": 1.6871907733108135e-14,
+      "minimum_support_fraction": 1.0982067796852726e-06,
+      "median_support_fraction": 1.0000000000000138,
+      "maximum_support_fraction": 1.0000000000000464,
+      "cells_support_ge_10pct": 54409,
+      "cells_support_ge_25pct": 52404,
+      "cells_support_ge_50pct": 49716,
+      "cells_support_ge_75pct": 47191,
+      "cells_support_ge_90pct": 45258
+    },
+    {
+      "grid_code": "hex20k_shift",
+      "description": "Canonical-area grid shifted by half of both lattice basis vectors.",
+      "cell_count": 29396,
+      "candidate_cell_count": 104622,
+      "nominal_area_ha": 19999.55746429762,
+      "side_length_m": 8773.72968419004,
+      "neighbor_distance_m": 15196.54558489239,
+      "shift_q_canonical_basis": 0.5,
+      "shift_r_canonical_basis": 0.5,
+      "vector_domain_support_total_ha": 497776400.4434173,
+      "fixed_domain_area_ha": 497776400.44341594,
+      "support_closure_relative_difference": 2.7465896309710913e-15,
+      "minimum_support_fraction": 0.0829038912221609,
+      "median_support_fraction": 0.9999999999999986,
+      "maximum_support_fraction": 1.0000000000000262,
+      "cells_support_ge_10pct": 27577,
+      "cells_support_ge_25pct": 27352,
+      "cells_support_ge_50pct": 25015,
+      "cells_support_ge_75pct": 22426,
+      "cells_support_ge_90pct": 22158
+    },
+    {
+      "grid_code": "hex40k_base",
+      "description": "Double-area scale grid with canonical origin and orientation.",
+      "cell_count": 15309,
+      "candidate_cell_count": 53530,
+      "nominal_area_ha": 39999.11492859524,
+      "side_length_m": 12407.927511976968,
+      "neighbor_distance_m": 21491.1608673758,
+      "shift_q_canonical_basis": 0.0,
+      "shift_r_canonical_basis": 0.0,
+      "vector_domain_support_total_ha": 497776400.44341534,
+      "fixed_domain_area_ha": 497776400.44341594,
+      "support_closure_relative_difference": 1.1771098418447535e-15,
+      "minimum_support_fraction": 1.5596492948926134e-06,
+      "median_support_fraction": 0.999999999999996,
+      "maximum_support_fraction": 1.0000000000000133,
+      "cells_support_ge_10pct": 14481,
+      "cells_support_ge_25pct": 13759,
+      "cells_support_ge_50pct": 12445,
+      "cells_support_ge_75pct": 11160,
+      "cells_support_ge_90pct": 10379
+    }
+  ],
+  "checks": {
+    "geometry_engine_verification": true,
+    "authenticated_canonical_source": true,
+    "canonical_population": true,
+    "aea_lattice_inferred": true,
+    "reference_area_consistent_with_20000_ha": true,
+    "unique_grid_identifiers": true,
+    "valid_generated_geometries": true,
+    "fixed_domain_support_closure": true,
+    "support_threshold_not_selected": true,
+    "no_process_metrics_computed": true
+  },
+  "outputs": {
+    "maup_grid_hex10k_base_v1.parquet": {
+      "sha256": "306eaa5d72fa57373187d42d9c4f98c3216a8b31ecc30bf4fd5e95fe7112db02",
+      "bytes": 4218622
+    },
+    "maup_grid_hex10k_base_v1.gpkg": {
+      "sha256": "7c8318e3a809ac92f384fd3a0ada9e97511078fb4841007d33a276e2db9936fb",
+      "bytes": 21553152
+    },
+    "maup_grid_hex10k_base_v1.geojson": {
+      "sha256": "98cba44fd7d8f6d62e9fd1ef5924bd577f1a5a825b2f414233ec7cdb9e746efc",
+      "bytes": 47626031
+    },
+    "maup_grid_hex20k_shift_v1.parquet": {
+      "sha256": "838ed063d5976b895155905821803d873b2ba0aae1cd6796b228e0302e978965",
+      "bytes": 2046054
+    },
+    "maup_grid_hex20k_shift_v1.gpkg": {
+      "sha256": "d33cf53da45ddedc122278aba7a0bba579013e3abfa4394d6a2533cfafb80d20",
+      "bytes": 11239424
+    },
+    "maup_grid_hex20k_shift_v1.geojson": {
+      "sha256": "2bd1d06a32f4012558817d2e86fec2bb7830c0bd6d132864b667ecb06629f42e",
+      "bytes": 24803326
+    },
+    "maup_grid_hex40k_base_v1.parquet": {
+      "sha256": "57e1fde8fd61cd183acbab78f02585bd57b7e72287a70d8549ead0c33cf83e43",
+      "bytes": 1181142
+    },
+    "maup_grid_hex40k_base_v1.gpkg": {
+      "sha256": "452adc8b17ece1ad9d970dcaa4ad7eff2624863df48aaf5338861951a1527d5e",
+      "bytes": 5881856
+    },
+    "maup_grid_hex40k_base_v1.geojson": {
+      "sha256": "a3018e12030ca6cd9ca26991e18a5bdee87a02319dc1e40658770e1c974f2858",
+      "bytes": 12870757
+    },
+    "canonical_maup_grid_summary_v1.csv": {
+      "sha256": "532eae7f09ea4d3495eaa0015462e493883baf62ae431f4759124d11e59a6aea",
+      "bytes": 1336
+    },
+    "canonical_maup_grid_support_distribution_v1.csv": {
+      "sha256": "87e90593c44951cdeecdef32101635fe2d5e1a78cdeeaaffdb15cb7c119decbb",
+      "bytes": 1114
+    },
+    "canonical_maup_grid_design_v1.json": {
+      "sha256": "ef5d4ef18fa736f203a3a18457c83e7c4845514680d17ae7dd81138a592c9f22",
+      "bytes": 1983
+    }
+  }
+}
