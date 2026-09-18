@@ -1,0 +1,56 @@
+{
+  "script_version": "phase8a-maup-alternative-grids-script-v2",
+  "fixed_domain": "union of the 24,889 canonical Phase 1 cells",
+  "fixed_domain_area_source": "projected canonical geometries in the project AEA CRS",
+  "source_sha256": "22425834aee2826f5261fdbda959719a4e46d7c6589a91417cc0328c3112cecc",
+  "source_cells": 24889,
+  "crs_aea": "+proj=aea +lat_0=-32 +lon_0=-60 +lat_1=-5 +lat_2=-42 +x_0=0 +y_0=0 +ellps=GRS80 +units=m +no_defs",
+  "crs_public_geometry": "EPSG:4326",
+  "grid_specs": [
+    {
+      "grid_code": "hex10k_base",
+      "area_multiplier": 0.5,
+      "shift_q": 0.0,
+      "shift_r": 0.0,
+      "description": "Half-area scale grid with canonical origin and orientation."
+    },
+    {
+      "grid_code": "hex20k_shift",
+      "area_multiplier": 1.0,
+      "shift_q": 0.5,
+      "shift_r": 0.5,
+      "description": "Canonical-area grid shifted by half of both lattice basis vectors."
+    },
+    {
+      "grid_code": "hex40k_base",
+      "area_multiplier": 2.0,
+      "shift_q": 0.0,
+      "shift_r": 0.0,
+      "description": "Double-area scale grid with canonical origin and orientation."
+    }
+  ],
+  "lattice": {
+    "anchor_x_aea": 767045.1246614072,
+    "anchor_y_aea": 2597613.632654486,
+    "anchor_source_index": 8524,
+    "neighbor_angle_rad": 0.5235987746621621,
+    "vertex_angle_rad": -9.361367236948581e-10,
+    "neighbor_distance_m": 15196.545584892388,
+    "side_length_m": 8773.72968419004,
+    "implied_reference_area_ha": 19999.55746429762,
+    "source_median_area_ha": 19999.864890947352,
+    "side_length_relative_difference": 7.68574769904339e-06,
+    "lattice_residual_p99_m": 15.562854417037501,
+    "lattice_residual_max_m": 16.912968638766728,
+    "basis_q": [
+      13160.594533398082,
+      7598.272780126078
+    ],
+    "basis_r": [
+      1.4226048700151727e-05,
+      15196.545584892388
+    ]
+  },
+  "support_threshold_decision": "deferred; Phase 8A reports the geometric distribution only",
+  "process_metrics_computed": false
+}
