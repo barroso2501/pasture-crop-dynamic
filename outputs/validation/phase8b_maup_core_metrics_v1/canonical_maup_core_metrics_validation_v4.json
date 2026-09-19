@@ -1,0 +1,309 @@
+{
+  "validation_status": "PASS",
+  "mode": "full",
+  "script_version": "phase8b-build-validate-maup-core-metrics-v4",
+  "execution_utc": "2026-09-19T23:04:33.558631+00:00",
+  "script_sha256": "3cdc9622ce57a7c912636f50529304daf5e722840e9a83fb02aaf68653e904fa",
+  "inputs": {
+    "canonical_panel": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase2/canonical_spatial_metrics_panel_v1.parquet",
+      "sha256": "8c99e77fc85a55e753f95e0e51b7be954ba9c4229a741e9e7b576c6f61637e4c"
+    },
+    "raw_exports": [
+      {
+        "file": "maup_core_metrics_hex10k_base_1985_1990_v2.csv",
+        "bytes": 18059986,
+        "sha256": "52e783ce0c69161a49823558689fa2b6ada70086f2c725c14c1d9cab906a6d2a",
+        "grid_code": "hex10k_base",
+        "t0": 1985,
+        "t1": 1990,
+        "rows": 56520
+      },
+      {
+        "file": "maup_core_metrics_hex10k_base_1990_1995_v2.csv",
+        "bytes": 18184027,
+        "sha256": "ff07cd00da7c5ef5379b9556849144a6e41a5aaf088823c92434f896b7183894",
+        "grid_code": "hex10k_base",
+        "t0": 1990,
+        "t1": 1995,
+        "rows": 56520
+      },
+      {
+        "file": "maup_core_metrics_hex10k_base_1995_2000_v2.csv",
+        "bytes": 18286976,
+        "sha256": "252f61d1729c2a69251d0cd0d46292c26713412a0e1f2996c41af0dee3f699af",
+        "grid_code": "hex10k_base",
+        "t0": 1995,
+        "t1": 2000,
+        "rows": 56520
+      },
+      {
+        "file": "maup_core_metrics_hex10k_base_2000_2005_v2.csv",
+        "bytes": 18397028,
+        "sha256": "e01f84ec093faa18097447a5db209acd3b89fe815e18587b61f72c3138e16264",
+        "grid_code": "hex10k_base",
+        "t0": 2000,
+        "t1": 2005,
+        "rows": 56520
+      },
+      {
+        "file": "maup_core_metrics_hex10k_base_2005_2010_v2.csv",
+        "bytes": 18491533,
+        "sha256": "cb88e8e76dc8ec56708459a1439d9da915bd51936e1419ac0cafa32ff604c096",
+        "grid_code": "hex10k_base",
+        "t0": 2005,
+        "t1": 2010,
+        "rows": 56520
+      },
+      {
+        "file": "maup_core_metrics_hex10k_base_2010_2015_v2.csv",
+        "bytes": 18587247,
+        "sha256": "3ea6300a88aee0fbe09990e95673d2722c8dba23fc70a6b945313d9634551ba3",
+        "grid_code": "hex10k_base",
+        "t0": 2010,
+        "t1": 2015,
+        "rows": 56520
+      },
+      {
+        "file": "maup_core_metrics_hex10k_base_2015_2020_v2.csv",
+        "bytes": 18643913,
+        "sha256": "e71a6e6bf928da2b5060078bf449d9566ac1be08f971fb378c71d69c1f944cb6",
+        "grid_code": "hex10k_base",
+        "t0": 2015,
+        "t1": 2020,
+        "rows": 56520
+      },
+      {
+        "file": "maup_core_metrics_hex10k_base_2020_2025_v2.csv",
+        "bytes": 18661702,
+        "sha256": "c417386d5fc741216652d9c15766ec6f3cc19c1ab94f5d2b3eeedcf61e6ff987",
+        "grid_code": "hex10k_base",
+        "t0": 2020,
+        "t1": 2025,
+        "rows": 56520
+      },
+      {
+        "file": "maup_core_metrics_hex20k_shift_1985_1990_v2.csv",
+        "bytes": 9612301,
+        "sha256": "aa1ec43570f9f888bb8954fb0b37024e44193d0c7c8c72499a3015185ac0d6bc",
+        "grid_code": "hex20k_shift",
+        "t0": 1985,
+        "t1": 1990,
+        "rows": 29396
+      },
+      {
+        "file": "maup_core_metrics_hex20k_shift_1990_1995_v2.csv",
+        "bytes": 9675609,
+        "sha256": "40c1797afeeec1e7577d9a13a87632c150c5ec9215a96e74f5087ab6d9e09b3e",
+        "grid_code": "hex20k_shift",
+        "t0": 1990,
+        "t1": 1995,
+        "rows": 29396
+      },
+      {
+        "file": "maup_core_metrics_hex20k_shift_1995_2000_v2.csv",
+        "bytes": 9732109,
+        "sha256": "f791ce9fb41df35861210f267c6a456ae81ea5bca82e62484fa3f67365b1f842",
+        "grid_code": "hex20k_shift",
+        "t0": 1995,
+        "t1": 2000,
+        "rows": 29396
+      },
+      {
+        "file": "maup_core_metrics_hex20k_shift_2000_2005_v2.csv",
+        "bytes": 9789451,
+        "sha256": "bf7724dfd9431f6342f4767ebfc11f830745ae264d963f575abaf7a8940a965c",
+        "grid_code": "hex20k_shift",
+        "t0": 2000,
+        "t1": 2005,
+        "rows": 29396
+      },
+      {
+        "file": "maup_core_metrics_hex20k_shift_2005_2010_v2.csv",
+        "bytes": 9835467,
+        "sha256": "586c56a6a736bd7e4188401741259c22c69bf96f18fd90bda78fc38e82a4f59a",
+        "grid_code": "hex20k_shift",
+        "t0": 2005,
+        "t1": 2010,
+        "rows": 29396
+      },
+      {
+        "file": "maup_core_metrics_hex20k_shift_2010_2015_v2.csv",
+        "bytes": 9884375,
+        "sha256": "9588b9599dcb93e5faf5d5d9760ff293ffdf6dcc0eaf117fcf3029963db0ef69",
+        "grid_code": "hex20k_shift",
+        "t0": 2010,
+        "t1": 2015,
+        "rows": 29396
+      },
+      {
+        "file": "maup_core_metrics_hex20k_shift_2015_2020_v2.csv",
+        "bytes": 9911551,
+        "sha256": "7ad2c8899012fa819a3e3662f4de9327157e4f5fcb5491b24ca2acf4423bd48e",
+        "grid_code": "hex20k_shift",
+        "t0": 2015,
+        "t1": 2020,
+        "rows": 29396
+      },
+      {
+        "file": "maup_core_metrics_hex20k_shift_2020_2025_v2.csv",
+        "bytes": 9921755,
+        "sha256": "5ad481db7bc591f71582a6859bbf32983bd7302b485bf1e84544a8da35c4663e",
+        "grid_code": "hex20k_shift",
+        "t0": 2020,
+        "t1": 2025,
+        "rows": 29396
+      },
+      {
+        "file": "maup_core_metrics_hex40k_base_1985_1990_v2.csv",
+        "bytes": 4972377,
+        "sha256": "756c7765daf35b5235f3816ff8999923bed0700be51e8239ffd2185df3498c1b",
+        "grid_code": "hex40k_base",
+        "t0": 1985,
+        "t1": 1990,
+        "rows": 15309
+      },
+      {
+        "file": "maup_core_metrics_hex40k_base_1990_1995_v2.csv",
+        "bytes": 5006139,
+        "sha256": "064533d520ed9f6a88d8ad7033a6eb7fad121fbc675ca6da111fd2689889d167",
+        "grid_code": "hex40k_base",
+        "t0": 1990,
+        "t1": 1995,
+        "rows": 15309
+      },
+      {
+        "file": "maup_core_metrics_hex40k_base_1995_2000_v2.csv",
+        "bytes": 5037668,
+        "sha256": "9a1b234743e29eede78ce8e58ba5a43b1a9a1550525a98cde5478882a573c5d9",
+        "grid_code": "hex40k_base",
+        "t0": 1995,
+        "t1": 2000,
+        "rows": 15309
+      },
+      {
+        "file": "maup_core_metrics_hex40k_base_2000_2005_v2.csv",
+        "bytes": 5067452,
+        "sha256": "23b6da245fa18234095c0bf86f9ac1a7c5a3cc5868ec61bf0197496babebc8b0",
+        "grid_code": "hex40k_base",
+        "t0": 2000,
+        "t1": 2005,
+        "rows": 15309
+      },
+      {
+        "file": "maup_core_metrics_hex40k_base_2005_2010_v2.csv",
+        "bytes": 5090519,
+        "sha256": "266c958871830a648c4c9f76b4d0f1ebbe20a44af9ffa37a6d478199c8f65eae",
+        "grid_code": "hex40k_base",
+        "t0": 2005,
+        "t1": 2010,
+        "rows": 15309
+      },
+      {
+        "file": "maup_core_metrics_hex40k_base_2010_2015_v2.csv",
+        "bytes": 5115772,
+        "sha256": "576c275c0dd80cd32b93144a2641cceb4873b3ff9032c600f76a22db729f4bb7",
+        "grid_code": "hex40k_base",
+        "t0": 2010,
+        "t1": 2015,
+        "rows": 15309
+      },
+      {
+        "file": "maup_core_metrics_hex40k_base_2015_2020_v2.csv",
+        "bytes": 5128030,
+        "sha256": "b2a682eaaa306a8bd8994c363a9a3763e9a952ebd382347d64955b279d05262e",
+        "grid_code": "hex40k_base",
+        "t0": 2015,
+        "t1": 2020,
+        "rows": 15309
+      },
+      {
+        "file": "maup_core_metrics_hex40k_base_2020_2025_v2.csv",
+        "bytes": 5136202,
+        "sha256": "e8ed72228ab070e4765c6c17b98bb36e6f41a421d8ea8093fa7b1a4517a1cded",
+        "grid_code": "hex40k_base",
+        "t0": 2020,
+        "t1": 2025,
+        "rows": 15309
+      }
+    ]
+  },
+  "structure": {
+    "rows": 809800,
+    "grids": 3,
+    "intervals": 8,
+    "duplicate_keys": 0
+  },
+  "tolerances": {
+    "row_identity_ha": 2e-06,
+    "vector_raster_domain_relative": 0.002,
+    "within_grid_temporal_support_relative": 1e-10,
+    "cross_grid_support_relative": 0.002,
+    "total_comparison_relative": 5e-06,
+    "total_comparison_absolute_ha": 1.0,
+    "effective_total_relative_rule": "for each grid and interval: max(base relative tolerance, that grid-interval vector-raster domain support relative difference)",
+    "maximum_effective_total_relative_tolerance": 0.00042654895120935316,
+    "effective_total_relative_tolerance_by_grid": {
+      "hex10k_base": 0.00042024694983878997,
+      "hex20k_shift": 0.0004240564771119519,
+      "hex40k_base": 0.00042654895120935316
+    }
+  },
+  "row_checks": {
+    "maximum_observation_partition_residual_ha": 2.5465851649641987e-11
+  },
+  "support_checks": {
+    "minimum_raster_domain_support_ha": 497985589.45738876,
+    "maximum_raster_domain_support_ha": 497988726.44496185,
+    "maximum_vector_raster_domain_relative_difference": 0.00042654895120935316,
+    "maximum_within_grid_support_relative_spread": 3.961773736328809e-14,
+    "per_grid": {
+      "hex10k_base": {
+        "intervals": 8,
+        "minimum_raster_domain_support_ha": 497985589.45738876,
+        "maximum_raster_domain_support_ha": 497985589.457404,
+        "mean_raster_domain_support_ha": 497985589.45739913,
+        "within_grid_support_relative_spread": 3.064102533393757e-14,
+        "maximum_vector_raster_domain_relative_difference": 0.00042024694983878997
+      },
+      "hex20k_shift": {
+        "intervals": 8,
+        "minimum_raster_domain_support_ha": 497987485.7501577,
+        "maximum_raster_domain_support_ha": 497987485.75017744,
+        "mean_raster_domain_support_ha": 497987485.75016725,
+        "within_grid_support_relative_spread": 3.961773736328809e-14,
+        "maximum_vector_raster_domain_relative_difference": 0.0004240564771119519
+      },
+      "hex40k_base": {
+        "intervals": 8,
+        "minimum_raster_domain_support_ha": 497988726.4449535,
+        "maximum_raster_domain_support_ha": 497988726.44496185,
+        "mean_raster_domain_support_ha": 497988726.4449577,
+        "within_grid_support_relative_spread": 1.675670517307788e-14,
+        "maximum_vector_raster_domain_relative_difference": 0.00042654895120935316
+      }
+    },
+    "maximum_cross_grid_support_relative_spread": 6.299332889272608e-06
+  },
+  "maximum_total_relative_differences": {
+    "consolidation_ha": 0.0001881162162565446,
+    "replenishment_ha": 5.521140336763921e-05,
+    "nat_tmp_endpoint_ha": 1.1505559898939097e-05
+  },
+  "checks": {
+    "raw_file_set_complete": true,
+    "expected_populations_match": true,
+    "keys_are_unique": true,
+    "metadata_are_consistent": true,
+    "areas_are_nonnegative": true,
+    "observation_partitions_close": true,
+    "processes_do_not_exceed_source_stocks": true,
+    "derived_metric_domains_are_valid": true,
+    "fixed_raster_support_matches_vector_domain": true,
+    "raster_support_is_temporally_invariant_within_grid": true,
+    "cross_grid_support_variation_is_within_geometric_tolerance": true,
+    "alternative_totals_match_canonical_totals": true,
+    "diagnostic_interval_is_retained": true,
+    "support_threshold_flags_are_preserved": true
+  }
+}
