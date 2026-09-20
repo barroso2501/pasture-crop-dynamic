@@ -1,0 +1,60 @@
+{
+  "validation_status": "PASS",
+  "script_version": "phase8c-maup-distribution-temporal-comparison-v1",
+  "execution_utc": "2026-09-20T00:07:42.524214+00:00",
+  "script_sha256": "18e2e9f347964ef52cf05d6c05e7373241ec5b06d9e3d37625888f1585a50720",
+  "inputs": {
+    "canonical_panel": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase2/canonical_spatial_metrics_panel_v1.parquet",
+      "sha256": "8c99e77fc85a55e753f95e0e51b7be954ba9c4229a741e9e7b576c6f61637e4c",
+      "rows": 199112
+    },
+    "alternative_panel": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase8/maup_metrics_v1/canonical_maup_core_metrics_panel_v4.parquet",
+      "sha256": "cdd5d4db2abb7648f8801694de93e6976d8073e271c12bd71b8c972b2a366313",
+      "rows": 809800
+    }
+  },
+  "structure": {
+    "harmonized_rows": 1008912,
+    "canonical_rows": 199112,
+    "alternative_rows": 809800,
+    "grids": 4,
+    "intervals": 8,
+    "aggregate_summary_rows": 32,
+    "aggregate_comparison_rows": 192,
+    "distribution_summary_rows": 768,
+    "distribution_comparison_rows": 576,
+    "temporal_comparison_rows": 48,
+    "assessment_rows": 6
+  },
+  "prespecified_thresholds": {
+    "focal_total_relative_difference": 0.002,
+    "aggregate_rate_or_index_absolute_difference": 0.02,
+    "net_balance_difference_over_canonical_gross": 0.02,
+    "weighted_ks_distance": 0.1,
+    "defined_support_fraction_absolute_difference": 0.05,
+    "temporal_spearman": 0.9,
+    "extremum_interval_distance": 1
+  },
+  "result_counts": {
+    "aggregate_failed": 0,
+    "distribution_failed": 109,
+    "temporal_failed": 0,
+    "overall_assessments_passing": 2
+  },
+  "checks": {
+    "input_hashes_match": true,
+    "expected_populations_match": true,
+    "keys_are_unique": true,
+    "interval_panels_are_balanced": true,
+    "support_threshold_populations_match_phase8a": true,
+    "diagnostic_interval_is_retained": true,
+    "absolute_cell_areas_are_compared_only_after_support_normalization": true,
+    "aggregate_totals_use_complete_positive_support": true,
+    "distribution_weights_are_positive": true,
+    "conditional_metric_support_is_explicit": true,
+    "primary_and_full_windows_are_separate": true,
+    "robustness_failures_are_reported_as_results_not_runtime_errors": true
+  }
+}

@@ -1,0 +1,7 @@
+﻿comparison_grid,comparison_effect,window,aggregate_checks,aggregate_failed,aggregate_direction_or_class_failed,aggregate_component_pass,distribution_checks,distribution_failed,distribution_component_pass,temporal_checks,temporal_failed,temporal_component_pass,overall_prespecified_robustness_pass,assessment
+hex10k_base,finer_scale_10k,primary_1985_2020,56,0,0,True,56,1,False,8,0,True,False,sensitive_for_at_least_one_criterion
+hex10k_base,finer_scale_10k,full_observed_1985_2025,64,0,0,True,64,1,False,8,0,True,False,sensitive_for_at_least_one_criterion
+hex20k_shift,zoning_shift_20k,primary_1985_2020,56,0,0,True,56,0,True,8,0,True,True,stable_under_prespecified_criteria
+hex20k_shift,zoning_shift_20k,full_observed_1985_2025,64,0,0,True,64,0,True,8,0,True,True,stable_under_prespecified_criteria
+hex40k_base,coarser_scale_40k,primary_1985_2020,56,0,0,True,56,16,False,8,0,True,False,sensitive_for_at_least_one_criterion
+hex40k_base,coarser_scale_40k,full_observed_1985_2025,64,0,0,True,64,20,False,8,0,True,False,sensitive_for_at_least_one_criterion
