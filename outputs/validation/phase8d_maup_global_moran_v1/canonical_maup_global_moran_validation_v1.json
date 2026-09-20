@@ -1,0 +1,183 @@
+{
+  "validation_status": "PASS",
+  "script_version": "phase8d-maup-global-moran-script-revision-2",
+  "execution_utc": "2026-09-20T13:51:21.398621+00:00",
+  "script_sha256": "3a28624bf1e53218537d923a244eac10b5e14b154b3b903e5454c355a234e009",
+  "inputs": {
+    "canonical_panel": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase2/canonical_spatial_metrics_panel_v1.parquet",
+      "sha256": "8c99e77fc85a55e753f95e0e51b7be954ba9c4229a741e9e7b576c6f61637e4c",
+      "bytes": 78033057
+    },
+    "canonical_weights": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase1/canonical_contiguity_weights_v1.parquet",
+      "sha256": "85ab9f0dd027545a611c5e681d39b5e2ee5aa185b5c1d318196b91d69392694f",
+      "bytes": 1174207
+    },
+    "canonical_phase5_results": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase5/global_moran_v1/canonical_global_moran_results_v1.csv",
+      "sha256": "30ababa6003dc03909819563d7b8389ca11c794f9fb9ed58681f4919864966e5",
+      "bytes": 43246
+    },
+    "alternative_panel": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase8/maup_metrics_v1/canonical_maup_core_metrics_panel_v4.parquet",
+      "sha256": "cdd5d4db2abb7648f8801694de93e6976d8073e271c12bd71b8c972b2a366313",
+      "bytes": 73523343
+    },
+    "hex10k_base": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase8/maup_grids_v1/maup_grid_hex10k_base_v1.parquet",
+      "sha256": "306eaa5d72fa57373187d42d9c4f98c3216a8b31ecc30bf4fd5e95fe7112db02",
+      "bytes": 4218622
+    },
+    "hex20k_shift": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase8/maup_grids_v1/maup_grid_hex20k_shift_v1.parquet",
+      "sha256": "838ed063d5976b895155905821803d873b2ba0aae1cd6796b228e0302e978965",
+      "bytes": 2046054
+    },
+    "hex40k_base": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase8/maup_grids_v1/maup_grid_hex40k_base_v1.parquet",
+      "sha256": "57e1fde8fd61cd183acbab78f02585bd57b7e72287a70d8549ead0c33cf83e43",
+      "bytes": 1181142
+    }
+  },
+  "engine_checks": {
+    "sparse_dense_agreement": true,
+    "affine_invariance": true,
+    "exhaustive_permutation_expectation_with_island": true,
+    "constant_undefined": true,
+    "seed_reproducible": true,
+    "by_reference": true,
+    "axial_neighbor_reference": true
+  },
+  "design": {
+    "analytical_version": "phase8d-maup-global-moran-v1",
+    "permutations": 9999,
+    "master_seed": 20260920,
+    "alternative_support_threshold": 0.5,
+    "metrics": [
+      "consolidation_density_per_10kha",
+      "replenishment_density_per_10kha",
+      "nat_tmp_density_per_10kha",
+      "net_cr_balance_density_per_10kha",
+      "cr_balance_index"
+    ],
+    "moran_absolute_difference_threshold": 0.1,
+    "temporal_spearman_threshold": 0.9,
+    "extremum_interval_distance_threshold": 1,
+    "multiple_testing": "Benjamini-Yekutieli across all three alternative grids; complete/conditional and primary/diagnostic separate"
+  },
+  "structure": {
+    "result_rows": 160,
+    "comparison_rows": 120,
+    "temporal_rows": 30,
+    "assessment_rows": 6,
+    "alternative_permutation_distributions": 120,
+    "simulated_statistics": 1199880
+  },
+  "canonical_reproduction": {
+    "maximum_absolute_raw_moran_residual": 5.773159728050814e-15
+  },
+  "graphs": [
+    {
+      "grid_code": "hex20k_canonical",
+      "support_rule": "complete_canonical_cells",
+      "maximum_neighbor_distance_relative_error": 0.0,
+      "cells": 24889,
+      "undirected_edges": 67453,
+      "components": 264,
+      "islands": 163,
+      "largest_component": 24014,
+      "mean_degree": 5.420306159347503,
+      "degree_distribution_json": "{\"0\": 163, \"1\": 320, \"2\": 644, \"3\": 1214, \"4\": 1743, \"5\": 2146, \"6\": 18659}"
+    },
+    {
+      "grid_code": "hex10k_base",
+      "support_rule": "domain_support_fraction_ge_0p50",
+      "maximum_neighbor_distance_relative_error": 7.092744452373343e-14,
+      "cells": 49716,
+      "undirected_edges": 138782,
+      "components": 264,
+      "islands": 82,
+      "largest_component": 48098,
+      "mean_degree": 5.582991391101456,
+      "degree_distribution_json": "{\"0\": 82, \"1\": 340, \"2\": 822, \"3\": 1579, \"4\": 3789, \"5\": 2937, \"6\": 40167}"
+    },
+    {
+      "grid_code": "hex20k_shift",
+      "support_rule": "domain_support_fraction_ge_0p50",
+      "maximum_neighbor_distance_relative_error": 3.578956997970025e-14,
+      "cells": 25015,
+      "undirected_edges": 69656,
+      "components": 101,
+      "islands": 38,
+      "largest_component": 24413,
+      "mean_degree": 5.569138516889866,
+      "degree_distribution_json": "{\"0\": 38, \"1\": 151, \"2\": 433, \"3\": 1025, \"4\": 1601, \"5\": 1786, \"6\": 19981}"
+    },
+    {
+      "grid_code": "hex40k_base",
+      "support_rule": "domain_support_fraction_ge_0p50",
+      "maximum_neighbor_distance_relative_error": 2.5391686583675453e-14,
+      "cells": 12445,
+      "undirected_edges": 33748,
+      "components": 113,
+      "islands": 68,
+      "largest_component": 12047,
+      "mean_degree": 5.423543591803937,
+      "degree_distribution_json": "{\"0\": 68, \"1\": 136, \"2\": 310, \"3\": 614, \"4\": 913, \"5\": 1178, \"6\": 9226}"
+    }
+  ],
+  "result_counts": {
+    "alternative_significant_by": 120,
+    "interval_failed": 1,
+    "temporal_failed": 8,
+    "assessments_passing": 0
+  },
+  "checks": {
+    "input_hashes_match": true,
+    "panel_populations_match": true,
+    "canonical_graph_matches_phase1": true,
+    "alternative_axial_graphs_match_geometry": true,
+    "support_threshold_populations_match_phase8a": true,
+    "canonical_engine_reproduces_phase5": true,
+    "density_normalization_applied_to_area_metrics": true,
+    "conditional_balance_support_preserved": true,
+    "primary_and_diagnostic_families_are_separate": true,
+    "checkpoint_design_authenticated": true,
+    "sensitivity_is_reported_as_result_not_validation_error": true
+  },
+  "outputs": {
+    "canonical_maup_global_moran_results_v1.csv": {
+      "bytes": 75408,
+      "sha256": "ed228e0e2d0b959521192a7132142dc365d15d18c528df7ad222449b58c667c9"
+    },
+    "canonical_maup_global_moran_comparison_v1.csv": {
+      "bytes": 37722,
+      "sha256": "067cd3e828c7b6a1ece9a435c0129736f01a4cf9d1420eba4b18da765386cfd5"
+    },
+    "canonical_maup_global_moran_temporal_comparison_v1.csv": {
+      "bytes": 5513,
+      "sha256": "02f4752fc9c6524821b8b80d64b5269abb647fe92ff0092cede9d951319179dd"
+    },
+    "canonical_maup_global_moran_assessment_v1.csv": {
+      "bytes": 846,
+      "sha256": "fac984fff7abf20b4cb9c284c8bdc082e775d0d656a369d77617bae6282d8e39"
+    },
+    "canonical_maup_global_moran_graph_summary_v1.csv": {
+      "bytes": 946,
+      "sha256": "fc3316f444f375037e67fe9d4816e7dd323621253438b51eb891e03ad0b6d29e"
+    },
+    "canonical_maup_global_moran_permutations_v1.npz": {
+      "bytes": 9232011,
+      "sha256": "4af6b60bf6c62dbb51efbc447a3aa3e769382739140b67f0e10c738151495098"
+    },
+    "fig01_maup_global_moran_trajectories_v1.png": {
+      "bytes": 396082,
+      "sha256": "4691f2f141fd35f0005f66f9a12feb87bbf6d02551195a337cc6f3939a0a10c8"
+    },
+    "fig02_maup_global_moran_difference_heatmap_v1.png": {
+      "bytes": 206466,
+      "sha256": "87bc3ea9ce07e0a7f5a3e87de95ef3e791175d176f02e3ba9b529fd521ccbfa2"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "review_status": "PASS",
+  "source_archive_sha256": "2aaa34f2d294631cb91150e62b93d31dee4f1f0b9e530721b40f51de6e6cb815",
+  "source_validation_status": "PASS",
+  "independent_checks": {
+    "inventory_hashes_and_sizes_match": true,
+    "npz_array_count": 120,
+    "all_npz_arrays_length_9999": true,
+    "all_npz_values_finite": true,
+    "maximum_permutation_summary_absolute_error": 9.917739372811152e-17,
+    "maximum_two_sided_p_absolute_error": 0.0,
+    "maximum_by_q_absolute_error": 9.280770596475918e-17,
+    "all_reported_checks_true": true
+  },
+  "verified_counts": {
+    "results": 160,
+    "alternative_comparisons": 120,
+    "temporal_comparisons": 30,
+    "assessments": 6,
+    "alternative_by_significant": 120,
+    "interval_failures": 1,
+    "temporal_failures": 8,
+    "overall_assessments_passing": 0
+  },
+  "interpretation": {
+    "sign_preserved_all_120": true,
+    "significance_preserved_all_120": true,
+    "magnitude_pass_119_of_120": true,
+    "strict_aggregate_failure_is_not_global_instability": true
+  }
+}

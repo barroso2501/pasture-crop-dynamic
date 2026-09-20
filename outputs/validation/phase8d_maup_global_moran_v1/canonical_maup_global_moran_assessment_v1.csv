@@ -1,0 +1,7 @@
+grid_code,comparison_effect,window,interval_checks,interval_failed,magnitude_failed,sign_failed,significance_failed,temporal_checks,temporal_failed,overall_prespecified_robustness_pass,assessment
+hex10k_base,finer_scale_10k,primary_1985_2020,35,0,0,0,0,5,2,False,sensitive_for_at_least_one_criterion
+hex10k_base,finer_scale_10k,full_observed_1985_2025,40,0,0,0,0,5,2,False,sensitive_for_at_least_one_criterion
+hex20k_shift,zoning_shift_20k,primary_1985_2020,35,0,0,0,0,5,1,False,sensitive_for_at_least_one_criterion
+hex20k_shift,zoning_shift_20k,full_observed_1985_2025,40,0,0,0,0,5,1,False,sensitive_for_at_least_one_criterion
+hex40k_base,coarser_scale_40k,primary_1985_2020,35,1,1,0,0,5,1,False,sensitive_for_at_least_one_criterion
+hex40k_base,coarser_scale_40k,full_observed_1985_2025,40,1,1,0,0,5,1,False,sensitive_for_at_least_one_criterion

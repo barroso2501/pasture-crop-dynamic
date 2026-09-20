@@ -1,0 +1,5 @@
+grid_code,support_rule,maximum_neighbor_distance_relative_error,cells,undirected_edges,components,islands,largest_component,mean_degree,degree_distribution_json
+hex20k_canonical,complete_canonical_cells,0,24889,67453,264,163,24014,5.4203061593475033,"{""0"": 163, ""1"": 320, ""2"": 644, ""3"": 1214, ""4"": 1743, ""5"": 2146, ""6"": 18659}"
+hex10k_base,domain_support_fraction_ge_0p50,7.0927444523733426e-14,49716,138782,264,82,48098,5.5829913911014559,"{""0"": 82, ""1"": 340, ""2"": 822, ""3"": 1579, ""4"": 3789, ""5"": 2937, ""6"": 40167}"
+hex20k_shift,domain_support_fraction_ge_0p50,3.5789569979700249e-14,25015,69656,101,38,24413,5.5691385168898657,"{""0"": 38, ""1"": 151, ""2"": 433, ""3"": 1025, ""4"": 1601, ""5"": 1786, ""6"": 19981}"
+hex40k_base,domain_support_fraction_ge_0p50,2.5391686583675453e-14,12445,33748,113,68,12047,5.423543591803937,"{""0"": 68, ""1"": 136, ""2"": 310, ""3"": 614, ""4"": 913, ""5"": 1178, ""6"": 9226}"
