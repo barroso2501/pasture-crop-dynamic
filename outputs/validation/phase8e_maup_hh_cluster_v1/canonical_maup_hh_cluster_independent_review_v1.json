@@ -1,0 +1,54 @@
+{
+  "review_status": "PASS",
+  "review_date": "2026-09-21",
+  "scope": "Independent review of transferred compact Phase 8E outputs and figures",
+  "script_version": "phase8e-maup-hh-cluster-robustness-v1",
+  "script_sha256": "2666bd3c8e2e770325dc9a8f27e24c7d4ea98a1f5787c9f0fddc065f1e3406f5",
+  "verified": {
+    "validation_status_pass": true,
+    "engine_checks_pass": true,
+    "alternative_maps": 120,
+    "cell_map_rows": 3487040,
+    "interval_comparisons": 240,
+    "temporal_comparisons": 60,
+    "primary_assessments": 30,
+    "primary_interval_location_passes": 94,
+    "primary_temporal_passes": 26,
+    "overall_assessments_passing": 21,
+    "class_count_sum_matches_cell_map_rows": true,
+    "interval_rule_discrepancies": 0,
+    "temporal_rule_discrepancies": 0,
+    "assessment_rule_discrepancies": 0,
+    "supplied_output_hashes_match_inventory": true,
+    "figures_present_and_legible": true
+  },
+  "crosswalk_relative_closure_error_max": 2.5219646607709e-16,
+  "source_archives": {
+    "compact_outputs_sha256": "0ee001ba4f70df68df8554a92655ba9339f830f7f8321db48108a22f47a613bc",
+    "figures_sha256": "8cc6ca290f7e689bc5487321e1b44ad6bfe621ca284f714da9aca67c73b5ace5"
+  },
+  "large_parquet_review": {
+    "included_in_transferred_review_material": false,
+    "independently_rehashed": false,
+    "reason": "The three large alternative Local Moran result Parquets were not uploaded for independent review.",
+    "execution_inventory_hashes_retained": true,
+    "files": {
+      "alternative_local_moran_hex10k_base_v1.parquet": "87ed0fa499819d473e2c6d7672e456fc7f53b60d1cbf495682ef5486c6a9544a",
+      "alternative_local_moran_hex20k_shift_v1.parquet": "5cedc39823d13e5ff88410d09db233a1e5bfb5d4319a64f1289e9bd0370b66a2",
+      "alternative_local_moran_hex40k_base_v1.parquet": "566b9748fd263e80088c10b3a24369a953d10d7b142d7577afdd1dc3c867f1a8"
+    }
+  },
+  "interpretation": {
+    "phase8_closed": true,
+    "canonical_grid_remains_primary": true,
+    "validation_pass_does_not_mean_all_robustness_criteria_passed": true,
+    "robust_metrics": [
+      "replenishment_density_per_10kha",
+      "net_cr_balance_density_per_10kha",
+      "cr_balance_index"
+    ],
+    "partially_robust_metric": "consolidation_density_per_10kha",
+    "maup_sensitive_metric": "nat_tmp_density_per_10kha",
+    "by_empty_empty_interval_comparisons": 23
+  }
+}

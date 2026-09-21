@@ -1,0 +1,87 @@
+{
+  "validation_status": "PASS",
+  "mode": "pilot",
+  "script_version": "phase8e-maup-hh-cluster-robustness-v1",
+  "execution_utc": "2026-09-21T16:15:32.963039+00:00",
+  "script_sha256": "2666bd3c8e2e770325dc9a8f27e24c7d4ea98a1f5787c9f0fddc065f1e3406f5",
+  "engine_checks": {
+    "bh_reference": true,
+    "by_reference": true,
+    "run_reference": true,
+    "weighted_spearman_reference": true,
+    "pysal_quadrants": {
+      "1": "HH",
+      "2": "LH",
+      "3": "LL",
+      "4": "HL"
+    }
+  },
+  "inputs": {
+    "canonical_local": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase6/local_moran_v1/canonical_local_moran_cell_results_v1.parquet",
+      "sha256": "ec5906cb86e4044082db91d4cf11440b0d5401f6f8b6484217c7e246449ca2b4",
+      "bytes": 29702347
+    },
+    "canonical_spatial": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase1/canonical_spatial_support_v1.parquet",
+      "sha256": "22425834aee2826f5261fdbda959719a4e46d7c6589a91417cc0328c3112cecc",
+      "bytes": 4347874
+    },
+    "alternative_panel": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase8/maup_metrics_v1/canonical_maup_core_metrics_panel_v4.parquet",
+      "sha256": "cdd5d4db2abb7648f8801694de93e6976d8073e271c12bd71b8c972b2a366313",
+      "bytes": 73523343
+    },
+    "hex10k_base": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase8/maup_grids_v1/maup_grid_hex10k_base_v1.parquet",
+      "sha256": "306eaa5d72fa57373187d42d9c4f98c3216a8b31ecc30bf4fd5e95fe7112db02",
+      "bytes": 4218622
+    },
+    "hex20k_shift": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase8/maup_grids_v1/maup_grid_hex20k_shift_v1.parquet",
+      "sha256": "838ed063d5976b895155905821803d873b2ba0aae1cd6796b228e0302e978965",
+      "bytes": 2046054
+    },
+    "hex40k_base": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase8/maup_grids_v1/maup_grid_hex40k_base_v1.parquet",
+      "sha256": "57e1fde8fd61cd183acbab78f02585bd57b7e72287a70d8549ead0c33cf83e43",
+      "bytes": 1181142
+    }
+  },
+  "test": {
+    "grid_code": "hex20k_shift",
+    "metric": "nat_tmp_density_per_10kha",
+    "t0": 2005,
+    "rows": 25015,
+    "permutations": 9999,
+    "bh_hh_cells": 65,
+    "canonical_hh_area_ha": 10419916.805229774,
+    "alternative_hh_area_ha": 1299971.2351793502,
+    "intersection_ha": 1249981.6738156676,
+    "union_ha": 10469906.366593454,
+    "jaccard": 0.11938804704156762,
+    "overlap_coefficient": 0.9615456403873538,
+    "canonical_capture": 0.11996081131744735,
+    "alternative_precision": 0.9615456403873538,
+    "footprint_ratio_alternative_to_canonical": 0.12475831232423013,
+    "jaccard_threshold": 0.4,
+    "overlap_coefficient_threshold": 0.6,
+    "location_criterion_pass": false
+  },
+  "crosswalk": {
+    "config": {
+      "version": "phase8e-maup-hh-cluster-robustness-v1",
+      "grid_code": "hex20k_shift",
+      "canonical_spatial_sha256": "22425834aee2826f5261fdbda959719a4e46d7c6589a91417cc0328c3112cecc",
+      "alternative_grid_sha256": "838ed063d5976b895155905821803d873b2ba0aae1cd6796b228e0302e978965",
+      "support_threshold": 0.5,
+      "crs": "+proj=aea +lat_0=-32 +lon_0=-60 +lat_1=-5 +lat_2=-42 +x_0=0 +y_0=0 +ellps=GRS80 +units=m +no_defs"
+    },
+    "rows": 93843,
+    "shared_support_ha": 472684218.79607964,
+    "expected_selected_domain_intersection_ha": 472684218.7960795,
+    "relative_area_closure_error": 2.5219646607709e-16,
+    "parquet_sha256": "34eb3574e59a8c6f56e6e49070da4406f7b09dc78955001176ef4993400beeea",
+    "created_utc": "2026-09-21T16:15:20.917520+00:00"
+  }
+}
