@@ -1,0 +1,3 @@
+﻿window,intervals,consolidation_ha,pas_tmp_censored_ha,pas_tmp_censored_share,pas_tmp_new_ha,pas_tmp_new_share,pas_tmp_unresolved_age_ha,pas_tmp_unresolved_age_share,pas_tmp_unattributed_age_ha,pas_tmp_unattributed_age_share,partition_residual_ha
+primary_1985_2020,7,20119468.0985724,10407770.8220209,0.517298507645904,9711546.26162708,0.482693986443717,151.014924416618,7.50591037878053e-06,0,0,0
+full_observed_1985_2025,8,22205794.8486017,11038814.6814184,0.497114143253176,11166803.4467693,0.502877898445164,176.720413998412,7.95830165969225e-06,0,0,0
