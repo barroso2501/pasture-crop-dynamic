@@ -1,0 +1,82 @@
+{
+  "validation_status": "PASS",
+  "version": "phase9a-integrated-evidence-matrix-v1",
+  "execution_utc": "2026-09-21T19:38:02.197118+00:00",
+  "script_sha256": "f37d09b04ceb807ace3fcdd6dd5511d2dd8802c263274262fa10e8ea2f59220d",
+  "claims_config": {
+    "path": "/content/deliverables/phase9a_evidence_matrix_implementation_v1/config/phase9a_evidence_claims_v1.csv",
+    "sha256": "ae2da74bf3ad61ea1acb94e8b69f4cc2e70c19e8a71a5c45277e2c0151a0244b"
+  },
+  "source_manifest": {
+    "path": "/content/deliverables/phase9a_evidence_matrix_implementation_v1/config/phase9a_source_manifest_v1.csv",
+    "sha256": "bc293a5ec92e013e89f7534727c31ab35adc658f0831d0487efb85fd193cd97c",
+    "sources": 16
+  },
+  "claim_summary": {
+    "claim_rows": 30,
+    "research_questions": 5,
+    "supported": 21,
+    "qualified": 7,
+    "evidence_gaps": 2,
+    "causal_claims": 0
+  },
+  "numeric_source_checks": {
+    "phase2_intervals": 8,
+    "phase3_distribution_rows": 96,
+    "phase7_validation_status": "PASS",
+    "phase8c_overall_passes": 2,
+    "phase8d_sign_failures": 0,
+    "phase8d_significance_failures": 0,
+    "phase8e_overall_passes": 21,
+    "phase8e_passes_by_metric": {
+      "consolidation_density_per_10kha": 3,
+      "cr_balance_index": 6,
+      "nat_tmp_density_per_10kha": 0,
+      "net_cr_balance_density_per_10kha": 6,
+      "replenishment_density_per_10kha": 6
+    }
+  },
+  "design_boundaries": {
+    "new_metrics_computed": false,
+    "new_hypothesis_tests": false,
+    "causal_inference": false,
+    "primary_period": "1985-2020",
+    "diagnostic_extension": "2020-2025 included and flagged",
+    "canonical_grid_remains_primary": true
+  },
+  "checks": {
+    "all_sources_authenticated": true,
+    "claim_population_exact": true,
+    "claim_ids_unique": true,
+    "all_research_questions_represented": true,
+    "evidence_gaps_explicit": true,
+    "no_causal_claims": true,
+    "phase2_direction_reproduced": true,
+    "phase7_validation_accepted": true,
+    "phase8c_counts_reproduced": true,
+    "phase8d_counts_reproduced": true,
+    "phase8e_counts_reproduced": true,
+    "diagnostic_extension_retained": true
+  },
+  "outputs": {
+    "canonical_integrated_evidence_matrix_v1.csv": {
+      "rows": 30,
+      "sha256": "c01d351085fecd5585d53dc9b331cfa8f1df46744dfdd8125b4f8d4a0e0f48c5"
+    },
+    "canonical_integrated_evidence_matrix_v1.md": {
+      "sha256": "0440a0908ec36ae91fbabd4dd73fc1c420e9dcc8a99911fdc8b0b5bd31fa181a"
+    },
+    "canonical_phase9a_evidence_coverage_v1.csv": {
+      "rows": 5,
+      "sha256": "d87c3620cd12e58791c4cf3d9f1adf447966f06bd19637f3643a03f48f2989c8"
+    },
+    "canonical_phase9a_open_evidence_gaps_v1.csv": {
+      "rows": 2,
+      "sha256": "629bd6b01bcdfa4cf3b938a93e6494012cb51740c97de9e73b5d9960d4ef2fc0"
+    },
+    "canonical_phase9a_source_inventory_v1.csv": {
+      "rows": 16,
+      "sha256": "93d36b4d24c4b49865e3e3da662d4159ad4b36ffcd8e5894b7af3a22bc92fcf6"
+    }
+  }
+}
