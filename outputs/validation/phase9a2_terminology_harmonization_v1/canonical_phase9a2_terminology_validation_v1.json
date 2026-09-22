@@ -1,0 +1,110 @@
+{
+  "validation_status": "PASS",
+  "version": "phase9a2-tmp-terminology-harmonization-v1",
+  "evidence_matrix_version": "phase9a2-terminology-harmonized-evidence-matrix-v3",
+  "execution_utc": "2026-09-22T19:32:44.920439+00:00",
+  "script_sha256": "395a7328fc49c336745ed90f6db4cdd5be0d949bb77b64eb115e2c1ed1273d3f",
+  "terminology_config": {
+    "path": "/content/phase9a2_tmp_terminology_implementation_v1/config/phase9a2_tmp_terminology_crosswalk_v1.csv",
+    "sha256": "877cfb6ea0760e7ede7ca17b36d4968f1f40dd6ee0b9b169e300528e11c123d1",
+    "rows": 6
+  },
+  "accepted_inputs": {
+    "phase9a1_validation": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase9/gap_resolution_v1/canonical_phase9_gap_resolution_validation_v1.json",
+      "sha256": "16443cc274772e43cc575d3687888d56a09fc420dd18d68fc4266525bc244951",
+      "version": "phase9-rq1-rq2-gap-resolution-v1"
+    },
+    "matrix_v2": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase9/gap_resolution_v1/canonical_integrated_evidence_matrix_v2.csv",
+      "sha256": "b5d5518545b23f3e1ef6e2692445021461eaad0a301711acf611bdae887eaa62",
+      "rows": 35
+    },
+    "cohort_summary": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase9/gap_resolution_v1/canonical_fixed_1985_pasture_cohort_summary_v1.csv",
+      "sha256": "f2e69d49999ec12e172a42365b3ffa4ff29d4afbd8c743057e92cde69b04fb85"
+    },
+    "origin_interval_summary": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase9/gap_resolution_v1/canonical_pas_tmp_origin_interval_summary_v1.csv",
+      "sha256": "0fb7d6db97ef929e6dddcd26c4570b3b569abda94e40789fd96a7c5c267bfb47"
+    }
+  },
+  "change_scope": {
+    "preferred_class_label": "Temporary Crop",
+    "preferred_running_prose": "temporary crops",
+    "deprecated_phrase": "temporary agriculture",
+    "human_readable_replacements": 5,
+    "changed_findings": [
+      "P9A031",
+      "P9A033",
+      "P9A034",
+      "P9A035"
+    ],
+    "stable_codes_preserved": [
+      "TMP",
+      "tmp",
+      "NAT→TMP",
+      "PAS→TMP",
+      "nat_tmp",
+      "pas_tmp"
+    ],
+    "numerical_recalculation": false,
+    "accepted_v1_v2_files_modified": false
+  },
+  "populations": {
+    "matrix_v2_rows": 35,
+    "matrix_v3_rows": 35,
+    "crosswalk_rows": 6,
+    "occurrence_audit_rows": 4,
+    "remaining_evidence_gaps": 0
+  },
+  "checks": {
+    "accepted_phase9a1_validation_authenticated": true,
+    "accepted_matrix_v2_authenticated": true,
+    "matrix_population_preserved": true,
+    "finding_identity_and_order_preserved": true,
+    "source_hashes_preserved": true,
+    "expected_human_readable_replacements": true,
+    "deprecated_phrase_absent_from_matrix_v3": true,
+    "technical_column_names_preserved": true,
+    "evidence_coverage_preserved": true,
+    "no_evidence_gaps": true,
+    "no_causal_claims": true,
+    "diagnostic_records_preserved": true,
+    "other_agriculture_label_protected": true
+  },
+  "outputs": {
+    "canonical_phase9a2_tmp_terminology_crosswalk_v1.csv": {
+      "bytes": 1280,
+      "sha256": "1c7c8b2663794ee9853b269e92666e13b552cb89c69570d74c01d5e371fcc2f5"
+    },
+    "canonical_phase9a2_occurrence_audit_v1.csv": {
+      "bytes": 1348,
+      "sha256": "48ab1ef87161f512ef2715d8616d947cfca5766d92a42c0c7ac1e4f85c91a18d"
+    },
+    "canonical_integrated_evidence_matrix_v3.csv": {
+      "bytes": 24493,
+      "sha256": "19a3bffcca22dfa7d8b14e70658e06563ca6437d79b2f06f9ef3affae125a075"
+    },
+    "canonical_integrated_evidence_matrix_v3.md": {
+      "bytes": 21472,
+      "sha256": "3104af29f7149bceb1e81947ec03499ce28752a1113fd54a6d3b49ac4893fbd5"
+    },
+    "canonical_phase9a_evidence_coverage_v3.csv": {
+      "bytes": 294,
+      "sha256": "8ffeb448bd132d309f8ef317a73352bf5bc8b2fa1e24173919171331690148f8"
+    },
+    "canonical_phase9a2_terminology_note_v1.md": {
+      "bytes": 896,
+      "sha256": "d482319ced49ae42c7a513b1e48163beb4d18bdabb9b35e9ac9e66745e9ec082"
+    },
+    "figures/fig01_fixed_1985_pasture_cohort_composition_v2.png": {
+      "bytes": 128057,
+      "sha256": "e90a10ec2ddafa8c99aa9ef3f1506170066e0c750d2a80fc04e9c1999e06e146"
+    },
+    "figures/fig02_pas_tmp_origin_composition_v2.png": {
+      "bytes": 112299,
+      "sha256": "2192007631b499a7f34295c19dec337fc8abe7bdd0cdbc3439c3437d336f5dff"
+    }
+  }
+}
