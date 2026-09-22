@@ -1,0 +1,7 @@
+term_id,context,stable_code,portuguese_label,preferred_english,deprecated_english,replacement_scope,implementation_note
+TMP_CLASS,class_label,TMP,Agricultura temporária,Temporary Crop,Temporary Agriculture,human_readable_english_only,Use title case in legends and class lists.
+TMP_PROSE,running_prose,TMP,agricultura temporária,temporary crops,temporary agriculture,human_readable_english_only,Use the plural common noun in ordinary sentences.
+TMP_MODIFIER,compound_modifier,TMP,de agricultura temporária,temporary-crop,temporary-agriculture,human_readable_english_only,Use a hyphen only when the term modifies another noun.
+NAT_TMP,transition_label,NAT→TMP,vegetação nativa→agricultura temporária,native vegetation to temporary crops,native vegetation to temporary agriculture,human_readable_english_only,Preserve NAT→TMP in identifiers tables and compact analytical notation.
+PAS_TMP,transition_label,PAS→TMP,pastagem→agricultura temporária,pasture to temporary crops,pasture to temporary agriculture,human_readable_english_only,Preserve PAS→TMP in identifiers tables and compact analytical notation.
+OAG_CLASS,protected_separate_class,OAG,outras classes agrícolas,Other Agriculture,,no_replacement,Do not replace or merge this separate analytical class.
