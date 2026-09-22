@@ -1,0 +1,6 @@
+﻿research_question,evidence_rows,supported_rows,qualified_rows,evidence_gap_rows,descriptive_rows,formal_inference_rows,sensitivity_rows,primary_or_both_rows,diagnostic_only_rows
+RQ1,1,0,0,1,0,0,0,1,0
+RQ2,1,0,0,1,0,0,0,1,0
+RQ3,2,1,1,0,2,0,0,2,0
+RQ4,18,15,3,0,9,6,2,18,0
+RQ5,8,5,3,0,0,0,8,7,1
