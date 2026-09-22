@@ -198,6 +198,8 @@ Phase 9A authenticated and integrated the accepted findings from the preceding p
 
 For RQ1, the analysis follows the same fixed baseline pixels at nine reference years; it does not treat endpoint composition as a survival curve or reconstruct pixel-level alternation. For RQ2, the share of PAS→TMP consolidation originating from pasture established during the observed series increases from 0% in 1985–1990 to 62.71% in 2015–2020. Across the primary period, 51.73% of accumulated consolidation originates from the left-censored 1985 stock and 48.27% from pasture established during the series. These pooled areas sum interval conversions and do not deduplicate pixels across intervals.
 
+Phase 9A.2 — TMP terminology harmonization: complete. The preferred English class label is Temporary Crop, with temporary crops in running prose. Stable codes and fields remain unchanged. The terminology-harmonized evidence matrix v3 supersedes v2 for new English-language synthesis, while v1 and v2 remain immutable provenance records.
+
 The evidence-integration stage is therefore complete. The next stage is the final narrative, figure, table, and manuscript-facing synthesis, using the authenticated matrix and retaining all documented qualifications.
 
 Key Phase 9 records are:
