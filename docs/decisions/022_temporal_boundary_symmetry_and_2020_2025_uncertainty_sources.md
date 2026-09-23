@@ -93,7 +93,7 @@ Native-vegetation classes are stabilized primarily through biome-specific edge m
 
 After biome layers are merged, a further harmonization pass applies. The agriculture post-integration filter (3-year window) covers 1986–2024, again excluding both 1985 and 2025. The pasture post-integration filter (5-year window) covers 1987–2023, excluding 1985–1986 and 2024–2025. Both series edges therefore sit outside the final harmonization step for the two classes central to RQ1–RQ3 (`PAS`, `TMP`), independent of and in addition to the class-specific filters above.
 
-### Implication for Decision 021, Section 3
+### Implication for Decision 022, Section 3
 
 The `temporal-filter-limited` label should not be applied uniformly to 2020–2025:
 
