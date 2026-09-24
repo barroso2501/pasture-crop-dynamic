@@ -40,7 +40,7 @@ The main analytical system contains three focal states:
 
 - **NAT** — native vegetation;
 - **PAS** — planted pasture;
-- **TMP** — temporary agriculture.
+- **TMP** — temporary crop.
 
 Additional categories are retained where necessary to close the accounting system, including mosaic or other agricultural uses, other anthropogenic or non-vegetated uses, water, and unobserved or masked pixels.
 
