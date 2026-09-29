@@ -1,0 +1,529 @@
+{
+  "status": "PASS",
+  "scope": "canonical_full_domain_one_interval",
+  "interval": "2005_2010",
+  "t0": 2005,
+  "t1": 2010,
+  "diagnostic_interval": 0,
+  "tolerance_ha_per_cell": 0.01,
+  "baseline_sha256": "9d3add0ec1603776f2ed489111876bc31fae4cdfb05729afed113824d7e16f18",
+  "inventory": [
+    {
+      "batch": 0,
+      "file": "canonical_pas_tmp_origin_2005_2010_b00_v4.csv",
+      "cells": 3168,
+      "bytes": 657743,
+      "sha256": "4db69f44b2eab7f3dcf2f34f7ec95d214b65d03ef22dea8db41e106abc55e9fe"
+    },
+    {
+      "batch": 1,
+      "file": "canonical_pas_tmp_origin_2005_2010_b01_v4.csv",
+      "cells": 3128,
+      "bytes": 652900,
+      "sha256": "02e45b96e8fd8f9b7f48985e520881b40b77ea3d6067998c6cef8461352a8242"
+    },
+    {
+      "batch": 2,
+      "file": "canonical_pas_tmp_origin_2005_2010_b02_v4.csv",
+      "cells": 3061,
+      "bytes": 639930,
+      "sha256": "4ddcc679c6287b67201e02786aa8adeb71f2b3ea7ef2a0601075621595d0f6c5"
+    },
+    {
+      "batch": 3,
+      "file": "canonical_pas_tmp_origin_2005_2010_b03_v4.csv",
+      "cells": 3118,
+      "bytes": 652064,
+      "sha256": "b325302917157053a1729e0eaace524822712f17baaabdfa3abb9e384c1ceb12"
+    },
+    {
+      "batch": 4,
+      "file": "canonical_pas_tmp_origin_2005_2010_b04_v4.csv",
+      "cells": 3104,
+      "bytes": 649267,
+      "sha256": "3e8cf155f9d802cef3818af34f3e461f77fa853c0cedac29c7cfd9ab83a28801"
+    },
+    {
+      "batch": 5,
+      "file": "canonical_pas_tmp_origin_2005_2010_b05_v4.csv",
+      "cells": 3105,
+      "bytes": 650666,
+      "sha256": "e700b389f624a165124591bb5d5cacbde773456af49f08f31b3951c25e087100"
+    },
+    {
+      "batch": 6,
+      "file": "canonical_pas_tmp_origin_2005_2010_b06_v4.csv",
+      "cells": 3088,
+      "bytes": 648060,
+      "sha256": "3a1742afe182506aad58b478fb8813df9b5f57c4e56402367cb8976114481280"
+    },
+    {
+      "batch": 7,
+      "file": "canonical_pas_tmp_origin_2005_2010_b07_v4.csv",
+      "cells": 3117,
+      "bytes": 647646,
+      "sha256": "6d68657496f35e66cd3d466e37392ac239fa16d841de8c3538e7de8728d209fd"
+    }
+  ],
+  "full_domain": {
+    "cells": 24889,
+    "changed_cells": 6266,
+    "flow_pas_tmp_ha": 2825891.9739923896,
+    "flow_nat_pas_ha": 10058052.561762612,
+    "old_ha": {
+      "censored": 1352159.02674731,
+      "new": 1473699.4503633808,
+      "unresolved": 33.49688169935755,
+      "unattributed": 0.0
+    },
+    "reconstructed_ha": {
+      "initial": 1164341.1313870416,
+      "new": 1661537.7283480735,
+      "unresolved": 13.114257276058197
+    },
+    "transfers_ha": {
+      "censored": {
+        "initial": 1164341.1313870416,
+        "new": 187817.7183713544,
+        "unresolved": 0.17698891460895538
+      },
+      "new": {
+        "initial": 0.0,
+        "new": 1473699.1885538083,
+        "unresolved": 0.2618095725774765
+      },
+      "unresolved": {
+        "initial": 0.0,
+        "new": 20.821422910485783,
+        "unresolved": 12.675458788871765
+      },
+      "unattributed": {
+        "initial": 0.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      }
+    },
+    "old_pct": {
+      "censored": 47.84892838054933,
+      "new": 52.14988626339294,
+      "unresolved": 0.0011853560577559346,
+      "unattributed": 0.0
+    },
+    "reconstructed_pct": {
+      "initial": 41.20260583570975,
+      "new": 58.796930089322245,
+      "unresolved": 0.00046407496807213464
+    },
+    "initial_minus_old_censored_pp": -6.646322544839585
+  },
+  "batches": {
+    "b00": {
+      "cells": 3168,
+      "changed_cells": 786,
+      "flow_pas_tmp_ha": 351148.22372791666,
+      "flow_nat_pas_ha": 1276101.5794136715,
+      "old_ha": {
+        "censored": 166112.24582068296,
+        "new": 185034.4098900931,
+        "unresolved": 1.568017140030861,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 143873.62027306197,
+        "new": 207273.90596042934,
+        "unresolved": 0.6974944248795509
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 143873.62027306197,
+          "new": 22238.625547620934,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 185034.4098900931,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.87052271515131,
+          "unresolved": 0.6974944248795509
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 47.30544954981553,
+        "new": 52.69410391022367,
+        "unresolved": 0.00044653996064232456,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 40.972333206088166,
+        "new": 59.02746816143181,
+        "unresolved": 0.00019863247988974504
+      },
+      "initial_minus_old_censored_pp": -6.333116343727362
+    },
+    "b01": {
+      "cells": 3128,
+      "changed_cells": 776,
+      "flow_pas_tmp_ha": 370874.58244067244,
+      "flow_nat_pas_ha": 1293115.9642596575,
+      "old_ha": {
+        "censored": 179721.04241545516,
+        "new": 191147.29687088958,
+        "unresolved": 6.24315432789279,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 156742.8383299512,
+        "new": 214129.65008014042,
+        "unresolved": 2.0940305814146996
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 156742.8383299512,
+          "new": 22978.20408550415,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 191147.29687088958,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 4.14912374647809,
+          "unresolved": 2.0940305814146996
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 48.45871109115561,
+        "new": 51.539605548856066,
+        "unresolved": 0.001683359988384075,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 42.26303061764143,
+        "new": 57.73640476275939,
+        "unresolved": 0.0005646195993357605
+      },
+      "initial_minus_old_censored_pp": -6.19568047351418
+    },
+    "b02": {
+      "cells": 3061,
+      "changed_cells": 760,
+      "flow_pas_tmp_ha": 342003.30103256565,
+      "flow_nat_pas_ha": 1229912.403871154,
+      "old_ha": {
+        "censored": 163849.62958843564,
+        "new": 178144.46226353908,
+        "unresolved": 9.209180591445344,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 141864.67420376,
+        "new": 200134.88782616874,
+        "unresolved": 3.739002637565136
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 141864.67420376,
+          "new": 21984.955384675504,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 178144.46226353908,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 5.470177953880207,
+          "unresolved": 3.739002637565136
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 47.90878599526553,
+        "new": 52.088521287862115,
+        "unresolved": 0.0026927168725100824,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 41.48049851432621,
+        "new": 58.5184082206013,
+        "unresolved": 0.0010932650726693152
+      },
+      "initial_minus_old_censored_pp": -6.428287480939325
+    },
+    "b03": {
+      "cells": 3118,
+      "changed_cells": 801,
+      "flow_pas_tmp_ha": 334613.1224036697,
+      "flow_nat_pas_ha": 1262913.219397696,
+      "old_ha": {
+        "censored": 165872.82405169273,
+        "new": 168731.48008110284,
+        "unresolved": 8.818270874052656,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 140627.78631036123,
+        "new": 193981.35892851083,
+        "unresolved": 3.9771647974848747
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 140627.78631036123,
+          "new": 25244.860752416913,
+          "unresolved": 0.17698891460895538
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 168731.48008110284,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 5.018094991176736,
+          "unresolved": 3.8001758828759193
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 49.571523931923835,
+        "new": 50.42584070494074,
+        "unresolved": 0.0026353631354046224,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 42.02697888838653,
+        "new": 57.97183252559238,
+        "unresolved": 0.001188586021048784
+      },
+      "initial_minus_old_censored_pp": -7.544545043537305
+    },
+    "b04": {
+      "cells": 3104,
+      "changed_cells": 775,
+      "flow_pas_tmp_ha": 338144.2171289399,
+      "flow_nat_pas_ha": 1260625.9089788059,
+      "old_ha": {
+        "censored": 154620.61093912178,
+        "new": 183521.94750235378,
+        "unresolved": 1.6586874648928642,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 134240.21152433456,
+        "new": 203904.00560460586,
+        "unresolved": 0.0
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 134240.21152433456,
+          "new": 20380.39941478724,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 183521.94750235378,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 1.6586874648928642,
+          "unresolved": 0.0
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 45.72623250870571,
+        "new": 54.273276964654954,
+        "unresolved": 0.0004905266394842351,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 39.69910018397463,
+        "new": 60.30089981602552,
+        "unresolved": 0.0
+      },
+      "initial_minus_old_censored_pp": -6.027132324731085
+    },
+    "b05": {
+      "cells": 3105,
+      "changed_cells": 800,
+      "flow_pas_tmp_ha": 376579.0699223727,
+      "flow_nat_pas_ha": 1258428.8647028753,
+      "old_ha": {
+        "censored": 174852.4854271552,
+        "new": 201724.4090136144,
+        "unresolved": 2.175481602549553,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 149064.6720618938,
+        "new": 227513.3537451959,
+        "unresolved": 1.0441152825951576
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 149064.6720618938,
+          "new": 25787.813365261543,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 201724.4090136144,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 1.1313663199543953,
+          "unresolved": 1.0441152825951576
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 46.43181190691213,
+        "new": 53.56761039725269,
+        "unresolved": 0.0005776958350335303,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 39.58389723906369,
+        "new": 60.41582549770891,
+        "unresolved": 0.00027726322729789245
+      },
+      "initial_minus_old_censored_pp": -6.847914667848443
+    },
+    "b06": {
+      "cells": 3088,
+      "changed_cells": 784,
+      "flow_pas_tmp_ha": 366892.41598104354,
+      "flow_nat_pas_ha": 1241609.8188140877,
+      "old_ha": {
+        "censored": 179586.47843308476,
+        "new": 187302.54638528044,
+        "unresolved": 3.3911626785993576,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 155860.59950428092,
+        "new": 211030.773864337,
+        "unresolved": 1.0426124259829521
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 155860.59950428092,
+          "new": 23725.878928803846,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 187302.54638528044,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 2.3485502526164055,
+          "unresolved": 1.0426124259829521
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 48.94799418322224,
+        "new": 51.05108152329808,
+        "unresolved": 0.0009242934797470904,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 42.48128135533166,
+        "new": 57.51843447078516,
+        "unresolved": 0.00028417388328812486
+      },
+      "initial_minus_old_censored_pp": -6.466712827890582
+    },
+    "b07": {
+      "cells": 3117,
+      "changed_cells": 784,
+      "flow_pas_tmp_ha": 345637.04135520913,
+      "flow_nat_pas_ha": 1235344.802324664,
+      "old_ha": {
+        "censored": 167543.71007168203,
+        "new": 178092.89835650744,
+        "unresolved": 0.4329270198941231,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 142066.72917939772,
+        "new": 203569.7923386854,
+        "unresolved": 0.5198371261358261
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 142066.72917939772,
+          "new": 25476.980892284268,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 178092.63654693487,
+          "unresolved": 0.2618095725774765
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.17489946633577347,
+          "unresolved": 0.2580275535583496
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 48.47388735152907,
+        "new": 51.52598739366087,
+        "unresolved": 0.00012525481013165096,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 41.102865775718925,
+        "new": 58.896983824565815,
+        "unresolved": 0.00015039971529023493
+      },
+      "initial_minus_old_censored_pp": -7.371021575810147
+    }
+  }
+}

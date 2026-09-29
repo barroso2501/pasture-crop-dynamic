@@ -1,0 +1,567 @@
+{
+  "status": "PASS",
+  "intervals": [
+    {
+      "interval": "1985_1990",
+      "t0": 1985,
+      "t1": 1990,
+      "diagnostic_interval": 0,
+      "full": {
+        "cells": 24889,
+        "changed_cells": 0,
+        "flow_pas_tmp_ha": 1450003.979396596,
+        "flow_nat_pas_ha": 16427491.784642903,
+        "old_ha": {
+          "censored": 1450003.979396596,
+          "new": 0.0,
+          "unresolved": 0.0,
+          "unattributed": 0.0
+        },
+        "reconstructed_ha": {
+          "initial": 1450003.979396596,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "transfers_ha": {
+          "censored": {
+            "initial": 1450003.979396596,
+            "new": 0.0,
+            "unresolved": 0.0
+          },
+          "new": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          },
+          "unresolved": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          },
+          "unattributed": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          }
+        },
+        "old_pct": {
+          "censored": 99.99999999999999,
+          "new": 0.0,
+          "unresolved": 0.0,
+          "unattributed": 0.0
+        },
+        "reconstructed_pct": {
+          "initial": 99.99999999999999,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "initial_minus_old_censored_pp": 0.0
+      }
+    },
+    {
+      "interval": "1990_1995",
+      "t0": 1990,
+      "t1": 1995,
+      "diagnostic_interval": 0,
+      "full": {
+        "cells": 24889,
+        "changed_cells": 3100,
+        "flow_pas_tmp_ha": 1638736.6055271807,
+        "flow_nat_pas_ha": 16853719.73917924,
+        "old_ha": {
+          "censored": 1163701.3381761853,
+          "new": 475032.6558034134,
+          "unresolved": 2.6115475818514824,
+          "unattributed": 0.0
+        },
+        "reconstructed_ha": {
+          "initial": 1153518.2710810308,
+          "new": 485217.11675701535,
+          "unresolved": 1.2176891341805458
+        },
+        "transfers_ha": {
+          "censored": {
+            "initial": 1153518.2710810308,
+            "new": 10183.067095154202,
+            "unresolved": 0.0
+          },
+          "new": {
+            "initial": 0.0,
+            "new": 475032.22199636075,
+            "unresolved": 0.43380705267190933
+          },
+          "unresolved": {
+            "initial": 0.0,
+            "new": 1.827665500342846,
+            "unresolved": 0.7838820815086365
+          },
+          "unattributed": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          }
+        },
+        "old_pct": {
+          "censored": 71.01210372986226,
+          "new": 28.987736906663876,
+          "unresolved": 0.00015936347385194028,
+          "unattributed": 0.0
+        },
+        "reconstructed_pct": {
+          "initial": 70.39070630328322,
+          "new": 29.609219390136296,
+          "unresolved": 7.430658045188511e-05
+        },
+        "initial_minus_old_censored_pp": -0.621397426579037
+      }
+    },
+    {
+      "interval": "1995_2000",
+      "t0": 1995,
+      "t1": 2000,
+      "diagnostic_interval": 0,
+      "full": {
+        "cells": 24889,
+        "changed_cells": 4313,
+        "flow_pas_tmp_ha": 1809550.1348413187,
+        "flow_nat_pas_ha": 15646525.355235565,
+        "old_ha": {
+          "censored": 1104693.3474761653,
+          "new": 704845.8153656722,
+          "unresolved": 10.971999481320381,
+          "unattributed": 0.0
+        },
+        "reconstructed_ha": {
+          "initial": 1035145.531797011,
+          "new": 774399.3824621394,
+          "unresolved": 5.22058216868078
+        },
+        "transfers_ha": {
+          "censored": {
+            "initial": 1035145.531797011,
+            "new": 69547.72966082674,
+            "unresolved": 0.08601832775508657
+          },
+          "new": {
+            "initial": 0.0,
+            "new": 704845.7284858898,
+            "unresolved": 0.08687978237867355
+          },
+          "unresolved": {
+            "initial": 0.0,
+            "new": 5.924315422773361,
+            "unresolved": 5.04768405854702
+          },
+          "unattributed": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          }
+        },
+        "old_pct": {
+          "censored": 61.047954748876684,
+          "new": 38.9514389126047,
+          "unresolved": 0.0006063385186220622,
+          "unattributed": 0.0
+        },
+        "reconstructed_pct": {
+          "initial": 57.20457874397517,
+          "new": 42.79513275436534,
+          "unresolved": 0.0002885016595098968
+        },
+        "initial_minus_old_censored_pp": -3.843376004901515
+      }
+    },
+    {
+      "interval": "2000_2005",
+      "t0": 2000,
+      "t1": 2005,
+      "diagnostic_interval": 0,
+      "full": {
+        "cells": 24889,
+        "changed_cells": 5320,
+        "flow_pas_tmp_ha": 3504280.6272256216,
+        "flow_nat_pas_ha": 16925807.055031713,
+        "old_ha": {
+          "censored": 1885734.772156229,
+          "new": 1618511.732084198,
+          "unresolved": 34.122985194652685,
+          "unattributed": 0.0
+        },
+        "reconstructed_ha": {
+          "initial": 1708658.5948661778,
+          "new": 1795610.451551437,
+          "unresolved": 11.580808006227016
+        },
+        "transfers_ha": {
+          "censored": {
+            "initial": 1708658.5948661778,
+            "new": 177076.0903682474,
+            "unresolved": 0.0869218036532402
+          },
+          "new": {
+            "initial": 0.0,
+            "new": 1618510.4235746693,
+            "unresolved": 1.3085095286369324
+          },
+          "unresolved": {
+            "initial": 0.0,
+            "new": 23.937608520715845,
+            "unresolved": 10.185376673936844
+          },
+          "unattributed": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          }
+        },
+        "old_pct": {
+          "censored": 53.81232192152335,
+          "new": 46.186704326976006,
+          "unresolved": 0.0009737515006515969,
+          "unattributed": 0.0
+        },
+        "reconstructed_pct": {
+          "initial": 48.759182743276526,
+          "new": 51.240486780678914,
+          "unresolved": 0.0003304760445340153
+        },
+        "initial_minus_old_censored_pp": -5.053139178246823
+      }
+    },
+    {
+      "interval": "2005_2010",
+      "t0": 2005,
+      "t1": 2010,
+      "diagnostic_interval": 0,
+      "full": {
+        "cells": 24889,
+        "changed_cells": 6266,
+        "flow_pas_tmp_ha": 2825891.9739923896,
+        "flow_nat_pas_ha": 10058052.561762612,
+        "old_ha": {
+          "censored": 1352159.02674731,
+          "new": 1473699.4503633808,
+          "unresolved": 33.49688169935755,
+          "unattributed": 0.0
+        },
+        "reconstructed_ha": {
+          "initial": 1164341.1313870416,
+          "new": 1661537.7283480735,
+          "unresolved": 13.114257276058197
+        },
+        "transfers_ha": {
+          "censored": {
+            "initial": 1164341.1313870416,
+            "new": 187817.7183713544,
+            "unresolved": 0.17698891460895538
+          },
+          "new": {
+            "initial": 0.0,
+            "new": 1473699.1885538083,
+            "unresolved": 0.2618095725774765
+          },
+          "unresolved": {
+            "initial": 0.0,
+            "new": 20.821422910485783,
+            "unresolved": 12.675458788871765
+          },
+          "unattributed": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          }
+        },
+        "old_pct": {
+          "censored": 47.84892838054933,
+          "new": 52.14988626339294,
+          "unresolved": 0.0011853560577559346,
+          "unattributed": 0.0
+        },
+        "reconstructed_pct": {
+          "initial": 41.20260583570975,
+          "new": 58.796930089322245,
+          "unresolved": 0.00046407496807213464
+        },
+        "initial_minus_old_censored_pp": -6.646322544839585
+      }
+    },
+    {
+      "interval": "2010_2015",
+      "t0": 2010,
+      "t1": 2015,
+      "diagnostic_interval": 0,
+      "full": {
+        "cells": 24889,
+        "changed_cells": 7401,
+        "flow_pas_tmp_ha": 4974529.591197529,
+        "flow_nat_pas_ha": 8697568.465934863,
+        "old_ha": {
+          "censored": 1991031.8248176442,
+          "new": 2983457.6539065233,
+          "unresolved": 40.112473361194134,
+          "unattributed": 0.0
+        },
+        "reconstructed_ha": {
+          "initial": 1708989.7575151818,
+          "new": 3265518.008069728,
+          "unresolved": 21.825612619519234
+        },
+        "transfers_ha": {
+          "censored": {
+            "initial": 1708989.7575151818,
+            "new": 282041.9803525856,
+            "unresolved": 0.08694987744092941
+          },
+          "new": {
+            "initial": 0.0,
+            "new": 2983455.827868781,
+            "unresolved": 1.8260377421975136
+          },
+          "unresolved": {
+            "initial": 0.0,
+            "new": 20.199848361313343,
+            "unresolved": 19.91262499988079
+          },
+          "unattributed": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          }
+        },
+        "old_pct": {
+          "censored": 40.02452469758731,
+          "new": 59.97466894529637,
+          "unresolved": 0.0008063571163024839,
+          "unattributed": 0.0
+        },
+        "reconstructed_pct": {
+          "initial": 34.35480131707837,
+          "new": 65.6447599356548,
+          "unresolved": 0.0004387472668398603
+        },
+        "initial_minus_old_censored_pp": -5.669723380508941
+      }
+    },
+    {
+      "interval": "2015_2020",
+      "t0": 2015,
+      "t1": 2020,
+      "diagnostic_interval": 0,
+      "full": {
+        "cells": 24889,
+        "changed_cells": 8156,
+        "flow_pas_tmp_ha": 3916475.1863855063,
+        "flow_nat_pas_ha": 9016705.139978958,
+        "old_ha": {
+          "censored": 1460446.533241739,
+          "new": 2455998.95410667,
+          "unresolved": 29.69903709824179,
+          "unattributed": 0.0
+        },
+        "reconstructed_ha": {
+          "initial": 1217364.8369658524,
+          "new": 2699100.739561849,
+          "unresolved": 9.609857805073261
+        },
+        "transfers_ha": {
+          "censored": {
+            "initial": 1217364.8369658524,
+            "new": 243081.1855587111,
+            "unresolved": 0.5107171759009361
+          },
+          "new": {
+            "initial": 0.0,
+            "new": 2455998.078729365,
+            "unresolved": 0.8753773048520088
+          },
+          "unresolved": {
+            "initial": 0.0,
+            "new": 21.475273773921472,
+            "unresolved": 8.223763324320316
+          },
+          "unattributed": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          }
+        },
+        "old_pct": {
+          "censored": 37.28981963982714,
+          "new": 62.70942204981255,
+          "unresolved": 0.0007583103603332381,
+          "unattributed": 0.0
+        },
+        "reconstructed_pct": {
+          "initial": 31.083175024258274,
+          "new": 68.9165796056743,
+          "unresolved": 0.00024537006741365687
+        },
+        "initial_minus_old_censored_pp": -6.206644615568862
+      }
+    },
+    {
+      "interval": "2020_2025",
+      "t0": 2020,
+      "t1": 2025,
+      "diagnostic_interval": 1,
+      "full": {
+        "cells": 24889,
+        "changed_cells": 7861,
+        "flow_pas_tmp_ha": 2086326.7500308168,
+        "flow_nat_pas_ha": 10038550.153941212,
+        "old_ha": {
+          "censored": 631043.8593974637,
+          "new": 1455257.1851437718,
+          "unresolved": 25.705489581794133,
+          "unattributed": 0.0
+        },
+        "reconstructed_ha": {
+          "initial": 419677.4571371882,
+          "new": 1666640.2468791034,
+          "unresolved": 9.04601452499628
+        },
+        "transfers_ha": {
+          "censored": {
+            "initial": 419677.4571371882,
+            "new": 211366.40226027527,
+            "unresolved": 0.0
+          },
+          "new": {
+            "initial": 0.0,
+            "new": 1455256.7498955235,
+            "unresolved": 0.4352482482790947
+          },
+          "unresolved": {
+            "initial": 0.0,
+            "new": 17.094723305076947,
+            "unresolved": 8.610766276717186
+          },
+          "unattributed": {
+            "initial": 0.0,
+            "new": 0.0,
+            "unresolved": 0.0
+          }
+        },
+        "old_pct": {
+          "censored": 30.246645660280333,
+          "new": 69.75212224654055,
+          "unresolved": 0.0012320931791443713,
+          "unattributed": 0.0
+        },
+        "reconstructed_pct": {
+          "initial": 20.11561502199927,
+          "new": 79.88395139229681,
+          "unresolved": 0.0004335857039106009
+        },
+        "initial_minus_old_censored_pp": -10.13103063828106
+      }
+    }
+  ],
+  "windows": {
+    "primary_1985_2020": {
+      "intervals": 7,
+      "cells_per_interval": 24889,
+      "flow_pas_tmp_ha": 20119468.09856614,
+      "flow_nat_pas_ha": 93625870.10176586,
+      "old_ha": {
+        "censored": 10407770.82201187,
+        "new": 9711546.261629857,
+        "unresolved": 151.01492441661802,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 9438022.103008892,
+        "new": 10681383.426750243,
+        "unresolved": 62.56880700973903
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 9438022.103008892,
+          "new": 969747.7714068794,
+          "unresolved": 0.9475960993591477
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 9711541.469208874,
+          "unresolved": 4.792420983314514
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 94.18613448955264,
+          "unresolved": 56.82878992706537
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 51.729850764561725,
+        "new": 48.269398644400404,
+        "unresolved": 0.0007505910378782848,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 46.9098986949934,
+        "new": 53.08979031861919,
+        "unresolved": 0.000310986387429388
+      },
+      "initial_minus_old_censored_pp": -4.819952069568323,
+      "includes_diagnostic_interval": 0
+    },
+    "full_observed_1985_2025": {
+      "intervals": 8,
+      "cells_per_interval": 24889,
+      "flow_pas_tmp_ha": 22205794.84859696,
+      "flow_nat_pas_ha": 103664420.25570707,
+      "old_ha": {
+        "censored": 11038814.681409333,
+        "new": 11166803.44677363,
+        "unresolved": 176.72041399841214,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 9857699.56014608,
+        "new": 12348023.673629345,
+        "unresolved": 71.61482153473531
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 9857699.56014608,
+          "new": 1181114.1736671547,
+          "unresolved": 0.9475960993591477
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 11166798.219104398,
+          "unresolved": 5.227669231593609
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 111.2808577946296,
+          "unresolved": 65.43955620378256
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 49.71141432528727,
+        "new": 50.28778984454676,
+        "unresolved": 0.0007958301659693932,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 44.392464342562924,
+        "new": 55.60721315233414,
+        "unresolved": 0.00032250510293829987
+      },
+      "initial_minus_old_censored_pp": -5.318949982724348,
+      "includes_diagnostic_interval": 1
+    }
+  }
+}

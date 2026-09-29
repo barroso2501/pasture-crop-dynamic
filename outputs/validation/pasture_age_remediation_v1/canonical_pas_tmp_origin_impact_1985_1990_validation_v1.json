@@ -1,0 +1,529 @@
+{
+  "status": "PASS",
+  "scope": "canonical_full_domain_one_interval",
+  "interval": "1985_1990",
+  "t0": 1985,
+  "t1": 1990,
+  "diagnostic_interval": 0,
+  "tolerance_ha_per_cell": 0.01,
+  "baseline_sha256": "3007f29b4b0ae872b2f730ba72fd170f13231fed3c9b760031ddb92bd65c75d7",
+  "inventory": [
+    {
+      "batch": 0,
+      "file": "canonical_pas_tmp_origin_1985_1990_b00_v4.csv",
+      "cells": 3168,
+      "bytes": 554858,
+      "sha256": "019e01c7e0eebd9770075c4b5916281ac9f48e4fbc527ca20717946b0faf3f11"
+    },
+    {
+      "batch": 1,
+      "file": "canonical_pas_tmp_origin_1985_1990_b01_v4.csv",
+      "cells": 3128,
+      "bytes": 548333,
+      "sha256": "7a467a33513c9fe0460bfbd8facf086c1f28db98bc714ee55690e4c1b759b93d"
+    },
+    {
+      "batch": 2,
+      "file": "canonical_pas_tmp_origin_1985_1990_b02_v4.csv",
+      "cells": 3061,
+      "bytes": 538282,
+      "sha256": "67772355b877535f804c7e6a300de8eba1053c76fe5a845471665390a338a442"
+    },
+    {
+      "batch": 3,
+      "file": "canonical_pas_tmp_origin_1985_1990_b03_v4.csv",
+      "cells": 3118,
+      "bytes": 548121,
+      "sha256": "5e83d82d3ffc7f7b83472668a35edb88fa4f490022b63dd06b33824761384e8a"
+    },
+    {
+      "batch": 4,
+      "file": "canonical_pas_tmp_origin_1985_1990_b04_v4.csv",
+      "cells": 3104,
+      "bytes": 545564,
+      "sha256": "22ad87cac7b70daaa70f371c97d65a18920f5a00a96724f530786e574ef96930"
+    },
+    {
+      "batch": 5,
+      "file": "canonical_pas_tmp_origin_1985_1990_b05_v4.csv",
+      "cells": 3105,
+      "bytes": 546662,
+      "sha256": "a24d11d8dfb3acfe0e8da9448901ca427204e811d2accbc60d3fad6cff6bdff8"
+    },
+    {
+      "batch": 6,
+      "file": "canonical_pas_tmp_origin_1985_1990_b06_v4.csv",
+      "cells": 3088,
+      "bytes": 543249,
+      "sha256": "fc8a619094bdbe67c4d20dded6ad1e116b4be76db14673ad8f9c947861dbfe17"
+    },
+    {
+      "batch": 7,
+      "file": "canonical_pas_tmp_origin_1985_1990_b07_v4.csv",
+      "cells": 3117,
+      "bytes": 548281,
+      "sha256": "20e38ad95d5c647b460787c2c47b36c2c769ab32fdc5a7089312be8a4c7dd436"
+    }
+  ],
+  "full_domain": {
+    "cells": 24889,
+    "changed_cells": 0,
+    "flow_pas_tmp_ha": 1450003.979396596,
+    "flow_nat_pas_ha": 16427491.784642903,
+    "old_ha": {
+      "censored": 1450003.979396596,
+      "new": 0.0,
+      "unresolved": 0.0,
+      "unattributed": 0.0
+    },
+    "reconstructed_ha": {
+      "initial": 1450003.979396596,
+      "new": 0.0,
+      "unresolved": 0.0
+    },
+    "transfers_ha": {
+      "censored": {
+        "initial": 1450003.979396596,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "new": {
+        "initial": 0.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "unresolved": {
+        "initial": 0.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "unattributed": {
+        "initial": 0.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      }
+    },
+    "old_pct": {
+      "censored": 99.99999999999999,
+      "new": 0.0,
+      "unresolved": 0.0,
+      "unattributed": 0.0
+    },
+    "reconstructed_pct": {
+      "initial": 99.99999999999999,
+      "new": 0.0,
+      "unresolved": 0.0
+    },
+    "initial_minus_old_censored_pp": 0.0
+  },
+  "batches": {
+    "b00": {
+      "cells": 3168,
+      "changed_cells": 0,
+      "flow_pas_tmp_ha": 180897.5727598043,
+      "flow_nat_pas_ha": 2088156.651558713,
+      "old_ha": {
+        "censored": 180897.5727598043,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 180897.5727598043,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 180897.5727598043,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "initial_minus_old_censored_pp": 0.0
+    },
+    "b01": {
+      "cells": 3128,
+      "changed_cells": 0,
+      "flow_pas_tmp_ha": 168763.10332921677,
+      "flow_nat_pas_ha": 1993116.709709993,
+      "old_ha": {
+        "censored": 168763.10332921677,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 168763.10332921677,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 168763.10332921677,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "initial_minus_old_censored_pp": 0.0
+    },
+    "b02": {
+      "cells": 3061,
+      "changed_cells": 0,
+      "flow_pas_tmp_ha": 179170.39794363233,
+      "flow_nat_pas_ha": 1958626.7094176675,
+      "old_ha": {
+        "censored": 179170.39794363233,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 179170.39794363233,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 179170.39794363233,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 100.00000000000001,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 100.00000000000001,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "initial_minus_old_censored_pp": 0.0
+    },
+    "b03": {
+      "cells": 3118,
+      "changed_cells": 0,
+      "flow_pas_tmp_ha": 179680.7644324399,
+      "flow_nat_pas_ha": 2053761.0673089733,
+      "old_ha": {
+        "censored": 179680.7644324399,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 179680.7644324399,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 179680.7644324399,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 100.00000000000001,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 100.00000000000001,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "initial_minus_old_censored_pp": 0.0
+    },
+    "b04": {
+      "cells": 3104,
+      "changed_cells": 0,
+      "flow_pas_tmp_ha": 179883.16185527592,
+      "flow_nat_pas_ha": 2071386.9592198574,
+      "old_ha": {
+        "censored": 179883.16185527592,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 179883.16185527592,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 179883.16185527592,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "initial_minus_old_censored_pp": 0.0
+    },
+    "b05": {
+      "cells": 3105,
+      "changed_cells": 0,
+      "flow_pas_tmp_ha": 175597.59154144098,
+      "flow_nat_pas_ha": 2040525.9144392193,
+      "old_ha": {
+        "censored": 175597.59154144098,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 175597.59154144098,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 175597.59154144098,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "initial_minus_old_censored_pp": 0.0
+    },
+    "b06": {
+      "cells": 3088,
+      "changed_cells": 0,
+      "flow_pas_tmp_ha": 189980.5640782328,
+      "flow_nat_pas_ha": 2121863.276057221,
+      "old_ha": {
+        "censored": 189980.5640782328,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 189980.5640782328,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 189980.5640782328,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "initial_minus_old_censored_pp": 0.0
+    },
+    "b07": {
+      "cells": 3117,
+      "changed_cells": 0,
+      "flow_pas_tmp_ha": 196030.8234565533,
+      "flow_nat_pas_ha": 2100054.4969312563,
+      "old_ha": {
+        "censored": 196030.8234565533,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_ha": {
+        "initial": 196030.8234565533,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "transfers_ha": {
+        "censored": {
+          "initial": 196030.8234565533,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "new": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unresolved": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        },
+        "unattributed": {
+          "initial": 0.0,
+          "new": 0.0,
+          "unresolved": 0.0
+        }
+      },
+      "old_pct": {
+        "censored": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0,
+        "unattributed": 0.0
+      },
+      "reconstructed_pct": {
+        "initial": 100.0,
+        "new": 0.0,
+        "unresolved": 0.0
+      },
+      "initial_minus_old_censored_pp": 0.0
+    }
+  }
+}
