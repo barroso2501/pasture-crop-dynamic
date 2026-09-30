@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "scope": "one_interval_full_domain",
+  "interval": "2005_2010",
+  "t0": 2005,
+  "t1": 2010,
+  "diagnostic_interval": 0,
+  "cells": 24889,
+  "batches": 8,
+  "tolerance_ha_per_cell": 0.01,
+  "totals_ha": {
+    "stock0_pas": 103006331.16010776,
+    "pas_persistence_ha": 94155152.9906034,
+    "pas_observed_outflow_ha": 8851107.574957356,
+    "pas_observation_loss_ha": 70.59454700350761,
+    "flow_pas_tmp_ha": 2825891.9739920185
+  },
+  "baseline_sha256": "9d3add0ec1603776f2ed489111876bc31fae4cdfb05729afed113824d7e16f18",
+  "rq2_validation_sha256": "54f438a1cad166b1c593185096d3e9fad0689f82ae02e405b1f5a4569d850bb0",
+  "inventory": [
+    {
+      "batch": 0,
+      "closure_file": "canonical_pas_origin_destination_2005_2010_b00_pilot_v1.csv",
+      "closure_sha256": "c1f5d81798a4577997c2e34552b77e2b1aced5c32ac7997a82cce8bb27df4156",
+      "rq2_file": "canonical_pas_tmp_origin_2005_2010_b00_v4.csv",
+      "rq2_sha256": "4db69f44b2eab7f3dcf2f34f7ec95d214b65d03ef22dea8db41e106abc55e9fe",
+      "cells": 3168
+    },
+    {
+      "batch": 1,
+      "closure_file": "canonical_pas_origin_destination_2005_2010_b01_pilot_v1.csv",
+      "closure_sha256": "f6a5334c4de6ee24a7b542c800105bb1482c9d1642c4ba33883c5d0c255ace7d",
+      "rq2_file": "canonical_pas_tmp_origin_2005_2010_b01_v4.csv",
+      "rq2_sha256": "02e45b96e8fd8f9b7f48985e520881b40b77ea3d6067998c6cef8461352a8242",
+      "cells": 3128
+    },
+    {
+      "batch": 2,
+      "closure_file": "canonical_pas_origin_destination_2005_2010_b02_pilot_v1.csv",
+      "closure_sha256": "2657c204f0e54a096c5db3947781f40b11d541c3c09e0cbff525270cf565bac9",
+      "rq2_file": "canonical_pas_tmp_origin_2005_2010_b02_v4.csv",
+      "rq2_sha256": "4ddcc679c6287b67201e02786aa8adeb71f2b3ea7ef2a0601075621595d0f6c5",
+      "cells": 3061
+    },
+    {
+      "batch": 3,
+      "closure_file": "canonical_pas_origin_destination_2005_2010_b03_pilot_v1.csv",
+      "closure_sha256": "af92298aee63589ee4364727657cba1cde56fef7d8df562b1f4591dd3537b1ac",
+      "rq2_file": "canonical_pas_tmp_origin_2005_2010_b03_v4.csv",
+      "rq2_sha256": "b325302917157053a1729e0eaace524822712f17baaabdfa3abb9e384c1ceb12",
+      "cells": 3118
+    },
+    {
+      "batch": 4,
+      "closure_file": "canonical_pas_origin_destination_2005_2010_b04_pilot_v1.csv",
+      "closure_sha256": "9fd3db513e9b40f5a5589e1ee0abd49adcc9e7892e7564e5c224e5306db02649",
+      "rq2_file": "canonical_pas_tmp_origin_2005_2010_b04_v4.csv",
+      "rq2_sha256": "3e8cf155f9d802cef3818af34f3e461f77fa853c0cedac29c7cfd9ab83a28801",
+      "cells": 3104
+    },
+    {
+      "batch": 5,
+      "closure_file": "canonical_pas_origin_destination_2005_2010_b05_pilot_v1.csv",
+      "closure_sha256": "5b457771296fd8b597d7322333ff6fc7574812e2e1af0e95aa4c9cd344fd9495",
+      "rq2_file": "canonical_pas_tmp_origin_2005_2010_b05_v4.csv",
+      "rq2_sha256": "e700b389f624a165124591bb5d5cacbde773456af49f08f31b3951c25e087100",
+      "cells": 3105
+    },
+    {
+      "batch": 6,
+      "closure_file": "canonical_pas_origin_destination_2005_2010_b06_pilot_v1.csv",
+      "closure_sha256": "239b6baf09b296b759798e233a82c6f69ee80002f191054decaf439846a38d05",
+      "rq2_file": "canonical_pas_tmp_origin_2005_2010_b06_v4.csv",
+      "rq2_sha256": "3a1742afe182506aad58b478fb8813df9b5f57c4e56402367cb8976114481280",
+      "cells": 3088
+    },
+    {
+      "batch": 7,
+      "closure_file": "canonical_pas_origin_destination_2005_2010_b07_pilot_v1.csv",
+      "closure_sha256": "97456df29856e881d5b6034b333436e8aa7797e22f9357c9c7c06987db4235ff",
+      "rq2_file": "canonical_pas_tmp_origin_2005_2010_b07_v4.csv",
+      "rq2_sha256": "6d68657496f35e66cd3d466e37392ac239fa16d841de8c3538e7de8728d209fd",
+      "cells": 3117
+    }
+  ],
+  "output_csv": "canonical_pas_origin_destination_2005_2010_full_v3.csv",
+  "output_sha256": "45b9d9d652ec79d95cff3dd2d2abead233d9d802ecaa45e4e371df8387e59d75",
+  "closure_export_style": "pilot",
+  "source_pilot_batch_00_reused": false,
+  "decision_024_fully_implemented": false
+}

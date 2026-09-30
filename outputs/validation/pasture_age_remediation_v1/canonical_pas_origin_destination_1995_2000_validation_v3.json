@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "scope": "one_interval_full_domain",
+  "interval": "1995_2000",
+  "t0": 1995,
+  "t1": 2000,
+  "diagnostic_interval": 0,
+  "cells": 24889,
+  "batches": 8,
+  "tolerance_ha_per_cell": 0.01,
+  "totals_ha": {
+    "stock0_pas": 79576949.48231716,
+    "pas_persistence_ha": 73202693.02729774,
+    "pas_observed_outflow_ha": 6374213.116729081,
+    "pas_observation_loss_ha": 43.338290341198444,
+    "flow_pas_tmp_ha": 1809550.1348413634
+  },
+  "baseline_sha256": "c557b04ed1ae1da26df67ad1d7143f1c19a215d2bfe08a1c2e88d4d98055c4af",
+  "rq2_validation_sha256": "94e30cd4bbcb4794722052084d11b8d1d3e7780e9159c4789f85e09de6bac5ec",
+  "inventory": [
+    {
+      "batch": 0,
+      "closure_file": "canonical_pas_origin_destination_1995_2000_b00_pilot_v1.csv",
+      "closure_sha256": "d2998271656e66a6e2381e628eaf18cc431249a08545195777cf9a51f525d2ba",
+      "rq2_file": "canonical_pas_tmp_origin_1995_2000_b00_v4.csv",
+      "rq2_sha256": "419f2e472ec2681b9d7daface811f35eff215fb50f2c0ed42e50028c2faa99b7",
+      "cells": 3168
+    },
+    {
+      "batch": 1,
+      "closure_file": "canonical_pas_origin_destination_1995_2000_b01_pilot_v1.csv",
+      "closure_sha256": "0bd9155b1c9ce93e52d62943d41020e6adf144578439b8f1d2980a3183bd5bed",
+      "rq2_file": "canonical_pas_tmp_origin_1995_2000_b01_v4.csv",
+      "rq2_sha256": "7103272a46485cd4f4fc8f1db7c8f411dd3b216066d486216c4b58b007088cb7",
+      "cells": 3128
+    },
+    {
+      "batch": 2,
+      "closure_file": "canonical_pas_origin_destination_1995_2000_b02_pilot_v1.csv",
+      "closure_sha256": "bb14fd007e44f1ea19f252c4de8a190d219deb4578e312b1b05a919da6047ef8",
+      "rq2_file": "canonical_pas_tmp_origin_1995_2000_b02_v4.csv",
+      "rq2_sha256": "e5cef87f6487f82e7fb82e7534ddc1f9d6fde9232d71efea5b04b72312244a39",
+      "cells": 3061
+    },
+    {
+      "batch": 3,
+      "closure_file": "canonical_pas_origin_destination_1995_2000_b03_pilot_v1.csv",
+      "closure_sha256": "ce42dcdc8d7c5e4d6cb1d41eaffb372dd2cbb9aec77b591d19a23488235de1bc",
+      "rq2_file": "canonical_pas_tmp_origin_1995_2000_b03_v4.csv",
+      "rq2_sha256": "3e72b6f472d67c0f23472bac2552afaa9d95a5e8e0b60f21bb8f76aa5cdd1d84",
+      "cells": 3118
+    },
+    {
+      "batch": 4,
+      "closure_file": "canonical_pas_origin_destination_1995_2000_b04_pilot_v1.csv",
+      "closure_sha256": "2461a54a42c6817915a4e9f90f81395d7b1e84c893ab34149137b0ad29c90150",
+      "rq2_file": "canonical_pas_tmp_origin_1995_2000_b04_v4.csv",
+      "rq2_sha256": "954391c3ca83d394a0b6931496eacae7902df6cb9f750ef7fa0c27ff0edc88ce",
+      "cells": 3104
+    },
+    {
+      "batch": 5,
+      "closure_file": "canonical_pas_origin_destination_1995_2000_b05_pilot_v1.csv",
+      "closure_sha256": "b432a1f9cedd1e3074c010958c94c3b121f07575adb71927f1393efbf41ac5ec",
+      "rq2_file": "canonical_pas_tmp_origin_1995_2000_b05_v4.csv",
+      "rq2_sha256": "bf0a6641b7ee5510d1e48a445d799c0ab779c98723cee5c868977c8cbda7aea2",
+      "cells": 3105
+    },
+    {
+      "batch": 6,
+      "closure_file": "canonical_pas_origin_destination_1995_2000_b06_pilot_v1.csv",
+      "closure_sha256": "e228890370a4fce589235e5c1f87a9af0b080d8cfdae1ec4c4a8f8567a465d42",
+      "rq2_file": "canonical_pas_tmp_origin_1995_2000_b06_v4.csv",
+      "rq2_sha256": "8e3411ad2de45ca28e3bfcbcbe4459f11d1db5c3ce5377d28265ea4bcfdf171a",
+      "cells": 3088
+    },
+    {
+      "batch": 7,
+      "closure_file": "canonical_pas_origin_destination_1995_2000_b07_pilot_v1.csv",
+      "closure_sha256": "1359b26bd6e86f5b3e3c536c70aae4e4735ef4e5df41829527070e60df56c738",
+      "rq2_file": "canonical_pas_tmp_origin_1995_2000_b07_v4.csv",
+      "rq2_sha256": "31e2653c4087a4941ffe3a1d21fc2c3cf22d368e05a280bd0db054b5b8e0e59e",
+      "cells": 3117
+    }
+  ],
+  "output_csv": "canonical_pas_origin_destination_1995_2000_full_v3.csv",
+  "output_sha256": "8638ff382834dcfdc95c1c4c6b966baa6e5bd714c436ca93e8be3bca520fcd7f",
+  "closure_export_style": "pilot",
+  "source_pilot_batch_00_reused": false,
+  "decision_024_fully_implemented": false
+}
