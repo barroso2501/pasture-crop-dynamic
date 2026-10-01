@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "scope": "versioned_corrected_stock_flow_derived_integrated_panels",
+  "rows": 199112,
+  "cells": 24889,
+  "intervals": 8,
+  "source_hashes": {
+    "panel": "2f05464b0362ac3fe17cd6f25cabc22f41674ab5c6f0e71678ad6ea2f6c6ce64",
+    "derived": "671d4ec50023aa3ea4064ef670c7682746a5dc907bff78f51f6213639d731302",
+    "integrated": "7487b884ca19ad2572c7a445352cdce2b55d678ebfd80022a6155b79c2b16e28",
+    "trajectory": "c888ff6403a0c39065bdfa3eb25bbd2146fe8b4c12aade7a070a4c08181803b9"
+  },
+  "gate_17o_sha256": "fdeb8d99f6bbfeb65e855975b88dcb1cc8fa98f692ca9e35eb0b81357b8bf3e3",
+  "corrected_inputs": [
+    {
+      "interval": "1985_1990",
+      "csv_sha256": "b99293c32f5d6c52f5444c6f8a1e5f43508c820e2cf74b59c1d44d9f6546c1ba",
+      "validation_sha256": "396518285b93397a858c8a90449e1c1ee5080cc0d2ec80fea2be9a8d1119fa8f"
+    },
+    {
+      "interval": "1990_1995",
+      "csv_sha256": "0edaeb5c289f6648caa0443dcccce296f04552c8b34949340e3e989c8bd21562",
+      "validation_sha256": "81052eb7ea93f1cb538b96c986d65947b4bdb19683cc40d9354c39e10ced4d9f"
+    },
+    {
+      "interval": "1995_2000",
+      "csv_sha256": "8638ff382834dcfdc95c1c4c6b966baa6e5bd714c436ca93e8be3bca520fcd7f",
+      "validation_sha256": "b3f8a12e73e0ff3bc97e49cfbbef0867c8dce6eee3299a6e032b6407d48d5103"
+    },
+    {
+      "interval": "2000_2005",
+      "csv_sha256": "9570c17e7df8c7db757b86db75466eb9aff1cac9944f7969ed9e6c23f41a5505",
+      "validation_sha256": "b9ac2e48f9b563e8833b253b7aaed306c584fc768c64f6771d01b77c6113899d"
+    },
+    {
+      "interval": "2005_2010",
+      "csv_sha256": "45b9d9d652ec79d95cff3dd2d2abead233d9d802ecaa45e4e371df8387e59d75",
+      "validation_sha256": "9a7aded7c334cbc2fbea2f7e5b6131dcb99bbaa4caebedda3354c4194d3216d4"
+    },
+    {
+      "interval": "2010_2015",
+      "csv_sha256": "bc9de1c982fd8aa0e7bfa5e1b7ce93addd9a807550fb493f4971fad304e8cd78",
+      "validation_sha256": "6a7c7bc3f74b19bb3f9d105d8c5c35b9c1595afa96e8a3ee796dab008d551717"
+    },
+    {
+      "interval": "2015_2020",
+      "csv_sha256": "ab5c2d0500540ff8b18fd84154c58d1266bec75a50f34cbaea2db1108260a82f",
+      "validation_sha256": "7acbf4474f0c553dcc55d6f477945e20a869f955961d89154571f57680a67ad0"
+    },
+    {
+      "interval": "2020_2025",
+      "csv_sha256": "86c659ba268d60c5b2e652e6d1799e255c68f6cb4b911404b91782dd2bff013a",
+      "validation_sha256": "149343027e53f12e203f949bb0c99e3012caa7cd7fcb552e221dd87c9a177ab8"
+    }
+  ],
+  "removed_source_age_fields": [
+    "pas_tmp_censored",
+    "pas_tmp_new",
+    "pas_tmp_unresolved_age",
+    "pas_tmp_unattributed_age",
+    "residual_pas_tmp_partition",
+    "pas_tmp_censored_share",
+    "pas_tmp_new_share",
+    "pas_tmp_unresolved_age_share",
+    "pas_tmp_unattributed_age_share"
+  ],
+  "corrected_area_fields": [
+    "origin_initial",
+    "origin_new",
+    "origin_unresolved",
+    "pas_initial_to_pas",
+    "pas_new_to_pas",
+    "pas_unresolved_to_pas",
+    "pas_initial_to_tmp",
+    "pas_new_to_tmp",
+    "pas_unresolved_to_tmp",
+    "pas_initial_to_nat",
+    "pas_new_to_nat",
+    "pas_unresolved_to_nat",
+    "pas_initial_to_oag",
+    "pas_new_to_oag",
+    "pas_unresolved_to_oag",
+    "pas_initial_to_out",
+    "pas_new_to_out",
+    "pas_unresolved_to_out",
+    "pas_initial_to_water",
+    "pas_new_to_water",
+    "pas_unresolved_to_water",
+    "pas_initial_to_nodata",
+    "pas_new_to_nodata",
+    "pas_unresolved_to_nodata",
+    "pas_initial_to_unexpected",
+    "pas_new_to_unexpected",
+    "pas_unresolved_to_unexpected",
+    "pas_initial_to_masked",
+    "pas_new_to_masked",
+    "pas_unresolved_to_masked",
+    "pas_observed_outflow_ha",
+    "pas_observation_loss_ha"
+  ],
+  "corrected_share_fields": [
+    "pas_tmp_origin_initial_share",
+    "pas_tmp_origin_new_share",
+    "pas_tmp_origin_unresolved_share"
+  ],
+  "nonorigin_fields_preserved_exactly": true,
+  "maximum_pas_total_difference_ha_per_cell": 3.2546431611990556e-06,
+  "maximum_origin_identity_residual_ha_per_cell": 1.4551915228366852e-11,
+  "independent_reexport_of_other_raster_flows": false,
+  "decision_024_criterion_9_versioned_panel_comparison": "PASS",
+  "decision_024_fully_implemented": false,
+  "outputs": {
+    "panel": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/panel/canonical_stock_flow_panel_1985_2025_v2.parquet",
+      "sha256": "ef3589be99e3a2cdc1c2245a15cedd090c8255775b34f14d4f2f27d3f9f8faa7"
+    },
+    "derived": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/analysis/canonical_stock_flow_derived_metrics_1985_2025_v2.parquet",
+      "sha256": "e4a17ba21640704e2f7db7a9885417a403b842910624f36f7f9da34bfd67a9c2"
+    },
+    "integrated": {
+      "path": "/content/drive/MyDrive/Trabalho/Contabilidade/analysis/canonical_integrated_stock_flow_trajectory_1985_2025_v2.parquet",
+      "sha256": "06127aac2f67a34ed79118f666a9c00063e28f32f16a046901370c0336b98499"
+    }
+  },
+  "interval_summary": {
+    "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase9/pasture_spell_panel_v2/canonical_pas_tmp_origin_interval_summary_v2.csv",
+    "sha256": "8b24c1c3475f1f19bca6abc09c425df43400f573e04d41df7afd0473b088c897"
+  },
+  "pooled_summary": {
+    "path": "/content/drive/MyDrive/Trabalho/Contabilidade/spatial/phase9/pasture_spell_panel_v2/canonical_pas_tmp_origin_pooled_summary_v2.csv",
+    "sha256": "7771a36808a95832f5b2e21f00d81cbe303da7d5c5c91c3e808e2345ce5e64d3"
+  }
+}
