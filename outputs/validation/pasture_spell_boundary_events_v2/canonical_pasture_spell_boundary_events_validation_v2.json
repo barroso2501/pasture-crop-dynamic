@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "mode": "full",
+  "validator_revision": "boundary-event-validator-v4",
+  "pixel_count_interpretation": "GEE weighted sum of unit masks: fractional pixel equivalents at polygon edges, not integer pixel counts",
+  "criterion_10": "PASS",
+  "decision_024_fully_implemented": false,
+  "cells": 24889,
+  "event_rows": 99556,
+  "years": [
+    2024,
+    2025
+  ],
+  "panel_sha256": "ef3589be99e3a2cdc1c2245a15cedd090c8255775b34f14d4f2f27d3f9f8faa7",
+  "panel_validation_sha256": "e89dd507f3bbc46fb5a7b13a496b4efbb60cec68b29a8d1443025b6b9a4667e2",
+  "gee_script_sha256": null,
+  "pixel_event_asset": "projects/ee-barroso2501/assets/canonical_pasture_spell_boundary_events_2024_2025_v2",
+  "raster_mismatch_pixels": 0,
+  "v1_rejected_export_hashes": [
+    {
+      "name": "canonical_pasture_spell_boundary_events_b00_v1.csv",
+      "sha256": "9c72a401d1e1c6877ba2166189fe23d0ac1f0e1c90940bff9f3381c9de666109"
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b01_v1.csv",
+      "sha256": "bfe89bb610dc99f51781a0d564b01d9a4596f4cfd96f5cfbbd52b62ab2a493f3"
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b02_v1.csv",
+      "sha256": "45c364dbb48f4f565926195d35dd4feea31000d24c59539cfe29030cbd01425b"
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b03_v1.csv",
+      "sha256": "3eb6194c6e1a72fba17d7ca0db155c3f5517c5765d832b4b19a04a60b39fc173"
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b04_v1.csv",
+      "sha256": "d0c734d44c9f9ae1ea701079051fad4b1df5703e1554c25f5db397ba5f31aedc"
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b05_v1.csv",
+      "sha256": "1f72fadb08cd19bc6c0f9f2acebad1e645022f9f2b6bf5f378d30a93c50932f8"
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b06_v1.csv",
+      "sha256": "59e603d22b01e72146ac02a5b84dc33fe5655ee0d002a29d9e7f17d41bc9a94e"
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b07_v1.csv",
+      "sha256": "6d98840bd7f7d9052cd3c35ecf8bb2e40674890c886f049cb0b6d45428e48daa"
+    }
+  ],
+  "v1_missing_area_recovered_ha": {
+    "2024": 71.33722379938057,
+    "2025": 77.33188809238224
+  },
+  "v1_v2_max_corrected_area_delta_ha": 5.21540641784668e-08,
+  "v1_v2_max_corrected_pixel_equivalent_delta": 7.275957614183426e-12,
+  "gee_script_hash_limitation": "The local script hash does not authenticate Code Editor contents; use the supplied JS unchanged.",
+  "raw_exports": [
+    {
+      "name": "canonical_pasture_spell_boundary_events_b00_v2.csv",
+      "sha256": "c19a1b12b8ddb54289b2d7de88e6ae1aaca072ed9580feda1659f6718a4fb323",
+      "rows": 3168
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b01_v2.csv",
+      "sha256": "99726c99e8d9fe17f0f7861000c9851ed004839082c014595fe3af31486c5131",
+      "rows": 3128
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b02_v2.csv",
+      "sha256": "04fc77f682907e6b44c1b536a65b0bd0af5f29ae3fa2dd350552d890519376b7",
+      "rows": 3061
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b03_v2.csv",
+      "sha256": "cc468a88545d82571af418ae277caadd3ed5617dd67f79a532db29ed5dc4e6bb",
+      "rows": 3118
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b04_v2.csv",
+      "sha256": "646033c43ba4558a0b016416bdd843b41fda087ccd2fc7525db12492861d8adf",
+      "rows": 3104
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b05_v2.csv",
+      "sha256": "78858d3bd568b326f55b137f5f6e25a5cc91d3ae10a90cc8280384f41b0315a2",
+      "rows": 3105
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b06_v2.csv",
+      "sha256": "4fbcb590418b0aeeb9360b995f1e696b9fcbd8da69d2969a4b7a3b18fb693de3",
+      "rows": 3088
+    },
+    {
+      "name": "canonical_pasture_spell_boundary_events_b07_v2.csv",
+      "sha256": "ff4b296d81ab5f269e063dc27fe8e2587e64288d505a04472a536ab72e7c51f6",
+      "rows": 3117
+    }
+  ],
+  "max_pair_area_residual_ha_per_cell": 2.1827872842550278e-11,
+  "input_csv_sha256": null,
+  "events_csv_sha256": "13178689d48a3f85abb2d57f4dfbe91df5778950854c384074b067b2dcfa3e86",
+  "summary_csv_sha256": "9edd721e1ffa50c64a8967121ec229f32893bfa2dd91eb316067939c14571355",
+  "event_definition": "Observed non-PAS to PAS / PAS to observed non-PAS; uncertain pairs excluded",
+  "observation_pairs": {
+    "2024": "2023->2024",
+    "2025": "2024->2025"
+  },
+  "right_censoring_note": "Ongoing pasture in 2025 has no observed later termination",
+  "full_tables_derived_from_saved_event_raster": true
+}
