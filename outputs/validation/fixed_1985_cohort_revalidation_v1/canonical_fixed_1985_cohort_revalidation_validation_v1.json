@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "scope": "Decision 024 RQ1 fixed-baseline cohort revalidation",
+  "script_version": "17w-fixed-1985-cohort-revalidation-v1",
+  "decision_024_fully_implemented": false,
+  "rq1_fixed_cohort_baseline_revalidated": true,
+  "no_new_gee_processing": true,
+  "pixel_level_independent_resampling": false,
+  "cohort_definition": "coverage 1985 PAS AND public pasture-age 1985 == 100",
+  "cells": 24889,
+  "cells_with_cohort": 16421,
+  "cohort_area_ha": 49035870.567182116,
+  "reference_years": [
+    1985,
+    1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015,
+    2020,
+    2025
+  ],
+  "comparison_rows": 45,
+  "1985_raw_code1_area_ha": 0.0,
+  "max_cell_cohort_vs_baseline_ha": 2.682209014892578e-07,
+  "max_cell_cohort_vs_panel_v2_ha": 2.6822272047866136e-07,
+  "max_cell_original_vs_panel_v2_ha": 3.637978807091713e-12,
+  "max_cell_state_closure_ha": 1.0913936421275139e-11,
+  "max_cell_state_total_difference_ha": 1.0913936421275139e-11,
+  "max_summary_state_delta_ha": 4.842877388000488e-08,
+  "max_summary_share_delta": 6.661338147750939e-16,
+  "input_sha256": {
+    "cohort": "2c6dd05d69f5851477dee856c23530d2d0f1979dcc40c6bb5d83964c4d9f755f",
+    "baseline": "3007f29b4b0ae872b2f730ba72fd170f13231fed3c9b760031ddb92bd65c75d7",
+    "panel_v2": "ef3589be99e3a2cdc1c2245a15cedd090c8255775b34f14d4f2f27d3f9f8faa7",
+    "spatial": "22425834aee2826f5261fdbda959719a4e46d7c6589a91417cc0328c3112cecc",
+    "phase9_validation": "16443cc274772e43cc575d3687888d56a09fc420dd18d68fc4266525bc244951",
+    "phase9_summary": "f2e69d49999ec12e172a42365b3ffa4ff29d4afbd8c743057e92cde69b04fb85",
+    "source_audit_validation": "6718a1cefa8e5274c4604e6099f52162bdb7615d79cad870410a27303c5f9e12",
+    "source_audit_annual": "b03024faf341d9ab92a0ccf31804fcd6b0a288fc64606c210b4d9987472ccd6a"
+  },
+  "comparison_sha256": "0e725601dfb58fb65f7ee026b84ce99dd3b3a8127f314c714d1526d96ccdf306",
+  "limits": [
+    "The accepted 15b export is authenticated, not reobserved at native pixels.",
+    "Matching per-cell area to coverage PAS establishes area equivalence under the 15b subset mask; it does not create a new fixed cohort.",
+    "Endpoint composition remains a nine-date composition of fixed pixels, not a survival curve or within-interval path analysis."
+  ],
+  "evidence_status": "P9A035-P9A037 remain suspended pending Decision 024 criterion 12"
+}
