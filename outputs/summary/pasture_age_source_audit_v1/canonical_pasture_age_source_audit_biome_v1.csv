@@ -1,0 +1,5 @@
+primary_biome,transbiome_flag,cells,raw_code1_any_ha,raw_code1_any_affected_cells,reuse100_any_ha,reuse100_any_affected_cells,joint_both_ha,joint_both_affected_cells,reentry_any_ha,reentry_any_affected_cells,reentry_two_plus_ha,reentry_two_plus_affected_cells,reentry_duration_ge2_ha,reentry_duration_ge2_affected_cells,reentry_duration_ge5_ha,reentry_duration_ge5_affected_cells,code100_unresolved_years_ha,code100_unresolved_years_affected_cells
+Amazon,0,13920,1177.86168484,37,1592829.43374,6150,0,0,8240094.34378,10642,1075771.12786,9152,7993060.83244,10534,6314741.9301,9946,639.868479088,22
+Amazon,1,293,466.475803842,149,127293.165122,241,0,0,451142.997273,283,58972.3726135,279,435983.584588,283,348726.48832,280,181.029743069,24
+Cerrado,0,10387,14.5241731107,1,7264683.47511,9185,0,0,15099941.8397,10184,1899210.74179,9917,14192841.1558,10158,11321191.5698,10070,21.8715728968,1
+Cerrado,1,289,483.924121192,163,76478.1870326,252,0,0,319565.944079,277,35337.6720169,274,297602.5031,277,234515.004682,277,49.592131643,16

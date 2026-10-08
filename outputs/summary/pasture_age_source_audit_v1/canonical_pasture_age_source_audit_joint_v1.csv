@@ -1,0 +1,5 @@
+category,scope,affected_cells,pixel_equiv,ha
+joint_none,full,23168,1744851099.29,151482233.843
+joint_code1_only,full,350,24691.8117647,2142.78578299
+joint_reuse100_only,full,15828,105744372.553,9061284.261
+joint_both,full,0,0,0

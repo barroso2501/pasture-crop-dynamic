@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "mode": "full",
+  "validator_revision": "source-audit-validator-v2",
+  "criterion_11": "PASS",
+  "decision_024_fully_implemented": false,
+  "population_cells": 24889,
+  "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "panel_sha256": "ef3589be99e3a2cdc1c2245a15cedd090c8255775b34f14d4f2f27d3f9f8faa7",
+  "spatial_sha256": "22425834aee2826f5261fdbda959719a4e46d7c6589a91417cc0328c3112cecc",
+  "raw_exports": [
+    {
+      "file": "canonical_pasture_age_source_audit_cell_b00_v1.csv",
+      "sha256": "ea2fd0abc42dadde49a3a644672416f5e47dd715ff6879bbcbdd65d706fc5e39",
+      "rows": 3168
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_annual_b00_v1.csv",
+      "sha256": "87e2b3dc43e90bfb1382eb09372d716f5532e83d1ba630a9f47f01e858039c27",
+      "rows": 3168
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_cell_b01_v1.csv",
+      "sha256": "2d7cc4da3698e88219b145e9ccf9a502671ac1ae112d90bdaaab271a307acdac",
+      "rows": 3128
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_annual_b01_v1.csv",
+      "sha256": "e190a17c5bbb575b836f23c43859671e60e8c4bb9575b9272633ce615f5501ae",
+      "rows": 3128
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_cell_b02_v1.csv",
+      "sha256": "65ab0c2de9a48c043176e8dca479e024f470866e0f7e7f9c2c0bf080de86a6be",
+      "rows": 3061
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_annual_b02_v1.csv",
+      "sha256": "5b478fb1fb8b40ad52533a0fd7288edb7e801ebe1566a95f1d88b5b891d1475b",
+      "rows": 3061
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_cell_b03_v1.csv",
+      "sha256": "4139cc03d1fc2e9fef5895c8e7d9f508416801dd2dc4e839030da75b96c27321",
+      "rows": 3118
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_annual_b03_v1.csv",
+      "sha256": "b3efbce2366b91ad6d4ef815d7ae242b041e77173e76b109257902b3e43ef35f",
+      "rows": 3118
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_cell_b04_v1.csv",
+      "sha256": "e324fcdf9f5761862b4a662c24385e91b71a531ce5d599337620d1c65340f708",
+      "rows": 3104
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_annual_b04_v1.csv",
+      "sha256": "3fae73d901bd9bcfc3a8dd1cd2bd8916369912f22bf7521ee09dfae5453d8f47",
+      "rows": 3104
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_cell_b05_v1.csv",
+      "sha256": "8d86ac381d87e09ed3e8bbed9dca6fdfae583c1277ef6c5182f8298c2f6a0464",
+      "rows": 3105
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_annual_b05_v1.csv",
+      "sha256": "e8700ba1a885976d86d1a49b7ddba5afebf5423bb70aec02214d0e6a6b19191c",
+      "rows": 3105
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_cell_b06_v1.csv",
+      "sha256": "9124b14b6251512618056739dbc9e57d2a586e83408cf4fb1716cc8c3bdff211",
+      "rows": 3088
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_annual_b06_v1.csv",
+      "sha256": "32d69b005e56427bba2edf8782e728f6241149bdcaa0e5a8d67d5cb71912ec56",
+      "rows": 3088
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_cell_b07_v1.csv",
+      "sha256": "5f2662c81bd4d18334a59440f91d0d8eb3f1ee43f00fe8dc74325c9b4dccb1b5",
+      "rows": 3117
+    },
+    {
+      "file": "canonical_pasture_age_source_audit_annual_b07_v1.csv",
+      "sha256": "605748c53d9c6be17aa93099d66a55949914c169734ec087bb3f5f6d27486561",
+      "rows": 3117
+    }
+  ],
+  "pilot_cell_sha256": null,
+  "pilot_annual_sha256": null,
+  "max_internal_residual": 1.4081633707974106e-06,
+  "gee_script_local_sha256": null,
+  "gee_code_editor_limitation": "Local JS hash cannot prove which text was executed in the Code Editor",
+  "source_age_asset": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_pasture_age_v1",
+  "raw_code1_definition": "Raw age value 1, regardless of coverage state",
+  "reuse100_definition": "Raw age 100 when independently reconstructed coverage-derived state is observed post-1985 NEW PAS",
+  "joint_universe": "pixels that ever had observed PAS or raw age code 1 in 1985-2025",
+  "joint_overlap": "same pixel in at least one code-1 year and at least one reuse-100 year; not same year",
+  "cell_biome_scope": "whole-cell area assigned to canonical primary_biome; not exact within-biome pixel area",
+  "transbiome_rule": "Phase 7: amazon_fraction_cell > 0 and cerrado_fraction_cell > 0; 582 canonical cells",
+  "pixel_interpretation": "weighted pixel equivalents under polygon-boundary reduction, not unweighted integer pixels",
+  "source100_unresolved_ha_years": 892.3619266968147,
+  "reentry_events_area_weighted_ha_events": 27557325.335410405,
+  "annual_summary_sha256": "b03024faf341d9ab92a0ccf31804fcd6b0a288fc64606c210b4d9987472ccd6a",
+  "joint_summary_sha256": "a90634cb75428df47d4c75612e2422f9a2009564710fa16bbbedda14f72c37f6",
+  "biome_summary_sha256": "081d41285778585805a348ce922b38f533a33d311307f32524f5c0fc87c92940",
+  "cell_parquet_sha256": "ec09f45c79452b0142495493d6160ff0bf8a3c33641384bfd5ddd851fb0ff2d5",
+  "first_raw_code1_year": 1986,
+  "last_raw_code1_year": 2025,
+  "first_reuse100_year": 1987,
+  "last_reuse100_year": 2025
+}
