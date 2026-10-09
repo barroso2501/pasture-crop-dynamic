@@ -272,71 +272,8 @@ Before corrected products are accepted, the pipeline must verify:
 Corrected products use new versioned filenames. Accepted earlier products are
 not overwritten and remain available to document the impact of the change.
 
-The suspensions of P9A035–P9A037 were rescinded on 2026-10-08 only for
-the corrected matrix-v4 statements, through new immutable events. The retired
-source-age statements remain superseded. Current manuscript-facing evidence
-is matrix v4.1 and its 2026-10-09 interpretation erratum. The technical closure
-and its assurance limits are recorded in
-`docs/decisions/024_implementation_closure_v2.md`. Historical events and
-validation JSONs retain their original statuses; a derived events-v3 index
-adds structured validation references and the interpretation amendments.
-
-## Observation-window dependence of RQ2 origin composition
-
-1985 is the earliest observed state, not a process origin (Decision 022).
-For the 1985–1990 endpoint flow, origin is assigned at t0=1985, so every
-observed PAS origin belongs to the initial category: its 100% share is true
-by construction, subject to numerical area-reduction precision. That first
-bar is not evidence for a historical predominance of old over new pastures.
-
-Membership in the uninterrupted 1985 spell can only be lost through time.
-Its share among PAS→TMP conversions, however, can increase or decrease:
-the denominator and conversion selection also change between intervals.
-A finite-duration stationary renewal process can generate a declining
-baseline-origin component without a temporal change in the process. The
-observed share trajectory alone cannot separate these explanations.
-
-The first observed-entry share above 50% in 2000–2005 is a statistic of
-this observation window, not an identified process threshold. Primary
-pooled shares 46.91%/53.09% also depend on the window start, its length,
-and interval conversion weights. Re-entry is included in observed entry;
-neither category identifies first-ever pasture establishment. A 1995/2000
-rebasing sensitivity is specified but has not been executed.
-
-## Meaning of boundary-event uncertain-pair area
-
-For event year y, `uncertain_pair_ha` is the area of pixels for which either
-coverage(y−1) or coverage(y) is NODATA, masked, or unexpected, preventing a
-confident PAS/non-PAS pair classification. Equivalently, it is the complement
-of the union of valid entry, valid termination, PAS→PAS, and non-PAS→non-PAS
-pairs, within the canonical cell reductions. It covers all land-cover states,
-not only pixels with a PAS endpoint. It is a shared pair-quality denominator
-and is repeated in the entry and termination summary rows; those repetitions
-must not be added as independent areas.
-
-The 2024 pair is 2023/2024 and has 4,688,518.25661 ha; the 2025 pair is
-2024/2025 and has 4,688,463.67044 ha. They are identical across event types
-within a year, not exactly identical between years (difference 54.58617 ha).
-These values do not measure unresolved PAS-origin area. `pas_observation_loss_ha`
-instead conditions on PAS at a five-year interval start and an unobserved
-interval-end coverage. It uses a different population and different dates;
-the 2020/2025 PAS observation-loss area is 32.743600 ha. Large pair uncertainty
-and small PAS endpoint loss therefore are not contradictory. The hypothesis
-that most uncertain-pair pixels are non-PAS has not been quantified: a
-pair-level cross-tabulation of previous/current PAS membership is needed
-before making that assertion. Spatial overlap across the two annual pairs
-is also not measured by the repeated summary numbers.
-
-## Execution and invariance assurance
-
-The closure uses exact production-source categorical logic under a local
-scalar adapter and source checks, accepted GEE export records, and cell-level
-accounting. It is not a fresh native GEE synthetic run or an independent
-all-pixel audit of criteria 3 and 5. The versioned panel gate preserved
-non-origin fields along the accepted chain, including retained downstream
-fields where present; NAT→TMP and TMP→* raster flows were not independently
-re-exported, and phases 2–8 were not rerun during remediation. Future GEE runs
-must retain the exact executed script snapshot and SHA-256, repository path,
-commit when available, constants snapshot, run identifier and export hashes.
-Current-source hashes must not retrospectively substitute for missing
-historical execution hashes.
+The affected findings P9A035–P9A037 remain suspended until the reconstructed
+pilot and full series pass the approved acceptance criteria. A successful run
+will create new validation and impact-audit records and a new versioned status
+event rescinding the suspension. It will not modify the accepted suspension
+event in place.

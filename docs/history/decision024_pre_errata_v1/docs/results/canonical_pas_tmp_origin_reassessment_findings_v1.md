@@ -1,5 +1,3 @@
-> **Status notice — 2026-10-09:** This is a dated historical record; statuses and source-age percentages in its body apply to its original edition. Current status: [Decision 024 closure and qualifications](../decisions/024_implementation_closure_v2.md); current RQ2 interpretation: [erratum v4.1](decision024_origin_window_erratum_v4_1.md).
-
 # Corrected origin of PAS→temporary-crop conversion
 
 **Research question 2:** among endpoint conversions from pasture (PAS) at the

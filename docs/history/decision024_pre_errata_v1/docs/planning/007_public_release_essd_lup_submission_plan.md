@@ -411,14 +411,3 @@ This plan is complete only when the project has produced:
 2. an ESSD data-description submission — or a formally justified alternative data-paper submission — anchored to that release;
 3. a distinct LUP analytical submission anchored to the same exact release;
 4. a public documentation structure in which a new user can understand the dataset, its provenance, its limitations, and its legitimate uses without access to private project history.
-
-
-## 12. Decision 024 release amendment — 2026-10-09
-
-This additive amendment makes the remediation dependencies explicit; it does not claim that the complete Stage 0 inventory or DOI deposit is finished. `config/public_release_decision024_required_files_v1.csv` lists eight corrected `canonical_pas_origin_destination_<t0>_<t1>_full_v3.csv` tables (24,889 cells each) and the v2 stock-flow, derived and integrated Parquets (199,112 rows each), with accepted SHA-256 values. These are required in the immutable DOI-bearing v1.0.0 package, together with validation JSONs, source code/configuration snapshots, cell keys, units, dictionaries, provenance and the v4.1 interpretation erratum. CSV origin columns must not be confused with retired source-age categories.
-
-The CSV bytes were authenticated locally during closure and the supplementary PAS→NAT aggregation. The Parquet hashes are inherited from the accepted 17p validation; the Parquet bytes have not been rehashed in this review. At release packaging, obtain those exact bytes, verify all inventory hashes, check schemas/keys/rows, and reproduce published summaries in a fresh environment. The eight cell CSVs and large Parquets need not be committed as Git objects, but must be publicly downloadable with persistent versioned DOI access and an unambiguous link from GitHub. External/private paths alone do not satisfy the release gate. DOI status is pending; no placeholder is an active DOI.
-
-This is a partial amendment for Decision 024, not a complete inventory of the other accepted project outputs. Follow the full Stage 0 inventory and scope-allocation requirements above. If an auxiliary re-entry decomposition or window sensitivity supports a manuscript claim, its data, code and dictionaries also become required for that exact release version.
-
-The plan's historical proposed filename `024_public_release_and_dual_publication_governance.md` must not collide with the already accepted pasture-spell Decision 024. A future publication-governance decision needs the next unused decision number, checked against the repository before creation. This review creates no duplicate Decision 024.

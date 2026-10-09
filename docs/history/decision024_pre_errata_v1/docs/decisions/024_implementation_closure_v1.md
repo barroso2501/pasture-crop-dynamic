@@ -1,5 +1,3 @@
-> **Status notice — 2026-10-09:** This is a dated historical record; statuses and source-age percentages in its body apply to its original edition. Current status: [Decision 024 closure and qualifications](024_implementation_closure_v2.md); current RQ2 interpretation: [erratum v4.1](../results/decision024_origin_window_erratum_v4_1.md).
-
 # Decision 024 — implementation closure v1
 
 **Specification recorded:** 2026-09-26. **Implementation reviewed and completed:** 2026-10-08.  

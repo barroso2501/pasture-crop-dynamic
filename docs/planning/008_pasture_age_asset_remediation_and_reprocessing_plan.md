@@ -1,48 +1,15 @@
-> **Status notice — 2026-10-09:** This is a dated historical record; statuses and source-age percentages in its body apply to its original edition. Current status: [Decision 024 closure and qualifications](../decisions/024_implementation_closure_v2.md); current RQ2 interpretation: [erratum v4.1](../results/decision024_origin_window_erratum_v4_1.md).
+> **Status notice — 2026-10-09:** This is a superseded plan-v2 record; statuses and source-age percentages in its body apply to its original edition. Current status: [Decision 024 closure and qualifications](../decisions/024_implementation_closure_v2.md); current RQ2 interpretation: [erratum v4.1](../results/decision024_origin_window_erratum_v4_1.md).
 
 # Pasture-age asset remediation and reprocessing plan
 
-**Version:** 3
+**Version:** 2
 **Status:** approved methodological remediation plan; implementation pending
-**Scope:** reconstruction of observed pasture episodes; correction of the PAS→temporary-crop origin attribution used for RQ2; supplementary PAS→NAT origin diagnosis; explicit separation of observed PAS outflow from observation loss in endpoint accounting; and controlled reprocessing of dependent products
+**Scope:** reconstruction of observed pasture episodes, correction of PAS-outflow origin attribution (temporary crops and native vegetation, closed against a residual), and controlled reprocessing of dependent products
 **Primary period:** 1985–2020
 **Diagnostic extension:** 2020–2025 remains included and explicitly flagged
 **Related decisions:** 003 (unresolved pasture-age code `1`), 009 (multiquinquennial episodes and 2020–2025), 020 (Phase 9 RQ1/RQ2 gap resolution), 022 (temporal boundary symmetry and 2020–2025 uncertainty sources)
 
-## Version history
-
-### Version 3 amendments
-
-Version 3 resolves six issues identified in the review of version 2:
-
-1. **RQ2 remains restricted to PAS→temporary crops.** PAS→NAT retains the
-   same reconstructed origin classification but is treated as a supplementary
-   diagnostic and accounting product, not as an expansion of RQ2 or of
-   findings P9A035–P9A037.
-2. **The five-year origin estimand is fixed at `t0`.** For an endpoint flow
-   `PAS(t0)→D(t1)`, the origin category is the reconstructed pasture-episode
-   state at the interval start. A different pasture episode beginning and
-   ending inside the interval does not replace that origin. Annual pathways
-   remain available as a separate analytical object.
-3. **Endpoint accounting now separates substantive observed outflow from
-   observation loss.** `NODATA`, `unexpected`, and `masked` are not described
-   as land-cover transitions and are not absorbed into a substantive
-   `PAS→other` residual.
-4. **Uncertain histories can become attributable again.** After a gap, a
-   confidently observed non-PAS year resets uncertainty; the next PAS year is
-   a new observed entry (`201`).
-5. **Boundary-adjacent events receive year-specific fields.** Entry and
-   termination flags retain the triggering year rather than collapsing all
-   2024–2025 events into a single series-level indicator.
-6. **Evidence-status records remain immutable.** Suspension is recorded as a
-   versioned event. A later rescission creates another versioned event linked
-   to the validating evidence rather than modifying the accepted suspension
-   record in place.
-
-These amendments clarify the estimand and accounting identities without
-changing the reconstruction principle adopted in version 2.
-
-### Version 2 amendments
+## Version 2 amendments
 
 Version 2 incorporates seven corrections identified in review of version 1, plus one editorial consistency fix. Each is justified below; none reverses a version-1 decision, all are extensions or connective tissue.
 
@@ -75,14 +42,10 @@ left-censored baseline stock.
 The project will no longer use the public pasture-age asset as the analytical
 source for PAS-outflow origin attribution. Instead, it will derive an
 auditable sequence of observed pasture episodes directly from the annual
-MapBiomas coverage series.
-
-The corrected PAS→temporary-crop origin partition remains the analytical
-product that answers RQ2. The same reconstructed origin state will also be
-reported for PAS→NAT as a supplementary diagnostic because the source defect
-is destination-independent. Remaining PAS endpoint destinations will be
-retained for accounting closure, with substantive destinations kept separate
-from loss of observation.
+MapBiomas coverage series, and will apply that reconstruction to every
+PAS-outflow destination that the project treats as a principal focal flow
+(PAS→temporary crops and PAS→NAT), closing the remainder as a residual rather
+than leaving it undefined by omission.
 
 ## 2. Observed failure
 
@@ -105,10 +68,10 @@ second episode begins inside the observed series and therefore has an observed
 entry year. It must not inherit the left-censored status of the earlier
 episode.
 
-The same source defect can affect a pixel whose endpoint destination is NAT
-rather than temporary crops. This supports applying the reconstructed origin
-state to PAS→NAT as a supplementary analysis, but it does not change the scope
-of RQ2.
+The same defect affects a pixel that later transitions PAS→NAT rather than
+PAS→temporary crops: the origin of the pasture episode immediately preceding
+either transition is misattributed in exactly the same way, regardless of the
+destination class.
 
 ## 3. Analytical object to be reconstructed
 
@@ -129,15 +92,11 @@ following states:
 | 2 | `post_1985_observed_entry` | Current pasture episode began after an observed non-PAS year |
 | 3 | `unresolved_episode_origin` | Current PAS episode cannot be attributed because its backward history encounters unobserved, masked, or unexpected coverage before a confirmed entry or 1985 |
 
-The categorical state, rather than a numerical code alone, will control:
-
-- the PAS→temporary-crop origin partition used for RQ2;
-- the supplementary PAS→NAT origin partition; and
-- accounting checks for other PAS-outflow destinations.
-
-`PAS→other_observed` comprises OAG, OUT, and WATER. Observation-loss
-destinations (`NODATA`, `unexpected`, and `masked`) remain separate and must
-not be absorbed into this substantive residual.
+The categorical state, rather than a numerical code alone, will control the
+origin partition for every PAS-outflow destination the project analyzes as a
+principal focal flow — PAS→temporary crops and PAS→NAT — with PAS→other
+(mosaic/other agriculture, other anthropogenic uses, water) closed as a
+residual so the partition is never incomplete by omission.
 
 ## 4. Temporal reconstruction rules
 
@@ -187,15 +146,12 @@ The ecological interpretation of the transition does not change the temporal
 rule. PAS→NAT terminates the episode even when it may represent regeneration,
 classification noise, or a short-lived alternation.
 
-Episode termination is used to reconstruct the annual state sequence, but the
-five-year endpoint-flow estimand remains anchored at the interval start. For
-each flow `PAS(t0)→D(t1)`, origin is defined by the reconstructed pasture-
-episode state at `t0`.
-
-An exit, re-entry, and second exit occurring between `t0` and `t1` does not
-replace the origin category observed at `t0`. Such within-interval changes may
-be examined separately as annual pathway information but must not silently
-change the endpoint-flow estimand.
+The origin state attached to the episode that just terminated is what feeds
+the origin partition at whichever destination the pixel transitions to. The
+reconstruction engine itself does not need to know the destination class to
+compute the origin state — the destination-specific partitions in Section 7
+and the implementation steps are simply different groupings of the same
+per-pixel, per-year output by the transition each pixel happens to make.
 
 ### 4.5 Missing or uncertain observations
 
@@ -209,12 +165,7 @@ PAS → NODATA → PAS
 ```
 
 This state may later become attributable if the reconstruction design adopts
-an explicitly validated gap rule. No gap bridging is authorized in
-reconstruction specification version 1.
-
-Uncertainty does not persist after a confidently observed non-PAS state. If a
-gap is followed by NAT, TMP, OAG, OUT, or WATER and PAS occurs later, that PAS
-observation begins a new attributable episode at `201`.
+an explicitly validated gap rule. No gap bridging is authorized in version 1.
 
 Terminology note (version 2): the gap year itself (NODATA or masked) is
 reported as `uncertain`. A PAS year whose origin cannot be attributed because
@@ -244,19 +195,10 @@ episode level:
   years (class- and year-specific, per Decision 022's filter specification).
 
 Implementation requirement: any episode entry (`post_1985_observed_entry`) or
-termination whose triggering year is 2024 or 2025 must retain a year-specific
-boundary qualification, distinct from `unresolved_episode_origin`. At minimum,
-the reconstructed output must provide:
-
-```text
-entry_boundary_adjacent_<year>
-termination_boundary_adjacent_<year>
-episode_boundary_year
-```
-
-Equivalent long-format event fields are acceptable if they preserve event
-type and triggering year. This lets downstream analyses apply Decision 022's
-caveats at the episode level, not only at the annual coverage level.
+termination whose triggering year is 2024 or 2025 must be flagged
+`boundary_adjacent = true` in the reconstructed output, distinct from
+`unresolved_episode_origin`. This lets downstream analyses apply Decision
+022's caveats at the episode level, not only at the annual coverage level.
 
 ## 5. Synthetic verification cases
 
@@ -272,8 +214,6 @@ the canonical domain:
 | `PAS, NODATA, PAS` | `100, uncertain, unresolved` |
 | `TMP, PAS, NODATA, PAS` | `NA, 201, uncertain, unresolved` |
 | `NODATA, PAS, PAS` (1985 itself unobserved) | `uncertain, unresolved, unresolved` |
-| `NODATA, PAS, NAT, PAS` | `uncertain, unresolved, NA, 201` |
-| `PAS, NODATA, PAS, NAT, PAS` | `100, uncertain, unresolved, NA, 201` |
 
 Required invariants are:
 
@@ -285,8 +225,8 @@ Required invariants are:
   episode;
 - every current PAS pixel receives exactly one origin state;
 - no origin state overlaps another;
-- every episode boundary triggered in 2024 or 2025 retains its event type and
-  triggering year and is flagged as boundary-adjacent (Section 4.6).
+- every episode boundary triggered in 2024 or 2025 is flagged
+  `boundary_adjacent` (Section 4.6).
 
 ## 6. Immediate evidence status
 
@@ -304,13 +244,12 @@ Until remediation is completed:
   P9A035–P9A037 above.
 
 The suspension applies to pasture-origin attribution on any destination, not
-to total observed transition area by destination class.
+to total PAS-outflow conversion area by destination class.
 
 The suspension is additionally recorded in a structured, machine-checkable
-event record (new in version 2; see Step 1) rather than being auditable only
-from this plan's prose. Rescission requires a later versioned status event, not
-an overwrite of the accepted suspension record and not merely regeneration of
-the figure or statistic.
+log (new in version 2; see Step 1) rather than being auditable only from this
+plan's prose. Rescinding the suspension for a given finding requires updating
+that log, not only regenerating the figure or statistic.
 
 ## 7. Expected impact by analytical component
 
@@ -325,18 +264,16 @@ the figure or statistic.
 | Consolidation–replenishment balance | Unaffected | Verify invariance |
 | Fixed 1985 PAS pixel cohort used for RQ1 | Expected to remain valid | Revalidate baseline definition and output hashes |
 | PAS-to-temporary-crop origin partition used for RQ2 | Invalid pending correction | Reconstruct and reprocess |
-| PAS→NAT origin partition | Not previously accepted; source-dependent if produced | Reconstruct as a supplementary diagnostic, outside RQ2 |
-| PAS→other observed (OAG, OUT, WATER) origin | Not previously computed | Compute as a substantive closing group; no manuscript claim required |
-| PAS→observation loss (NODATA, unexpected, masked) | Explicit coverage diagnostic | Retain separately from substantive outflows and include in full closure |
+| PAS→NAT origin partition | Invalid pending correction (newly scoped in version 2) | Reconstruct and reprocess |
+| PAS→other (mosaic/other agriculture, other anthropogenic, water) origin, as closure residual | Not previously computed | Compute as a closing term against total PAS outflow; no manuscript claims required beyond the closure check itself |
 | Cell trajectories, Moran, LISA, biome comparisons, and MAUP | Expected to remain valid | Apply formal invariance gate before deciding whether to rerun |
 | Integrated evidence matrix | Partly invalid | Replace dependent evidence rows after corrected execution |
 
-The fixed RQ1 cohort and the reconstructed episode origin represent different analytical
+The fixed RQ1 cohort and the RQ2 episode origin represent different analytical
 objects. A pixel that was PAS in 1985 remains a member of the fixed spatial
 cohort even after leaving and returning to pasture. Its later pasture episode,
-however, is classified as post-1985. This classification answers RQ2 when the
-endpoint flow is PAS→temporary crops and is supplementary when the endpoint
-flow is PAS→NAT.
+however, is classified as post-1985 for RQ2, on whichever destination it
+eventually transitions to.
 
 ## 8. Implementation sequence
 
@@ -352,23 +289,17 @@ Create a decision record describing:
 
 The public asset and all accepted version-1 outputs remain immutable evidence.
 
-In addition, produce a structured suspension-event record as an immediate,
-checkable artifact rather than plan prose alone:
+In addition (new in version 2), produce a structured suspension log as an
+immediate, checkable artifact rather than plan prose alone:
 
 ```text
-outputs/validation/pasture_age_remediation_v1/
-canonical_evidence_status_events_v1.csv
+docs/validation/evidence_suspension_log_v1.csv
 ```
 
-with columns `event_id, finding_id, event_status, effective_date, reason,
-governing_record, rescission_criteria, source_version`. Initial rows are
-P9A035, P9A036, and P9A037, each with `event_status = suspended`,
-`governing_record = 008`, and `rescission_criteria = corrected origin
-partition passes Step 4/Step 8 acceptance criteria`.
-
-The accepted file is immutable. If remediation later permits rescission, a
-new versioned event file records `event_status = rescinded` and references the
-validation artifact that satisfied the criterion.
+with columns `finding_id, status, suspended_date, reason, governing_plan,
+rescission_criteria, rescinded_date`. Initial rows: P9A035, P9A036, P9A037,
+each `status = suspended`, `governing_plan = 008`, `rescission_criteria =
+corrected origin partition passes Step 4/Step 8 acceptance criteria`.
 
 ### Step 2 — Build the reconstruction engine
 
@@ -377,8 +308,8 @@ produces:
 
 1. 41 bands of observed pasture-spell origin;
 2. 41 optional bands of auxiliary consecutive episode age;
-3. year- and event-specific boundary-adjacent fields per Section 4.6 for
-   episode entries or terminations triggered in 2024 or 2025;
+3. a `boundary_adjacent` flag band per Section 4.6 for episode boundaries
+   triggered in 2024 or 2025;
 4. annual validation summaries;
 5. counts and areas of unresolved origins;
 6. a reproducible configuration record with asset identifiers, native CRS,
@@ -419,25 +350,21 @@ year and report:
 The audit must distinguish source discrepancies from the analytical
 reclassification adopted by the project.
 
-### Step 4 — Run a pasture-origin remediation pilot
+### Step 4 — Run a PAS-outflow origin pilot
 
 Use 2015–2020 as the first pilot because it supports a central RQ2 comparison.
-Calculate the old and reconstructed PAS→temporary-crop origin partitions side
-by side. Apply the same reconstructed origin state to PAS→NAT as a
-supplementary diagnostic. For the same interval, calculate
-`PAS→other_observed` and `PAS→observation_loss` separately.
+Calculate the old and reconstructed origin partitions side by side for both
+PAS→temporary crops and PAS→NAT, and compute the PAS→other closure residual
+for the same interval.
 
 Pilot acceptance requires:
 
-- exact closure of the origin partition within every destination;
-- exact closure of PAS endpoint non-persistence across observed outflow and
-  observation-loss destinations;
+- exact closure to total PAS-outflow area, by destination and in aggregate;
 - zero overlap among origin components;
 - reproduction of synthetic sequences;
 - exact invariance of every non-age stock and flow field;
 - documented transfer from the old censored category to the reconstructed
-  post-1985 category for PAS→temporary crops and, separately, for the
-  supplementary PAS→NAT diagnostic;
+  post-1985 category, for both destinations;
 - explicit unresolved component where history is insufficient;
 - correct `boundary_adjacent` flagging is not exercised by this interval
   (2015–2020 predates the 2024–2025 boundary) and is instead checked in Step 5
@@ -474,38 +401,13 @@ canonical_pas_tmp_origin_interval_summary_v2.csv
 canonical_pas_tmp_origin_pooled_summary_v2.csv
 canonical_pas_nat_origin_interval_summary_v2.csv
 canonical_pas_nat_origin_pooled_summary_v2.csv
-canonical_pas_outflow_destination_and_origin_closure_v2.csv
+canonical_pas_outflow_origin_closure_v2.csv
 ```
 
-The last file verifies three separate identities per interval and pooled:
-
-```text
-PAS→destination total =
-    initial continuous origin
-  + post-1985 observed-entry origin
-  + unresolved origin
-
-observed PAS outflow =
-    PAS→TMP
-  + PAS→NAT
-  + PAS→OAG
-  + PAS→OUT
-  + PAS→WATER
-
-PAS endpoint non-persistence =
-    observed PAS outflow
-  + PAS→NODATA
-  + PAS→unexpected
-  + PAS→masked
-
-PAS stock at t0 =
-    PAS→PAS persistence
-  + PAS endpoint non-persistence
-```
-
-For presentation, OAG, OUT, and WATER may be grouped as
-`PAS→other_observed`; NODATA, unexpected, and masked may be grouped as
-`PAS→observation_loss`. The two groups must remain distinguishable.
+The last file (new in version 2) verifies, per interval and pooled, that
+PAS→temporary-crop origin totals + PAS→NAT origin totals + PAS→other residual
+reconcile exactly to total PAS outflow, closing the accounting identity by
+construction rather than by omission.
 
 Regenerate RQ2 figures, tables, evidence statements, and manuscript-ready
 language from these corrected products.
@@ -532,19 +434,14 @@ For RQ1:
 
 For RQ2:
 
-- replace all PAS→temporary-crop origin shares and temporal comparisons;
-- reassess the direction and strength of the censored-to-post-1985 shift for
-  PAS→temporary crops;
+- replace all origin shares and temporal comparisons for both PAS→temporary
+  crops and PAS→NAT, and report the PAS→other closure residual alongside
+  them;
+- reassess the direction and strength of the censored-to-post-1985 shift on
+  each destination separately, noting whether the two destinations show
+  consistent or divergent shifts;
 - revise P9A035–P9A037;
 - regenerate the relevant figure and evidence matrix rows.
-
-Separately from RQ2:
-
-- report the PAS→NAT origin partition as a supplementary diagnostic;
-- compare its temporal direction with PAS→temporary crops without treating it
-  as an answer to RQ2; and
-- create new evidence identifiers only if this supplementary result is later
-  admitted to the integrated evidence matrix.
 
 ### Step 9 — Update documentation and releases
 
@@ -565,11 +462,11 @@ Decision 024 must explicitly cite and remain consistent with Decisions 003
 is legible as an extension of the project's existing censoring and boundary
 framework rather than a freestanding fix.
 
-The revision to `docs/methods/data_sources_and_classification.md` must replace
-the source-age rule with the reconstructed `t0` origin state. It must preserve
-PAS→temporary crops as the RQ2 estimand, describe PAS→NAT as supplementary,
-and state the separate identities for `PAS→other_observed` and
-`PAS→observation_loss` established in Sections 7 and 8 of this plan.
+The revision to `docs/methods/data_sources_and_classification.md` must
+generalize its current "Pasture-origin classification" section, which is
+scoped to `PAS→TMP` only, to state the identity for all three components
+(PAS→temporary crops, PAS→NAT, PAS→other residual) established in Section 7
+of this plan.
 
 README product lists, data dictionaries, manifests, release notes, and the
 dual-manuscript plan must point to the corrected version-2 products.
@@ -584,17 +481,16 @@ The remediation is accepted only if:
 4. code `100` never reappears after an observed interruption;
 5. every observed re-entry begins at auxiliary code `201`;
 6. all uncertain histories remain explicit rather than being silently assigned;
-7. the origin components close exactly within each destination; substantive
-   destinations close to observed PAS outflow; and observed outflow plus
-   observation loss closes to PAS endpoint non-persistence while preserving
-   `PAS→other_observed` and `PAS→observation_loss` as separate groups;
+7. the origin components close exactly to the total PAS-outflow, both for
+   PAS→temporary crops and PAS→NAT individually and for the PAS→other residual
+   in aggregate;
 8. all eight intervals contain 24,889 unique canonical cells;
 9. non-age stocks and flows reconcile with version 1 within the accepted
    numerical tolerance;
 10. corrected summaries reproduce their underlying cell-level totals;
 11. primary and diagnostic periods remain separately identified;
-12. every episode boundary triggered in 2024 or 2025 retains event type and
-    triggering year and is flagged as boundary-adjacent;
+12. every episode boundary triggered in 2024 or 2025 is flagged
+    `boundary_adjacent`;
 13. the code-`1`/code-`100` overlap audit (Step 3) is complete and reconciled;
 14. output inventories, hashes, validation JSON files, and method records are
     complete.

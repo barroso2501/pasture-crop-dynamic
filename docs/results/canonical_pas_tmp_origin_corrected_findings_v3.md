@@ -1,8 +1,6 @@
-> **Status notice — 2026-10-09:** This is a dated historical record; statuses and source-age percentages in its body apply to its original edition. Current status: [Decision 024 closure and qualifications](../decisions/024_implementation_closure_v2.md); current RQ2 interpretation: [erratum v4.1](decision024_origin_window_erratum_v4_1.md).
-
 # Corrected RQ2 findings — Decision 024 closure
 
-**Accepted review date:** 2026-10-08. **Evidence edition:** v4.
+**Numerical review:** 2026-10-08. **Interpretation erratum:** 2026-10-09. **Evidence edition:** v4.1.
 
 RQ2 concerns PAS→temporary-crop endpoint conversion. The origin category is the current observed pasture spell reconstructed from annual coverage at t0. PAS→NAT origin remains supplementary and is not promoted into the integrated matrix by this record.
 
@@ -28,19 +26,19 @@ RQ2 concerns PAS→temporary-crop endpoint conversion. The origin category is th
 
 ## P9A035
 
-The share of PAS-to-temporary-crop endpoint conversion attributed to an uninterrupted left-censored 1985 pasture spell decreases across the seven primary intervals, while observed post-1985 entry spells increase.
+Within the fixed 1985-defined window, the observed initial-spell share of PAS-to-temporary-crop endpoint conversions declines across the seven primary intervals; this is a window-conditioned composition, not evidence by itself of a changing land-use regime.
 
-Initial/post-1985-entry shares: 1985-1990 100.00%/0.00%; 2015-2020 31.08%/68.92%. Post-1985-entry share first exceeds 50% in 2000-2005 (51.24%).
+Initial/post-1985-entry shares: 1985-1990 100.00%/0.00% by construction; 2015-2020 31.08%/68.92%. The first observed share above 50% is 2000-2005 (51.24%); this date is window-specific and is not a process threshold.
 
-Origin is reconstructed from annual coverage at t0. A post-1985 observed entry includes re-entry; it is not first-ever establishment. The shift is descriptive, with no trend-significance or causal claim. Endpoint flow does not determine the annual path between t0 and t1.
+1985 is the earliest observed state, not a process origin (Decision 022). The first interval is 100% initial by construction. Shares depend on window start, follow-up length and selection into the changing conversion denominator; finite-duration stationary renewal can also produce decline. Initial membership is non-increasing, but its conversion share need not be monotonic. Window-start sensitivity has not been executed. Origin is reconstructed from annual coverage at t0. A post-1985 observed entry includes re-entry; it is not first-ever establishment. The shift is descriptive, with no trend-significance or causal claim. Endpoint flow does not determine the annual path between t0 and t1.
 
 ## P9A036
 
-Across 1985-2020, observed post-1985 entry spells contribute a modest majority of pooled PAS-to-temporary-crop endpoint conversion area; uninterrupted left-censored 1985 spells remain substantial.
+For the fixed 1985-2020 window, pooled interval conversion area attributed to observed post-1985 entry spells is 53.09%, compared with 46.91% for uninterrupted left-censored 1985 spells; these proportions are conditional on the chosen baseline and interval weights.
 
 Primary interval-conversion sum = 20.119468 million ha; initial 46.91% (9.438022 million ha), post-1985 entry 53.09% (10.681383 million ha), unresolved 62.568807 ha (0.000311%).
 
-Pooled values sum interval conversion areas and do not deduplicate pixels converted in different intervals. Initial origin is a continuous observed 1985 spell at t0, not membership in the fixed RQ1 cohort after interruptions. No causal attribution or inferential majority test is claimed.
+1985 is the earliest observed state, not a process origin (Decision 022). The first interval is 100% initial by construction. Shares depend on window start, follow-up length and selection into the changing conversion denominator; finite-duration stationary renewal can also produce decline. Initial membership is non-increasing, but its conversion share need not be monotonic. Window-start sensitivity has not been executed. Observed entry includes re-entry and does not identify first-ever establishment. Pooled values sum interval conversion areas and do not deduplicate pixels converted in different intervals. Initial origin is a continuous observed 1985 spell at t0, not membership in the fixed RQ1 cohort after interruptions. No causal attribution or inferential majority test is claimed.
 
 ## P9A037
 
@@ -58,4 +56,4 @@ The primary pooled denominator is a sum of interval conversion areas, not a uniq
 
 The descriptive increase is not an estimated causal effect or an inferential trend test. No claim of uninterrupted first-ever establishment after 1985 is made. Source classification accuracy and limited 2024–2025 boundary support remain interpretation limits.
 
-Current evidence authority: `outputs/summary/decision024_closure_v1/canonical_integrated_evidence_matrix_v4.csv`; status-event authority: `outputs/validation/decision024_closure_v1/canonical_evidence_status_events_v2.csv`.
+Current evidence authority: `outputs/summary/decision024_review_v1/canonical_integrated_evidence_matrix_v4_1.csv`; event index: `outputs/validation/decision024_review_v1/canonical_evidence_status_events_v3.csv`. The first origin bar is 100% initial by construction, not a process baseline. Window sensitivity is pending.
