@@ -1,0 +1,3 @@
+"finding_id","from_edition","to_edition","changed_fields","change_type"
+"P9A035","v4","v4.1","topic;evidence_status;main_result;numeric_evidence;robustness_status;interpretation_boundary;manuscript_use","interpretation_only_no_source_data_change"
+"P9A036","v4","v4.1","evidence_status;main_result;robustness_status;interpretation_boundary;manuscript_use","interpretation_only_no_source_data_change"

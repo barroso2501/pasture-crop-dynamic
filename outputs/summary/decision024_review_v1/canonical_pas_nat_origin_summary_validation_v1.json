@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "scope": "supplementary_pas_nat_origin_aggregation_only",
+  "native_pixel_reprocessing": false,
+  "eight_input_csvs_authenticated": true,
+  "input_records": [
+    {
+      "interval": "1985_1990",
+      "filename": "canonical_pas_origin_destination_1985_1990_full_v3.csv",
+      "sha256": "b99293c32f5d6c52f5444c6f8a1e5f43508c820e2cf74b59c1d44d9f6546c1ba",
+      "rows": 24889
+    },
+    {
+      "interval": "1990_1995",
+      "filename": "canonical_pas_origin_destination_1990_1995_full_v3.csv",
+      "sha256": "0edaeb5c289f6648caa0443dcccce296f04552c8b34949340e3e989c8bd21562",
+      "rows": 24889
+    },
+    {
+      "interval": "1995_2000",
+      "filename": "canonical_pas_origin_destination_1995_2000_full_v3.csv",
+      "sha256": "8638ff382834dcfdc95c1c4c6b966baa6e5bd714c436ca93e8be3bca520fcd7f",
+      "rows": 24889
+    },
+    {
+      "interval": "2000_2005",
+      "filename": "canonical_pas_origin_destination_2000_2005_full_v3.csv",
+      "sha256": "9570c17e7df8c7db757b86db75466eb9aff1cac9944f7969ed9e6c23f41a5505",
+      "rows": 24889
+    },
+    {
+      "interval": "2005_2010",
+      "filename": "canonical_pas_origin_destination_2005_2010_full_v3.csv",
+      "sha256": "45b9d9d652ec79d95cff3dd2d2abead233d9d802ecaa45e4e371df8387e59d75",
+      "rows": 24889
+    },
+    {
+      "interval": "2010_2015",
+      "filename": "canonical_pas_origin_destination_2010_2015_full_v3.csv",
+      "sha256": "bc9de1c982fd8aa0e7bfa5e1b7ce93addd9a807550fb493f4971fad304e8cd78",
+      "rows": 24889
+    },
+    {
+      "interval": "2015_2020",
+      "filename": "canonical_pas_origin_destination_2015_2020_full_v3.csv",
+      "sha256": "ab5c2d0500540ff8b18fd84154c58d1266bec75a50f34cbaea2db1108260a82f",
+      "rows": 24889
+    },
+    {
+      "interval": "2020_2025",
+      "filename": "canonical_pas_origin_destination_2020_2025_full_v3.csv",
+      "sha256": "86c659ba268d60c5b2e652e6d1799e255c68f6cb4b911404b91782dd2bff013a",
+      "rows": 24889
+    }
+  ],
+  "cells_per_interval": 24889,
+  "maximum_destination_identity_residual_ha_per_cell": 1.8189894035458565e-12,
+  "accepted_pas_tmp_summaries_reproduced": true,
+  "primary_direction_agreements": 6,
+  "primary_comparisons": 6,
+  "diagnostic_direction_agrees": false,
+  "limits": [
+    "First interval is 100% initial by construction.",
+    "Shares are window-dependent, not process thresholds.",
+    "Pooled areas may count a pixel in several intervals.",
+    "PAS->NAT does not by itself identify ecological regeneration.",
+    "No spatial or causal inference; no uncertainty decomposition or window sensitivity executed."
+  ],
+  "outputs": {
+    "canonical_pas_nat_origin_interval_summary_v1.csv": {
+      "sha256": "fd851f388644054ecd699521e8c423a73996905b484ba8cf21fc585f4c80ccdf",
+      "bytes": 1204
+    },
+    "canonical_pas_nat_origin_pooled_summary_v1.csv": {
+      "sha256": "38c92657fd4bbd5d164b70a5964aff8d4cfe06a326a8c86ab132c78275e00a5b",
+      "bytes": 444
+    },
+    "canonical_pas_nat_tmp_origin_direction_comparison_v1.csv": {
+      "sha256": "7d7990095bf7069dfda0f5a6ef1947f65f0d61047f970089a312d44c3a0821cb",
+      "bytes": 1114
+    }
+  }
+}
