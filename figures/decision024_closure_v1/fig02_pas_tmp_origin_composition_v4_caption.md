@@ -1,0 +1,5 @@
+# Figure 02 v4 — corrected observed-pasture-spell origin
+
+Stacked shares of PAS-to-temporary-crop five-year endpoint conversion, classified by the observed pasture-spell origin at interval start. Origin is reconstructed from annual coverage. The categories are an uninterrupted left-censored 1985 spell, an observed post-1985 entry spell, and unresolved spell origin. Observed post-1985 entry includes re-entry and is not the first-ever establishment of pasture at a location. The small unresolved component is present in the source table even when not visually discernible (<0.001% per interval). The final, hatched bar is the 2020–2025 diagnostic extension, with limited temporal-filter support. The figure is descriptive and does not show survival, paths between endpoints, causal attribution, or a statistical trend test.
+
+Source: `outputs/summary/pasture_spell_panel_v2/canonical_pas_tmp_origin_interval_summary_v2.csv`, authenticated through the corrected panel v2 validation. This figure supersedes source-age origin-composition figures for current manuscript use; historical figures remain immutable provenance.

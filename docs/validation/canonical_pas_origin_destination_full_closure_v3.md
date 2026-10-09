@@ -12,8 +12,6 @@ The eight `canonical_pas_origin_destination_YYYY_YYYY_full_v3.csv` files and eig
 
 The validator `17m_validate_pas_origin_destination_full_v3.py` checks every cell against the authenticated canonical stock-flow baseline, including each PAS endpoint destination, and matches each PAS→TMP origin component to the accepted RQ2 batch. The wrapper `17n_run_all_pas_origin_destination_closure_v1.py` ran all eight intervals. This independent review also read the supplied final CSV bytes and JSON records without relying only on their `PASS` fields.
 
-**RQ2 provenance clarification.** `rq2_validation_sha256` in each closure JSON is the hash of the *corresponding interval* file `canonical_pas_tmp_origin_impact_YYYY_YYYY_validation_v1.json` passed as `--rq2-validation`. It does not refer to the pooled `canonical_pas_tmp_origin_series_reassessment_validation_v1.json`. The eight interval hashes were recomputed from the previously accepted GitHub update package and all eight matched byte for byte. For example, 2020–2025 is `d30ef510512e04687ce53fd5ba0de246d72f81c09c2cba46d2d9d5ad7fa881f8`, while the distinct pooled series file is `d6172a2f1fca242fd62e9e163d5b324f4adc809b9e3ed9dd0dafc911662299bb`. Comparing those two hashes as if they named the same file would give a false provenance discrepancy. The interval validators also authenticate each accepted RQ2 batch CSV against the interval inventory before comparing the origin components cell by cell.
-
 ## Independent checks and results
 
 | Check | Result |

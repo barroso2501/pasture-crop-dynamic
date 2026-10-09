@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "cases": 10,
+  "boundary_event_year_check": true,
+  "pilot_js_sha256": "0dea8cc106e1c41e967f7f6cf2e4a60864ab732b4200c7aa822a82529f266429",
+  "production_js_sha256": "6eea669ab6d25bb50d48c739359f55fafa9dc5ad27f8432715dcf487da47c55b",
+  "production_scalar_checks": {
+    "status": "PASS",
+    "production_histories_checked": 9330,
+    "continuous_history_through": 2025,
+    "classes_checked": [
+      15,
+      3,
+      39,
+      27,
+      -9999,
+      999
+    ],
+    "all_states_single_valued": true
+  },
+  "test_configuration_limit": "Exact JavaScript functions and the production categorical update were executed with scalar image operations. Classes 3 and 39 cover valid non-PAS inputs to these tests; PAS 15, NODATA 27, masked and unexpected values were also checked. The remote constants module and native GEE rasters were not executed."
+}

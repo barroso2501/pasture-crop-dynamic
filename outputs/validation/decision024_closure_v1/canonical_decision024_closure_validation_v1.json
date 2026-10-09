@@ -1,0 +1,505 @@
+{
+  "status": "PASS",
+  "review_date": "2026-10-08",
+  "scope": "Decision 024 12-criterion technical remediation and corrected evidence closure",
+  "decision_024_fully_implemented": true,
+  "criterion_12": "PASS",
+  "acceptance_criteria": [
+    {
+      "criterion": 1,
+      "status": "PASS",
+      "record": "outputs/validation/decision024_closure_v1/canonical_pasture_spell_synthetic_review_v1.json"
+    },
+    {
+      "criterion": 2,
+      "status": "PASS",
+      "record": "outputs/summary/pasture_age_source_audit_v1/canonical_pasture_age_source_audit_annual_v1.csv"
+    },
+    {
+      "criterion": 3,
+      "status": "PASS",
+      "record": "gee/17g_compare_pas_tmp_origin_interval_batches_v1.js"
+    },
+    {
+      "criterion": 4,
+      "status": "PASS",
+      "record": "outputs/validation/decision024_closure_v1/canonical_pasture_spell_synthetic_review_v1.json"
+    },
+    {
+      "criterion": 5,
+      "status": "PASS",
+      "record": "gee/17a_reconstruct_observed_pasture_spell_age_pilot_v1.js"
+    },
+    {
+      "criterion": 6,
+      "status": "PASS",
+      "record": "outputs/validation/decision024_closure_v1/canonical_pasture_spell_synthetic_review_v1.json"
+    },
+    {
+      "criterion": 7,
+      "status": "PASS",
+      "record": "docs/validation/canonical_pas_origin_destination_full_closure_v3.md"
+    },
+    {
+      "criterion": 8,
+      "status": "PASS",
+      "record": "outputs/validation/decision024_closure_v1/canonical_decision024_input_inventory_v1.csv"
+    },
+    {
+      "criterion": 9,
+      "status": "PASS",
+      "record": "outputs/validation/pasture_spell_panel_v2/canonical_pasture_spell_panel_v2_validation.json"
+    },
+    {
+      "criterion": 10,
+      "status": "PASS",
+      "record": "outputs/validation/pasture_spell_boundary_events_v2/canonical_pasture_spell_boundary_events_validation_v2.json"
+    },
+    {
+      "criterion": 11,
+      "status": "PASS",
+      "record": "outputs/validation/pasture_age_source_audit_v1/canonical_pasture_age_source_audit_validation_v1.json"
+    },
+    {
+      "criterion": 12,
+      "status": "PASS",
+      "record": "outputs/validation/decision024_closure_v1/canonical_decision024_closure_validation_v1.json"
+    }
+  ],
+  "evidence_matrix_version": "phase9-decision024-corrected-evidence-matrix-v4",
+  "matrix_rows": 35,
+  "substantively_revised_findings": [
+    "P9A035",
+    "P9A036",
+    "P9A037"
+  ],
+  "unchanged_substantive_findings": 32,
+  "new_event_rows": 3,
+  "cumulative_event_rows": 6,
+  "historical_v3_origin_claims_status": "superseded; rescission applies only to rewritten matrix-v4 statements",
+  "rq1_revalidation_status": "PASS",
+  "checks": {
+    "matrix_v3_authenticated": true,
+    "eight_full_cell_csv_hashes_authenticated": true,
+    "eight_equal_unique_cell_populations": true,
+    "origin_destination_stock_closure": true,
+    "corrected_interval_summaries_reproduced": true,
+    "pooled_summaries_reproduced": true,
+    "17o_17p_hash_chain_reconciled": true,
+    "boundary_panel_hash_chain_reconciled": true,
+    "source_audit_rq1_hash_chain_reconciled": true,
+    "41_annual_audit_records_chronological": true,
+    "synthetic_and_production_scalar_histories_pass": true,
+    "exactly_three_findings_revised": true,
+    "other_32_findings_preserved_except_edition": true,
+    "35_unique_findings_preserved": true,
+    "no_causal_claims_introduced": true,
+    "primary_diagnostic_roles_preserved": true,
+    "historical_suspension_bytes_preserved_in_v2": true,
+    "three_linked_rescission_events_appended": true,
+    "corrected_figure_regenerated": true,
+    "current_readme_reconciled": true
+  },
+  "independent_review": {
+    "closure_records": [
+      {
+        "interval": "1985_1990",
+        "cells": 24889,
+        "raw_csv_sha256": "b99293c32f5d6c52f5444c6f8a1e5f43508c820e2cf74b59c1d44d9f6546c1ba",
+        "validation_sha256": "396518285b93397a858c8a90449e1c1ee5080cc0d2ec80fea2be9a8d1119fa8f",
+        "max_identity_residual_ha_per_cell": 8.185452315956354e-12,
+        "project_relative_path": "spatial/phase9/pasture_spell_closure_full_v1/canonical_pas_origin_destination_1985_1990_full_v3.csv"
+      },
+      {
+        "interval": "1990_1995",
+        "cells": 24889,
+        "raw_csv_sha256": "0edaeb5c289f6648caa0443dcccce296f04552c8b34949340e3e989c8bd21562",
+        "validation_sha256": "81052eb7ea93f1cb538b96c986d65947b4bdb19683cc40d9354c39e10ced4d9f",
+        "max_identity_residual_ha_per_cell": 1.4551915228366852e-11,
+        "project_relative_path": "spatial/phase9/pasture_spell_closure_full_v1/canonical_pas_origin_destination_1990_1995_full_v3.csv"
+      },
+      {
+        "interval": "1995_2000",
+        "cells": 24889,
+        "raw_csv_sha256": "8638ff382834dcfdc95c1c4c6b966baa6e5bd714c436ca93e8be3bca520fcd7f",
+        "validation_sha256": "b3f8a12e73e0ff3bc97e49cfbbef0867c8dce6eee3299a6e032b6407d48d5103",
+        "max_identity_residual_ha_per_cell": 1.4551915228366852e-11,
+        "project_relative_path": "spatial/phase9/pasture_spell_closure_full_v1/canonical_pas_origin_destination_1995_2000_full_v3.csv"
+      },
+      {
+        "interval": "2000_2005",
+        "cells": 24889,
+        "raw_csv_sha256": "9570c17e7df8c7db757b86db75466eb9aff1cac9944f7969ed9e6c23f41a5505",
+        "validation_sha256": "b9ac2e48f9b563e8833b253b7aaed306c584fc768c64f6771d01b77c6113899d",
+        "max_identity_residual_ha_per_cell": 1.4551915228366852e-11,
+        "project_relative_path": "spatial/phase9/pasture_spell_closure_full_v1/canonical_pas_origin_destination_2000_2005_full_v3.csv"
+      },
+      {
+        "interval": "2005_2010",
+        "cells": 24889,
+        "raw_csv_sha256": "45b9d9d652ec79d95cff3dd2d2abead233d9d802ecaa45e4e371df8387e59d75",
+        "validation_sha256": "9a7aded7c334cbc2fbea2f7e5b6131dcb99bbaa4caebedda3354c4194d3216d4",
+        "max_identity_residual_ha_per_cell": 1.27613475342514e-11,
+        "project_relative_path": "spatial/phase9/pasture_spell_closure_full_v1/canonical_pas_origin_destination_2005_2010_full_v3.csv"
+      },
+      {
+        "interval": "2010_2015",
+        "cells": 24889,
+        "raw_csv_sha256": "bc9de1c982fd8aa0e7bfa5e1b7ce93addd9a807550fb493f4971fad304e8cd78",
+        "validation_sha256": "6a7c7bc3f74b19bb3f9d105d8c5c35b9c1595afa96e8a3ee796dab008d551717",
+        "max_identity_residual_ha_per_cell": 1.0913936421275139e-11,
+        "project_relative_path": "spatial/phase9/pasture_spell_closure_full_v1/canonical_pas_origin_destination_2010_2015_full_v3.csv"
+      },
+      {
+        "interval": "2015_2020",
+        "cells": 24889,
+        "raw_csv_sha256": "ab5c2d0500540ff8b18fd84154c58d1266bec75a50f34cbaea2db1108260a82f",
+        "validation_sha256": "7acbf4474f0c553dcc55d6f477945e20a869f955961d89154571f57680a67ad0",
+        "max_identity_residual_ha_per_cell": 1.4551915228366852e-11,
+        "project_relative_path": "spatial/phase9/pasture_spell_closure_full_v1/canonical_pas_origin_destination_2015_2020_full_v3.csv"
+      },
+      {
+        "interval": "2020_2025",
+        "cells": 24889,
+        "raw_csv_sha256": "86c659ba268d60c5b2e652e6d1799e255c68f6cb4b911404b91782dd2bff013a",
+        "validation_sha256": "149343027e53f12e203f949bb0c99e3012caa7cd7fcb552e221dd87c9a177ab8",
+        "max_identity_residual_ha_per_cell": 1.0913936421275139e-11,
+        "project_relative_path": "spatial/phase9/pasture_spell_closure_full_v1/canonical_pas_origin_destination_2020_2025_full_v3.csv"
+      }
+    ],
+    "max_identity_residual_ha_per_cell": 1.4551915228366852e-11,
+    "max_cell_aggregate_vs_summary_delta_ha": 2.3283064365386963e-10,
+    "matrix_v3_sha256": "19a3bffcca22dfa7d8b14e70658e06563ca6437d79b2f06f9ef3affae125a075"
+  },
+  "synthetic_review": {
+    "status": "PASS",
+    "cases": 10,
+    "boundary_event_year_check": true,
+    "pilot_js_sha256": "0dea8cc106e1c41e967f7f6cf2e4a60864ab732b4200c7aa822a82529f266429",
+    "production_js_sha256": "6eea669ab6d25bb50d48c739359f55fafa9dc5ad27f8432715dcf487da47c55b",
+    "production_scalar_checks": {
+      "status": "PASS",
+      "production_histories_checked": 9330,
+      "continuous_history_through": 2025,
+      "classes_checked": [
+        15,
+        3,
+        39,
+        27,
+        -9999,
+        999
+      ],
+      "all_states_single_valued": true
+    },
+    "test_configuration_limit": "Exact JavaScript functions and the production categorical update were executed with scalar image operations. Classes 3 and 39 cover valid non-PAS inputs to these tests; PAS 15, NODATA 27, masked and unexpected values were also checked. The remote constants module and native GEE rasters were not executed."
+  },
+  "native_pixel_reexecution_in_this_review": false,
+  "original_nonorigin_raster_reexport_in_this_review": false,
+  "all_phases_1_8_statistics_rerun": false,
+  "publication_scope": "Accepted descriptive observed-spell-origin evidence with diagnostic and source-classification qualifications; not a causal or statistical-trend claim.",
+  "upstream_records_remain_immutable": true,
+  "original_decision_preserved": true,
+  "limits": [
+    "Executed source logic in a scalar test configuration; no remote constants or Code Editor contents authentication.",
+    "Relies on earlier accepted full-domain export/Parquet executions where native inputs are external.",
+    "Non-origin invariance is the accepted PAS/dependency-chain and corrected-panel comparison, not an independent re-export of all other raster flows.",
+    "RQ1 revalidation establishes per-cell area equivalence under the original subset mask without independently reobserving each source pixel.",
+    "2020-2025 remains diagnostic; limited 2024-2025 temporal-filter support is retained.",
+    "Source accuracy and official raw-code semantics are not established by accounting or this remediation.",
+    "Pooled interval conversion areas are not deduplicated pixel areas."
+  ],
+  "outputs": {
+    "README.md": {
+      "sha256": "ad82259f40a1460d9c4af737ba80d5fccb737692a38db422f4019315fc1a59dc",
+      "bytes": 33965
+    },
+    "analysis/17w_revalidate_fixed_1985_pasture_cohort_v1.py": {
+      "sha256": "ad04154abcac1231de33365f51e6b8fccbe9e62c5f75e78b0cd6792b0f585528",
+      "bytes": 17896
+    },
+    "analysis/closure_production_engine.js": {
+      "sha256": "dd642fbdaa7c551edb01fbac06b33521f1402ee48d282d71d4220d0f92d556cd",
+      "bytes": 2165
+    },
+    "analysis/closure_synthetic_exact.js": {
+      "sha256": "d5dc4a8c199fbd906933121c7531248eab2aa96e26a3f98a1d7428664d9555f8",
+      "bytes": 2982
+    },
+    "docs/decisions/024_implementation_closure_v1.md": {
+      "sha256": "0c3d25df158c749366191c9c09328233e3d32c084c16e5b1ba22d45f12614879",
+      "bytes": 3237
+    },
+    "docs/decisions/024_reconstruction_of_observed_pasture_spell_age.md": {
+      "sha256": "76763f934cf57a7656b6995e385bffc3d052f4f3659600daf6564de6984a9782",
+      "bytes": 6996
+    },
+    "docs/methods/data_sources_and_classification.md": {
+      "sha256": "8c1baea2028991387bb12ba92dbdf585872373f656333c3d45480af57c1c8973",
+      "bytes": 11283
+    },
+    "docs/methods/observed_pasture_spell_age_reconstruction.md": {
+      "sha256": "241c1545858fc33de0da15d5903f78a1f872962186297c72e54dc298ea3ca499",
+      "bytes": 7927
+    },
+    "docs/methods/pasture_age_source_asset_audit.md": {
+      "sha256": "8c072e9e08ffce1c1e7e1cff8afc1038384b36ec3ad6743d8f81c80fe331b9dd",
+      "bytes": 5344
+    },
+    "docs/planning/008_pasture_age_asset_remediation_and_reprocessing_plan_v3.md": {
+      "sha256": "a7c7f6d17e063601fcf9e4dd628c1a2a85b38d3b15a1df731838003e169a69eb",
+      "bytes": 30869
+    },
+    "docs/results/canonical_pas_tmp_origin_corrected_findings_v2.md": {
+      "sha256": "4916a7f3aea0e537ffb2956c72a3bccccbe0c0f279e55ccbee6a48dac79eb9fb",
+      "bytes": 4904
+    },
+    "docs/validation/canonical_fixed_1985_pasture_cohort_revalidation_v1.md": {
+      "sha256": "3ccbec10aaf87622e458f4195bb56d65f5d891422b04a357d479bea59aa991c6",
+      "bytes": 7826
+    },
+    "docs/validation/canonical_pas_origin_destination_full_closure_v3.md": {
+      "sha256": "4ccfc3f282567a694cfbb72215e2c4a55b77541acd24956d07b4f9e1b3938c2d",
+      "bytes": 7090
+    },
+    "docs/validation/decision024_final_evidence_review_v1.md": {
+      "sha256": "ef2b7b1123357e6b2f00c4d8e5fdad72e4b73ab24de267375117c5180562d067",
+      "bytes": 5820
+    },
+    "docs/validation/pasture_age_evidence_suspension_v1.md": {
+      "sha256": "affe3fabb68f1d8fcea232d0067ea43bf1b007e757ed0dfc230feb8cfc8bdab1",
+      "bytes": 2365
+    },
+    "docs/validation/pasture_age_source_asset_impact_audit_v1.md": {
+      "sha256": "f57c82e322aa1dc47520cbd88cc4e01216c8fb159831a3d6f6bdcd4ad6b43fd6",
+      "bytes": 5542
+    },
+    "figures/decision024_closure_v1/fig02_pas_tmp_origin_composition_v4.png": {
+      "sha256": "4412b639fd311504b6a577503c42ba39193689583b3d1b5624e5c0cefb76588c",
+      "bytes": 166402
+    },
+    "figures/decision024_closure_v1/fig02_pas_tmp_origin_composition_v4.svg": {
+      "sha256": "f5a7ac1e58183aeb8afd724f3108f47eb275bcba526d3574d84c8cdc2a9627ce",
+      "bytes": 88792
+    },
+    "figures/decision024_closure_v1/fig02_pas_tmp_origin_composition_v4_caption.md": {
+      "sha256": "b0a7b0e09b2cfb94c39e27a15d4e4d9e92d7466201ca36c142a4acf214f56e91",
+      "bytes": 1124
+    },
+    "gee/17a_reconstruct_observed_pasture_spell_age_pilot_v1.js": {
+      "sha256": "0dea8cc106e1c41e967f7f6cf2e4a60864ab732b4200c7aa822a82529f266429",
+      "bytes": 7505
+    },
+    "gee/17g_compare_pas_tmp_origin_interval_batches_v1.js": {
+      "sha256": "6eea669ab6d25bb50d48c739359f55fafa9dc5ad27f8432715dcf487da47c55b",
+      "bytes": 5173
+    },
+    "gee/17u_export_pasture_age_source_audit_v1.js": {
+      "sha256": "68cbb73ce877657741a6362ea3cc4afcfda5ed6635090ebf86252c7946369b92",
+      "bytes": 8335
+    },
+    "outputs/summary/decision024_closure_v1/canonical_integrated_evidence_matrix_v4.csv": {
+      "sha256": "05a13f45f25b69d7414a1273a97512059438f3ffb47e2e151ed93c8675cf0320",
+      "bytes": 25892
+    },
+    "outputs/summary/decision024_closure_v1/canonical_integrated_evidence_matrix_v4.md": {
+      "sha256": "0f2584b4e9fbf6dc11b4e59668101e6aec359252f3a5e022f6844e03f79d1cb0",
+      "bytes": 22253
+    },
+    "outputs/summary/fixed_1985_cohort_revalidation_v1/canonical_fixed_1985_cohort_revalidation_comparison_v1.csv": {
+      "sha256": "0e725601dfb58fb65f7ee026b84ce99dd3b3a8127f314c714d1526d96ccdf306",
+      "bytes": 5501
+    },
+    "outputs/summary/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_1985_1990_summary_v1.csv": {
+      "sha256": "d9319fcf62140967eedc86c4b687adea1c7188f8b3ce51cb2075a6a246aa52e6",
+      "bytes": 1083
+    },
+    "outputs/summary/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_1990_1995_summary_v1.csv": {
+      "sha256": "c735a215abae1209c0f7ba3697097f8b1d0951092e12c922b69520b1859154d5",
+      "bytes": 1942
+    },
+    "outputs/summary/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_1995_2000_summary_v1.csv": {
+      "sha256": "1bda84da2023c021fde028a03dd1aa188df8e3de80e6952580eb5a62d2cb0ff2",
+      "bytes": 2025
+    },
+    "outputs/summary/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2000_2005_summary_v1.csv": {
+      "sha256": "b5817595f07d842bb9750b460a9fccc6fef8fa628fa4cea75499e4a9c7c9a619",
+      "bytes": 2045
+    },
+    "outputs/summary/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2005_2010_summary_v1.csv": {
+      "sha256": "2602e075558240b3d4820f5ec1358dba086c8c900ecddf0c7fb8a5b2cf82257f",
+      "bytes": 2061
+    },
+    "outputs/summary/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2010_2015_summary_v1.csv": {
+      "sha256": "0321315f54fbc455d7cefdce607675f1e1421048e6cc68dab3e1b26f838acbba",
+      "bytes": 2061
+    },
+    "outputs/summary/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2015_2020_summary_v1.csv": {
+      "sha256": "7d94a0a64056908aedb03c22dfd8cf05bbd4d55be518d4c5edf60d69ec9928bd",
+      "bytes": 2084
+    },
+    "outputs/summary/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2020_2025_summary_v1.csv": {
+      "sha256": "df002fff431b9f57071a8b7dff720fb8fce863b5188a114671f26dba7bbc4509",
+      "bytes": 2039
+    },
+    "outputs/summary/pasture_age_remediation_v1/canonical_pas_tmp_origin_series_reassessment_v1.csv": {
+      "sha256": "b0c1a263cc0558121a6845aa0475cb15eae8b1f2063a2b3ea683160ea60d0827",
+      "bytes": 545
+    },
+    "outputs/summary/pasture_age_source_audit_v1/canonical_pasture_age_source_audit_annual_v1.csv": {
+      "sha256": "b03024faf341d9ab92a0ccf31804fcd6b0a288fc64606c210b4d9987472ccd6a",
+      "bytes": 3271
+    },
+    "outputs/summary/pasture_age_source_audit_v1/canonical_pasture_age_source_audit_biome_v1.csv": {
+      "sha256": "081d41285778585805a348ce922b38f533a33d311307f32524f5c0fc87c92940",
+      "bytes": 1028
+    },
+    "outputs/summary/pasture_age_source_audit_v1/canonical_pasture_age_source_audit_joint_v1.csv": {
+      "sha256": "a90634cb75428df47d4c75612e2422f9a2009564710fa16bbbedda14f72c37f6",
+      "bytes": 228
+    },
+    "outputs/summary/pasture_spell_boundary_events_v2/canonical_pasture_spell_boundary_summary_v2.csv": {
+      "sha256": "9edd721e1ffa50c64a8967121ec229f32893bfa2dd91eb316067939c14571355",
+      "bytes": 500
+    },
+    "outputs/summary/pasture_spell_nonorigin_invariance_v1/canonical_pasture_spell_nonorigin_invariance_intervals_v1.csv": {
+      "sha256": "6e28abdcc2d7b15fd1e3614addb84d197149d86343ef21da769ac98e13f0fc47",
+      "bytes": 1697
+    },
+    "outputs/summary/pasture_spell_panel_v2/canonical_pas_tmp_origin_interval_summary_v2.csv": {
+      "sha256": "8b24c1c3475f1f19bca6abc09c425df43400f573e04d41df7afd0473b088c897",
+      "bytes": 1220
+    },
+    "outputs/summary/pasture_spell_panel_v2/canonical_pas_tmp_origin_pooled_summary_v2.csv": {
+      "sha256": "7771a36808a95832f5b2e21f00d81cbe303da7d5c5c91c3e808e2345ce5e64d3",
+      "bytes": 445
+    },
+    "outputs/summary/phase9a2_terminology_harmonization_v1/canonical_integrated_evidence_matrix_v3.csv": {
+      "sha256": "19a3bffcca22dfa7d8b14e70658e06563ca6437d79b2f06f9ef3affae125a075",
+      "bytes": 24493
+    },
+    "outputs/validation/decision024_closure_v1/canonical_decision024_acceptance_criteria_v1.csv": {
+      "sha256": "a3a2144d01ee5e05088c1994d40b7b256244ad5ebc0950356f73539416f77339",
+      "bytes": 2811
+    },
+    "outputs/validation/decision024_closure_v1/canonical_decision024_input_inventory_v1.csv": {
+      "sha256": "683b42a9e52a21a5a06e5ddd9c400780fc8bc41c1aca18543a835391cbde5e74",
+      "bytes": 10288
+    },
+    "outputs/validation/decision024_closure_v1/canonical_evidence_coverage_v4.csv": {
+      "sha256": "432e89da6e565cf4d4060b467e5c5585206d9dd4694f02b24d401dd0a6e84f23",
+      "bytes": 129
+    },
+    "outputs/validation/decision024_closure_v1/canonical_evidence_status_events_v2.csv": {
+      "sha256": "a12ea98884f9471c7ac5ff2d09c4f8d54a6cd9f276c969798b78fbcea8a2fdc0",
+      "bytes": 3142
+    },
+    "outputs/validation/decision024_closure_v1/canonical_finding_revision_crosswalk_v4.csv": {
+      "sha256": "dd523524a04bd957ed17bfa8bc6bb829531c5ba1f0a797a4489f01284abcc92e",
+      "bytes": 2474
+    },
+    "outputs/validation/decision024_closure_v1/canonical_pasture_spell_synthetic_review_v1.json": {
+      "sha256": "1464815cca863bf47d2b7186e4144060a9b88f1abcb6e81af08497e4b40c1d2e",
+      "bytes": 869
+    },
+    "outputs/validation/fixed_1985_cohort_revalidation_v1/canonical_fixed_1985_cohort_revalidation_validation_v1.json": {
+      "sha256": "4a9864dcfed4203d192da742c8f9219d25809b4e34377d6a5c0c5559430396be",
+      "bytes": 2357
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_evidence_status_events_v1.csv": {
+      "sha256": "b3e6964afbe16e48a3ca95ab92a7f0a961f7a0d231680045f0630982dddca4e6",
+      "bytes": 1471
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_origin_destination_1985_1990_validation_v3.json": {
+      "sha256": "396518285b93397a858c8a90449e1c1ee5080cc0d2ec80fea2be9a8d1119fa8f",
+      "bytes": 4006
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_origin_destination_1990_1995_validation_v3.json": {
+      "sha256": "81052eb7ea93f1cb538b96c986d65947b4bdb19683cc40d9354c39e10ced4d9f",
+      "bytes": 4007
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_origin_destination_1995_2000_validation_v3.json": {
+      "sha256": "b3f8a12e73e0ff3bc97e49cfbbef0867c8dce6eee3299a6e032b6407d48d5103",
+      "bytes": 4008
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_origin_destination_2000_2005_validation_v3.json": {
+      "sha256": "b9ac2e48f9b563e8833b253b7aaed306c584fc768c64f6771d01b77c6113899d",
+      "bytes": 4004
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_origin_destination_2005_2010_validation_v3.json": {
+      "sha256": "9a7aded7c334cbc2fbea2f7e5b6131dcb99bbaa4caebedda3354c4194d3216d4",
+      "bytes": 4007
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_origin_destination_2010_2015_validation_v3.json": {
+      "sha256": "6a7c7bc3f74b19bb3f9d105d8c5c35b9c1595afa96e8a3ee796dab008d551717",
+      "bytes": 4007
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_origin_destination_2015_2020_validation_v3.json": {
+      "sha256": "7acbf4474f0c553dcc55d6f477945e20a869f955961d89154571f57680a67ad0",
+      "bytes": 4008
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_origin_destination_2020_2025_validation_v3.json": {
+      "sha256": "149343027e53f12e203f949bb0c99e3012caa7cd7fcb552e221dd87c9a177ab8",
+      "bytes": 4009
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_1985_1990_validation_v1.json": {
+      "sha256": "00fc6c9787c828fd8c4e0c8b859c12820dbdd432f9e4382aa225688cd120c3d4",
+      "bytes": 12737
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_1990_1995_validation_v1.json": {
+      "sha256": "b6f87ab359548b1a8f6867dc87a48adc6d418a56efe526f6c56f35d365183f3c",
+      "bytes": 14309
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_1995_2000_validation_v1.json": {
+      "sha256": "94e30cd4bbcb4794722052084d11b8d1d3e7780e9159c4789f85e09de6bac5ec",
+      "bytes": 14603
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2000_2005_validation_v1.json": {
+      "sha256": "ae35f07b1e35d804fd2b4a24af40427dadd667e16d67c3b42f52f9c4ecaea2db",
+      "bytes": 14696
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2005_2010_validation_v1.json": {
+      "sha256": "54f438a1cad166b1c593185096d3e9fad0689f82ae02e405b1f5a4569d850bb0",
+      "bytes": 14691
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2010_2015_validation_v1.json": {
+      "sha256": "7cfb88581204261a3b833655f9f5f23aa43ccde53694e0134190d20294b42e55",
+      "bytes": 14758
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2015_2020_validation_v1.json": {
+      "sha256": "3c6266cb57a74f1eff24cc8a70ca76c388a22a4a76f5137f50844496e5a1a285",
+      "bytes": 14774
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_tmp_origin_impact_2020_2025_validation_v1.json": {
+      "sha256": "d30ef510512e04687ce53fd5ba0de246d72f81c09c2cba46d2d9d5ad7fa881f8",
+      "bytes": 14600
+    },
+    "outputs/validation/pasture_age_remediation_v1/canonical_pas_tmp_origin_series_reassessment_validation_v1.json": {
+      "sha256": "d6172a2f1fca242fd62e9e163d5b324f4adc809b9e3ed9dd0dafc911662299bb",
+      "bytes": 16037
+    },
+    "outputs/validation/pasture_age_source_audit_v1/canonical_pasture_age_source_audit_validation_v1.json": {
+      "sha256": "6718a1cefa8e5274c4604e6099f52162bdb7615d79cad870410a27303c5f9e12",
+      "bytes": 5511
+    },
+    "outputs/validation/pasture_spell_boundary_events_v2/canonical_pasture_spell_boundary_events_validation_v2.json": {
+      "sha256": "5582104b1960edd6df3e00ababcb4a3d2b5d30824ae9d5b9b0559a4f7c92c518",
+      "bytes": 4544
+    },
+    "outputs/validation/pasture_spell_nonorigin_invariance_v1/canonical_pasture_spell_nonorigin_invariance_validation_v1.json": {
+      "sha256": "fdeb8d99f6bbfeb65e855975b88dcb1cc8fa98f692ca9e35eb0b81357b8bf3e3",
+      "bytes": 7818
+    },
+    "outputs/validation/pasture_spell_panel_v2/canonical_pasture_spell_panel_v2_validation.json": {
+      "sha256": "e89dd507f3bbc46fb5a7b13a496b4efbb60cec68b29a8d1443025b6b9a4667e2",
+      "bytes": 5367
+    },
+    "outputs/validation/phase9a2_terminology_harmonization_v1/canonical_phase9a2_terminology_validation_v1.json": {
+      "sha256": "cdcf9fad856b33c2e92670f049dd48d3fbfcc0edb6d29a2f997225efe2fe7043",
+      "bytes": 4335
+    },
+    "analysis/17x_validate_decision024_closure_v1.py": {
+      "sha256": "7d1695c2e425b37b559ea5836902c068a0071fb868d73096ed6664668d9b82ac",
+      "bytes": 8464
+    }
+  }
+}
