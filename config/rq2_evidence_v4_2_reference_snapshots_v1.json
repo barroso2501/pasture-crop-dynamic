@@ -1,0 +1,60 @@
+{
+  "previous_edition": "v4.1",
+  "current_edition": "v4.2",
+  "finding_ids": [
+    "P9A003",
+    "P9A004",
+    "P9A005",
+    "P9A006",
+    "P9A007",
+    "P9A008",
+    "P9A009",
+    "P9A010",
+    "P9A011",
+    "P9A012",
+    "P9A013",
+    "P9A014",
+    "P9A015",
+    "P9A016",
+    "P9A017",
+    "P9A018",
+    "P9A019",
+    "P9A020",
+    "P9A021",
+    "P9A022",
+    "P9A023",
+    "P9A024",
+    "P9A025",
+    "P9A026",
+    "P9A027",
+    "P9A028",
+    "P9A029",
+    "P9A030",
+    "P9A031",
+    "P9A032",
+    "P9A033",
+    "P9A034",
+    "P9A035",
+    "P9A036",
+    "P9A037"
+  ],
+  "files": [
+    {
+      "relative_path": "outputs/summary/decision024_review_v1/canonical_integrated_evidence_matrix_v4_1.csv",
+      "sha256": "fd9569e4db650770c64f2676eca607e42caf4abf9fe7e5f3e57aede37c7fa815"
+    },
+    {
+      "relative_path": "outputs/validation/decision024_review_v1/canonical_evidence_status_events_v3.csv",
+      "sha256": "f695ee638cabd83013d73206bb31fba1b415bb0be94dbe665fb5005a30e123f7"
+    },
+    {
+      "relative_path": "outputs/validation/window_origin_sensitivity_v1/full/canonical_window_origin_sensitivity_validation_v1.json",
+      "sha256": "59e702fe091387157553439680a6bed9cadad924cebceb5a8ea4c8cef4c54c78"
+    },
+    {
+      "relative_path": "docs/history/rq2_pre_consolidation_v4_2/docs/methods/data_sources_and_classification.md",
+      "sha256": "c7d98438789473180486c80b76a1e98de130787738241e70fae37b6e95c1eabb"
+    }
+  ],
+  "scope": "Pin the accepted predecessor and native validation; do not retrospectively authenticate remote code or other 33 source contents."
+}

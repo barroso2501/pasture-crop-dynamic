@@ -275,11 +275,16 @@ not overwritten and remain available to document the impact of the change.
 The suspensions of P9A035–P9A037 were rescinded on 2026-10-08 only for
 the corrected matrix-v4 statements, through new immutable events. The retired
 source-age statements remain superseded. Current manuscript-facing evidence
-is matrix v4.1 and its 2026-10-09 interpretation erratum. The technical closure
+is matrix v4.2, incorporating the accepted 1985/1995/2000 window sensitivity
+into P9A035/P9A036 while preserving P9A037 and the other findings. The
+2026-10-09 erratum remains historical provenance. The technical closure
 and its assurance limits are recorded in
 `docs/decisions/024_implementation_closure_v2.md`. Historical events and
-validation JSONs retain their original statuses; a derived events-v3 index
-adds structured validation references and the interpretation amendments.
+validation JSONs retain their original statuses. Events-v3 supplied structured
+validation references and the interpretation amendments; current events-v4
+preserves its entire byte sequence and appends two supplementary-evidence events.
+No qualified status is promoted. See
+`docs/results/rq2_evidence_consolidation_v4_2.md`.
 
 ## Observation-window dependence of RQ2 origin composition
 
@@ -300,8 +305,19 @@ The first observed-entry share above 50% in 2000–2005 is a statistic of
 this observation window, not an identified process threshold. Primary
 pooled shares 46.91%/53.09% also depend on the window start, its length,
 and interval conversion weights. Re-entry is included in observed entry;
-neither category identifies first-ever pasture establishment. A 1995/2000
-rebasing sensitivity is specified but has not been executed.
+neither category identifies first-ever pasture establishment. The 1985/1995/2000
+rebasing sensitivity has been executed and validated on the fixed 24,889-cell
+domain. On identical 2000–2020 conversions, initial shares are 38.10%, 64.70%
+and 78.07%, respectively. First-20-year pooled shares are 63.64%, 72.25% and
+78.07%, with different calendar periods and baseline populations. The first
+primary >50% entry crossing occurs in 2000–2005 only under b=1985; the later
+windows cross only in separately diagnostic 2020–2025. These results qualify
+origin composition as window-dependent and do not identify an artifact
+fraction, stationarity, physical establishment age or a process threshold.
+The first-observed-entry/re-entry decomposition remains unperformed. Native
+categorical fixtures and field invariants passed; auxiliary numerical age 201
+and unrelated boundary-raster checks are not included in this execution.
+The executed method is `docs/methods/window_origin_sensitivity_v2.md`.
 
 ## Meaning of boundary-event uncertain-pair area
 
@@ -340,3 +356,12 @@ must retain the exact executed script snapshot and SHA-256, repository path,
 commit when available, constants snapshot, run identifier and export hashes.
 Current-source hashes must not retrospectively substitute for missing
 historical execution hashes.
+
+## Evidence edition synchronization — 2026-10-12
+
+The governing evidence edition is matrix v4.2 and cumulative events-v4. The
+pre-update normative text is archived unchanged under
+`docs/history/rq2_pre_consolidation_v4_2/docs/methods/`. The core classification,
+assets, masks and origin estimator are unchanged. The completed sensitivity
+and documentary consolidation do not reexecute phases 2–8 or declare the
+public data/DOI release complete.

@@ -1,0 +1,49 @@
+{
+  "P9A035": {
+    "elapsed_years_to_interval_start": 15,
+    "interval_ordinal": 4,
+    "initial_pct_by_baseline_at_15_years": {
+      "1985": 48.759182743278316,
+      "1995": 59.897442732698046,
+      "2000": 66.35817724587909
+    },
+    "first_primary_entry_crossing_by_baseline": {
+      "1985": "2000_2005",
+      "1995": null,
+      "2000": null
+    },
+    "later_baseline_observed_crossing": "2020_2025",
+    "later_crossing_is_diagnostic": true
+  },
+  "P9A036": {
+    "canonical_primary": {
+      "window": "primary_1985_2020",
+      "intervals": 7,
+      "includes_diagnostic_interval": 0,
+      "flow_pas_tmp_ha": 20119468.098572355,
+      "initial_ha": 9438022.10300835,
+      "new_ha": 10681383.426750213,
+      "unresolved_ha": 62.56880700973903,
+      "initial_pct": 46.90989869497622,
+      "new_pct": 53.08979031860264,
+      "unresolved_pct": 0.000310986387429292
+    },
+    "common_calendar": "2000_2020",
+    "common_calendar_flow_ha": 15221177.378801236,
+    "common_calendar_initial_pct_by_baseline": {
+      "1985": 38.100563290270145,
+      "1995": 64.69500548994084,
+      "2000": 78.07090438801364
+    },
+    "common_calendar_entry_pct_by_baseline": {
+      "1985": 61.89906794367248,
+      "1995": 35.30474623450927,
+      "2000": 21.928952873634522
+    },
+    "equal_followup_20years_initial_pct_by_baseline": {
+      "1985": 63.63916658745055,
+      "1995": 72.25349999171222,
+      "2000": 78.07090438801364
+    }
+  }
+}

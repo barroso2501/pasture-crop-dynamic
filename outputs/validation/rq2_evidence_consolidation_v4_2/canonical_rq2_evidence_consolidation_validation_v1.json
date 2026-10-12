@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "documentary_and_numerical_evidence_consolidation",
+  "date": "2026-10-12",
+  "matrix_version": "v4.2",
+  "matrix_rows": 35,
+  "substantively_updated_findings": [
+    "P9A035",
+    "P9A036"
+  ],
+  "other_findings_substantively_unchanged": 33,
+  "P9A037_substantively_unchanged": true,
+  "canonical_source_anchors_and_hashes_preserved": true,
+  "qualified_statuses_preserved": true,
+  "all_causal_claim_flags_zero": true,
+  "historical_event_rows_and_bytes_preserved": 8,
+  "new_supplementary_event_rows": 2,
+  "supplementary_source_inventory_entries_authenticated": 9,
+  "numerical_claims_match_accepted_sources": true,
+  "manuscript_numbers_and_key_boundaries_checked": true,
+  "native_window_sensitivity_pass_reused": true,
+  "new_native_execution_performed": false,
+  "other_33_source_contents_reauthenticated_here": false,
+  "remote_execution_script_identity_independently_verified": false,
+  "matrix_csv_sha256": "eec8bfd02e649d7b98302e3c6ededabfd1f9dc215164765220a1577e42d884c5",
+  "previous_matrix_csv_sha256": "fd9569e4db650770c64f2676eca607e42caf4abf9fe7e5f3e57aede37c7fa815",
+  "event_csv_sha256": "5b282a82b15a01cabd633d42b11772d29d7ca3b6aaf836faf61edb471f02738c",
+  "previous_event_csv_sha256": "f695ee638cabd83013d73206bb31fba1b415bb0be94dbe665fb5005a30e123f7",
+  "native_sensitivity_validation_sha256": "59e702fe091387157553439680a6bed9cadad924cebceb5a8ea4c8cef4c54c78",
+  "source_inventory_sha256": "6bdbb86488f160ba148a05d91b18899bf0ef410b52edf040c243864a44898bce",
+  "release_with_DOI_complete": false,
+  "first_entry_reentry_decomposition_performed": false,
+  "limits": [
+    "This is evidence consolidation, not a new native or causal analysis.",
+    "Canonical 1985 numerical evidence and all other finding contents are preserved.",
+    "The complete manuscript was not supplied; the manuscript file is a standalone proposed section.",
+    "Public DOI packaging remains pending."
+  ]
+}
