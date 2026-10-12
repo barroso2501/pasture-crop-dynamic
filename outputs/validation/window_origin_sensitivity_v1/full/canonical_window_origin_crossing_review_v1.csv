@@ -1,0 +1,4 @@
+baseline_year,first_primary_interval,first_observed_interval,first_observed_is_diagnostic,interpretation
+1985,2000_2005,2000_2005,False,window_specific_statistic_not_process_threshold
+1995,,2020_2025,True,window_specific_statistic_not_process_threshold
+2000,,2020_2025,True,window_specific_statistic_not_process_threshold

@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "scope": "pilot",
+  "version": "window-origin-sensitivity-v1",
+  "config_sha256": "a637db84cd462a149ea73d7013095fc1500c63eca395e25f251dd850631c7358",
+  "source_script_snapshot": {
+    "filename": "18c_export_window_origin_sensitivity_pilot_v1.js",
+    "sha256": "54f059763a08ed8f2077b821a1a38a66ead4b0fd038ab4790065742c833d800c"
+  },
+  "operator_attests_unmodified_supplied_script": false,
+  "executed_script_sha256_operator_attested": null,
+  "independently_verified_remote_script_identity": false,
+  "runtime_config_and_native_projection_verified": true,
+  "native_synthetic_cases": 30,
+  "native_synthetic_input": {
+    "filename": "canonical_window_origin_native_synthetic_v1.csv",
+    "sha256": "ac3db0456b8e2e10910903df10a868104c4f888d2b703b48b965e2f224cedb04",
+    "bytes": 4381
+  },
+  "native_field_invariant_counts_zero": true,
+  "reference_inputs": [
+    {
+      "filename": "canonical_pas_origin_destination_1985_1990_full_v3.csv",
+      "sha256": "b99293c32f5d6c52f5444c6f8a1e5f43508c820e2cf74b59c1d44d9f6546c1ba",
+      "bytes": 8200756
+    },
+    {
+      "filename": "canonical_pas_origin_destination_1990_1995_full_v3.csv",
+      "sha256": "0edaeb5c289f6648caa0443dcccce296f04552c8b34949340e3e989c8bd21562",
+      "bytes": 9623426
+    },
+    {
+      "filename": "canonical_pas_origin_destination_1995_2000_full_v3.csv",
+      "sha256": "8638ff382834dcfdc95c1c4c6b966baa6e5bd714c436ca93e8be3bca520fcd7f",
+      "bytes": 9816308
+    },
+    {
+      "filename": "canonical_pas_origin_destination_2000_2005_full_v3.csv",
+      "sha256": "9570c17e7df8c7db757b86db75466eb9aff1cac9944f7969ed9e6c23f41a5505",
+      "bytes": 10000065
+    },
+    {
+      "filename": "canonical_pas_origin_destination_2005_2010_full_v3.csv",
+      "sha256": "45b9d9d652ec79d95cff3dd2d2abead233d9d802ecaa45e4e371df8387e59d75",
+      "bytes": 10223842
+    },
+    {
+      "filename": "canonical_pas_origin_destination_2010_2015_full_v3.csv",
+      "sha256": "bc9de1c982fd8aa0e7bfa5e1b7ce93addd9a807550fb493f4971fad304e8cd78",
+      "bytes": 10340086
+    },
+    {
+      "filename": "canonical_pas_origin_destination_2015_2020_full_v3.csv",
+      "sha256": "ab5c2d0500540ff8b18fd84154c58d1266bec75a50f34cbaea2db1108260a82f",
+      "bytes": 10455710
+    },
+    {
+      "filename": "canonical_pas_origin_destination_2020_2025_full_v3.csv",
+      "sha256": "86c659ba268d60c5b2e652e6d1799e255c68f6cb4b911404b91782dd2bff013a",
+      "bytes": 10520519
+    }
+  ],
+  "run_manifest_input": {
+    "filename": "canonical_window_origin_run_manifest_pilot_v1.csv",
+    "sha256": "6888d7d78b5e221d1f3f871cc61166251acb3e13a6b54d41de5d90b17c27eec8",
+    "bytes": 2139
+  },
+  "fresh_export_inputs": [
+    {
+      "filename": "canonical_window_origin_2015_2020_pilot_v1.csv",
+      "sha256": "87f460f122a568c782f2cb9485df2cf44186ffc8065f61a91c693397abf8741e",
+      "bytes": 1849
+    }
+  ],
+  "maximum_control_or_1985_origin_difference_ha_per_cell": 1.8189894035458565e-12,
+  "fresh_rows": 6,
+  "normalized_rows": 6,
+  "pilot_validation_sha256": null,
+  "whole_domain_sensitivity_complete": false,
+  "baseline_years": [
+    1985,
+    1995,
+    2000
+  ],
+  "early_1985_reference_rows_reused": 0,
+  "fresh_native_audit_for_reused_early_rows": false,
+  "outputs": {
+    "pilot_window_origin_native_cell_panel_v1.csv": {
+      "sha256": "383da1eb506e95029d2157f472fad823faf9e8f423bbdf63615ce65c108d3744",
+      "rows": 6,
+      "bytes": 1973
+    }
+  },
+  "interpretation_limits": [
+    "The first interval is 100% baseline-continuous by construction where conversion area is positive.",
+    "Calendar matches hold endpoint conversions fixed but change origin definitions.",
+    "Equal follow-up comparisons change calendar time and baseline cohort composition.",
+    "Neither identifies an artifact fraction or proves stationarity/regime change.",
+    "Observed entry includes re-entry and is not first-ever establishment.",
+    "Pooled interval conversion area is not deduplicated pixel area.",
+    "2020-2025 is diagnostic; source classification accuracy is not validated."
+  ]
+}

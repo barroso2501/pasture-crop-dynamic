@@ -1,0 +1,148 @@
+[
+  {
+    "case_id": "continuous",
+    "values": [
+      15,
+      15,
+      15
+    ],
+    "expected": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "case_id": "exit_reentry",
+    "values": [
+      15,
+      39,
+      39,
+      15,
+      15
+    ],
+    "expected": [
+      1,
+      0,
+      0,
+      2,
+      2
+    ]
+  },
+  {
+    "case_id": "first_and_reentry",
+    "values": [
+      3,
+      15,
+      15,
+      3,
+      15
+    ],
+    "expected": [
+      0,
+      2,
+      2,
+      0,
+      2
+    ]
+  },
+  {
+    "case_id": "repeated_reentry",
+    "values": [
+      15,
+      3,
+      15,
+      3,
+      15
+    ],
+    "expected": [
+      1,
+      0,
+      2,
+      0,
+      2
+    ]
+  },
+  {
+    "case_id": "gap_after_initial",
+    "values": [
+      15,
+      27,
+      15
+    ],
+    "expected": [
+      1,
+      4,
+      3
+    ]
+  },
+  {
+    "case_id": "gap_after_entry",
+    "values": [
+      39,
+      15,
+      27,
+      15
+    ],
+    "expected": [
+      0,
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "case_id": "baseline_nodata",
+    "values": [
+      27,
+      15,
+      15
+    ],
+    "expected": [
+      4,
+      3,
+      3
+    ]
+  },
+  {
+    "case_id": "baseline_masked",
+    "values": [
+      null,
+      15,
+      15
+    ],
+    "expected": [
+      4,
+      3,
+      3
+    ]
+  },
+  {
+    "case_id": "reset_after_gap",
+    "values": [
+      15,
+      27,
+      3,
+      15
+    ],
+    "expected": [
+      1,
+      4,
+      0,
+      2
+    ]
+  },
+  {
+    "case_id": "unexpected_gap",
+    "values": [
+      15,
+      999,
+      15
+    ],
+    "expected": [
+      1,
+      4,
+      3
+    ]
+  }
+]

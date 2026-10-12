@@ -1,0 +1,14 @@
+{
+  "accepted_17g_source_sha256": "6eea669ab6d25bb50d48c739359f55fafa9dc5ad27f8432715dcf487da47c55b",
+  "constants_reference_sha256": "0a284699d8d7cafa64c6bfdecdae308e4a97cc49bd7227a5838c753a2fe1063c",
+  "gee_scripts": {
+    "pilot": {
+      "filename": "18c_export_window_origin_sensitivity_pilot_v1.js",
+      "sha256": "54f059763a08ed8f2077b821a1a38a66ead4b0fd038ab4790065742c833d800c"
+    },
+    "full": {
+      "filename": "18c_export_window_origin_sensitivity_full_v1.js",
+      "sha256": "43150848b6e10ef5d544b645e893f7b209986a2a92633d4f6ee370e6f73509b3"
+    }
+  }
+}

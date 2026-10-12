@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "scope": "full_domain_window_sensitivity",
+  "review_date": "2026-10-12",
+  "validation_report_sha256": "59e702fe091387157553439680a6bed9cadad924cebceb5a8ea4c8cef4c54c78",
+  "cells": 24889,
+  "baseline_interval_populations": 19,
+  "normalized_rows": 472891,
+  "fresh_rows": 423113,
+  "reused_rows": 49778,
+  "all_fresh_native_invariants_zero": true,
+  "reused_native_counters_remain_missing_not_zero": true,
+  "maximum_flow_partition_residual_ha_per_row": 2.7284841053187847e-12,
+  "maximum_stock_partition_residual_ha_per_row": 1.4551915228366852e-11,
+  "maximum_control_difference_ha_per_cell": 3.2782554626464844e-07,
+  "common_calendar_2000_2020_initial_pct": {
+    "1985": 38.100563290270145,
+    "1995": 64.69500548994084,
+    "2000": 78.07090438801364
+  },
+  "equal_followup_20years_initial_pct": {
+    "1985": 63.63916658745055,
+    "1995": 72.25349999171222,
+    "2000": 78.07090438801364
+  },
+  "full_window_sensitivity_complete": true,
+  "first_entry_reentry_decomposition_complete": false,
+  "uncertain_pair_cross_tab_complete": false,
+  "auxiliary_age_201_native_audit_complete": false,
+  "renewal_or_conversion_hazard_identification_performed": false,
+  "operator_execution_hash_attestation_supplied": false,
+  "independently_verified_remote_script_identity": false,
+  "interpretation": "Shares and 50% crossings are conditional on the observation boundary; no artifact fraction or stationary-process inference.",
+  "input_archives": [
+    {
+      "filename": "drive-download-20261012T162338Z-1-001.zip",
+      "sha256": "9cd884aa9ee5164c1697b7fef8cb025bfc7b87038710bc5aa60d62997f60bb2b",
+      "bytes": 3945688
+    },
+    {
+      "filename": "drive-download-20261012T162450Z-1-001.zip",
+      "sha256": "94ed761edd46fae88a100ad914604f2da5a5b1891e0466d7e35c854e2ac829c4",
+      "bytes": 4005000
+    },
+    {
+      "filename": "drive-download-20261012T162555Z-1-001.zip",
+      "sha256": "c40ea726b08a14ea986440e6039be1453a60dcdd2409313b15a6a910fba76931",
+      "bytes": 3942082
+    },
+    {
+      "filename": "drive-download-20261012T162621Z-1-001.zip",
+      "sha256": "3c1b7a32ac4f852c128822f9effcc675848384471024f344c41dc74d8f3d692b",
+      "bytes": 3816574
+    },
+    {
+      "filename": "drive-download-20261012T162730Z-1-001.zip",
+      "sha256": "51c9d3f9e4f6db5b41efa5060858a5fa721aea196845da58166d9a49c59540e6",
+      "bytes": 3072838
+    },
+    {
+      "filename": "drive-download-20261012T162757Z-1-001.zip",
+      "sha256": "3251268708c2e69586f12c75d40244468c5cb4c663ecf20f42a64c6435f94e00",
+      "bytes": 1764540
+    }
+  ]
+}

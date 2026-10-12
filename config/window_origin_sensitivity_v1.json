@@ -1,0 +1,229 @@
+{
+  "version": "window-origin-sensitivity-v1",
+  "baselines": [
+    1985,
+    1995,
+    2000
+  ],
+  "all_intervals": [
+    [
+      1985,
+      1990
+    ],
+    [
+      1990,
+      1995
+    ],
+    [
+      1995,
+      2000
+    ],
+    [
+      2000,
+      2005
+    ],
+    [
+      2005,
+      2010
+    ],
+    [
+      2010,
+      2015
+    ],
+    [
+      2015,
+      2020
+    ],
+    [
+      2020,
+      2025
+    ]
+  ],
+  "fresh_interval_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pilot_interval_index": 6,
+  "pilot_cell_ids": [
+    "32173",
+    "18081"
+  ],
+  "pilot_grid_ids": [
+    "IK-77",
+    "GH-123"
+  ],
+  "expected_cells": 24889,
+  "expected_batches": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "coverage_asset": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3",
+  "grid_asset": "projects/ee-barroso2501/assets/grade_hex_CeAmz_canonical_c11_v3",
+  "crs": "EPSG:4326",
+  "crs_transform": [
+    0.00026949458523585647,
+    0,
+    -74.02073025380652,
+    0,
+    -0.00026949458523585647,
+    5.405791885246045
+  ],
+  "classes": {
+    "NAT": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13,
+      29,
+      32,
+      49,
+      50,
+      84
+    ],
+    "PAS": [
+      15
+    ],
+    "TMP": [
+      19,
+      20,
+      39,
+      40,
+      41,
+      62
+    ],
+    "OAG": [
+      9,
+      21,
+      35,
+      36,
+      46,
+      47,
+      48
+    ],
+    "OUT": [
+      22,
+      23,
+      24,
+      25,
+      30,
+      75,
+      91
+    ],
+    "WATER": [
+      26,
+      31,
+      33
+    ],
+    "NODATA": [
+      27
+    ]
+  },
+  "constants_module": "users/barroso2501/pasture-crop:lib/constants",
+  "per_cell_tolerance_ha": 0.01,
+  "summary_tolerance_ha": 0.001,
+  "zero_invariant_tolerance": 1e-09,
+  "run_tag": "ws1_20261009",
+  "reference_cells_source": "eight accepted full_v3 origin-destination CSVs",
+  "native_execution_performed_here": false,
+  "full_scientific_results_available": false,
+  "immutable_reference_files": [
+    {
+      "interval": "1985_1990",
+      "filename": "canonical_pas_origin_destination_1985_1990_full_v3.csv",
+      "sha256": "b99293c32f5d6c52f5444c6f8a1e5f43508c820e2cf74b59c1d44d9f6546c1ba"
+    },
+    {
+      "interval": "1990_1995",
+      "filename": "canonical_pas_origin_destination_1990_1995_full_v3.csv",
+      "sha256": "0edaeb5c289f6648caa0443dcccce296f04552c8b34949340e3e989c8bd21562"
+    },
+    {
+      "interval": "1995_2000",
+      "filename": "canonical_pas_origin_destination_1995_2000_full_v3.csv",
+      "sha256": "8638ff382834dcfdc95c1c4c6b966baa6e5bd714c436ca93e8be3bca520fcd7f"
+    },
+    {
+      "interval": "2000_2005",
+      "filename": "canonical_pas_origin_destination_2000_2005_full_v3.csv",
+      "sha256": "9570c17e7df8c7db757b86db75466eb9aff1cac9944f7969ed9e6c23f41a5505"
+    },
+    {
+      "interval": "2005_2010",
+      "filename": "canonical_pas_origin_destination_2005_2010_full_v3.csv",
+      "sha256": "45b9d9d652ec79d95cff3dd2d2abead233d9d802ecaa45e4e371df8387e59d75"
+    },
+    {
+      "interval": "2010_2015",
+      "filename": "canonical_pas_origin_destination_2010_2015_full_v3.csv",
+      "sha256": "bc9de1c982fd8aa0e7bfa5e1b7ce93addd9a807550fb493f4971fad304e8cd78"
+    },
+    {
+      "interval": "2015_2020",
+      "filename": "canonical_pas_origin_destination_2015_2020_full_v3.csv",
+      "sha256": "ab5c2d0500540ff8b18fd84154c58d1266bec75a50f34cbaea2db1108260a82f"
+    },
+    {
+      "interval": "2020_2025",
+      "filename": "canonical_pas_origin_destination_2020_2025_full_v3.csv",
+      "sha256": "86c659ba268d60c5b2e652e6d1799e255c68f6cb4b911404b91782dd2bff013a"
+    }
+  ],
+  "valid_source_codes": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    39,
+    40,
+    41,
+    46,
+    47,
+    48,
+    49,
+    50,
+    62,
+    75,
+    84,
+    91
+  ]
+}
