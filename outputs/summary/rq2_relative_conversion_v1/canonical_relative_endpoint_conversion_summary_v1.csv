@@ -1,0 +1,4 @@
+baseline_year,estimable_primary_intervals,primary_ratio_min,primary_ratio_max,diagnostic_2020_2025_ratio,primary_ratio_monotonic_increasing,primary_ratio_monotonic_decreasing
+1985,6,1.1673545140392567,1.3978758285100279,0.80721453685806177,False,False
+1995,4,1.0046423947126022,1.1964151274081642,0.72090069004357471,False,False
+2000,3,0.81635400457242835,1.1016386143079566,0.67117880277164699,True,False

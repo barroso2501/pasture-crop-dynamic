@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "national_descriptive_ratios_from_accepted_area_sums",
+  "source_relative_path": "outputs/validation/window_origin_sensitivity_v1/full/canonical_window_origin_interval_summary_v1.csv",
+  "source_sha256": "a5843f81f0c1306e559b63a4bebf569be0b5f88cfcfb0bb7f3c3f3049a04341c",
+  "interval_rows": 19,
+  "estimable_ratios": 16,
+  "undefined_first_interval_ratios": 3,
+  "denominator": "observed_origin_class_PAS_stock_at_t0_not_time_integrated_exposure",
+  "aggregation": "ratio_of_national_sums_not_mean_of_cell_ratios",
+  "maximum_factorization_residual": 8.881784197001252e-16,
+  "outputs": {
+    "canonical_relative_endpoint_conversion_fractions_v1.csv": {
+      "sha256": "e796e2093d76f9ffe36677f5b4881eb7feb3d637d20e538e88c30150288204f4",
+      "rows": 19,
+      "bytes": 9837
+    },
+    "canonical_relative_endpoint_conversion_summary_v1.csv": {
+      "sha256": "5be1caf519db577b354a97157aa70e3d430a81b8ab7a9d2420d51d8ef962962b",
+      "rows": 3,
+      "bytes": 406
+    }
+  },
+  "new_native_execution": false,
+  "annualized_hazard_or_rate": false,
+  "causal_or_inferential_model": false,
+  "unresolved_origin_retained_separately": true,
+  "ratio_excludes_unresolved_class": true
+}

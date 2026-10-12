@@ -1,0 +1,104 @@
+{
+  "version": "plan009-joint-native-followup-protocol-v1",
+  "frozen_date": "2026-10-12",
+  "status": "PREPARED_NOT_EXECUTED",
+  "baseline_year": 1985,
+  "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "cells": 24889,
+  "pilot_grid_ids": [
+    "IK-77",
+    "GH-123"
+  ],
+  "uncertain_pairs": [
+    [
+      2023,
+      2024
+    ],
+    [
+      2024,
+      2025
+    ]
+  ],
+  "pair_observation_classes": [
+    "observed_PAS",
+    "observed_nonPAS",
+    "NODATA",
+    "masked",
+    "unexpected"
+  ],
+  "entry_history_classes": [
+    "first_observed_entry_complete_previous_history",
+    "confirmed_observed_reentry",
+    "no_previous_PAS_observed_but_previous_history_uncertain"
+  ],
+  "native_mismatch_tolerance": 0,
+  "area_tolerance_ha_per_cell": 0.01,
+  "area_tolerance_ha_aggregate": 0.001,
+  "sample_seed": 20261012,
+  "pilot_sample_cap_per_nonempty_stratum": 20,
+  "full_sample_cap_per_nonempty_stratum": 200,
+  "sampling_strata": [
+    "continuous_initial",
+    "confirmed_first_observed_entry",
+    "confirmed_observed_reentry",
+    "uncertain_prior_history_entry",
+    "PAS_after_gap_unresolved",
+    "observed_NODATA_or_masked_or_unexpected",
+    "2024_or_2025_entry",
+    "2024_or_2025_termination"
+  ],
+  "empty_stratum_is_pass": false,
+  "age_201_and_boundary_native_executed": false,
+  "reference_uncertain_pair_totals_ha": {
+    "2024": 4688518.25661,
+    "2025": 4688463.67044
+  },
+  "limits": [
+    "No pre1985 entry history can be inferred.",
+    "A sampled native comparison is not exhaustive pixel verification.",
+    "Keep accepted origin/flow outputs unchanged.",
+    "Pilot support/runtime must be verified before full scheduling."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "descriptive_derivative_and_documentary_update_v4.3",
+  "date": "2026-10-12",
+  "matrix_rows": 35,
+  "substantively_updated_findings": [
+    "P9A035",
+    "P9A036"
+  ],
+  "other_findings_unchanged": 33,
+  "canonical_anchors_statuses_and_causal_flags_preserved": true,
+  "historical_event_rows_preserved": 10,
+  "supplementary_event_rows_added": 2,
+  "source_inventory_entries_checked": 13,
+  "interval_ratios": 19,
+  "estimable_ratios": 16,
+  "undefined_first_interval_ratios": 3,
+  "independent_area_ratio_and_factorization_checks": "PASS",
+  "no_new_native_execution": true,
+  "operator_attestation_recorded": false,
+  "native_extensions_status": "protocol_prepared_not_exporter_or_execution",
+  "known_release_files_verified": 83,
+  "missing_parquets": 3,
+  "complete_stage0_inventory_accepted": false,
+  "doi_assigned": false,
+  "matrix_sha256": "6afea3c12f9f64b7042efc1d614b4e4948cdc3ab6ef3a6671817f8794f6271e3",
+  "previous_matrix_sha256": "eec8bfd02e649d7b98302e3c6ededabfd1f9dc215164765220a1577e42d884c5",
+  "events_sha256": "41354acf399115177a57496a23d550eaf397cd8d907b21ddef166f979ae929fe",
+  "native_validation_sha256_unchanged": "59e702fe091387157553439680a6bed9cadad924cebceb5a8ea4c8cef4c54c78",
+  "limits": [
+    "Fractions are national descriptive endpoint ratios, not time exposure, hazards or causal adjustments.",
+    "No pooled exposure-normalized ratio is estimated.",
+    "Native chronology/age/boundary/cross-tab extensions require a future GEE implementation and pilot.",
+    "The full manuscript was not edited; a complete proposed section is provided.",
+    "Known-product byte verification is partial; the full public-release scope is not frozen."
+  ]
+}

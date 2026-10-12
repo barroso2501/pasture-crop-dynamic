@@ -275,14 +275,13 @@ not overwritten and remain available to document the impact of the change.
 The suspensions of P9A035–P9A037 were rescinded on 2026-10-08 only for
 the corrected matrix-v4 statements, through new immutable events. The retired
 source-age statements remain superseded. Current manuscript-facing evidence
-is matrix v4.2, incorporating the accepted 1985/1995/2000 window sensitivity
+is matrix v4.3, incorporating the accepted 1985/1995/2000 window sensitivity
 into P9A035/P9A036 while preserving P9A037 and the other findings. The
 2026-10-09 erratum remains historical provenance. The technical closure
 and its assurance limits are recorded in
 `docs/decisions/024_implementation_closure_v2.md`. Historical events and
 validation JSONs retain their original statuses. Events-v3 supplied structured
-validation references and the interpretation amendments; current events-v4
-preserves its entire byte sequence and appends two supplementary-evidence events.
+validation references and the interpretation amendments; events-v4 preserved its entire byte sequence and appended two supplementary-evidence events. Current events-v5 preserves all ten events-v4 rows and appends two endpoint-fraction events.
 No qualified status is promoted. See
 `docs/results/rq2_evidence_consolidation_v4_2.md`.
 
@@ -359,9 +358,13 @@ historical execution hashes.
 
 ## Evidence edition synchronization — 2026-10-12
 
-The governing evidence edition is matrix v4.2 and cumulative events-v4. The
+The current governing evidence edition is matrix v4.3 and cumulative events-v5; matrix v4.2/events-v4 are preceding editions. The
 pre-update normative text is archived unchanged under
 `docs/history/rq2_pre_consolidation_v4_2/docs/methods/`. The core classification,
 assets, masks and origin estimator are unchanged. The completed sensitivity
 and documentary consolidation do not reexecute phases 2–8 or declare the
 public data/DOI release complete.
+
+## Stock-normalized endpoint fractions — v4.3
+
+Origin composition combines class-stock composition and per-stock endpoint conversion fractions. At t0, define f_o=C_o/S_o and R=f_initial/f_entry from national sums. The first entry-stock-zero interval has undefined R. These are descriptive five-year endpoint fractions, not annual rates or exposure-integrated hazards; unresolved origin is retained separately. The algebraic identity C_initial/C_entry=(S_initial/S_entry)R does not identify a causal contribution. Calendar-paired monotonicity of initial shares follows set nesting. Follow-up and stock/conversion comparisons also change periods/cohorts and do not isolate a mechanical artifact fraction. The unchanged canonical definitions and the new derivative are documented in `docs/methods/relative_endpoint_conversion_fractions_v1.md`.

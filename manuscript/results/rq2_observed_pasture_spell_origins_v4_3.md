@@ -1,0 +1,40 @@
+# RQ2 — observed pasture-spell origins and observation-window sensitivity
+
+Scientific wording prepared on 2026-10-12 for integration into the manuscript. This is a standalone draft; no complete manuscript file was supplied or edited. The statements are descriptive and supported by matrix v4.3, accepted full-domain sensitivity and stock-at-t0 endpoint fractions.
+
+## Methods wording
+
+We reconstructed the origin of the current observed pasture spell at the beginning of each five-year interval from annual land-cover observations. Pasture continuously observed from the boundary year was classified as baseline-continuous (initial), pasture following a confidently observed non-pasture state as observed entry, and pasture with insufficient intervening observations as unresolved. Observed entry includes return to pasture and is not first-ever pasture establishment. The canonical boundary was 1985. Sensitivity analyses repeated the same classification with boundaries in 1995 and 2000 on the fixed 24,889-cell domain, retaining the same calendar endpoint PAS→TMP conversions and native raster alignment. The first positive-flow interval of each boundary is 100% initial by construction. We compared origin composition over the common primary calendar period 2000–2020 and over the first four five-year intervals after each boundary. These follow-up periods were 1985–2005, 1995–2015 and 2000–2020. The 2020–2025 interval was reported separately as diagnostic.
+
+## Results wording
+
+Under the canonical 1985 boundary, the initial share of pasture-to-temporary-crop endpoint conversion declined from 100.00% in 1985–1990 to 31.08% in 2015–2020; the corresponding observed-entry share reached 68.92% in the latter interval. Across the seven primary intervals, the summed conversion area was 20.119468 million ha: 46.91% was attributed to continuous baseline-1985 spells, 53.09% to observed post-1985 entry and 0.000311% to unresolved origin (62.568807 ha). These are sums of interval-conversion areas, not deduplicated across intervals.
+
+Rebasing showed substantial sensitivity of origin composition to the observation boundary. On the same 15.221177 million ha of interval conversions during 2000–2020, the initial shares were 38.10%, 64.70% and 78.07% for boundaries in 1985, 1995 and 2000, respectively; observed-entry shares were 61.90%, 35.30% and 21.93%. Thus, observed-entry majority in this matched-calendar period held under the 1985 definition and did not persist under the two later definitions. The earliest primary interval with observed-entry share above 50% was 2000–2005 under the 1985 boundary. Neither later boundary crossed 50% within its primary intervals ending by 2020; both crossed only in the separately reported diagnostic interval 2020–2025.
+
+All three boundaries began with 100% initial attribution and subsequently showed declining shares. During the fourth five-year interval, beginning 15 years after each boundary, the initial shares were 48.76%, 59.90% and 66.36% for boundaries in 1985, 1995 and 2000, respectively. Pooled initial shares over the respective first 20 years were 63.64%, 72.25% and 78.07%. These matched-follow-up comparisons use different calendar periods, baseline pasture stocks and conversion denominators. Their unequal trajectories therefore do not isolate the contribution of window truncation.
+
+The completed sensitivity passed its prespecified accounting and native categorical checks. The normalized panel contained 472,891 cell–boundary–interval observations, comprising 423,113 new native exports and 49,778 explicitly identified accepted observations reused for the two earliest 1985 intervals. New origin-partition, initial-continuity and confirmed-entry mismatch counters were zero; reused observations were not assigned invented native counters. Reference and control differences were within the prespecified tolerances.
+
+## Stock-normalized endpoint conversion fractions
+
+We divided each origin class's endpoint conversion area by its pasture stock at interval start, then compared initial and observed-entry fractions. National estimates divide sums of class areas; they are not averages of cell-level ratios. The initial/entry ratio ranged from 1.1674 to 1.3979 across the six estimable b1985 primary intervals and from 1.0046 to 1.1964 across the four estimable b1995 primary intervals. The three estimable b2000 primary ratios increased from 0.8164 through 1.0530 to 1.1016. The diagnostic 2020–2025 ratios were 0.8072, 0.7209 and 0.6712, respectively. The first interval of each boundary had no observed-entry stock, so its relative ratio was undefined, rather than equal to one.
+
+The origin-area ratio factorizes exactly into the class-stock ratio multiplied by this endpoint-fraction ratio. Thus origin composition combines stock availability and conversion per unit of stock. The canonical 46.91%/53.09% composition is not itself a comparison of conversion propensity. These fractions use stock at t0, not time-integrated exposure through the quinquennium; they are not annual hazards, spatially adjusted preferences or causal effects. Unresolved origin is retained separately. No pooled exposure-normalized ratio is estimated.
+
+Calendar-paired monotonicity with later boundaries follows set nesting: its direction is definitional and its magnitude describes reclassification of identical endpoint conversions. Matched-follow-up curves and the contrast between retained stock and conversion shares provide complementary descriptive information, but also change periods and cohort populations; they do not isolate an artifact fraction.
+
+## Discussion and interpretation wording
+
+The canonical composition is a description of current observed pasture-spell origins conditional on the 1985 boundary. It does not distinguish physically old pasture from first-ever newly established pasture. Moving the boundary changes the history used for attribution: a pasture spell entered after 1985 can be baseline-continuous relative to 1995 or 2000. Consequently, the apparent majority and its crossing date depend on the observation window. The 2000–2005 crossing is not a process threshold and does not independently establish a change of land-use regime.
+
+A decline following a boundary at which all observed pasture is initial is compatible with loss of continuous-spell membership and subsequent observed entries. The sensitivity does not quantify a mechanical artifact fraction, demonstrate stationarity, or estimate a renewal or conversion-hazard model. Non-increasing membership of the continuous baseline stock also does not mathematically require a declining share in the selected conversion population. Neither accounting closure nor the small unresolved-origin component establishes land-cover classification accuracy. The diagnostic extension retains its source-boundary qualification. The first-observed-entry versus observed-re-entry decomposition remains unperformed.
+
+## Supporting project records
+
+- [Matrix v4.3](../../outputs/summary/rq2_evidence_consolidation_v4_2/canonical_integrated_evidence_matrix_v4_2.csv), P9A035/P9A036; P9A037 is substantively unchanged.
+- [Canonical interval summary](../../outputs/summary/pasture_spell_panel_v2/canonical_pas_tmp_origin_interval_summary_v2.csv) and [pooled summary](../../outputs/summary/pasture_spell_panel_v2/canonical_pas_tmp_origin_pooled_summary_v2.csv).
+- [Completed window sensitivity](../../docs/results/window_origin_sensitivity_full_findings_v1.md), [native validation](../../docs/validation/window_origin_sensitivity_full_validation_v1.md), and [method v2](../../docs/methods/window_origin_sensitivity_v2.md).
+- [Source-to-claim inventory](../../config/rq2_evidence_v4_2_source_inventory_v1.csv) and [derived endpoint fractions](../../outputs/summary/rq2_evidence_consolidation_v4_2/canonical_rq2_numerical_claims_v4_2.json).
+
+Use the existing canonical composition image with the v4.3 caption, the window-sensitivity figure and the stock-normalized endpoint-fraction figure where the manuscript layout permits. Figure numbering can be assigned when integrating the complete paper.
