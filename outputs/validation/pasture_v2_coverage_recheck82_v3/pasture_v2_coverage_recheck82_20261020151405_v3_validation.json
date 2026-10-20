@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "version": "pasture-v2-coverage-recheck-v3",
+  "recheck_run": "20261020151405",
+  "parent_run": "20261016150312",
+  "native_transport_controls": "PASS",
+  "real_cell_preflight": "PASS",
+  "real_preflight_audit_id": "000000000000000002b2",
+  "reduction_strategy": "mapped_direct_reduceRegion_finite_image",
+  "native_output_fixture_fields": 26,
+  "native_cells_rechecked": 82,
+  "parent_cells_reused_unchanged": 21787,
+  "combined_cells": 21869,
+  "affected_cells": {
+    "code1": 0,
+    "invalid100_after_nonpas": 0,
+    "reused100_after_exit": 0,
+    "code100_without_confirmed_initial": 0,
+    "code100_after_gap_only": 0,
+    "age100_outside_pas": 0,
+    "age_positive_outside_pas": 0,
+    "pasture_age_masked": 0,
+    "pasture_age_zero": 0,
+    "unexpected_age_code": 0,
+    "coverage_unknown_code": 0,
+    "has_pasture": 21036,
+    "has_code100": 16004,
+    "has_2xx": 21033,
+    "has_valid_coverage": 21869
+  },
+  "pending_controls": [],
+  "changed_flag_values": 82,
+  "newly_recognized_code_cell_counts": {
+    "1": 0,
+    "10": 0,
+    "22": 0,
+    "26": 0,
+    "75": 60,
+    "84": 0,
+    "91": 24
+  },
+  "verdicts": {
+    "code1": "NAO_DETECTADO_NO_DOMINIO_COMPLETO",
+    "invalid100_after_nonpas": "NAO_DETECTADO_NO_DOMINIO_COMPLETO",
+    "reused100_after_exit": "NAO_DETECTADO_NO_DOMINIO_COMPLETO"
+  },
+  "input_sha256": {
+    "config": "afc8580b3ba12e5d3497a0f4ddf8e63e18e12f8e448be7fa0128d523e0fcc101",
+    "recheck_csv": "04eca93b8c1820030241a532afc42014968e55afebc7d1bf7569786d2c322f10",
+    "parent_validation": "f874225b3dcda43959b154f4699bf49e9463a7f77c953bde825dc8022b5224df",
+    "pasture_v2_mem12_domain_new_20261016150312_b0.csv": "24246a17f3e54b791ef8a213671aca78838226c069bb9f47402fe29e6ac19e0b",
+    "pasture_v2_mem12_domain_new_20261016150312_b1.csv": "003cccd42ebbcf8785ea185338ee42e0531f65e040613c0fa8468136eefe2feb",
+    "pasture_v2_mem12_domain_new_20261016150312_b2.csv": "33aae0513ebb82e169a8e70b37c57f5dd16bdf16d10da0a672ce3c9e2a7dfde7",
+    "pasture_v2_mem12_domain_new_20261016150312_b3.csv": "41855e6942b14afa185c786d226b2c39bbdfba2b1d5ab15103c7e9cf7f43b079",
+    "pasture_v2_mem12_domain_new_20261016150312_b4.csv": "be8bd248661385a2b5ff05eb2d10ac6866255fd29d14fb97d429b3775632e033",
+    "pasture_v2_mem12_domain_new_20261016150312_b5.csv": "67c9d6692eec7ff1e194b4deb2651c59873faef5284d441de2101473fdbafc1c",
+    "pasture_v2_mem12_domain_new_20261016150312_b6.csv": "961c4c59f017c74dcb5462062f19a58fd45e5c5dd7069b349289b01b1c9bf383",
+    "pasture_v2_mem12_domain_new_20261016150312_b7.csv": "695de8ab37bca97d11ad7764d560fe41d1916754e9e627b92107cee7bd657522"
+  },
+  "provenance_rule": "Only cells with observed parent unknown code are replaced. Elsewhere the expanded known list cannot change coverage states: any added observed code would have set the parent unknown flag.",
+  "limitations": [
+    "Same referenced coverage/age asset IDs; remote asset bytes are not independently hashed.",
+    "No full-domain raster re-export is claimed for the 21,787 reused cells.",
+    "Cell occurrence flags, not pixel counts or hectares; not validation of all numeric ages.",
+    "Executed script text has no operator hash attestation."
+  ],
+  "executed_script_sha256": null,
+  "output_sha256": {
+    "pasture_v2_coverage_recheck82_20261020151405_v3_combined_cells.csv": "e5a986e45f89cff5dacb5eff9cbd4cb42d6f1185ca40dcc2b2f72b75d779c652",
+    "pasture_v2_coverage_recheck82_20261020151405_v3_flag_changes.csv": "a0c2c3be93e66a81f9b6b1c029cd173830285e1aa952d938d76f3f08c737c3d3"
+  }
+}

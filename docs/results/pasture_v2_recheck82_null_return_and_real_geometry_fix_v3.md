@@ -1,3 +1,5 @@
+> Historical status/instructions. On 2026-10-20 the targeted audit was accepted; no rerun is needed. Current: [acceptance record](../validation/pasture_v2_targeted_domain_audit_acceptance_v1.md).
+
 # Pasture-age v2: rejected all-null return and real-geometry preflight v3
 
 Date: 2026-10-20. Native v3 status: **PENDING**. No scientific closure.

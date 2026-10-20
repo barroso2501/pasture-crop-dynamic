@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-20",
+  "status": "ACCEPTED_TARGETED_AUDIT",
+  "native_recheck_run": "20261020151405",
+  "parent_native_run": "20261016150312",
+  "years": [
+    1985,
+    2025
+  ],
+  "grid_asset": "projects/ee-barroso2501/assets/grade_hex_CeAmz_selecao",
+  "selected_domain_cells": 21869,
+  "native_rechecked_cells": 82,
+  "unchanged_parent_cells_reused": 21787,
+  "native_missing_reductions": 0,
+  "native_real_preflight_methods": "both complete and equal on the single checked cell; direct selected",
+  "native_controls": {
+    "code1": 0,
+    "invalid100_after_nonpas": 0,
+    "reused100_after_exit": 0,
+    "code100_without_confirmed_initial": 0,
+    "code100_after_gap_only": 0,
+    "age100_outside_pas": 0,
+    "age_positive_outside_pas": 0,
+    "pasture_age_masked": 0,
+    "pasture_age_zero": 0,
+    "unexpected_age_code": 0,
+    "coverage_unknown_code": 0,
+    "has_pasture": 21036,
+    "has_code100": 16004,
+    "has_2xx": 21033,
+    "has_valid_coverage": 21869
+  },
+  "pending_audit_controls": [],
+  "changed_flags": {
+    "coverage_unknown_code": 82
+  },
+  "new_coverage_code_cell_counts": {
+    "1": 0,
+    "10": 0,
+    "22": 0,
+    "26": 0,
+    "75": 60,
+    "84": 0,
+    "91": 24
+  },
+  "coverage_75_91_intersection_cells": 2,
+  "validation_sha256": "e644344bdc1f2fea79a46b062dafa1947d6022ba3b1921e61a864c53f2b2a67c",
+  "input_csv_sha256": "04eca93b8c1820030241a532afc42014968e55afebc7d1bf7569786d2c322f10",
+  "input_library_file_id": "libfile_0773fb8212648191bf793b4e8afec4cf",
+  "distributed_script_sha256": "4bb7fa9664ccd1d41438da0cf4f930888ae4fad62e1dd9dad0d25d35f61e3862",
+  "executed_script_sha256": null,
+  "canonical_source_migration": false,
+  "canonical_accounting_rerun": false,
+  "matrix_current": "v4.3",
+  "cumulative_events_current": "v5",
+  "scope": "No audited coding/consistency anomaly detected in selected 21869-cell domain, 1985–2025; occurrence flags are not area or full numerical-age validation.",
+  "remaining_external_qualifications": [
+    "Remote asset content not independently hashed; reuse assumes same referenced asset contents.",
+    "Executed script text has no operator hash attestation.",
+    "Numerical-age 201 native assurance, entry/re-entry chronology, annual uncertain-pair full-domain validation and DOI release remain separate."
+  ]
+}

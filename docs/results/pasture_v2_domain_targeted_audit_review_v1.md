@@ -1,3 +1,5 @@
+> Historical status/instructions. On 2026-10-20 the targeted audit was accepted; no rerun is needed. Current: [acceptance record](../validation/pasture_v2_targeted_domain_audit_acceptance_v1.md).
+
 # Targeted new-age audit: complete domain, one coverage-list qualification
 
 Review date: 2026-10-19. **File integrity PASS; scientific interpretation remains qualified by 82 coverage-unknown cells.** Native run `20261016150312` covers 1985–2025 on `projects/ee-barroso2501/assets/grade_hex_CeAmz_selecao`. All eight CSVs were received in `drive-download-20261019T145422Z-1-001.zip`. The immutable v1.2 validation JSON and original native CSV bytes are included in the package.

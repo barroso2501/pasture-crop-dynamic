@@ -1,3 +1,5 @@
+> Historical status/instructions. On 2026-10-20 the targeted audit was accepted; no rerun is needed. Current: [acceptance record](../validation/pasture_v2_targeted_domain_audit_acceptance_v1.md).
+
 # Native preflight stop: explicit spatial fixture v2.1
 
 Date 2026-10-20. The operator's v2 preflight returned all 26 correctly named outputs, with a systematic alternating pattern: the first input family returned zero; its complement returned 2, 4, …, 26. The assertion expected a maximum of i+1 in every band. It therefore stopped before creating the 82-cell export task. This is a synthetic preflight result, not an observation of age-code anomalies or the 82-cell data. No new scientific acceptance follows.

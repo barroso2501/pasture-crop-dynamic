@@ -1,3 +1,5 @@
+> Historical status/instructions. On 2026-10-20 the targeted audit was accepted; no rerun is needed. Current: [acceptance record](../validation/pasture_v2_targeted_domain_audit_acceptance_v1.md).
+
 # Rejected blank native return and explicit export revision
 
 Review date 2026-10-20. Run `20261020134910`, version `pasture-v2-coverage-recheck-v1`, is **not accepted**. All 82 selected cells and their identity metadata are present, but all 25 computed fields are empty in every row: 2,050 missing numeric results. The original v1 validator correctly rejected this file rather than substituting zeros. No recheck-derived combined panel was written or accepted.

@@ -1,3 +1,5 @@
+> Historical status/instructions. On 2026-10-20 the targeted audit was accepted; no rerun is needed. Current: [acceptance record](../validation/pasture_v2_targeted_domain_audit_acceptance_v1.md).
+
 # Recheck82 code revision v3.1 — Feature property assignment
 
 Date: 2026-10-20. CSV protocol/version remains v3; corrected native export remains pending.
