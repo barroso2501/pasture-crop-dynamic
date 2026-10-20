@@ -1,0 +1,526 @@
+{
+  "version": "pasture-v2-coverage-recheck-v2",
+  "parent_run": "20261016150312",
+  "cells": [
+    {
+      "audit_id": "00000000000000000661",
+      "cell_id": "6679",
+      "GRID_ID": "HS-189"
+    },
+    {
+      "audit_id": "00000000000000000a0b",
+      "cell_id": "8111",
+      "GRID_ID": "IH-179"
+    },
+    {
+      "audit_id": "00000000000000000c50",
+      "cell_id": "8975",
+      "GRID_ID": "IK-173"
+    },
+    {
+      "audit_id": "00000000000000000d6d",
+      "cell_id": "9395",
+      "GRID_ID": "HS-170"
+    },
+    {
+      "audit_id": "00000000000000000ded",
+      "cell_id": "9570",
+      "GRID_ID": "IR-169"
+    },
+    {
+      "audit_id": "0000000000000000141e",
+      "cell_id": "11808",
+      "GRID_ID": "JE-155"
+    },
+    {
+      "audit_id": "0000000000000000169c",
+      "cell_id": "12657",
+      "GRID_ID": "JE-150"
+    },
+    {
+      "audit_id": "0000000000000000179c",
+      "cell_id": "12999",
+      "GRID_ID": "JE-148"
+    },
+    {
+      "audit_id": "00000000000000001f60",
+      "cell_id": "15818",
+      "GRID_ID": "IN-133"
+    },
+    {
+      "audit_id": "00000000000000002981",
+      "cell_id": "20182",
+      "GRID_ID": "CT-115"
+    },
+    {
+      "audit_id": "00000000000000002c25",
+      "cell_id": "21217",
+      "GRID_ID": "HN-112"
+    },
+    {
+      "audit_id": "00000000000000002e1f",
+      "cell_id": "22053",
+      "GRID_ID": "DH-109"
+    },
+    {
+      "audit_id": "000000000000000046cd",
+      "cell_id": "34851",
+      "GRID_ID": "JR-67"
+    },
+    {
+      "audit_id": "000000000000000003df",
+      "cell_id": "5670",
+      "GRID_ID": "GJ-196"
+    },
+    {
+      "audit_id": "00000000000000000648",
+      "cell_id": "6654",
+      "GRID_ID": "GT-189"
+    },
+    {
+      "audit_id": "00000000000000000bef",
+      "cell_id": "8833",
+      "GRID_ID": "IM-174"
+    },
+    {
+      "audit_id": "00000000000000000c4f",
+      "cell_id": "8974",
+      "GRID_ID": "IJ-173"
+    },
+    {
+      "audit_id": "00000000000000000cb3",
+      "cell_id": "9120",
+      "GRID_ID": "IK-172"
+    },
+    {
+      "audit_id": "00000000000000000d06",
+      "cell_id": "9249",
+      "GRID_ID": "HT-171"
+    },
+    {
+      "audit_id": "000000000000000013a0",
+      "cell_id": "11641",
+      "GRID_ID": "JF-156"
+    },
+    {
+      "audit_id": "0000000000000000149c",
+      "cell_id": "11977",
+      "GRID_ID": "JF-154"
+    },
+    {
+      "audit_id": "0000000000000000189f",
+      "cell_id": "13343",
+      "GRID_ID": "JG-146"
+    },
+    {
+      "audit_id": "00000000000000001f61",
+      "cell_id": "15819",
+      "GRID_ID": "IO-133"
+    },
+    {
+      "audit_id": "00000000000000002a38",
+      "cell_id": "20476",
+      "GRID_ID": "CS-114"
+    },
+    {
+      "audit_id": "000000000000000003af",
+      "cell_id": "5582",
+      "GRID_ID": "ID-197"
+    },
+    {
+      "audit_id": "0000000000000000067a",
+      "cell_id": "6704",
+      "GRID_ID": "IR-189"
+    },
+    {
+      "audit_id": "00000000000000001197",
+      "cell_id": "10956",
+      "GRID_ID": "IP-160"
+    },
+    {
+      "audit_id": "00000000000000002a39",
+      "cell_id": "20477",
+      "GRID_ID": "CT-114"
+    },
+    {
+      "audit_id": "00000000000000002c26",
+      "cell_id": "21218",
+      "GRID_ID": "HO-112"
+    },
+    {
+      "audit_id": "00000000000000004106",
+      "cell_id": "32214",
+      "GRID_ID": "JY-77"
+    },
+    {
+      "audit_id": "000000000000000003f6",
+      "cell_id": "5716",
+      "GRID_ID": "ID-196"
+    },
+    {
+      "audit_id": "0000000000000000043e",
+      "cell_id": "5852",
+      "GRID_ID": "ID-195"
+    },
+    {
+      "audit_id": "0000000000000000053b",
+      "cell_id": "6264",
+      "GRID_ID": "IA-192"
+    },
+    {
+      "audit_id": "0000000000000000099f",
+      "cell_id": "7953",
+      "GRID_ID": "HT-180"
+    },
+    {
+      "audit_id": "00000000000000000c51",
+      "cell_id": "8976",
+      "GRID_ID": "IL-173"
+    },
+    {
+      "audit_id": "00000000000000000d07",
+      "cell_id": "9250",
+      "GRID_ID": "HU-171"
+    },
+    {
+      "audit_id": "00000000000000000d6c",
+      "cell_id": "9394",
+      "GRID_ID": "HR-170"
+    },
+    {
+      "audit_id": "00000000000000001113",
+      "cell_id": "10780",
+      "GRID_ID": "ID-161"
+    },
+    {
+      "audit_id": "0000000000000000139e",
+      "cell_id": "11628",
+      "GRID_ID": "IS-156"
+    },
+    {
+      "audit_id": "0000000000000000179d",
+      "cell_id": "13000",
+      "GRID_ID": "JF-148"
+    },
+    {
+      "audit_id": "0000000000000000275b",
+      "cell_id": "19204",
+      "GRID_ID": "IN-119"
+    },
+    {
+      "audit_id": "00000000000000004622",
+      "cell_id": "34616",
+      "GRID_ID": "JX-68"
+    },
+    {
+      "audit_id": "0000000000000000483a",
+      "cell_id": "35324",
+      "GRID_ID": "JQ-65"
+    },
+    {
+      "audit_id": "000000000000000004e1",
+      "cell_id": "6128",
+      "GRID_ID": "ID-193"
+    },
+    {
+      "audit_id": "0000000000000000051e",
+      "cell_id": "6233",
+      "GRID_ID": "GV-192"
+    },
+    {
+      "audit_id": "000000000000000005f7",
+      "cell_id": "6538",
+      "GRID_ID": "HS-190"
+    },
+    {
+      "audit_id": "00000000000000000679",
+      "cell_id": "6703",
+      "GRID_ID": "IQ-189"
+    },
+    {
+      "audit_id": "00000000000000000b2b",
+      "cell_id": "8545",
+      "GRID_ID": "IL-176"
+    },
+    {
+      "audit_id": "00000000000000000b8e",
+      "cell_id": "8689",
+      "GRID_ID": "IM-175"
+    },
+    {
+      "audit_id": "00000000000000000d6f",
+      "cell_id": "9397",
+      "GRID_ID": "HU-170"
+    },
+    {
+      "audit_id": "0000000000000000118b",
+      "cell_id": "10944",
+      "GRID_ID": "ID-160"
+    },
+    {
+      "audit_id": "0000000000000000118c",
+      "cell_id": "10945",
+      "GRID_ID": "IE-160"
+    },
+    {
+      "audit_id": "0000000000000000151c",
+      "cell_id": "12146",
+      "GRID_ID": "JF-153"
+    },
+    {
+      "audit_id": "0000000000000000171c",
+      "cell_id": "12828",
+      "GRID_ID": "JE-149"
+    },
+    {
+      "audit_id": "0000000000000000099e",
+      "cell_id": "7952",
+      "GRID_ID": "HS-180"
+    },
+    {
+      "audit_id": "000000000000000009ad",
+      "cell_id": "7967",
+      "GRID_ID": "IH-180"
+    },
+    {
+      "audit_id": "00000000000000000d04",
+      "cell_id": "9247",
+      "GRID_ID": "HR-171"
+    },
+    {
+      "audit_id": "00000000000000000d0a",
+      "cell_id": "9253",
+      "GRID_ID": "HX-171"
+    },
+    {
+      "audit_id": "0000000000000000159d",
+      "cell_id": "12316",
+      "GRID_ID": "JE-152"
+    },
+    {
+      "audit_id": "0000000000000000159e",
+      "cell_id": "12317",
+      "GRID_ID": "JF-152"
+    },
+    {
+      "audit_id": "0000000000000000161e",
+      "cell_id": "12489",
+      "GRID_ID": "JF-151"
+    },
+    {
+      "audit_id": "0000000000000000169e",
+      "cell_id": "12659",
+      "GRID_ID": "JG-150"
+    },
+    {
+      "audit_id": "0000000000000000171d",
+      "cell_id": "12829",
+      "GRID_ID": "JF-149"
+    },
+    {
+      "audit_id": "00000000000000002801",
+      "cell_id": "19480",
+      "GRID_ID": "IO-118"
+    },
+    {
+      "audit_id": "0000000000000000478a",
+      "cell_id": "35089",
+      "GRID_ID": "JQ-66"
+    },
+    {
+      "audit_id": "000000000000000002b2",
+      "cell_id": "5045",
+      "GRID_ID": "IC-201"
+    },
+    {
+      "audit_id": "00000000000000000894",
+      "cell_id": "7526",
+      "GRID_ID": "HV-183"
+    },
+    {
+      "audit_id": "00000000000000000a0a",
+      "cell_id": "8110",
+      "GRID_ID": "IG-179"
+    },
+    {
+      "audit_id": "00000000000000000b8c",
+      "cell_id": "8687",
+      "GRID_ID": "IK-175"
+    },
+    {
+      "audit_id": "00000000000000000f1a",
+      "cell_id": "10029",
+      "GRID_ID": "IU-166"
+    },
+    {
+      "audit_id": "0000000000000000151b",
+      "cell_id": "12145",
+      "GRID_ID": "JE-153"
+    },
+    {
+      "audit_id": "0000000000000000161f",
+      "cell_id": "12490",
+      "GRID_ID": "JG-151"
+    },
+    {
+      "audit_id": "0000000000000000181e",
+      "cell_id": "13172",
+      "GRID_ID": "JG-147"
+    },
+    {
+      "audit_id": "00000000000000001cb5",
+      "cell_id": "14802",
+      "GRID_ID": "IV-138"
+    },
+    {
+      "audit_id": "0000000000000000346d",
+      "cell_id": "25404",
+      "GRID_ID": "IQ-99"
+    },
+    {
+      "audit_id": "00000000000000004789",
+      "cell_id": "35088",
+      "GRID_ID": "JP-66"
+    },
+    {
+      "audit_id": "00000000000000000716",
+      "cell_id": "6941",
+      "GRID_ID": "HA-187"
+    },
+    {
+      "audit_id": "0000000000000000141f",
+      "cell_id": "11809",
+      "GRID_ID": "JF-155"
+    },
+    {
+      "audit_id": "0000000000000000169d",
+      "cell_id": "12658",
+      "GRID_ID": "JF-150"
+    },
+    {
+      "audit_id": "00000000000000001cb4",
+      "cell_id": "14801",
+      "GRID_ID": "IU-138"
+    },
+    {
+      "audit_id": "00000000000000002edc",
+      "cell_id": "22371",
+      "GRID_ID": "DI-108"
+    },
+    {
+      "audit_id": "000000000000000033eb",
+      "cell_id": "25079",
+      "GRID_ID": "IQ-100"
+    }
+  ],
+  "expected_cells": 82,
+  "known_coverage_codes": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    39,
+    40,
+    41,
+    46,
+    47,
+    48,
+    49,
+    50,
+    62,
+    75,
+    84,
+    91
+  ],
+  "previous_known_coverage_codes": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    11,
+    12,
+    13,
+    15,
+    19,
+    20,
+    21,
+    23,
+    24,
+    25,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    39,
+    40,
+    41,
+    46,
+    47,
+    48,
+    49,
+    50,
+    62
+  ],
+  "newly_recognized_codes": [
+    1,
+    10,
+    22,
+    26,
+    75,
+    84,
+    91
+  ],
+  "coverage": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_coverage_v3",
+  "age": "projects/mapbiomas-public/assets/brazil/lulc/collection11/mapbiomas_brazil_collection11_pasture_origin_age_v2",
+  "grid": "projects/ee-barroso2501/assets/grade_hex_CeAmz_selecao",
+  "crs": "EPSG:4326",
+  "crs_transform": [
+    0.00026949458523585647,
+    0,
+    -74.02073025380652,
+    0,
+    -0.00026949458523585647,
+    5.405791885246045
+  ],
+  "parent_zip_sha256": "6f6cfe4b026879f72899d82787827249d1a33f652e1e16dea4f86e43f061efd9",
+  "parent_validation_sha256": "f874225b3dcda43959b154f4699bf49e9463a7f77c953bde825dc8022b5224df",
+  "required_transport_controls": [
+    "native_schema_test_status",
+    "native_schema_test_fields",
+    "native_schema_expected_json",
+    "image_band_names_json",
+    "reducer_missing_count",
+    "reducer_missing_fields",
+    "reducer_properties_json",
+    "reducer_property_names_json"
+  ],
+  "native_grid_support_required": 1
+}

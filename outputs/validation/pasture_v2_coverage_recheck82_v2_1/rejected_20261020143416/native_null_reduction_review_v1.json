@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-20",
+  "run": "20261020143416",
+  "status": "REJECTED_NULL_REDUCTIONS",
+  "rows": 82,
+  "numeric_results_per_row": 26,
+  "missing_results": 2132,
+  "native_fixture": "PASS",
+  "all_result_property_names_present": true,
+  "raw_result_values_null": true,
+  "constant_support_also_null": true,
+  "input_sha256": "b4ed7b512d1dba36d3abf0c585d0dee3d463f93990a1ee1623af32890e1d0317",
+  "scientific_acceptance": false,
+  "diagnosis": "Consistent with the documented filtered-table/global-image-footprint intersection failure; not independently proven on the service.",
+  "new_native_execution": "PENDING"
+}

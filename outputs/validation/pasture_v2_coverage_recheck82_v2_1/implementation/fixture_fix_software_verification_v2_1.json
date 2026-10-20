@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-20",
+  "version": "pasture-v2-coverage-recheck-v2.1",
+  "software_status": "PASS",
+  "native_status": "PENDING",
+  "native_export_status": "NOT_EXECUTED",
+  "checks": {
+    "temporal_engine_byte_identical": true,
+    "actual_cell_reducer_byte_identical": true,
+    "javascript_syntax": "PASS",
+    "retained_scalar_cases": 14,
+    "additional_scalar_cases": 3,
+    "independent_reducer_software_model_inputs_outputs": 26,
+    "file_validator_tests": 12,
+    "native_grid_window_geometry_math": "PASS",
+    "one_unexercised_spatial_half_rejected_by_validator": true
+  },
+  "operator_reported_v2_preflight": "STOPPED; names present but 13 of 26 values mismatched expectations",
+  "scientific_new_82_cell_result_accepted": false,
+  "source_sha256": {
+    "gee/recheck_pasture_v2_82cells_v2_1.js": "d1256e8e577a63eb415a772289679cd67f7855b0894245adf508c0adb59cb9f1",
+    "analysis/validate_pasture_v2_recheck82_v2_1.py": "fae71d1c8b08fa831b173d2eb21a8a76a6882ea8a0552d4c32a6013317612059",
+    "config/pasture_v2_coverage_recheck_82_v2_1.json": "cbe14878c90c254852084a51dc999be9877bb3e161796d649b8aa4cd5ba3ad3f",
+    "tests/test_recheck82_validator_v2_1.py": "2ecda7b216f66b31c09af7f8a6344c12e1d7ef19b9b844a8ef5b89e245b994b9",
+    "tests/test_explicit_reducer_v2_1.js": "ef857df08461584f4e6988ea828f88e90a196a722c8f85b12fd7845d8e9e0174"
+  }
+}

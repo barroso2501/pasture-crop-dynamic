@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "run": "20261016150312",
+  "mode": "domain",
+  "product": "new",
+  "rows_validated": 21869,
+  "grid_asset": "projects/ee-barroso2501/assets/grade_hex_CeAmz_selecao",
+  "input_sha256": {
+    "pasture_v2_mem12_domain_new_20261016150312_b0.csv": "24246a17f3e54b791ef8a213671aca78838226c069bb9f47402fe29e6ac19e0b",
+    "pasture_v2_mem12_domain_new_20261016150312_b1.csv": "003cccd42ebbcf8785ea185338ee42e0531f65e040613c0fa8468136eefe2feb",
+    "pasture_v2_mem12_domain_new_20261016150312_b2.csv": "33aae0513ebb82e169a8e70b37c57f5dd16bdf16d10da0a672ce3c9e2a7dfde7",
+    "pasture_v2_mem12_domain_new_20261016150312_b3.csv": "41855e6942b14afa185c786d226b2c39bbdfba2b1d5ab15103c7e9cf7f43b079",
+    "pasture_v2_mem12_domain_new_20261016150312_b4.csv": "be8bd248661385a2b5ff05eb2d10ac6866255fd29d14fb97d429b3775632e033",
+    "pasture_v2_mem12_domain_new_20261016150312_b5.csv": "67c9d6692eec7ff1e194b4deb2651c59873faef5284d441de2101473fdbafc1c",
+    "pasture_v2_mem12_domain_new_20261016150312_b6.csv": "961c4c59f017c74dcb5462062f19a58fd45e5c5dd7069b349289b01b1c9bf383",
+    "pasture_v2_mem12_domain_new_20261016150312_b7.csv": "695de8ab37bca97d11ad7764d560fe41d1916754e9e627b92107cee7bd657522"
+  },
+  "pending_controls": [
+    "coverage_unknown_code"
+  ],
+  "affected_cells": {
+    "code1": 0,
+    "invalid100_after_nonpas": 0,
+    "reused100_after_exit": 0,
+    "code100_without_confirmed_initial": 0,
+    "code100_after_gap_only": 0,
+    "age100_outside_pas": 0,
+    "age_positive_outside_pas": 0,
+    "pasture_age_masked": 0,
+    "pasture_age_zero": 0,
+    "unexpected_age_code": 0,
+    "coverage_unknown_code": 82,
+    "has_pasture": 21036,
+    "has_code100": 16004,
+    "has_2xx": 21033,
+    "has_valid_coverage": 21869
+  },
+  "unit": "células com ocorrência, não pixels ou hectares",
+  "full_domain_complete_for_this_product": true,
+  "executed_script_sha256": null,
+  "native_execution_independently_observed": false,
+  "limitation": "Um smoke PASS confirma apenas exportação e integridade de uma célula; não ausência no domínio.",
+  "verdicts": {
+    "code1": "NAO_DETECTADO_COM_PENDENCIAS",
+    "invalid100_after_nonpas": "NAO_DETECTADO_COM_PENDENCIAS",
+    "reused100_after_exit": "NAO_DETECTADO_COM_PENDENCIAS"
+  }
+}

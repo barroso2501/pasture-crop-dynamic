@@ -1,0 +1,33 @@
+{
+  "review_date": "2026-10-20",
+  "received_recheck_v1_status": "REJECTED_INCOMPLETE_RESULTS",
+  "received_recheck_rows": 82,
+  "missing_results": 2050,
+  "v2_software_status": "PASS",
+  "v2_native_status": "PENDING",
+  "exact_remote_failure_cause": "Not established from the returned v1 CSV",
+  "checks": {
+    "syntax": "PASS",
+    "retained_scalar_tests": 14,
+    "added_coverage_scalar_tests": 3,
+    "named_independent_reducer_model": {
+      "inputs": 26,
+      "outputs": 26,
+      "status": "PASS",
+      "native": false
+    },
+    "v2_file_validator_tests": 10,
+    "observed_all_blank_pattern_rejected": true,
+    "temporal_engine_identical": true
+  },
+  "no_combined_native_recheck_accepted": true,
+  "parent_native_results_unchanged": true,
+  "executed_script_sha256": null,
+  "source_sha256": {
+    "gee/recheck_pasture_v2_82cells_v2.js": "1467f4ed661feeedafeb86c30a8d3eb5a8361aa1da4a51bce77a0a1ae302c221",
+    "analysis/validate_pasture_v2_recheck82_v2.py": "473bf6fc3cc88acc0fb7cc5d7951fda78e22f4a426e06e4078a94e6d10a8fde9",
+    "config/pasture_v2_coverage_recheck_82_v2.json": "0d2ef690c839a69f9bc56bc17ee9229f8f0e423c24cc45092ebb9ad46e283788",
+    "tests/test_recheck82_validator_v2.py": "cc908455b89644ff624c4b5641c2328f7f85a507d1266a3f743a20dc42029713",
+    "tests/test_explicit_reducer_v2.js": "f7599706f82d551da807369ab0d544baf27242f4ad65e395a6b968438b30f0a0"
+  }
+}

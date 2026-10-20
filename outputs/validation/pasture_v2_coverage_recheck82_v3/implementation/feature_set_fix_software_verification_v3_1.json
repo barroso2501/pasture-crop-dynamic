@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-20",
+  "code_revision": "v3.1",
+  "csv_protocol": "v3",
+  "node_syntax": "PASS",
+  "scalar_original": 14,
+  "scalar_additional": 3,
+  "method_selection_scenarios": 5,
+  "unsupported_setMulti_guard": "PASS",
+  "scope": "one executable line changed plus code revision comment",
+  "validator_config_integration_tests": "byte-identical to v3; previous 17 integration tests passed; not rerun for unchanged validator",
+  "parent_eight_csv_hashes": "UNCHANGED",
+  "native_corrected_export": "PENDING",
+  "scientific_acceptance": false,
+  "source_sha256": {
+    "gee/recheck_pasture_v2_82cells_v3.js": "4bb7fa9664ccd1d41438da0cf4f930888ae4fad62e1dd9dad0d25d35f61e3862",
+    "analysis/validate_pasture_v2_recheck82_v3.py": "b5a441981047d194f57019357a16543bbff05496e8e79ffc4b48564c11397254",
+    "tests/test_real_reduction_choice_v3.js": "1729c0d4e38a366c3aa08b91a49a0289554c2b077860301bdf2e5cbc0cac500e"
+  }
+}

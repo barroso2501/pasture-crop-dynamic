@@ -1,0 +1,23 @@
+{
+  "status": "PASS_SOFTWARE_ONLY",
+  "date": "2026-10-20",
+  "scalar_tests_original": 14,
+  "scalar_tests_additional": 3,
+  "method_selection_scenarios": 5,
+  "validator_integration_tests": 17,
+  "node_syntax": "PASS",
+  "python_syntax": "PASS",
+  "parent_eight_csv_hashes": "UNCHANGED",
+  "parent_validation_sha256": "f874225b3dcda43959b154f4699bf49e9463a7f77c953bde825dc8022b5224df",
+  "temporal_engine": "BYTE_IDENTICAL_TO_V1",
+  "rejected_input_sha256": "b4ed7b512d1dba36d3abf0c585d0dee3d463f93990a1ee1623af32890e1d0317",
+  "native_v3": "PENDING",
+  "scientific_closure": false,
+  "source_sha256": {
+    "gee/recheck_pasture_v2_82cells_v3.js": "99ca1f348bd5cd1ab528a7642018dc3f467e6e423a443f52fd5121a7ea01e1fb",
+    "analysis/validate_pasture_v2_recheck82_v3.py": "b5a441981047d194f57019357a16543bbff05496e8e79ffc4b48564c11397254",
+    "config/pasture_v2_coverage_recheck_82_v3.json": "afc8580b3ba12e5d3497a0f4ddf8e63e18e12f8e448be7fa0128d523e0fcc101",
+    "tests/test_real_reduction_choice_v3.js": "a78eb48ed627ee70f87e14c851c5db3a6c80850105034af61b4426d41b5b646a",
+    "tests/test_recheck82_validator_v3.py": "c28c86f42101dd146b2d78740842bc127eb4f9b885b652a13d3f91dac2b7ab1f"
+  }
+}

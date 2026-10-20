@@ -1,0 +1,38 @@
+{
+  "review_date": "2026-10-19",
+  "parent_native_file_integrity": "PASS",
+  "parent_run": "20261016150312",
+  "parent_cells": 21869,
+  "unknown_coverage_cells": 82,
+  "parent_unaffected_cells": 21787,
+  "parent_zip_sha256": "6f6cfe4b026879f72899d82787827249d1a33f652e1e16dea4f86e43f061efd9",
+  "expanded_known_observed_codes": 39,
+  "added_coverage_codes": [
+    1,
+    10,
+    22,
+    26,
+    75,
+    84,
+    91
+  ],
+  "NODATA_27_remains_invalid": true,
+  "software_checks": {
+    "javascript_syntax": "PASS",
+    "temporal_engine_unchanged": "PASS",
+    "retained_scalar_cases": 14,
+    "added_scalar_cases": 3,
+    "validator_integration_tests": 6,
+    "temporary_fixtures_not_scientific": true
+  },
+  "native_recheck_status": "PENDING",
+  "full_combined_recheck_acceptance": "PENDING",
+  "matrix_changed": false,
+  "events_changed": false,
+  "source_sha256": {
+    "gee/recheck_pasture_v2_82cells_v1.js": "c9ae155fb4a9c07e56b28ec9b46e0a1e9b608b8eae9860c7f97c48b032ec88c6",
+    "analysis/validate_pasture_v2_recheck82_v1.py": "67a3026d3c76cf5d6c5a7088233aad40b53b16ee0fbe3b5c634b6ce3be001baf",
+    "config/pasture_v2_coverage_recheck_82_v1.json": "b605579741e9890a77b423aa45e01b5f4ef047531faa4d2c7792564cb89f6f22",
+    "tests/test_recheck82_validator.py": "e2f047f90913be769fc573fe109fe3c5433559fbab6ea1fff1e8095089f79de4"
+  }
+}
