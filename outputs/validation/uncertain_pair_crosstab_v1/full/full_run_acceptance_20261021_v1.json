@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-21",
+  "status": "FULL_NATIVE_EXPORTS_VALIDATED",
+  "full_native_outputs_received": true,
+  "full_scientific_acceptance": true,
+  "accepted_scope": "endpoint observation-state and observed-PAS overlap for 2023→2024 and 2024→2025",
+  "supersedes_current_status_of": "outputs/validation/uncertain_pair_crosstab_v1/implementation/full_run_handoff_20261020_v1.json",
+  "historical_handoff_preserved": true,
+  "validator_report": "canonical_uncertain_pairs_full_v1_validation.json",
+  "additional_review": "received_full_review_v1.json",
+  "matrix_v4_3_changed": false,
+  "events_v5_changed": false,
+  "pasture_age_source_migration": false
+}

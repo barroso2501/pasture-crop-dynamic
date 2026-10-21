@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "scope": "pilot",
+  "version": "uncertain-pair-crosstab-v1",
+  "cells": 2,
+  "rows": 4,
+  "native_fixtures_passed": 34,
+  "scientific_full_domain_complete": false,
+  "checks": [
+    "exact_inventory",
+    "runtime_constants",
+    "native_projections",
+    "native_fixtures",
+    "cell_partitions",
+    "zero_raster_mismatches",
+    "aggregate_partitions"
+  ],
+  "boundary_controls": [],
+  "input_sha256": {
+    "config": "586377ed81394b4ee24de71f05409d120992cc91135238cce07541ddaf18399a",
+    "crosswalk": "0eb32696f3643b2b2ef6503c504e3909c7d3496a5e1efd97ed7c0bca1c5dc95b",
+    "accepted_boundary_summary": "9edd721e1ffa50c64a8967121ec229f32893bfa2dd91eb316067939c14571355",
+    "accepted_boundary_validation": "5582104b1960edd6df3e00ababcb4a3d2b5d30824ae9d5b9b0559a4f7c92c518",
+    "supplied_script": "e762dc37df452454e2add4d7686a854c1a74a0442f948aaebfb8ec725a893512",
+    "canonical_uncertain_pairs_manifest_pilot_v1.csv": "75fe58e3032731da57cf434958dc61f1d78932e5d742d7f28fdc43b783a0f7d1",
+    "canonical_uncertain_pairs_native_synthetic_v1.csv": "601e786de721ee1ba31e42805557cf1856c34b57437baffcc5b9573f8e27c464",
+    "canonical_uncertain_pairs_pilot_v1.csv": "85233c89844124bee267e379fb812cf06dfdcef5f55acba1acc75392b747d730",
+    "native_case_definitions": "dc2216f8f3c37a60d37b22fff953abe5b0e3449150d5506c436456d667b92123"
+  },
+  "output_sha256": {
+    "canonical_uncertain_pairs_pilot_v1_cells.csv": "5d446b296afc2cfd4b959b515fc45bca1a133fb7bfccb34b022b4dbe16de23da",
+    "canonical_uncertain_pairs_pilot_v1_conditional_cells.csv": "fb8c662a05cc0f69b422a9d8a5e06450c11f1f39df78c82e3fe11735c3856d58",
+    "canonical_uncertain_pairs_pilot_v1_summary.csv": "bbd427516c0d5dc27434db4c7ac0a20ebb949bee4b5660c3997807b6733a4c8a",
+    "canonical_uncertain_pairs_pilot_v1_conditional_summary.csv": "6b4a1a51e0612c28f4a489e1736b0e83f612ab332388a9dc8a7656aaadbf87df",
+    "canonical_uncertain_pairs_pilot_v1_cross_table.csv": "29e8155034e24c49d59f7d7903e0fd38c45fa52959b30164d606453da5c94026"
+  },
+  "execution_identity": {
+    "supplied_script_sha256": "e762dc37df452454e2add4d7686a854c1a74a0442f948aaebfb8ec725a893512",
+    "executed_script_sha256": null,
+    "operator_attestation": null,
+    "independently_verified_remote_execution": false
+  },
+  "limitations": [
+    "Operator-provided native exports; not independently observed remote execution.",
+    "Pilot support is two cells only; no domain-wide PAS-overlap inference.",
+    "Annual uncertain-pair area is distinct from unresolved pasture-origin area."
+  ]
+}

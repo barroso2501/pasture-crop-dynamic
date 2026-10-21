@@ -1,0 +1,308 @@
+[
+  {
+    "case_id": "pair_0_0",
+    "previous_value": 15,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 0,
+    "expected_current": 0
+  },
+  {
+    "case_id": "pair_0_1",
+    "previous_value": 15,
+    "previous_masked": false,
+    "current_value": 3,
+    "current_masked": false,
+    "expected_previous": 0,
+    "expected_current": 1
+  },
+  {
+    "case_id": "pair_0_2",
+    "previous_value": 15,
+    "previous_masked": false,
+    "current_value": 27,
+    "current_masked": false,
+    "expected_previous": 0,
+    "expected_current": 2
+  },
+  {
+    "case_id": "pair_0_3",
+    "previous_value": 15,
+    "previous_masked": false,
+    "current_value": null,
+    "current_masked": true,
+    "expected_previous": 0,
+    "expected_current": 3
+  },
+  {
+    "case_id": "pair_0_4",
+    "previous_value": 15,
+    "previous_masked": false,
+    "current_value": 999,
+    "current_masked": false,
+    "expected_previous": 0,
+    "expected_current": 4
+  },
+  {
+    "case_id": "pair_1_0",
+    "previous_value": 3,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 1,
+    "expected_current": 0
+  },
+  {
+    "case_id": "pair_1_1",
+    "previous_value": 3,
+    "previous_masked": false,
+    "current_value": 3,
+    "current_masked": false,
+    "expected_previous": 1,
+    "expected_current": 1
+  },
+  {
+    "case_id": "pair_1_2",
+    "previous_value": 3,
+    "previous_masked": false,
+    "current_value": 27,
+    "current_masked": false,
+    "expected_previous": 1,
+    "expected_current": 2
+  },
+  {
+    "case_id": "pair_1_3",
+    "previous_value": 3,
+    "previous_masked": false,
+    "current_value": null,
+    "current_masked": true,
+    "expected_previous": 1,
+    "expected_current": 3
+  },
+  {
+    "case_id": "pair_1_4",
+    "previous_value": 3,
+    "previous_masked": false,
+    "current_value": 999,
+    "current_masked": false,
+    "expected_previous": 1,
+    "expected_current": 4
+  },
+  {
+    "case_id": "pair_2_0",
+    "previous_value": 27,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 2,
+    "expected_current": 0
+  },
+  {
+    "case_id": "pair_2_1",
+    "previous_value": 27,
+    "previous_masked": false,
+    "current_value": 3,
+    "current_masked": false,
+    "expected_previous": 2,
+    "expected_current": 1
+  },
+  {
+    "case_id": "pair_2_2",
+    "previous_value": 27,
+    "previous_masked": false,
+    "current_value": 27,
+    "current_masked": false,
+    "expected_previous": 2,
+    "expected_current": 2
+  },
+  {
+    "case_id": "pair_2_3",
+    "previous_value": 27,
+    "previous_masked": false,
+    "current_value": null,
+    "current_masked": true,
+    "expected_previous": 2,
+    "expected_current": 3
+  },
+  {
+    "case_id": "pair_2_4",
+    "previous_value": 27,
+    "previous_masked": false,
+    "current_value": 999,
+    "current_masked": false,
+    "expected_previous": 2,
+    "expected_current": 4
+  },
+  {
+    "case_id": "pair_3_0",
+    "previous_value": null,
+    "previous_masked": true,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 3,
+    "expected_current": 0
+  },
+  {
+    "case_id": "pair_3_1",
+    "previous_value": null,
+    "previous_masked": true,
+    "current_value": 3,
+    "current_masked": false,
+    "expected_previous": 3,
+    "expected_current": 1
+  },
+  {
+    "case_id": "pair_3_2",
+    "previous_value": null,
+    "previous_masked": true,
+    "current_value": 27,
+    "current_masked": false,
+    "expected_previous": 3,
+    "expected_current": 2
+  },
+  {
+    "case_id": "pair_3_3",
+    "previous_value": null,
+    "previous_masked": true,
+    "current_value": null,
+    "current_masked": true,
+    "expected_previous": 3,
+    "expected_current": 3
+  },
+  {
+    "case_id": "pair_3_4",
+    "previous_value": null,
+    "previous_masked": true,
+    "current_value": 999,
+    "current_masked": false,
+    "expected_previous": 3,
+    "expected_current": 4
+  },
+  {
+    "case_id": "pair_4_0",
+    "previous_value": 999,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 4,
+    "expected_current": 0
+  },
+  {
+    "case_id": "pair_4_1",
+    "previous_value": 999,
+    "previous_masked": false,
+    "current_value": 3,
+    "current_masked": false,
+    "expected_previous": 4,
+    "expected_current": 1
+  },
+  {
+    "case_id": "pair_4_2",
+    "previous_value": 999,
+    "previous_masked": false,
+    "current_value": 27,
+    "current_masked": false,
+    "expected_previous": 4,
+    "expected_current": 2
+  },
+  {
+    "case_id": "pair_4_3",
+    "previous_value": 999,
+    "previous_masked": false,
+    "current_value": null,
+    "current_masked": true,
+    "expected_previous": 4,
+    "expected_current": 3
+  },
+  {
+    "case_id": "pair_4_4",
+    "previous_value": 999,
+    "previous_masked": false,
+    "current_value": 999,
+    "current_masked": false,
+    "expected_previous": 4,
+    "expected_current": 4
+  },
+  {
+    "case_id": "source_code_1",
+    "previous_value": 1,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 1,
+    "expected_current": 0
+  },
+  {
+    "case_id": "source_code_39",
+    "previous_value": 39,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 1,
+    "expected_current": 0
+  },
+  {
+    "case_id": "source_code_26",
+    "previous_value": 26,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 1,
+    "expected_current": 0
+  },
+  {
+    "case_id": "source_code_84",
+    "previous_value": 84,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 1,
+    "expected_current": 0
+  },
+  {
+    "case_id": "source_code_91",
+    "previous_value": 91,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 1,
+    "expected_current": 0
+  },
+  {
+    "case_id": "source_code_0",
+    "previous_value": 0,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 4,
+    "expected_current": 0
+  },
+  {
+    "case_id": "source_code_minus9999",
+    "previous_value": -9999,
+    "previous_masked": false,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 4,
+    "expected_current": 0
+  },
+  {
+    "case_id": "masked_PAS_value",
+    "previous_value": 15,
+    "previous_masked": true,
+    "current_value": 15,
+    "current_masked": false,
+    "expected_previous": 3,
+    "expected_current": 0
+  },
+  {
+    "case_id": "masked_unexpected_value",
+    "previous_value": 999,
+    "previous_masked": true,
+    "current_value": 27,
+    "current_masked": false,
+    "expected_previous": 3,
+    "expected_current": 2
+  }
+]

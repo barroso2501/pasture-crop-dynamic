@@ -1,0 +1,5 @@
+﻿event_year,scope,cell_id,GRID_ID,source_batch_id,previous_PAS_support_ha,current_PAS_support_ha,uncertain_pair_ha,uncertain_previous_PAS_ha,uncertain_current_PAS_ha,uncertain_no_observed_PAS_ha,previous_PAS_uncertain_fraction,current_PAS_uncertain_fraction,uncertain_no_observed_PAS_fraction
+2024,pilot,18081,GH-123,1,773.7999900119271,725.7087658829257,0.0,0.0,0.0,0.0,0.0,0.0,
+2025,pilot,18081,GH-123,1,725.7087658829257,691.0686083340471,0.0,0.0,0.0,0.0,0.0,0.0,
+2024,pilot,32173,IK-77,5,6245.490757600145,6106.015962602373,0.0,0.0,0.0,0.0,0.0,0.0,
+2025,pilot,32173,IK-77,5,6106.0159626023715,5962.884914180722,0.0,0.0,0.0,0.0,0.0,0.0,

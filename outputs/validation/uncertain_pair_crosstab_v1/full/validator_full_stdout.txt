@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "full",
+  "cells": 24889,
+  "rows": 49778,
+  "native_fixtures_passed": 34,
+  "scientific_full_domain_complete": true
+}

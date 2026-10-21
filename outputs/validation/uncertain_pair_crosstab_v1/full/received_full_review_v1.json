@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-21",
+  "status": "PASS",
+  "scope": "full",
+  "received_new_csvs": 9,
+  "validation_input_csvs": 10,
+  "reused_pilot_synthetic_csv": true,
+  "synthetic_new_execution": false,
+  "native_full_execution_rerun": false,
+  "source_packages": [
+    {
+      "file": "drive-download-20261020T170940Z-1-001(2).zip",
+      "bytes": 3194387,
+      "sha256": "8730bfce54f4074e0dbb8949be4acad73ede9895bcaca07be21ed71f0962baff"
+    },
+    {
+      "file": "uncertain_pair_crosstab_full_run_current_v1(1).zip",
+      "bytes": 187056,
+      "sha256": "b24549a0a35df73c2d1c71b3c12dbcbfe9dd0f33abe8cd02404fa8f3baf09afe"
+    }
+  ],
+  "original_package_files_verified": 33,
+  "batch_inventory": [
+    {
+      "file": "canonical_uncertain_pairs_b00_v1.csv",
+      "rows": 6336,
+      "cells": 3168,
+      "rows_2024": 3168,
+      "rows_2025": 3168,
+      "sha256": "cff581d5e4c28605d375c14e650d16e7bb8bef6c2017de372f8445635ead6f23"
+    },
+    {
+      "file": "canonical_uncertain_pairs_b01_v1.csv",
+      "rows": 6256,
+      "cells": 3128,
+      "rows_2024": 3128,
+      "rows_2025": 3128,
+      "sha256": "1a270a9691fa6d809d4fb6437abede8b9b7a509f649235aa31c1875bccf18121"
+    },
+    {
+      "file": "canonical_uncertain_pairs_b02_v1.csv",
+      "rows": 6122,
+      "cells": 3061,
+      "rows_2024": 3061,
+      "rows_2025": 3061,
+      "sha256": "d7b6f378a195ed89c520be9607d652ffe89a61cb3dc4e9a01f22fdec15563944"
+    },
+    {
+      "file": "canonical_uncertain_pairs_b03_v1.csv",
+      "rows": 6236,
+      "cells": 3118,
+      "rows_2024": 3118,
+      "rows_2025": 3118,
+      "sha256": "d19ecb183213b53d690ae230685958986d865c9dcb7f4cff45e1b14657a397c9"
+    },
+    {
+      "file": "canonical_uncertain_pairs_b04_v1.csv",
+      "rows": 6208,
+      "cells": 3104,
+      "rows_2024": 3104,
+      "rows_2025": 3104,
+      "sha256": "40408b89d74a6e84be47c9b6a726aaa1b9e44b971caa0086c3cfe99bdd17bf43"
+    },
+    {
+      "file": "canonical_uncertain_pairs_b05_v1.csv",
+      "rows": 6210,
+      "cells": 3105,
+      "rows_2024": 3105,
+      "rows_2025": 3105,
+      "sha256": "b3d1f5aae62d74d93ac74e75bc4bf812856d2c75d4bec22c03c414b32413251c"
+    },
+    {
+      "file": "canonical_uncertain_pairs_b06_v1.csv",
+      "rows": 6176,
+      "cells": 3088,
+      "rows_2024": 3088,
+      "rows_2025": 3088,
+      "sha256": "a56f9a3e5037b4cfdaa89b383afce81c104a696fbb91875be768b318178dd145"
+    },
+    {
+      "file": "canonical_uncertain_pairs_b07_v1.csv",
+      "rows": 6234,
+      "cells": 3117,
+      "rows_2024": 3117,
+      "rows_2025": 3117,
+      "sha256": "d8d2708c01aa7fa1001469c899b976f7d54958255cdb27a502382bf6f5deee95"
+    }
+  ],
+  "cells": 24889,
+  "rows": 49778,
+  "rows_per_year": 24889,
+  "native_fixture_cases": 34,
+  "native_fixture_error_values_checked": 204,
+  "actual_raster_error_values_checked": 149334,
+  "all_actual_raster_error_values_zero": true,
+  "pilot_native_rows_compared_to_full": 4,
+  "pilot_full_max_metric_difference_ha": 3.637978807091713e-12,
+  "pilot_preserved_byte_for_byte": true,
+  "original_scripts_config_tests_preserved": true,
+  "max_cell_support_residual_ha": 1.0913936421275139e-11,
+  "max_cell_conditional_partition_residual_ha": 0.0,
+  "historical_controls_checked": 8,
+  "max_absolute_historical_difference_ha": 5.023088306188583e-06,
+  "historical_tolerance_ha": 0.001,
+  "validator_exit_code": 0,
+  "identical_output_reuse": "PASS",
+  "scientific_matrix": "v4.3 unchanged",
+  "status_events": "events-v5 unchanged",
+  "execution_identity": {
+    "supplied_script_sha256": "097c212a5900e435ac6adfbbb544d90f64627cd9d46c743b7cdb8fc047615bec",
+    "executed_script_sha256": null,
+    "operator_attestation": null,
+    "independently_verified_remote_execution": false
+  },
+  "limitations": [
+    "Operator-provided native exports; not independently observed remote execution.",
+    "Endpoint PAS status only; no inference that a pixel was never PAS in other years.",
+    "Annual uncertain-pair area is distinct from unresolved pasture-origin area."
+  ]
+}

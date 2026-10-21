@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "scope": "full",
+  "version": "uncertain-pair-crosstab-v1",
+  "cells": 24889,
+  "rows": 49778,
+  "native_fixtures_passed": 34,
+  "scientific_full_domain_complete": true,
+  "checks": [
+    "exact_inventory",
+    "runtime_constants",
+    "native_projections",
+    "native_fixtures",
+    "cell_partitions",
+    "zero_raster_mismatches",
+    "aggregate_partitions",
+    "accepted_boundary_totals",
+    "accepted_pilot_identity"
+  ],
+  "boundary_controls": [
+    {
+      "event_year": 2024,
+      "event_type": "entry",
+      "field": "event_area_ha",
+      "actual_ha": 2523813.8141250233,
+      "reference_ha": 2523813.81412,
+      "difference_ha": 5.023088306188583e-06
+    },
+    {
+      "event_year": 2024,
+      "event_type": "entry",
+      "field": "uncertain_pair_ha",
+      "actual_ha": 4688518.2566093765,
+      "reference_ha": 4688518.25661,
+      "difference_ha": -6.230548024177551e-07
+    },
+    {
+      "event_year": 2024,
+      "event_type": "termination",
+      "field": "event_area_ha",
+      "actual_ha": 2539640.4994198866,
+      "reference_ha": 2539640.49942,
+      "difference_ha": -1.1315569281578064e-07
+    },
+    {
+      "event_year": 2024,
+      "event_type": "termination",
+      "field": "uncertain_pair_ha",
+      "actual_ha": 4688518.2566093765,
+      "reference_ha": 4688518.25661,
+      "difference_ha": -6.230548024177551e-07
+    },
+    {
+      "event_year": 2025,
+      "event_type": "entry",
+      "field": "event_area_ha",
+      "actual_ha": 3063669.7491532047,
+      "reference_ha": 3063669.74915,
+      "difference_ha": 3.2046809792518616e-06
+    },
+    {
+      "event_year": 2025,
+      "event_type": "entry",
+      "field": "uncertain_pair_ha",
+      "actual_ha": 4688463.670440795,
+      "reference_ha": 4688463.67044,
+      "difference_ha": 7.953494787216187e-07
+    },
+    {
+      "event_year": 2025,
+      "event_type": "termination",
+      "field": "event_area_ha",
+      "actual_ha": 2783060.7959571984,
+      "reference_ha": 2783060.79596,
+      "difference_ha": -2.8014183044433594e-06
+    },
+    {
+      "event_year": 2025,
+      "event_type": "termination",
+      "field": "uncertain_pair_ha",
+      "actual_ha": 4688463.670440795,
+      "reference_ha": 4688463.67044,
+      "difference_ha": 7.953494787216187e-07
+    }
+  ],
+  "input_sha256": {
+    "config": "586377ed81394b4ee24de71f05409d120992cc91135238cce07541ddaf18399a",
+    "crosswalk": "0eb32696f3643b2b2ef6503c504e3909c7d3496a5e1efd97ed7c0bca1c5dc95b",
+    "accepted_boundary_summary": "9edd721e1ffa50c64a8967121ec229f32893bfa2dd91eb316067939c14571355",
+    "accepted_boundary_validation": "5582104b1960edd6df3e00ababcb4a3d2b5d30824ae9d5b9b0559a4f7c92c518",
+    "supplied_script": "097c212a5900e435ac6adfbbb544d90f64627cd9d46c743b7cdb8fc047615bec",
+    "canonical_uncertain_pairs_b00_v1.csv": "cff581d5e4c28605d375c14e650d16e7bb8bef6c2017de372f8445635ead6f23",
+    "canonical_uncertain_pairs_b01_v1.csv": "1a270a9691fa6d809d4fb6437abede8b9b7a509f649235aa31c1875bccf18121",
+    "canonical_uncertain_pairs_b02_v1.csv": "d7b6f378a195ed89c520be9607d652ffe89a61cb3dc4e9a01f22fdec15563944",
+    "canonical_uncertain_pairs_b03_v1.csv": "d19ecb183213b53d690ae230685958986d865c9dcb7f4cff45e1b14657a397c9",
+    "canonical_uncertain_pairs_b04_v1.csv": "40408b89d74a6e84be47c9b6a726aaa1b9e44b971caa0086c3cfe99bdd17bf43",
+    "canonical_uncertain_pairs_b05_v1.csv": "b3d1f5aae62d74d93ac74e75bc4bf812856d2c75d4bec22c03c414b32413251c",
+    "canonical_uncertain_pairs_b06_v1.csv": "a56f9a3e5037b4cfdaa89b383afce81c104a696fbb91875be768b318178dd145",
+    "canonical_uncertain_pairs_b07_v1.csv": "d8d2708c01aa7fa1001469c899b976f7d54958255cdb27a502382bf6f5deee95",
+    "canonical_uncertain_pairs_manifest_full_v1.csv": "18bc41424bb2e9931cced35e6d0c40aaf3c80813da735c53c2bdde569b6ee625",
+    "canonical_uncertain_pairs_native_synthetic_v1.csv": "601e786de721ee1ba31e42805557cf1856c34b57437baffcc5b9573f8e27c464",
+    "native_case_definitions": "dc2216f8f3c37a60d37b22fff953abe5b0e3449150d5506c436456d667b92123",
+    "accepted_pilot_validation": "c2b7f6e0acc37d73639c28c47483c7f7b6e606d3c26d5d6ab32baecc2e7dfe67"
+  },
+  "output_sha256": {
+    "canonical_uncertain_pairs_full_v1_cells.csv": "b14c3a695c24e8b9900c48236b18c7c38a34b866741b5586cab6638cbb52470f",
+    "canonical_uncertain_pairs_full_v1_conditional_cells.csv": "76d4232c7cc4a770fe07797871eae216fbe585453dd19625a95c5a1d00a23e9a",
+    "canonical_uncertain_pairs_full_v1_summary.csv": "20f73ac9ddf6a276088c16b797714d31f3e626dff4ba06b54aafe815dbf20697",
+    "canonical_uncertain_pairs_full_v1_conditional_summary.csv": "72fbe60485db076cd93e4c1a361aa92a1a0f9bcaf6c7ef41bc6787f0c28da14e",
+    "canonical_uncertain_pairs_full_v1_cross_table.csv": "82aa5596a17008f781653ae62793832541f1a34f3b695b5fbd1136dd6c059b40"
+  },
+  "execution_identity": {
+    "supplied_script_sha256": "097c212a5900e435ac6adfbbb544d90f64627cd9d46c743b7cdb8fc047615bec",
+    "executed_script_sha256": null,
+    "operator_attestation": null,
+    "independently_verified_remote_execution": false
+  },
+  "limitations": [
+    "Operator-provided native exports; not independently observed remote execution.",
+    "Endpoint PAS status only; no inference that a pixel was never PAS in other years.",
+    "Annual uncertain-pair area is distinct from unresolved pasture-origin area."
+  ]
+}

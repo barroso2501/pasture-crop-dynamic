@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-20",
+  "status": "READY_FOR_FULL_NATIVE_EXECUTION",
+  "full_native_outputs_received": false,
+  "full_scientific_acceptance": false,
+  "expected_new_files": 9,
+  "expected_cells": 24889,
+  "expected_rows": 49778,
+  "pairs": [
+    [
+      2023,
+      2024
+    ],
+    [
+      2024,
+      2025
+    ]
+  ],
+  "pilot_rerun_required": false,
+  "code_or_policy_changes": false,
+  "unchanged_files_sha256": {
+    "gee/19a_export_uncertain_pair_crosstab_full_v1.js": "097c212a5900e435ac6adfbbb544d90f64627cd9d46c743b7cdb8fc047615bec",
+    "gee/19a_export_uncertain_pair_crosstab_pilot_v1.js": "e762dc37df452454e2add4d7686a854c1a74a0442f948aaebfb8ec725a893512",
+    "analysis/19b_validate_uncertain_pair_crosstab_v1.py": "e944b71d692d8a5439c8a8ddabdc3b185ecfa5160667a271b37d00bcef7d3286",
+    "config/uncertain_pair_crosstab_v1.json": "586377ed81394b4ee24de71f05409d120992cc91135238cce07541ddaf18399a",
+    "config/canonical_uncertain_pair_cell_crosswalk_v1.csv": "0eb32696f3643b2b2ef6503c504e3909c7d3496a5e1efd97ed7c0bca1c5dc95b",
+    "config/uncertain_pair_native_cases_v1.json": "dc2216f8f3c37a60d37b22fff953abe5b0e3449150d5506c436456d667b92123",
+    "config/canonical_pasture_spell_boundary_summary_v2.csv": "9edd721e1ffa50c64a8967121ec229f32893bfa2dd91eb316067939c14571355",
+    "config/constants_uncertain_pair_reference_v1.js": "0a284699d8d7cafa64c6bfdecdae308e4a97cc49bd7227a5838c753a2fe1063c",
+    "config/canonical_pasture_spell_boundary_events_validation_v2.json": "5582104b1960edd6df3e00ababcb4a3d2b5d30824ae9d5b9b0559a4f7c92c518"
+  },
+  "readme_source": "pasture_v2_recheck82_acceptance_v1 with current handoff paragraph",
+  "targeted_age_v2_audit": "ACCEPTED; no rerun required",
+  "reproduced_native_pilot_validation": "PASS: 2 cells, 4 actual rows, 34 native fixtures; supplied historical outputs, not a new GEE execution"
+}
