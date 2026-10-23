@@ -1,0 +1,20 @@
+{
+  "version": "entry-reentry-github-packaging-v1",
+  "date": "2026-10-23",
+  "source_archive": "entry_reentry_full_acceptance_record_v1.zip",
+  "source_archive_sha256": "29b29b29088e38a2ac072b5da1457ef39e05e2baec5d2cf5c0c4af3052de866b",
+  "compressed_files": [
+    {
+      "compressed_path": "data/entry_reentry_full_v1/canonical_entry_reentry_full_v1_cells.csv.gz",
+      "compressed_sha256": "024f8632246579e057a3258c937aa095f2fa4833512b9e89725aa9a8359195ef",
+      "compressed_bytes": 12309355,
+      "restored_path": "outputs/validation/entry_reentry_v1/full/canonical_entry_reentry_full_v1_cells.csv",
+      "restored_sha256": "87fcafa3347bc4a76e39fbffbaf79fb3255804145b6f89ffdb6827b490fe160e",
+      "restored_bytes": 55723043
+    }
+  ],
+  "excluded_temporary_file": "outputs/validation/entry_reentry_v1/full/.canonical_entry_reentry_full_v1_cells.csv.0fRNRJ",
+  "validation_report_changed": false,
+  "scientific_results_changed": false,
+  "description": "The large normalized panel is losslessly compressed; restore before reproducing validation. No scientific logic or source pins changed."
+}
