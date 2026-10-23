@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-21",
+  "status": "LOCAL_SOFTWARE_VERIFICATION_PASS",
+  "native_pilot_status": "PENDING_NOT_EXECUTED_HERE",
+  "native_full_status": "NOT_PREPARED_OR_EXECUTED",
+  "scientific_decomposition_results_available": false,
+  "script_syntax": "PASS",
+  "selector_schema_checks": "PASS",
+  "scalar_engine": {
+    "status": "PASS",
+    "assurance": "local_scalar_only",
+    "manual_fixture_cases": 31,
+    "manual_fixture_steps": 302,
+    "exhaustive_length6_histories": 46656,
+    "exhaustive_prefix_steps": 55986,
+    "accepted_engine_byte_identity": true,
+    "native_execution_performed": false
+  },
+  "validator_synthetic_integration_tests": 29,
+  "native_fixture_cases_prepared": 31,
+  "native_fixture_pixel_year_steps_prepared": 302,
+  "native_tasks_expected": 4,
+  "real_cell_interval_rows_expected": 4,
+  "real_history_audit_rows_expected": 2,
+  "native_fixture_error_fields": 16,
+  "accepted_reference_rows": 4,
+  "accepted_reference_raw_files": 4,
+  "accepted_reference_hashes_verified": true,
+  "supplied_script_sha256": "8102689f6aab94511d55ea784fd22b05b100ae9bf760d2517ba3a14004cbb3ba",
+  "executed_script_sha256": null,
+  "operator_attestation": null,
+  "matrix_v4_3_changed": false,
+  "events_v5_changed": false,
+  "test_exports_and_test_acceptance_reports": "TemporaryDirectory only; not packaged as scientific results",
+  "checks": [
+    {
+      "check": "js_syntax",
+      "exit_code": 0
+    },
+    {
+      "check": "engine_tests",
+      "exit_code": 0
+    },
+    {
+      "check": "validator_tests",
+      "exit_code": 0
+    }
+  ]
+}
