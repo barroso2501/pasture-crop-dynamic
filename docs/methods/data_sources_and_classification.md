@@ -275,13 +275,14 @@ not overwritten and remain available to document the impact of the change.
 The suspensions of P9A035–P9A037 were rescinded on 2026-10-08 only for
 the corrected matrix-v4 statements, through new immutable events. The retired
 source-age statements remain superseded. Current manuscript-facing evidence
-is matrix v4.3, incorporating the accepted 1985/1995/2000 window sensitivity
-into P9A035/P9A036 while preserving P9A037 and the other findings. The
+is matrix v4.4, incorporating the accepted 1985/1995/2000 window sensitivity,
+endpoint-fraction context and canonical entry/re-entry decomposition into
+P9A035/P9A036 while preserving P9A037 and the other findings. The
 2026-10-09 erratum remains historical provenance. The technical closure
 and its assurance limits are recorded in
 `docs/decisions/024_implementation_closure_v2.md`. Historical events and
 validation JSONs retain their original statuses. Events-v3 supplied structured
-validation references and the interpretation amendments; events-v4 preserved its entire byte sequence and appended two supplementary-evidence events. Current events-v5 preserves all ten events-v4 rows and appends two endpoint-fraction events.
+validation references and the interpretation amendments; events-v4 preserved its entire byte sequence and appended two supplementary-evidence events. Historical events-v5 preserved all ten events-v4 rows and appended two endpoint-fraction events. Current events-v6 preserves all 12 events-v5 rows byte-for-byte and appends two entry/re-entry supplementary events.
 No qualified status is promoted. See
 `docs/results/rq2_evidence_consolidation_v4_2.md`.
 
@@ -313,10 +314,14 @@ primary >50% entry crossing occurs in 2000–2005 only under b=1985; the later
 windows cross only in separately diagnostic 2020–2025. These results qualify
 origin composition as window-dependent and do not identify an artifact
 fraction, stationarity, physical establishment age or a process threshold.
-The first-observed-entry/re-entry decomposition remains unperformed. Native
-categorical fixtures and field invariants passed; auxiliary numerical age 201
-and unrelated boundary-raster checks are not included in this execution.
-The executed method is `docs/methods/window_origin_sensitivity_v2.md`.
+The original sensitivity execution included native categorical fixtures and
+field invariants; it did not include auxiliary numerical age-201 checks.
+The later canonical entry/re-entry full execution is now accepted and
+incorporated in matrix v4.4, with coverage-derived auxiliary-age checks.
+Its method is `docs/methods/rq2_entry_reentry_incorporation_v4_4.md`.
+The dated sensitivity method remains `docs/methods/window_origin_sensitivity_v2.md`.
+No complete public-age numeric audit or new independent event-raster
+comparison is thereby claimed.
 
 ## Meaning of boundary-event uncertain-pair area
 
@@ -336,15 +341,18 @@ These values do not measure unresolved PAS-origin area. `pas_observation_loss_ha
 instead conditions on PAS at a five-year interval start and an unobserved
 interval-end coverage. It uses a different population and different dates;
 the 2020/2025 PAS observation-loss area is 32.743600 ha. Large pair uncertainty
-and small PAS endpoint loss therefore are not contradictory. The hypothesis
-that most uncertain-pair pixels are non-PAS has not been quantified: a
-pair-level cross-tabulation of previous/current PAS membership is needed
-before making that assertion. Spatial overlap across the two annual pairs
-is also not measured by the repeated summary numbers.
+and small PAS endpoint loss therefore are not contradictory. The accepted later full-domain pair cross-tab now quantifies observed PAS
+at either uncertain endpoint: 20.933621 ha in 2023/2024 and 18.391388 ha
+in 2024/2025, respectively 0.0004464869% and 0.000392269% of pair uncertainty.
+Almost all uncertain area is masked at both endpoints. This does not identify
+true non-pasture coverage beneath masks or show that these pixels were never
+PAS in other years. Spatial overlap across the two annual pairs is not
+measured by the repeated summary numbers. See
+`docs/results/uncertain_pair_crosstab_full_findings_v1.md`.
 
 ## Execution and invariance assurance
 
-The closure uses exact production-source categorical logic under a local
+The original 2026-10-08 closure uses exact production-source categorical logic under a local
 scalar adapter and source checks, accepted GEE export records, and cell-level
 accounting. It is not a fresh native GEE synthetic run or an independent
 all-pixel audit of criteria 3 and 5. The versioned panel gate preserved
@@ -356,11 +364,13 @@ commit when available, constants snapshot, run identifier and export hashes.
 Current-source hashes must not retrospectively substitute for missing
 historical execution hashes.
 
-## Evidence edition synchronization — 2026-10-12
+## Evidence edition synchronization — 2026-10-23
 
-The current governing evidence edition is matrix v4.3 and cumulative events-v5; matrix v4.2/events-v4 are preceding editions. The
-pre-update normative text is archived unchanged under
-`docs/history/rq2_pre_consolidation_v4_2/docs/methods/`. The core classification,
+The current governing evidence edition is matrix v4.4 and cumulative events-v6;
+earlier matrices and events remain historical editions. The preceding normative
+text is archived unchanged under
+`docs/history/rq2_before_entry_reentry_v4_4/docs/methods/`; the earlier
+`rq2_pre_consolidation_v4_2` archive is also retained. The core classification,
 assets, masks and origin estimator are unchanged. The completed sensitivity
 and documentary consolidation do not reexecute phases 2–8 or declare the
 public data/DOI release complete.
@@ -368,3 +378,32 @@ public data/DOI release complete.
 ## Stock-normalized endpoint fractions — v4.3
 
 Origin composition combines class-stock composition and per-stock endpoint conversion fractions. At t0, define f_o=C_o/S_o and R=f_initial/f_entry from national sums. The first entry-stock-zero interval has undefined R. These are descriptive five-year endpoint fractions, not annual rates or exposure-integrated hazards; unresolved origin is retained separately. The algebraic identity C_initial/C_entry=(S_initial/S_entry)R does not identify a causal contribution. Calendar-paired monotonicity of initial shares follows set nesting. Follow-up and stock/conversion comparisons also change periods/cohorts and do not isolate a mechanical artifact fraction. The unchanged canonical definitions and the new derivative are documented in `docs/methods/relative_endpoint_conversion_fractions_v1.md`.
+
+
+## Confirmed-entry chronology — v4.4
+
+At each confirmed nonPAS-to-PAS entry, use observations strictly before that
+entry. Earlier observed PAS identifies re-entry; no earlier observed PAS plus
+complete valid history since 1985 identifies first observed entry; no earlier
+observed PAS plus an earlier gap identifies uncertain prior history. Freeze
+the label during the confirmed spell. A gap is not proof of an exit and is
+not bridged. First observed entry is not first-ever establishment. Current
+confirmed origin with uncertain earlier history differs from unresolved
+current-spell origin.
+
+The entry subclasses partition both the accepted entry conversion component
+and its PAS stock at t0. Conditional entry-flow shares, conditional entry-stock
+shares and contributions to all PAS-to-TMP conversion have distinct denominators.
+Ratios divide summed cell areas. The baseline conditional entry fractions are
+undefined; pools sum interval conversions without deduplicating pixels.
+The primary conditional re-entry-flow sequence is not monotonic. Classification
+instability, available observation length and changing stock populations can
+affect observed recurrence. These statements do not estimate a causal trend,
+physical renewal process or annual hazard.
+
+Full-domain chronology and coverage-derived auxiliary age-201 assurance are
+accepted under the unchanged native full report. The original seeded annual
+pixel-sampling proposal is not claimed executed, and the public-age v2
+complete numeric validation remains separate. Current component status:
+`config/plan009_followup_status_20261023_v1.json`. The original frozen
+protocol JSON and historical execution hash/attestation fields are unchanged.
