@@ -1,0 +1,22 @@
+{
+  "description": "Pinned supplied source and accepted reference bytes; not an executed-text attestation.",
+  "sha256": {
+    "analysis/20b_validate_entry_reentry_pilot_v1.py": "adef63964d42d69c4fb3b3f24ceeb4c0f6984cead6bbbc4fd6acbc4c645b76e2",
+    "config/constants_entry_reentry_reference_v1.js": "0a284699d8d7cafa64c6bfdecdae308e4a97cc49bd7227a5838c753a2fe1063c",
+    "config/entry_reentry_native_cases_v1.json": "5e691b39c6d7f72205d06572396b161ff561acfeb29700e626d70880f7dec52a",
+    "config/entry_reentry_pilot_reference_v1.csv": "58ee945a399cfa854f49816d969d5ed5493fb26a02f04326af7a82f8cff9e09e",
+    "config/entry_reentry_schema_v1.json": "65319f034b0f22b20811bc589743415b04d6fcbc9403004a3427d60f8c7d4f55",
+    "config/entry_reentry_v1.json": "f525b6c1822045f19bd795a3325f36ea0394d66bdbad6f56e365d9ade87155fa",
+    "config/reference_native/canonical_window_origin_2015_2020_b01_v1.csv": "72f6a5c31b17c7f9597ced8e45050d863c6e5fe8f1a80aaebcb4cecbc6d61664",
+    "config/reference_native/canonical_window_origin_2015_2020_b05_v1.csv": "5824b8b0025ae715886b241eac58ab0d65ce7688a5d71165887c940a4d69eca0",
+    "config/reference_native/canonical_window_origin_2020_2025_b01_v1.csv": "cd4c444d3b7c7638f9e44ce79d99f129537ab5504e2943a78f0f651496425c3f",
+    "config/reference_native/canonical_window_origin_2020_2025_b05_v1.csv": "ff786be0691d9b22d6c9c1c68f873ac0b0e4b243eb3903b4ff3deff973fc8a9c",
+    "config/reference_validation/window_origin_full_validation_v1.json": "59e702fe091387157553439680a6bed9cadad924cebceb5a8ea4c8cef4c54c78",
+    "gee/17g_accepted_origin_engine_reference_v1.js": "6eea669ab6d25bb50d48c739359f55fafa9dc5ad27f8432715dcf487da47c55b",
+    "gee/18c_accepted_window_engine_reference_v1.js": "54f059763a08ed8f2077b821a1a38a66ead4b0fd038ab4790065742c833d800c",
+    "gee/20a_export_entry_reentry_pilot_v1.js": "8102689f6aab94511d55ea784fd22b05b100ae9bf760d2517ba3a14004cbb3ba",
+    "tests/test_entry_reentry_engine_v1.js": "d986e80922918d572394b060f31b8a1df7213ebc1367605da7e13c5dcbb29b97",
+    "tests/test_entry_reentry_validator_v1.py": "ceba8fd9c8f0d72e127f28fe44d880d4554afa6b8986a126f201a0809e7f66f3",
+    "config/entry_reentry_source_packages_v1.json": "ec8f1da736ab2bd575b1b88b0a9d595f47e86923a02606ac7bd39fcd201e3d0b"
+  }
+}

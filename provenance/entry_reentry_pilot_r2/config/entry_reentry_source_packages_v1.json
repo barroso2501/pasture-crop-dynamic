@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-21",
+  "packages": [
+    {
+      "filename": "decision024_review_corrections_v1.zip",
+      "bytes": 704698,
+      "sha256": "f4a9044efd914bee8a62d37f1231bf19f3ad316df9415b2d786b27fbb6c046f9"
+    },
+    {
+      "filename": "window_origin_sensitivity_full_data_v1.zip",
+      "bytes": 43190995,
+      "sha256": "22685c2190c8958ad934c42db834422fd78e8a3ef384791aa83668a7b6c6f737"
+    },
+    {
+      "filename": "window_origin_sensitivity_full_record_v1.zip",
+      "bytes": 309685,
+      "sha256": "165141ef5438ca9ba240855ccbb32d655ac1304a77a16315f3b932047159de33"
+    },
+    {
+      "filename": "window_origin_sensitivity_implementation_v1.zip",
+      "bytes": 55987,
+      "sha256": "291c9352d61bb92aa9d0a284c2824fa66fe8c409e78230edb42818e332692d01"
+    }
+  ],
+  "reference_route": "Four original native full-sensitivity CSVs and the accepted full-validation JSON; hashes reconciled before extracting four baseline-1985 reference rows."
+}

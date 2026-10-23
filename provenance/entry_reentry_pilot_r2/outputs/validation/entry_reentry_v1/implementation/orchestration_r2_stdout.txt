@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "assurance": "local_eager_adapter_only",
+  "full_script_scenarios": 4,
+  "metadata_rejection_scenarios": 2,
+  "asynchronous_metadata_calls_per_run": 1,
+  "exports_before_metadata": 0,
+  "export_tasks_per_success": 4,
+  "native_fixtures_per_success": 31,
+  "native_execution_performed": false
+}

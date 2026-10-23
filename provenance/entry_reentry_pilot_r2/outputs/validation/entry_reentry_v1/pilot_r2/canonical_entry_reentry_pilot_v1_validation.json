@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "scope": "pilot",
+  "version": "entry-reentry-pilot-v1",
+  "cells": 2,
+  "rows": 4,
+  "history_audit_rows": 2,
+  "audit_years": [
+    1985,
+    2025
+  ],
+  "native_fixture_cases": 31,
+  "native_fixture_steps": 302,
+  "full_domain_decomposition_complete": false,
+  "native_full_domain_auxiliary_age201_complete": false,
+  "historical_comparisons": 32,
+  "max_historical_per_cell_difference_ha": 1.8189894035458565e-12,
+  "input_sha256": {
+    "canonical_entry_reentry_history_audit_pilot_v1.csv": "82843eac96daedff49ca249b95724bb57184ca088b1f89b1be38c6f7f0cb6f82",
+    "canonical_entry_reentry_manifest_pilot_v1.csv": "767704c6f0c72ce5b1cbead2bcdafc3529b5ace8c5fee82446b7ccaf5cc66d50",
+    "canonical_entry_reentry_native_synthetic_v1.csv": "e6079e7e87e264ecd3d82ed95336b7ea99d072962d683da711ed390f6a7e9f13",
+    "canonical_entry_reentry_pilot_v1.csv": "0a8da90877cde377b9c268d6bddeff05d9aeadf9c4950d5aa145ec223ee890da",
+    "analysis/20b_validate_entry_reentry_pilot_v1.py": "adef63964d42d69c4fb3b3f24ceeb4c0f6984cead6bbbc4fd6acbc4c645b76e2",
+    "config/constants_entry_reentry_reference_v1.js": "0a284699d8d7cafa64c6bfdecdae308e4a97cc49bd7227a5838c753a2fe1063c",
+    "config/entry_reentry_native_cases_v1.json": "5e691b39c6d7f72205d06572396b161ff561acfeb29700e626d70880f7dec52a",
+    "config/entry_reentry_pilot_reference_v1.csv": "58ee945a399cfa854f49816d969d5ed5493fb26a02f04326af7a82f8cff9e09e",
+    "config/entry_reentry_schema_v1.json": "65319f034b0f22b20811bc589743415b04d6fcbc9403004a3427d60f8c7d4f55",
+    "config/entry_reentry_source_packages_v1.json": "ec8f1da736ab2bd575b1b88b0a9d595f47e86923a02606ac7bd39fcd201e3d0b",
+    "config/entry_reentry_v1.json": "2ec1c8cdd4c544a2dbf29ef7e3c3ad9faaefadfc2a531c2ed28692d44e57048e",
+    "config/reference_native/canonical_window_origin_2015_2020_b01_v1.csv": "72f6a5c31b17c7f9597ced8e45050d863c6e5fe8f1a80aaebcb4cecbc6d61664",
+    "config/reference_native/canonical_window_origin_2015_2020_b05_v1.csv": "5824b8b0025ae715886b241eac58ab0d65ce7688a5d71165887c940a4d69eca0",
+    "config/reference_native/canonical_window_origin_2020_2025_b01_v1.csv": "cd4c444d3b7c7638f9e44ce79d99f129537ab5504e2943a78f0f651496425c3f",
+    "config/reference_native/canonical_window_origin_2020_2025_b05_v1.csv": "ff786be0691d9b22d6c9c1c68f873ac0b0e4b243eb3903b4ff3deff973fc8a9c",
+    "config/reference_validation/window_origin_full_validation_v1.json": "59e702fe091387157553439680a6bed9cadad924cebceb5a8ea4c8cef4c54c78",
+    "docs/history/entry_reentry_browser_freeze_r1/gee/17g_accepted_origin_engine_reference_v1.js": "6eea669ab6d25bb50d48c739359f55fafa9dc5ad27f8432715dcf487da47c55b",
+    "docs/history/entry_reentry_browser_freeze_r1/gee/18c_accepted_window_engine_reference_v1.js": "54f059763a08ed8f2077b821a1a38a66ead4b0fd038ab4790065742c833d800c",
+    "docs/history/entry_reentry_browser_freeze_r1/gee/20a_export_entry_reentry_pilot_v1.js": "8102689f6aab94511d55ea784fd22b05b100ae9bf760d2517ba3a14004cbb3ba",
+    "gee/20a_export_entry_reentry_pilot_v1.js": "2419ffe2499ea395c08c4cff5eae4ec79e4a95c826116fc9fd5e251292e101dd",
+    "tests/test_entry_reentry_engine_v1.js": "7faaab86d11fd01ca237b127674765d0de89897c29d3badd828efee094f5b012",
+    "tests/test_entry_reentry_orchestration_r2.js": "2cb97bfa6597e09d1310fd09fcc2e80d6e10fcc84b9b5e04ad6d050871430644",
+    "tests/test_entry_reentry_validator_v1.py": "a6bca5c75591e44fff6b36fdebafe438baee38dd77b5240bd693dbb65760eb23"
+  },
+  "output_sha256": {
+    "canonical_entry_reentry_pilot_v1_cells.csv": "67eb7ce9854866b93c11a78c2ef948795328bee9774c19711462ba15963a8ab0",
+    "canonical_entry_reentry_pilot_v1_summary.csv": "6c6d913943fded6c95bfce31092f571084ec08aa3de749f13f76627968de1451",
+    "canonical_entry_reentry_pilot_v1_historical_controls.csv": "1142275328c9b339845d07c7945bdd82a1d4c9b273308910c4ee3ab15d9ab128",
+    "canonical_entry_reentry_pilot_v1_history_audit.csv": "6c97c7ae13d993e29c31674c999f7297646fc9de2eab00add362efea38ab84ee"
+  },
+  "execution_identity": {
+    "supplied_script_sha256": "2419ffe2499ea395c08c4cff5eae4ec79e4a95c826116fc9fd5e251292e101dd",
+    "executed_script_sha256": null,
+    "operator_attestation": null,
+    "independently_verified_remote_execution": false
+  },
+  "limitations": [
+    "Two-cell pilot; no domain-wide shares or rare-event absence inference.",
+    "First observed entry refers to the window beginning in 1985, not first-ever establishment.",
+    "Prior PAS under masks is unknown; gaps are not bridged.",
+    "Entry counts are observed confirmed entry counts, not total historical spell counts.",
+    "Pixel equivalents and pixel-years are reduction-weighted and may be fractional.",
+    "No new boundary-raster asset comparison or pasture-age source migration."
+  ]
+}

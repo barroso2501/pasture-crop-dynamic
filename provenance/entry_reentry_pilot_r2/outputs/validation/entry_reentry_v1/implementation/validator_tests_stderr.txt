@@ -1,0 +1,35 @@
+test_age201_native_error (__main__.Tests.test_age201_native_error) ... ok
+test_audit_year_coverage (__main__.Tests.test_audit_year_coverage) ... ok
+test_duplicate_cell (__main__.Tests.test_duplicate_cell) ... ok
+test_duplicate_columns (__main__.Tests.test_duplicate_columns) ... ok
+test_extra_csv (__main__.Tests.test_extra_csv) ... ok
+test_flow_exceeds_stock (__main__.Tests.test_flow_exceeds_stock) ... ok
+test_fractional_pixel_equivalents_are_valid (__main__.Tests.test_fractional_pixel_equivalents_are_valid) ... ok
+test_historical_mismatch_with_internal_closure (__main__.Tests.test_historical_mismatch_with_internal_closure) ... ok
+test_missing_file (__main__.Tests.test_missing_file) ... ok
+test_missing_history_audit (__main__.Tests.test_missing_history_audit) ... ok
+test_missing_interval (__main__.Tests.test_missing_interval) ... ok
+test_nan (__main__.Tests.test_nan) ... ok
+test_native_expectation_tampering (__main__.Tests.test_native_expectation_tampering) ... ok
+test_native_fixture_duplicate (__main__.Tests.test_native_fixture_duplicate) ... ok
+test_native_fixture_missing (__main__.Tests.test_native_fixture_missing) ... ok
+test_native_zero_support (__main__.Tests.test_native_zero_support) ... ok
+test_negative (__main__.Tests.test_negative) ... ok
+test_origin_reference_mismatch (__main__.Tests.test_origin_reference_mismatch) ... ok
+test_partition_failure (__main__.Tests.test_partition_failure) ... ok
+test_projection_mismatch (__main__.Tests.test_projection_mismatch) ... ok
+test_real_age201_error (__main__.Tests.test_real_age201_error) ... ok
+test_real_frozen_label_error (__main__.Tests.test_real_frozen_label_error) ... ok
+test_refuse_overwrite (__main__.Tests.test_refuse_overwrite) ... ok
+test_reject_r1_run_identity (__main__.Tests.test_reject_r1_run_identity) ... ok
+test_runtime_mismatch (__main__.Tests.test_runtime_mismatch) ... ok
+test_valid_and_immutable_reuse (__main__.Tests.test_valid_and_immutable_reuse) ... ok
+test_wrong_batch (__main__.Tests.test_wrong_batch) ... ok
+test_wrong_diagnostic (__main__.Tests.test_wrong_diagnostic) ... ok
+test_wrong_grid (__main__.Tests.test_wrong_grid) ... ok
+test_zero_history_for_positive_entry_stock (__main__.Tests.test_zero_history_for_positive_entry_stock) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 6.021s
+
+OK

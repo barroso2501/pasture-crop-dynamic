@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "pilot",
+  "cells": 2,
+  "rows": 4,
+  "history_audit_rows": 2,
+  "native_fixture_cases": 31,
+  "native_fixture_steps": 302,
+  "full_domain_decomposition_complete": false
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-21",
+  "status": "LOCAL_SOFTWARE_VERIFICATION_PASS",
+  "implementation_revision": 2,
+  "native_pilot_status": "PENDING_NOT_EXECUTED_HERE",
+  "scientific_decomposition_results_available": false,
+  "browser_symptom": "unresponsive page after Run, reported by operator",
+  "fixes": [
+    "42 synchronous metadata calls replaced by one asynchronous asset-metadata call",
+    "real and synthetic annual recurrence orchestration changed to server-side List.iterate",
+    "only runnable 20a retained in gee; references and old implementation archived",
+    "separate Drive folder and run identity for revision 2"
+  ],
+  "native_browser_responsiveness_verified": false,
+  "exact_root_cause_experimentally_isolated": false,
+  "step_function_byte_identical_to_r1": true,
+  "accepted_control_function_byte_identical": true,
+  "native_cases_byte_identical": true,
+  "historical_native_reference_files_byte_identical": true,
+  "scalar_engine": {
+    "status": "PASS",
+    "assurance": "local_scalar_only",
+    "manual_fixture_cases": 31,
+    "manual_fixture_steps": 302,
+    "exhaustive_length6_histories": 46656,
+    "exhaustive_prefix_steps": 55986,
+    "accepted_engine_byte_identity": true,
+    "native_execution_performed": false
+  },
+  "whole_script_local_eager_adapter": {
+    "status": "PASS",
+    "assurance": "local_eager_adapter_only",
+    "full_script_scenarios": 4,
+    "metadata_rejection_scenarios": 2,
+    "asynchronous_metadata_calls_per_run": 1,
+    "exports_before_metadata": 0,
+    "export_tasks_per_success": 4,
+    "native_fixtures_per_success": 31,
+    "native_execution_performed": false
+  },
+  "validator_synthetic_integration_tests": 30,
+  "native_tasks_expected": 4,
+  "real_cell_interval_rows_expected": 4,
+  "real_history_audit_rows_expected": 2,
+  "native_cases_expected": 31,
+  "native_steps_expected": 302,
+  "native_fixture_error_fields": 16,
+  "supplied_script_sha256": "2419ffe2499ea395c08c4cff5eae4ec79e4a95c826116fc9fd5e251292e101dd",
+  "executed_script_sha256": null,
+  "operator_attestation": null,
+  "drive_folder": "entry_reentry_pilot_v1_r2",
+  "run_tag": "er1_20261021_r2",
+  "matrix_v4_3_changed": false,
+  "events_v5_changed": false,
+  "checks": {
+    "js_syntax": {
+      "exit_code": 0
+    },
+    "engine_tests": {
+      "exit_code": 0
+    },
+    "orchestration_r2": {
+      "exit_code": 0
+    },
+    "validator_tests": {
+      "exit_code": 0
+    }
+  }
+}
