@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-23",
+  "status": "FULL_ACCEPTED",
+  "validation_source": "Unchanged distributed 20d validator on operator-supplied native CSV exports",
+  "command": "python3 analysis/20d_validate_entry_reentry_full_v1.py --scope full --export-dir outputs/native/entry_reentry_v1/full --output-dir outputs/validation/entry_reentry_v1/full",
+  "validator_exit_code": 0,
+  "received_archive": {
+    "filename": "drive-download-20261023T173045Z-1-001.zip",
+    "bytes": 15470855,
+    "sha256": "532d8fb548bbd2524d3cf354cea232c1545c17ff91d02642df226eeb3d9c8750"
+  },
+  "implementation_archive": {
+    "filename": "entry_reentry_full_implementation_v1.zip",
+    "sha256": "fa8820b468274cf90e3ed00dd9982153c19b37a4c0c09d7519446be84fcabfd8"
+  },
+  "local_reference_recovery": "Two incomplete scratch reference copies were replaced with exact bytes from the SHA256-authenticated distributed implementation ZIP before validation. No source pins or validator logic were changed.",
+  "received_csvs": 73,
+  "cells": 24889,
+  "cell_interval_rows": 199112,
+  "history_audit_rows": 24889,
+  "history_years_checked": [
+    1985,
+    2025
+  ],
+  "real_history_error_values_checked": 248890,
+  "all_real_history_error_values_zero": true,
+  "accepted_origin_pixel_error_values_checked": 199112,
+  "all_accepted_origin_pixel_errors_zero": true,
+  "preserved_native_fixture_cases": 31,
+  "preserved_native_fixture_steps": 302,
+  "historical_cell_field_comparisons": 1592896,
+  "aggregate_historical_controls": 64,
+  "max_historical_cell_difference_ha": 3.7997961044311523e-07,
+  "max_historical_aggregate_difference_ha": 3.591179847717285e-06,
+  "pilot_controls": 126,
+  "max_pilot_area_difference_ha": 3.637978807091713e-12,
+  "max_pilot_count_difference": 8.731149137020111e-11,
+  "max_auxiliary_cell_partition_residual_ha": 1.0913936421275139e-11,
+  "positive_history_support_cells": {
+    "first_observed_entry_pixel_years": 23128,
+    "confirmed_reentry_pixel_years": 21386,
+    "prior_history_uncertain_entry_pixel_years": 371
+  },
+  "full_domain_decomposition_complete": true,
+  "native_full_domain_auxiliary_age201_complete": true,
+  "pasture_age_v2_asset_numerical_age_validation_complete": false,
+  "execution_identity": {
+    "supplied_script_sha256": "71dd4ca0cda14e764570618c1a3a2be71901bc4193670307c35c4b3a6667eaf4",
+    "executed_script_sha256": null,
+    "operator_attestation": null,
+    "independently_verified_remote_execution": false
+  },
+  "matrix_v4_3_changed": false,
+  "events_v5_changed": false,
+  "native_pilot_files_reexported": false,
+  "scientific_scope": "RQ2 PAS-to-TMP; auxiliary coverage-reconstructed spell labels and age checks; no pasture-age asset migration"
+}

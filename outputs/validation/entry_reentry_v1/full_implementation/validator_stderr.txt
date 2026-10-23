@@ -1,0 +1,38 @@
+test_aggregate_stricter_than_cell_tolerance (__main__.Tests.test_aggregate_stricter_than_cell_tolerance) ... ok
+test_auxiliary_partition (__main__.Tests.test_auxiliary_partition) ... ok
+test_baseline_construction (__main__.Tests.test_baseline_construction) ... ok
+test_complete_full_validation_and_immutable_reuse (__main__.Tests.test_complete_full_validation_and_immutable_reuse) ... ok
+test_duplicate_cell (__main__.Tests.test_duplicate_cell) ... ok
+test_empty_batch (__main__.Tests.test_empty_batch) ... ok
+test_extra_retry_csv (__main__.Tests.test_extra_retry_csv) ... ok
+test_foreign_cell (__main__.Tests.test_foreign_cell) ... ok
+test_historical_control (__main__.Tests.test_historical_control) ... ok
+test_history_age201_error (__main__.Tests.test_history_age201_error) ... ok
+test_history_frozen_label_error (__main__.Tests.test_history_frozen_label_error) ... ok
+test_history_partition (__main__.Tests.test_history_partition) ... ok
+test_history_support (__main__.Tests.test_history_support) ... ok
+test_history_years (__main__.Tests.test_history_years) ... ok
+test_immutable_output_refusal (__main__.Tests.test_immutable_output_refusal) ... ok
+test_manifest_batch_size (__main__.Tests.test_manifest_batch_size) ... ok
+test_manifest_runtime_grid (__main__.Tests.test_manifest_runtime_grid) ... ok
+test_missing_file (__main__.Tests.test_missing_file) ... ok
+test_nan (__main__.Tests.test_nan) ... ok
+test_negative (__main__.Tests.test_negative) ... ok
+test_pilot_auxiliary_flow_identity (__main__.Tests.test_pilot_auxiliary_flow_identity) ... ok
+test_pilot_history_boundary (__main__.Tests.test_pilot_history_boundary) ... ok
+test_pixel_origin_error (__main__.Tests.test_pixel_origin_error) ... ok
+test_positive_stock_without_event_support (__main__.Tests.test_positive_stock_without_event_support) ... ok
+test_projection (__main__.Tests.test_projection) ... ok
+test_reference_tampering (__main__.Tests.test_reference_tampering) ... ok
+test_run_identity (__main__.Tests.test_run_identity) ... ok
+test_runtime (__main__.Tests.test_runtime) ... ok
+test_step_compatibility_beyond_hashes (__main__.Tests.test_step_compatibility_beyond_hashes) ... ok
+test_wrong_batch (__main__.Tests.test_wrong_batch) ... ok
+test_wrong_diagnostic (__main__.Tests.test_wrong_diagnostic) ... ok
+test_wrong_grid (__main__.Tests.test_wrong_grid) ... ok
+test_wrong_interval (__main__.Tests.test_wrong_interval) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 9.873s
+
+OK

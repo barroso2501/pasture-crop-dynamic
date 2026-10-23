@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "assurance": "local_scalar_only",
+  "manual_fixture_cases": 31,
+  "manual_fixture_steps": 302,
+  "exhaustive_length6_histories": 46656,
+  "exhaustive_prefix_steps": 55986,
+  "accepted_engine_byte_identity": true,
+  "native_execution_performed": false
+}

@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-21",
+  "status": "LOCAL_IMPLEMENTATION_VERIFICATION_PASS",
+  "scope": "software_only",
+  "native_full_execution_performed": false,
+  "full_domain_decomposition_complete": false,
+  "native_full_domain_age201_complete": false,
+  "expected_cells": 24889,
+  "expected_cell_interval_rows": 199112,
+  "expected_history_audit_rows": 24889,
+  "expected_new_native_csvs": 73,
+  "expected_cell_csvs": 64,
+  "expected_audit_csvs": 8,
+  "expected_manifests": 1,
+  "accepted_pilot_files_preserved": 79,
+  "native_pilot_rerun_required": false,
+  "accepted_native_fixtures_reused": 31,
+  "accepted_native_fixture_steps": 302,
+  "reference_rows": 199112,
+  "historical_reference_source_rows": {
+    "accepted_reused_1985_reference": 49778,
+    "fresh_native_gee_export": 149334
+  },
+  "reference_panel_sha256": "20a34af52dd6cbed5ce75662a7b88a1b93f3d8adbbcf46d8f1fc927396998c67",
+  "reference_reproduction_from_exact_source_zip": "PASS; extractor executed and reproduced both shipped CSV hashes byte-for-byte",
+  "reference_csv_sha256": "f31c21c1861aefa1b4c053489d64405b07d65af1ea2ba0a87b5ddac3d2ce680c",
+  "crosswalk_csv_sha256": "8cd4cd208f76c550369b41a7b73dcd4e4125d628c1b6bec34da5657c5af6ed14",
+  "scalar_engine": {
+    "status": "PASS",
+    "assurance": "local_scalar_only",
+    "manual_fixture_cases": 31,
+    "manual_fixture_steps": 302,
+    "exhaustive_length6_histories": 46656,
+    "exhaustive_prefix_steps": 55986,
+    "accepted_engine_byte_identity": true,
+    "native_execution_performed": false
+  },
+  "export_orchestration": {
+    "status": "PASS",
+    "assurance": "local_eager_adapter_only",
+    "successful_scenarios": 4,
+    "metadata_rejections": 2,
+    "asynchronous_metadata_calls_per_run": 1,
+    "exports_before_metadata": 0,
+    "exports_before_first_UI_yield": 1,
+    "deferred_callbacks_per_success": 72,
+    "unique_export_tasks": 73,
+    "cell_files": 64,
+    "history_files": 8,
+    "manifest_files": 1,
+    "native_execution_performed": false
+  },
+  "synthetic_validator_tests": 33,
+  "checks": {
+    "syntax": {
+      "status": "PASS",
+      "exit_code": 0
+    },
+    "engine": {
+      "status": "PASS",
+      "exit_code": 0
+    },
+    "orchestration": {
+      "status": "PASS",
+      "exit_code": 0
+    },
+    "validator": {
+      "status": "PASS",
+      "exit_code": 0
+    },
+    "real_reference_and_pilot_preflight": {
+      "status": "PASS",
+      "result": "Reached native full-export inventory gate after authenticating and checking all actual references; no outputs created."
+    }
+  },
+  "supplied_script_sha256": "71dd4ca0cda14e764570618c1a3a2be71901bc4193670307c35c4b3a6667eaf4",
+  "executed_script_sha256": null,
+  "operator_attestation": null,
+  "matrix_v4_3_changed": false,
+  "events_v5_changed": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "assurance": "local_eager_adapter_only",
+  "successful_scenarios": 4,
+  "metadata_rejections": 2,
+  "asynchronous_metadata_calls_per_run": 1,
+  "exports_before_metadata": 0,
+  "exports_before_first_UI_yield": 1,
+  "deferred_callbacks_per_success": 72,
+  "unique_export_tasks": 73,
+  "cell_files": 64,
+  "history_files": 8,
+  "manifest_files": 1,
+  "native_execution_performed": false
+}
