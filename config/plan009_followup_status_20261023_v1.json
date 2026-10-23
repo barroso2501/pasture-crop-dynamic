@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-23",
+  "version": "plan009-current-followup-status-v1",
+  "matrix_version": "v4.4",
+  "events_version": "v6",
+  "historical_protocol_unchanged": "config/plan009_joint_native_followup_protocol_v1.json",
+  "historical_protocol_status_not_rewritten": true,
+  "components": {
+    "coverage_entry_reentry_full": {
+      "status": "ACCEPTED_FULL",
+      "cells": 24889,
+      "rows": 199112,
+      "record": "outputs/validation/entry_reentry_v1/full/canonical_entry_reentry_full_v1_validation.json",
+      "sha256": "03120bb75b64cd5c328f716f2c5d4efc1207ff51d3f24a31f0139ab891affeb9"
+    },
+    "coverage_auxiliary_age201_full": {
+      "status": "ACCEPTED_FULL_FOR_COVERAGE_DERIVED_ENGINE",
+      "record": "outputs/validation/entry_reentry_v1/full/canonical_entry_reentry_full_v1_validation.json",
+      "sha256": "03120bb75b64cd5c328f716f2c5d4efc1207ff51d3f24a31f0139ab891affeb9",
+      "public_age_asset_full_numeric_validation": false
+    },
+    "pas_conditioned_uncertain_pairs_full": {
+      "status": "ACCEPTED_FULL",
+      "cells": 24889,
+      "rows": 49778,
+      "record": "outputs/validation/uncertain_pair_crosstab_v1/full/canonical_uncertain_pairs_full_v1_validation.json",
+      "sha256": "ac27c850d1329e14813e916f3da876533500696eee8f4685153a5e995a3dfbba"
+    },
+    "original_seeded_pixel_sampling_protocol": {
+      "status": "NOT_CLAIMED_COMPLETED",
+      "reason": "Full-domain aggregate native invariants and fixtures were accepted; the separate proposed seeded annual-pixel sample was not supplied and is not retroactively declared executed."
+    },
+    "public_age_v2_complete_numeric_validation": {
+      "status": "NOT_PERFORMED",
+      "reason": "Separate 21,869-cell targeted coding audit does not validate every numeric age or migrate canonical accounting."
+    },
+    "remote_executed_text_attestation": {
+      "status": "NOT_SUPPLIED",
+      "executed_script_sha256": null,
+      "operator_attestation": null
+    },
+    "public_data_release": {
+      "status": "NOT_DECLARED_READY",
+      "doi_assigned": false,
+      "reason": "Earlier partial release inventory and byte-check record retain their dated scope; no new release/DOI verification in this update."
+    }
+  },
+  "no_new_gee_execution_this_update": true,
+  "no_new_boundary_event_raster_comparison_this_update": true,
+  "matrix_status_promotion": false
+}
