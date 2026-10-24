@@ -1,0 +1,45 @@
+{
+  "status": "PASS_FOR_INTEGRATED_DRAFT",
+  "date": "2026-10-24",
+  "scope": "claim_source_coverage_and_descriptive_rendering_audit_not_new_native_or_spatial_inference",
+  "matrix_version": "v4.4",
+  "events_version": "v6",
+  "matrix_sha256_unchanged": "e792843b9dad60fdc236869935219df6b75f5ea4f33db1b41acdb39ec4307e35",
+  "accepted_findings": 35,
+  "RQ_coverage": {
+    "RQ3": 2,
+    "RQ4": 18,
+    "RQ5": 8,
+    "RQ1": 4,
+    "RQ2": 3
+  },
+  "direct_legacy_anchor_hash_matches": 31,
+  "legacy_narrative_exceptions_with_authenticated_numeric_support": 4,
+  "accepted_project_sources_checked": 49,
+  "references_initially_verified": 5,
+  "reference_orphans": 0,
+  "main_figures_planned": 6,
+  "new_main_figures_generated": 3,
+  "main_existing_figure_reused": 1,
+  "main_figures_still_to_assemble": [
+    "F1",
+    "F4"
+  ],
+  "new_figure_formats_verified": 9,
+  "main_tables_written": 2,
+  "display_registry_rows": 13,
+  "local_manuscript_links_checked": 14,
+  "new_gee_or_spatial_fit": false,
+  "scientific_matrix_or_events_changed": false,
+  "submission_ready": false,
+  "stage0_governance_frozen": false,
+  "doi_assigned": false,
+  "word_count_main_draft": 5795,
+  "limitations": [
+    "Text is a first integrated draft; this audit does not certify every scientific interpretation or replace author review.",
+    "Four historic Phase 7 narrative anchors are absent; accepted direct numerical support is checked and the exception remains explicit.",
+    "Initial bibliography is not a systematic or complete literature review; access scope is recorded.",
+    "F1/F4 and supplementary table assembly remain editorial tasks.",
+    "Public release, official dataset citation, licensing/attribution and contribution-based authorship are not finalized here."
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "totals_million_ha_round_to_matrix_values": true,
+  "primary_totals": [
+    {
+      "primary_biome": "Amazon",
+      "metric": "consolidation_ha",
+      "window": "primary_1985_2020",
+      "sum_interval_area_ha": 5102124.588025377,
+      "population": "all_cells_primary_biome_assignment",
+      "not_exact_pixel_biome_partition": true
+    },
+    {
+      "primary_biome": "Amazon",
+      "metric": "replenishment_ha",
+      "window": "primary_1985_2020",
+      "sum_interval_area_ha": 47814385.210193336,
+      "population": "all_cells_primary_biome_assignment",
+      "not_exact_pixel_biome_partition": true
+    },
+    {
+      "primary_biome": "Amazon",
+      "metric": "nat_tmp_endpoint_ha",
+      "window": "primary_1985_2020",
+      "sum_interval_area_ha": 2042762.4960319058,
+      "population": "all_cells_primary_biome_assignment",
+      "not_exact_pixel_biome_partition": true
+    },
+    {
+      "primary_biome": "Cerrado",
+      "metric": "consolidation_ha",
+      "window": "primary_1985_2020",
+      "sum_interval_area_ha": 15017343.510546977,
+      "population": "all_cells_primary_biome_assignment",
+      "not_exact_pixel_biome_partition": true
+    },
+    {
+      "primary_biome": "Cerrado",
+      "metric": "replenishment_ha",
+      "window": "primary_1985_2020",
+      "sum_interval_area_ha": 45811484.891542405,
+      "population": "all_cells_primary_biome_assignment",
+      "not_exact_pixel_biome_partition": true
+    },
+    {
+      "primary_biome": "Cerrado",
+      "metric": "nat_tmp_endpoint_ha",
+      "window": "primary_1985_2020",
+      "sum_interval_area_ha": 7108041.802096897,
+      "population": "all_cells_primary_biome_assignment",
+      "not_exact_pixel_biome_partition": true
+    }
+  ],
+  "trajectory_checks": [
+    {
+      "boundary_scope": "primary_assignment",
+      "primary_biome": "Amazon",
+      "metric": "nat_tmp_endpoint_ha",
+      "analysis_window": "primary",
+      "cells": "14213",
+      "mean_state_changes": "0.79328783508056",
+      "mean_distinct_states": "1.4605642721452192",
+      "constant_cells": "9664",
+      "constant_cell_fraction": "0.67994089917681",
+      "mean_maximum_episode_intervals": "5.9627101948920007"
+    },
+    {
+      "boundary_scope": "primary_assignment",
+      "primary_biome": "Cerrado",
+      "metric": "nat_tmp_endpoint_ha",
+      "analysis_window": "primary",
+      "cells": "10676",
+      "mean_state_changes": "2.1266391907081306",
+      "mean_distinct_states": "2.1853690520794307",
+      "constant_cells": "1917",
+      "constant_cell_fraction": "0.17956163357062571",
+      "mean_maximum_episode_intervals": "4.2258336455601349"
+    }
+  ],
+  "persistent_hh_checks": [
+    {
+      "biome": "Amazon",
+      "metric": "replenishment_ha",
+      "cells": 2785
+    },
+    {
+      "biome": "Cerrado",
+      "metric": "replenishment_ha",
+      "cells": 1569
+    },
+    {
+      "biome": "Amazon",
+      "metric": "nat_tmp_endpoint_ha",
+      "cells": 153
+    },
+    {
+      "biome": "Cerrado",
+      "metric": "nat_tmp_endpoint_ha",
+      "cells": 511
+    }
+  ],
+  "global_tests": 160,
+  "all_global_tests_BY_significant": true,
+  "max_boundary_abs_I_difference": 0.04484799213676455,
+  "legacy_narrative_anchor_missing": true,
+  "legacy_anchor_sha256": "7dbc6c0f7d7744fd37c524a3383066af806b4403cbb3a375cbcbee88536b34f1",
+  "current_matrix_unchanged": true
+}

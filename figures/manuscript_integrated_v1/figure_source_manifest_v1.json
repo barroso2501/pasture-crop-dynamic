@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-24",
+  "sources": {
+    "outputs/validation/phase9_gap_resolution_v1/canonical_fixed_1985_pasture_cohort_summary_v1.csv": "f2e69d49999ec12e172a42365b3ffa4ff29d4afbd8c743057e92cde69b04fb85",
+    "outputs/summary/phase7_biome_comparison_v1/canonical_phase7_biome_process_summary_v1.csv": "fc2d5d1d5a764f4f54beefb1a90e34246b15ab40c9cae18a84c2f5c15d67a397",
+    "outputs/validation/phase8e_maup_hh_cluster_v1/canonical_maup_hh_robustness_assessment_v1.csv": "cbdfb3825948ab7f7e81535c9d06fb110dec846881096b06c657e328092687b4"
+  },
+  "new_analytical_fit": false,
+  "description": "Descriptive rendering and arithmetic regrouping of accepted summaries; no new spatial model, native export or significance test.",
+  "outputs": {
+    "figures/manuscript_integrated_v1/fig02_fixed_1985_cohort_endpoints_v1.pdf": "a93483c9c6d7ded2083f732961a59e45590d8494cd8bdc5295dcc770092406fe",
+    "figures/manuscript_integrated_v1/fig02_fixed_1985_cohort_endpoints_v1.png": "1b23f09d09647fadd0e92a2c81977091f7ec9888bddf3137a2e0371f065987c6",
+    "figures/manuscript_integrated_v1/fig02_fixed_1985_cohort_endpoints_v1.svg": "d39248b8448216797f2ded51da8fdf20a3de9b0cb0b7003d0d160163f97e8c04",
+    "figures/manuscript_integrated_v1/fig05_primary_biome_process_totals_v1.pdf": "e3ca6d621c662875b70b87f78945e3e5e3226c7d34938adb2dd0b3d680541519",
+    "figures/manuscript_integrated_v1/fig05_primary_biome_process_totals_v1.png": "56300356c19ba1d57fa46ec19b7106172ab13f1c97e2baff0688cf247181e7c2",
+    "figures/manuscript_integrated_v1/fig05_primary_biome_process_totals_v1.svg": "041d46550e47f053e0e8cca918a1ea7a7d2e585de0166a3eba49446b770dfdb5",
+    "figures/manuscript_integrated_v1/fig06_hh_maup_robustness_v1.pdf": "af5106ca24d365fe5214a75c5a0518a44c7c83d5bec9cfe9ca33533fd4b31222",
+    "figures/manuscript_integrated_v1/fig06_hh_maup_robustness_v1.png": "9feeb34eed559ca55fbc51399530a5752188832f47de89f7b0b071fcf237e4c5",
+    "figures/manuscript_integrated_v1/fig06_hh_maup_robustness_v1.svg": "498d8d22c1fe5a1bc37ab0e5d7af2418e5c2f16f84fa0b28505c4742ee9d3682"
+  }
+}
